@@ -1,0 +1,23 @@
+.bgimg{
+    background: url("../Assets/jumbotron-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fontlato{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.background1 {
+    background: url("../Assets/background-1.png");
+}
+
+.background2 {
+    background: url("../Assets/background-2.png")
+}
+
+.background3 {
+    background: url("../Assets/background-3.png")
+}
