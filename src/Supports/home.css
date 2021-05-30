@@ -4,6 +4,11 @@
     background-size: cover;
 }
 
+.bgproject{
+    background: url("../Assets//project/bgproject.png");
+    background-repeat: no-repeat;
+}
+
 .fontlato{
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -20,4 +25,12 @@
 
 .background3 {
     background: url("../Assets/background-3.png")
+}
+
+.backgroundproject1 {
+    background : url("../Assets//project//project1.png")
+}
+
+.backgroundproject2 {
+    background : url("../Assets//project//project2.png")
 }
