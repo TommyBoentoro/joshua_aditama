@@ -131,7 +131,7 @@ class Project extends React.Component{
                             </div>
                     </div>
                 </div>
-
+              
                 {/*  */}
 
                 <div className="border" style={{width: "1440px", height: "272px"}}>
