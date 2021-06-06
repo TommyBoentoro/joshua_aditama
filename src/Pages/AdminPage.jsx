@@ -7,25 +7,45 @@ import {onGetData} from "../Redux/Actions/projectaction"
 
 class AdminPage extends React.Component{
 
+    componentDidMount () {
+        this.onGet()
+    }
+
     onSubmit = () => {
+        let token = localStorage.getItem("my-tkn")
+
         let addData = {
             title : this.title.value,
-            description : this.description.value
+            description : this.description.value,
+            token
         }
 
         this.props.onAddData(addData)
+        window.location = "/adminpage"
+
+    }
+
+    onGet = () => {
+        let token = localStorage.getItem("my-tkn")
+
+        let data = {
+            token : token
+        }
+        
+        this.props.onGetData(data)
+
+        
     }
 
 
-
     render(){
-        if(this.props.project.data === null){
-            return(
-                <div>
-                    Loading
-                </div>
-            )
-        }
+        // if(this.props.project.data === null){
+        //     return(
+        //         <div>
+        //             Loading
+        //         </div>
+        //     )
+        // }
         return(
             <div className ="container my-5">
                 <h2>
@@ -37,7 +57,7 @@ class AdminPage extends React.Component{
                 </div>
                 <div className="form-group">
                     <label>Description</label>
-                    <input type="text" ref={(e)=> this.description=e} className="form-control" placeholder= "Input Title"/>
+                    <input type="text" ref={(e)=> this.description=e} className="form-control" placeholder= "Input Description"/>
                 </div>
                 <button type="submit" onClick={() => this. onSubmit()} class="btn btn-primary">Submit</button>
 
@@ -49,7 +69,7 @@ class AdminPage extends React.Component{
                 <hr />
                 <br />
                 {/* Test Maping */}
-                <div>
+                {/* <div>
                     {
                         this.props.project.data.map((value,index) => {
                             return(
@@ -61,12 +81,28 @@ class AdminPage extends React.Component{
                             )
                         })
                     }
-                </div>
+                </div> */}
 
                 <br />
 
                 <div>
-                    description
+                    {
+                        this.props.project.data?
+                        this.props.project.data.map((value,index) => {
+                            return(
+                                <>
+                                    <h4>
+                                        {value.title}
+                                    </h4>
+                                    <p>
+                                        {value.description}
+                                    </p>
+                                </>
+                            )
+                        })
+                        :
+                        null
+                    }
                 </div>
             </div>
         )

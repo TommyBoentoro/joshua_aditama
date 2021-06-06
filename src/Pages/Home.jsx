@@ -41,7 +41,7 @@ class Home extends React.Component{
     // }
     render () {
         return(
-           <>
+           <> 
             <div className="border border-black bgimg" style={{width: "1440px", height: "900px"}}>
                 <div className = "border border-black " style={{height: "900px", width: "1179px", marginLeft: "130px"}}>
                     <nav className = "navbar navbar-light bg-light d-flex flex-row justify-content-between">
