@@ -1,12 +1,15 @@
 .bgimg{
-    background: url("../Assets/jumbotron-3.png");
+    background: url("../Assets/jumbotron.JPG");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+   
+ 
 }
 
 .bgproject{
     background: url("../Assets//project/bgproject.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fontlato{
@@ -17,14 +20,22 @@
 
 .background1 {
     background: url("../Assets/background-1.png");
+    background-repeat: no-repeat;
 }
 
 .background2 {
-    background: url("../Assets/background-2.png")
+    background: url("../Assets/background-2.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -200px;
 }
 
 .background3 {
-    background: url("../Assets/background-3.png")
+    background: url("../Assets/background-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px
 }
 
 .backgroundproject1 {
@@ -33,4 +44,15 @@
 
 .backgroundproject2 {
     background : url("../Assets//project//project2.png")
+}
+
+.backgroundstudio1 {
+    background: url("../Assets//Studio//jumbotron1.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container1 {
+    margin-left: 130px;
+    margin-right: 130px;
 }
