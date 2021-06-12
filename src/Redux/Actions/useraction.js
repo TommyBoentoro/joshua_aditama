@@ -31,3 +31,33 @@ export const onUserLogin = (data) => {
         })
     }
 }
+
+export const onSubmitMessage = (name, email, contact, letter) => {
+    return(dispatch) => {
+        // dispatch(
+        //     {
+        //         type: `LOADING`
+        //     }
+        // )
+        axios.post(`http://localhost:4000/user-system/send-email`, {name: name, email: email, contact: contact, letter: letter})
+        .then((res) => {
+            console.log(res)
+            dispatch(
+                {
+                    type: `MESSAGE_SUCCESS`,
+                    payload: res.data.message
+                }
+            )
+        })
+        .catch((err) => {
+            
+            dispatch(
+                {
+                    type: `MESSAGE_ERROR`,
+                    payload:err.data.message
+                }
+            )
+        })
+    }
+    
+}

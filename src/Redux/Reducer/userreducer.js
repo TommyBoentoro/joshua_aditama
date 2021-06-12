@@ -1,7 +1,8 @@
 let initialState = {
     loading:false,
     message: null,
-    isRedirect:false
+    isRedirect:false,
+    letter: null
 }
 
 const userReducer = (state = initialState, action) => {
@@ -12,6 +13,10 @@ const userReducer = (state = initialState, action) => {
             return{...state, message:action.payload, isRedirect:true, loading: false}
         case `USER_ERROR`:
             return{...state, message:action.payload, loading: false}  
+        case `MESSAGE_SUCCESS`:
+            return{...state, letter: action.payload, loading: false}
+        case `MESSAGE_ERROR` :
+            return{...state, letter: action.payload, loading: false}
         default:
             return state
     }

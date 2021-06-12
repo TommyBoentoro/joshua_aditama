@@ -1,12 +1,27 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import {connect } from "react-redux"
 
 //Import Images
 import logo from "./../Assets/logo-2.png"
 
 // Import Css
 import "./../Supports/home.css"
+
+// Import Action
+import { onSubmitMessage } from "../Redux/Actions/useraction"
+
 class ContactUs extends React.Component{
+
+    onSubmit = () => {
+        let name = this.name.value
+        let email = this.email.value
+        let contact = this.contact.value
+        let letter = this.letter.value
+
+        this.props.onSubmitMessage(name, email, contact, letter)
+    }
+
     render(){
         return(
             <div style={{width: "100%"}}>
@@ -47,18 +62,26 @@ class ContactUs extends React.Component{
                                     Get In Touch
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
+                                    <input type="text" class="form-control" ref={(e) => this.name=e} placeholder="Name" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
+                                    <input type="text" class="form-control" ref={(e) => this.email=e} placeholder="Email" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Contact Number" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
+                                    <input type="text" class="form-control" ref={(e) => this.contact=e} placeholder="Contact Number" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Message" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
+                                    <input type="text" class="form-control" ref={(e) => this.letter=e} placeholder="Message" style={{width: "575px", height: "36px", color: "darkgray", marginTop: "40px"}}/>
                                 </div>
-                                <input type="button" value="Submit" className="btn btn-dark" style ={{marginTop: "60px"}} />
+                                <div>
+                                <input type="button" onClick={() => this.onSubmit()} value="Submit" className="btn btn-dark" style ={{marginTop: "60px"}} />
+                                <h6>
+                                    {
+                                        this.props.user.letter
+                                    }
+                                </h6>
+                                </div>
+                                
                             </div>
                         </div>       
                 </div>
@@ -107,5 +130,15 @@ class ContactUs extends React.Component{
     }
 }
 
-export default ContactUs
+const mapDispatchToProps = {
+    onSubmitMessage
+}
+
+const mapStateToProps = (state) => {
+    return{
+        user: state.user
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactUs)
 

@@ -1,7 +1,7 @@
 let initialState = {
     loading:false,
     message: null,
-    datata: null
+    data: null
 }
 
 const projectReducer = (state = initialState, action) => {
