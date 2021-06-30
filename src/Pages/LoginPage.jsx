@@ -22,7 +22,7 @@ class LoginPage extends React.Component{
             )
         }
             return(
-                <div className="container">
+                <div className="container" style={{marginTop:"300px"}}>
                     <div>
                         Admin Page Login
                     </div>
@@ -30,10 +30,11 @@ class LoginPage extends React.Component{
                     <div>
                         <input type="text" ref={(e)=> this.username=e} placeholder="Username" />
                     </div>
-                
+                    <br />
                     <div>
                         <input type="text" ref={(e) => this.password=e} placeholder=" Password" />
                     </div>
+                    <br />
                     
                     <div>
                         <input type="button" onClick={() => this.onLogin()} value="login" className="btn btn-primary" />

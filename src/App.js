@@ -10,6 +10,9 @@ import Studio from "./Pages/Studio"
 import adminPage from "./Pages/AdminPage"
 import loginPage from "./Pages/LoginPage"
 import Test from "./Pages/Test"
+import Navbar from "./components/Navbar"
+import Footbar from "./components/Footer"
+import ProjectDetail from "./Pages/projectDetail"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -24,6 +27,7 @@ function App (){
   return(
     <Provider store={store}>
       <BrowserRouter>
+        <Navbar/>
         <Switch>
           <Route exact path = '/' component={Home}/>
           <Route path = "/project" component = {Project}/>
@@ -32,7 +36,9 @@ function App (){
           <Route path = "/adminpage" component = {adminPage} />
           <Route path = "/loginpage" component = {loginPage} />
           <Route path = "/test" component = {Test} />
+          <Route path = "/projectdetail" component = {ProjectDetail}/>
         </Switch>
+        <Footbar/>
       </BrowserRouter>
     </Provider>
     

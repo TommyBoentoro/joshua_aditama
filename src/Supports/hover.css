@@ -1,0 +1,94 @@
+.cardhover1{
+    background-color:transparent;
+    transition: ease-out .5s;
+}
+
+.cardhover1:hover{
+    background-color: red;
+}
+
+.bgcard{
+    background-color: bisque;
+    transition: ease-out .5s;
+}
+
+.bgcard:hover{
+    background-color:green;
+}
+
+.bgcardprimary{
+    background-color: grey;
+}
+
+.btn-1{
+    background-color: rgba(32, 32, 32, 0 );
+    transition: ease-out .5s;
+}
+
+.btn-1:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  
+}
+
+.btn-2{
+    background-color: transparent;
+    color: black;
+    transition:ease-out .3s;
+}
+
+.btn-2:hover{
+    background-color: black;
+    color: white;
+}
+
+.wrapper{
+    width: 575px;
+    background: #fff ;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0);
+}
+
+.wrapper .input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .input-data input{
+    height: 100%;
+    width: 100%;
+    border:none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    outline: none;
+}
+
+.input-data input:focus ~ label {
+    transform:  translateY(-20px);
+   
+}
+
+.wrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #8f8f8f;
+    pointer-events: none;
+    font-weight: 400;
+}
+
+.image {
+    display: inline-block;
+}
+
+.imagehover img{
+    transform:  scale(1);
+    transition: 0.3s  ease-in-out;
+}
+
+.imagehover:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}

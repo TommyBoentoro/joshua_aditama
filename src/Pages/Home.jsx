@@ -1,82 +1,72 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import Slider from "react-slick"
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 // import Image
 import logo from "./../Assets/logo-2.png"
 import gambarHome1 from "./../Assets/fotoHome-1.png"
 import background2 from "./../Assets/background-2.JPG"
-import ourService1 from "./../Assets/ourService1.png"
-import ourService2 from "./../Assets/ourService2.png"
-import ourService3 from "./../Assets/ourService3.png"
 import gambarHome2 from "./../Assets/fotoHome-2.png"
-
+import Jumbotron from "./../Assets/jumbotron.JPG"
+import myService from "./../Assets/myService.png"
 
 
 // Import css
 import "./../Supports/home.css"
 class Home extends React.Component{
-    // render(){
-    //     return(
-    //         <div className="d-flex flex-column justify-content-center" style={{height: "100vh"}}>
-    //              <img src={jumbotronImage1} alt="jumbotron-1" style={{maxWidth: "100%", height: "auto"}} />
-    //             <div className = "container">
-    //                 <nav class="navbar navbar-light bg-light" style={{position : "absolute",  left: "160px"}}>
-    //                     <div>
-    //                         <a class="navbar-brand" href="#">Joshua Aditama</a>
-    //                     </div>
-    //                     <div>
-    //                         <Link to="/project" style={{color: "#39986E"}}>Project</Link>
-    //                         <a class="navbar-brand" href="http://localhost:3000/project">Project</a>
-    //                         <a class="navbar-brand" href="http://localhost:3000/studio">Studio</a>
-    //                         <a class="navbar-brand" href="http://localhost:3000/contactus">Contact Us</a>
-    //                     </div>
-                        
-    //                 </nav>
-    //             </div>
-    //         </div>
-       
-            
-    //     )
-    // }
+   
     render () {
+
+        const settings = {
+            autoplay: true,
+            slideToShow: 1,
+            slideToScroll: 1,
+            dots: false
+        }
+
         return(
            <> 
-            <div className="border border-black bgimg" style={{width: "100%", height: "900px"}}>
-                    <nav className = "navbar  d-flex flex-row justify-content-between container1" style={{marginTop:"50px"}}>
-                        <div>
-                            <img src={logo} alt="logo"  />
-                        </div>
+            {/* <div className="border border-black ">
+                <Slider {...settings}>
+                    <div>
+                        <img src={Jumbotron} alt="Jumbotron"/>
+                    </div>
+                    <div>
+                        <h1 className="d-flex justify-content-center align-items-center" style={{height:"900px", fontSize:"72px"}}>
+                            2
+                        </h1>
+                    </div>
+                    <div>
+                        <h1 className="d-flex justify-content-center align-items-center" style={{height:"900px", fontSize:"72px"}}>
+                            3
+                        </h1>
+                    </div>
+                </Slider>
+            </div> */}
 
-                        <div className = "d-flex flex-row">
-                                    <div>
-                                        <Link to="/project" className="fontlato" style={{color: "black"}}>PROJECT</Link>
-                                    </div>
-                                    <div className="fontlato" style = {{marginRight: "45px", marginLeft: "45px"}}>
-                                        <Link to="/studio"  className="fontlato" style={{color: "black"}} >STUDIO</Link>
-                                    </div>
-                                    <div className= "fontlato">
-                                        <Link to="/contactus"  className="fontlato" style={{color: "black"}} >CONTACT US</Link>
-                                    </div>
-                        </div> 
-                    </nav>
+            <div >
+                <img src={Jumbotron} alt="" style={{height:"100%", width:"100%"}} />
             </div>
 
             {/*  */}
 
-            <div  style={{width: "100%", height: "900px"}}>
+            {/* <div  style={{width: "100%", height: "900px"}}>
                 <div className="d-flex flex-row justify-content-between">
                     <div  style={{marginTop: "220px", width:"474px", height:"447px", marginLeft:"130px"}}>
-                        <div className="fontlato" style={{fontSize: "14px"}}>
+                        <div className="fontlato" style={{fontSize: "14px", fontWeight:"700", letterSpacing:"0.025cm", lineHeight:"17px"}}>
                             ABOUT US
                         </div>
                         <div className= "fontlato" style={{fontSize: "36px", lineHeight: "46.98px", letterSpacing:"0.5%", width: "403px", height: "94px", marginTop:"21px", fontWeight:"300", color:"#000000"}}>
-                        We turn ideas into works of art.
+                        Turning spatial experience into a work of art
                         </div>
                         <div className="fontlato" style={{width:"474px", height:"248px", fontSize:"17px", marginTop:"19px", fontWeight:"400", color:"#8F8F8F", lineHeight: "180%", letterSpacing:"0.025cm"}}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt. 
-                        Praesent ac sapien mollis, tristique lacus non, aliquet nisi. Nunc nec nisi lacus. Curabitur ac gravida nisl. Quisque pellentesque posuere arcu eget egestas. 
-                        Etiam venenatis, arcu at pulvinar porta, nulla nunc varius dolor, at interdum mi est non velit. Etiam pulvinar rhoncus urna laoreet malesuada. 
+                        Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. 
+                        We create a connection between art and human to experience interior and architectural spaces. 
+                        From commercial to personal spaces drive us to explore the specialty of each projects as works of art. 
+                        Brief, concept, and design implementation give a particular excitement for us to be explored together with you.
                         </div>
                         <div style={{color: "#000000", fontWeight:"500", marginTop:"20px"}}>
                             Read More
@@ -86,100 +76,101 @@ class Home extends React.Component{
                         <img src={gambarHome1} alt="logo1"  />
                     </div>
                 </div>
-               <div className="d-flex justify-content-center" style={{width: "100%",marginTop: "100px", fontSize:"46px"}}>
+               <div className="d-flex justify-content-center fontlato" style={{width: "100%",marginTop: "100px", fontSize:"46px", fontWeight:"normal"}}>
                    Our Project
                </div>
+            </div> */}
+
+            <div className="container d-flex" style={{paddingTop:"166px"}}>
+                <div className="col-6" style={{marginTop:"54px"}}>
+                    <div className="fontlato" style={{fontSize: "14px", fontWeight:"700", letterSpacing:"0.025cm", lineHeight:"17px"}}>
+                        ABOUT US
+                    </div>
+                    <div className= "fontlato" style={{fontSize: "36px", lineHeight: "46.98px", letterSpacing:"0.5%", width: "403px", height: "94px", marginTop:"21px", fontWeight:"300", color:"#000000"}}>
+                        Turning spatial experience into a work of art
+                    </div>
+                    <div className="fontlato" style={{width:"474px", height:"248px", fontSize:"17px", marginTop:"19px", fontWeight:"400", color:"#8F8F8F", lineHeight: "180%", letterSpacing:"0.025cm"}}>
+                    Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. 
+                    We create a connection between art and human to experience interior and architectural spaces. 
+                    From commercial to personal spaces drive us to explore the specialty of each projects as works of art. 
+                    Brief, concept, and design implementation give a particular excitement for us to be explored together with you.
+                    </div>
+                    <div style={{color: "#000000", fontWeight:"500", marginTop:"20px"}}>
+                        Read More
+                    </div>
+                </div>
+                <div className="col-6 backgroundhome">
+                    
+                </div>
             </div>
 
-            <div className=" background2 " style={{width:"100%", height:"700px",marginTop:"20px"}}>
-                test
+            <div className="container" style={{marginTop:"193px"}}>
+                <div className="d-flex justify-content-center" style={{fontSize:"46px", fontWeight:"400"}}>
+                    My Projects
+                </div>
             </div>
+            <div>
+                <img src={background2} alt="" style={{width:"100%", marginTop:"57px"}} />
+            </div>
+
+
+
+            {/* <div className=" background2 " style={{width:"100%", height:"700px",marginTop:"20px"}}>
+                test
+            </div> */}
 
             {/*  */}
 
-            <div  style={{width: "100%", height: "998px"}}>
-                <div className=" d-flex justify-content-center" style={{marginTop: "31px"}}>
-                    <button className="fontlato" style={{color: "white", background: "black", width:"143px", height: "52px", Radius: "40px" }}>
+            
+                <div className=" d-flex justify-content-center" style={{marginTop: "63px"}}>
+                    <button className="fontlato btn-1" style={{width:"143px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
                         View more
                     </button>
                 </div>
-                <div className=" fontlato d-flex justify-content-center" style={{marginTop:"120px", fontSize: "46px"}}>
-                    Our Service
-                </div>
-                <div className=" d-flex flex-row justify-content-center" style={{marginTop:"100px", width: "100%", height:"417px"}}>
-                    <div style={{paddingTop: "10px"}}>
-                        <img src={ourService1} alt="Our Service 1" />
-                    </div>
-                    <div style={{paddingTop: "10px", marginLeft:"32px"}}>
-                        <img src={ourService2} alt="Our Service 2" />
-                    </div>
-                    <div style={{paddingTop: "10px", marginLeft:"32px"}}>
-                        <img src={ourService3} alt="Our Service 3" />
-                    </div>
-                </div>
-            </div>
+           
 
-            {/*  */}
-
-            <div className=" background3" style={{width: "100%", height: "1054px"}}>
-                <div className=" d-flex flex-row container1 justify-content-between" style={{height: "346px"}}>
-                    <div className="" style={{width:"706px", height:"346px"}}>
-                        <div className=" fontlato d-flex flex-column justify-content-between" style={{marginTop:"36px", width:"605px", height:"226px", fontSize: "12px", color:"#8D8D8D"}}>
-                            <div>
-                                FEEL FREE TO KEEP IN TOUCH WITH US
-                            </div>
-                            <div style={{fontSize: "40px", fontWeight:"300", color:"black"}}>
-                                We pursue excellence, innovation and professionalism in everything we undertake.
-                            </div>
+                    <div className="container d-flex flex-column fontlato align-items-center" style={{marginTop:"180px"}}>
+                        <div style={{fontSize:"46px", fontWeight:"400"}}>
+                            My Services
                         </div>
-                        <div className="d-flex align-items-end  fontlato" style={{height:"84px"}}>
-                            <button style={{borderRadius:"40px", width:"119px", height: "52px", background:"white", fontWeight:"400", fontSize:"13px"}}>
-                                Inquiry Now
-                            </button>
-                        </div>
-                    </div>
-                    <div style={{height:"348px", width:"473px"}}>
-                        <img src={gambarHome2} alt="Home 2" />
-                    </div>
-                </div>
-
-                {/*  */}
-
-                <div className=" d-flex flex-row justify-content-between" style={{marginTop:"224px", marginLeft:"130px", marginRight:"130px", height:"343px"}}>
-                    <div>
-                        <img src={logo} alt="logo" />
-                    </div>
-                        <div>
-                            <div className=" d-flex flex-row fontlato" style={{width:"566px" , fontSize:"24px", fontWeight:"normal", color:"grey", fontWeight:"300"}}>
-                                <div style={{width:"303px"}}>
-                                    <div>
-                                        Home
+                        <div className="col-10  " style={{marginTop:"80px"}}>
+                            <div className="col d-flex ">
+                                <div className="col-6  ">
+                                    <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
+                                        01.
                                     </div>
-                                    <div style={{marginTop:"30px"}}>
-                                        Project
+                                    <div style={{fontSize:"32px", fontWeight:"300", marginTop:"10px"}}>
+                                        Design Concultacy
                                     </div>
-                                    <div style={{marginTop:"30px"}}>
-                                        Studio
+                                    <div className="col-6" style={{width:"100%", height:"1.5px", backgroundColor:"black", marginTop:"30px"}}> 
+                                        {/* Garis */}
                                     </div>
-                                    <div style={{marginTop:"30px"}}>
-                                        Contact Us
+                                    <div style={{fontSize:"17px", fontWeight:"400", color:"#8F8F8F", width:"90%", marginTop:"30px"}}>
+                                    As an interior-architecture design studio, we will provide integrated design process for prospective clients. 
+                                    From brief-based ideas, design concept, design implementation, to construction drawing and details are executed as a design 
+                                    language that is very content and unique for each projects.
                                     </div>
                                 </div>
-                                <div>
-                                    <div style={{fontWeight:"bold", color:"black"}}>
-                                        Follow My Social media
+                                <div className="col-6 " style={{paddingLeft:"80px"}}>
+                                    <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
+                                        02.
                                     </div>
-                                    <div style={{marginTop:"30px"}} > Instagram </div>
-                                    <div style={{marginTop:"30px"}}>Facebook</div>
-                                    <div style={{marginTop:"30px"}}>Twitter</div>
+                                    <div style={{fontSize:"32px", fontWeight:"300", marginTop:"10px"}}>
+                                        Design & Build
+                                    </div>
+                                    <div className="col-6" style={{width:"100%", height:"1.5px", backgroundColor:"black", marginTop:"30px"}}> 
+                                        {/* Garis */}
+                                    </div>
+                                    <div style={{fontSize:"17px", fontWeight:"400", color:"#8F8F8F", width:"90%", marginTop:"30px"}}>
+                                    Providing a one-stop building solution for prospective clients in various scale. 
+                                    With a strong design language and on-site experiences, we are ready to work simultaneously 
+                                    with our competent and experienced partners.
+                                    </div>
+                                </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                </div>
-                <div className="d-flex  justify-content-center fontlato" style={{fontSize:"11px", fontWeight:"400", letterSpacing:"0.05cm"}}>
-                    © 2021 Joshua Aditama. All Rights Reserved
-                </div>
-            </div>
+           
            </>
         )
     }
