@@ -54,15 +54,10 @@ class Footbar extends React.Component{
                                     <div style={{fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px", fontWeight:"700"}} >
                                         Follow My Social Media
                                     </div>
-                                    <div style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px", marginTop:"30px"}}>
-                                        Instagram
+                                    <div style={{ marginTop:"30px"}}>
+                                        <a href="https://www.instagram.com/joshua_aditama/" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Instagram  </a>
                                     </div>
-                                    <div style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px", marginTop:"30px"}}>
-                                        Facebook
-                                    </div>
-                                    <div style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px", marginTop:"30px"}}>
-                                        Twitter
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
