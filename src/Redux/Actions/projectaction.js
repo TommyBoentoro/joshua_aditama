@@ -97,7 +97,7 @@ export const onGetData = () => {
     return(dispatch) => {
         axios.get(`http://localhost:4000/data-system/get-product`)
         .then((res) => {
-            console.log(res.data.detail)
+            console.log(res)
             dispatch({
                 type: `GET_SUCCESS`,
                 payload: res.data.detail

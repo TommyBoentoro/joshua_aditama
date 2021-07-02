@@ -12,8 +12,8 @@
     transition: ease-out .5s;
 }
 
-.bgcard:hover{
-    background-color:green;
+.bgcard #picture_one{
+    background-color: green;
 }
 
 .bgcardprimary{
@@ -65,10 +65,14 @@
     outline: none;
 }
 
-.input-data input:focus ~ label {
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
     transform:  translateY(-20px);
-   
+    
+    
 }
+
+
 
 .wrapper .input-data label{
     position: absolute;
@@ -77,6 +81,7 @@
     color: #8f8f8f;
     pointer-events: none;
     font-weight: 400;
+    transition: all 0.3s ease;
 }
 
 .image {

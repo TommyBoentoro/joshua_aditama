@@ -63,6 +63,31 @@
 
 
 .container1 {
-    margin-left: 130px;
-    margin-right: 130px;
+    width: 100%;
 }
+
+.bg-white{
+    background-color: white;
+}
+
+.containerhome {
+    display: grid;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+    background-color: salmon;
+}
+
+.containerhome ul{
+    margin: auto;
+    padding: 0;
+}
+
+.containerhome ul li{
+    position: relative;
+    list-style: none;
+    color:black;
+    font-size: 4rem;
+    cursor: pointer;
+}
+

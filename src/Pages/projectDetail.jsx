@@ -32,20 +32,20 @@ class ProjectDetail extends React.Component{
                         Openaire Semarang
                     </div>
                     <div  style={{fontSize:"18px", fontWeight:"400", color:"white", paddingBottom:"70px" }}>
-                        <div className="row">
-                            <div className="col">
+                        <div className="row ">
+                            <div className="col d-flex justify-content-center">
                                 Client : Openaire Group
                             </div>
-                            <div className="col">
+                            <div className="col d-flex justify-content-center">
                                 Category : Interior
-                            </div>
-                            <div className="col">
+                            </div> 
+                            <div className="col d-flex justify-content-center">
                                 Location : Semarang, INA
                             </div>
-                            <div className="col">
+                            <div className="col d-flex justify-content-center">
                                 Year : 2021
                             </div>
-                            <div className="col">
+                            <div className="col d-flex justify-content-center">
                             Status : Done
                             </div>
                         </div>

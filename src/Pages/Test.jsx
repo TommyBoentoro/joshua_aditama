@@ -1,6 +1,9 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import {connect} from "react-redux"
+import Slider from "react-slick"
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // Action
 import { onGetData } from "../Redux/Actions/projectaction"
@@ -19,6 +22,10 @@ import "./../Supports/hover.css"
 
 class Test extends React.Component{
 
+    // componentWillReceiveProps(){
+    //     this.refs.slick.innerSlider.onWindowResized()
+    //   }
+
     componentDidMount(){
         this.onGet()
     }
@@ -34,11 +41,49 @@ class Test extends React.Component{
     }
 
     render(){
+
+        // const settings = {
+        //     autoplay: true,
+        //     infinite:true,
+        //     speed:500,
+        //     slideToShow: 1,
+        //     slideToScroll: 1,
+        //     dots: true,
+            
+        // }
         return(
             <>
+            <div style={{paddingTop:"200px"}}>
+                {/* <Link to ='/'>
+                        <button  className="fontlato btn-1" style={{width:"143px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
+                            View more
+                        </button>
+                </Link> */}
+                <a href="/projectdetail">
+                        <button  className="fontlato btn-1" style={{width:"143px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
+                            View more
+                        </button>
+                </a>
+            </div>
+            {/* Test Slider */}
+                {/* <div className="container1">
+                    <Slider ref="slick" className="border"{...settings}>
+                       <img src={gambarHome1} alt="" />
+                       <img src={gambarHome1} alt="" />
+                       <img src={gambarHome1} alt="" />
+                    
+                    </Slider>
+                </div>
+                
+            
+
+            <div className="border" style={{width:"100vh", height:"200px", marginTop:"200px"}}>
+                tommy
+            </div> */}
+
                 {/* Test Hover Home */}
               {/* <div className="container d-flex bgcard" style={{height:"400px", position:"relative", top:"200px"}}>
-                <div className="border col-4 d-flex align-items-end " style={{height:"400px"}}>
+                <div className="border col-4 d-flex align-items-end" id="picture_one" style={{height:"400px"}}>
                     <div className="d-flex flex-column justify-content-end cardhover1 border" style={{height:"150px", width:"400px"}}>
                         <div>
                             Ini Judul
@@ -49,7 +94,7 @@ class Test extends React.Component{
                     </div>
                 </div>
                 <div className="border col-4 d-flex align-items-end" style={{height:"400px"}}>
-                    <div className="d-flex flex-column justify-content-end cardhover1 border" style={{height:"150px", width:"400px"}}>
+                    <div className="d-flex flex-column justify-content-end cardhover1 border" id="picture_two" style={{height:"150px", width:"400px"}}>
                         <div>
                             Ini Judul
                         </div>
@@ -59,7 +104,7 @@ class Test extends React.Component{
                     </div>
                 </div>
                 <div className="border col-4 d-flex align-items-end" style={{height:"400px"}}>
-                    <div className="d-flex flex-column justify-content-end cardhover1 border" style={{height:"150px", width:"400px"}}>
+                    <div className="d-flex flex-column justify-content-end cardhover1 border" id = "picture_three" style={{height:"150px", width:"400px"}}>
                         <div>
                             Ini Judul
                         </div>
@@ -69,9 +114,11 @@ class Test extends React.Component{
                     </div>
                 </div>
               </div> */}
+                
+              
 
 
-              {/* Test Maping */}
+            {/* Test Maping */}
             <div className="container d-flex flex-column justify-content-between" style={{marginTop:"200px"}}>
                 {
                     this.props.project.data?
@@ -88,7 +135,10 @@ class Test extends React.Component{
                                     {
                                         value.image.map((val,idx) => {
                                             return(
-                                                <img src={val.image} alt="" />
+                                                <div key={idx} className="border" style={{width:"200px", height:"100px"}}>
+                                                    <img src={val.image} alt="image gagal"/>
+                                                </div>
+                                                
                                             )
                                         })
                                     }
@@ -100,6 +150,7 @@ class Test extends React.Component{
                     :
                     null
                 }
+
                 {/* {
                     this.props.project.data?
                     this.props.project.data.map((value,index) => {
@@ -151,8 +202,7 @@ class Test extends React.Component{
                 
                 {/* Front-end */}
                 {/* 1. Animasi slick di home */}
-                {/* 2. Animasi Hover di home */}
-                {/* 3. Animasi Navbar */}
+                {/* 2. Animasi Hover di home */} 
 
                 {/* Back-end */}
                 {/* 1. Get image */}

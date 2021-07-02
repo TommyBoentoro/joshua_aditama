@@ -1,8 +1,9 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import {Link, Redirect} from "react-router-dom"
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useHistory } from "react-router-dom";
 
 
 // import Image
@@ -17,7 +18,7 @@ import myService from "./../Assets/myService.png"
 // Import css
 import "./../Supports/home.css"
 class Home extends React.Component{
-   
+
     render () {
 
         const settings = {
@@ -123,9 +124,13 @@ class Home extends React.Component{
 
             
                 <div className=" d-flex justify-content-center" style={{marginTop: "63px"}}>
-                    <button className="fontlato btn-1" style={{width:"143px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
-                        View more
-                    </button>
+                <a href="/project">
+                        <button  className="fontlato btn-1" style={{width:"119px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
+                            View More
+                        </button>
+                </a>
+                    
+                    
                 </div>
            
 
@@ -178,4 +183,3 @@ class Home extends React.Component{
 
 export default Home
 
-// test masuk github

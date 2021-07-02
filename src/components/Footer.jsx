@@ -17,9 +17,12 @@ class Footbar extends React.Component{
                                         We are looking forward to explore the uniqueness of upcoming projects, together with you!
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <button className="btn-2" style={{borderRadius:"40px", width:"119px", height: "52px",  fontWeight:"400", fontSize:"13px", border:"1px solid black"}}>
-                                            Inquiry Now
-                                        </button>
+                                        <a href="/contactus">
+                                            <button  className="btn-2" style={{borderRadius:"40px", width:"119px", height: "52px",  fontWeight:"400", fontSize:"13px", border:"1px solid black"}}>
+                                                Inquiry Now
+                                            </button>
+                                        </a>
+                                       
                                     </div>
                                 </div>
                                 <div className="col-5" >
@@ -35,16 +38,16 @@ class Footbar extends React.Component{
                             <div className="col-6 d-flex">
                                 <div className="col-5">
                                     <div>
-                                        <Link to="/" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}>Home</Link>
+                                        <a href="/" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Home </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <Link to="/project" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}>Project</Link>
+                                        <a href="/project" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Project </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <Link to="/studio" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}>Studio</Link>
+                                        <a href="/studio" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Studio </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <Link to="/contactus" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}>Contact</Link>
+                                        <a href="/contactus" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Contact </a>
                                     </div>
                                 </div>
                                 <div className="col-7 ">

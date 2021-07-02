@@ -27,7 +27,7 @@ class ContactUs extends React.Component{
         return(
             <div className="container" style={{width: "100%"}}>
                  <div >
-                        <div className="d-flex flex-row fontlato container " style={{marginTop: "245px"}}>
+                        <div className="d-flex flex-row fontlato container " style={{paddingTop:"245px"}}>
                             <div className="col-6 " >
                                 <div className = "fontlato" style={{fontSize: "36px", fontWeight:"400"}}>
                                     Contact
@@ -46,25 +46,25 @@ class ContactUs extends React.Component{
                                 </div>
                                 <div className = "wrapper" >
                                     <div className="input-data" style={{marginRight:"20px"}}>
-                                        <input type="text" ref={(e) => this.name=e}/>
+                                        <input type="text" ref={(e) => this.name=e} required/>
                                         <label> Name </label>
                                     </div>
                                 </div>
                                 <div className = "wrapper" >
                                     <div className="input-data" style={{marginRight:"20px"}}>
-                                        <input type="text" ref={(e) => this.email=e}/>
+                                        <input type="text" ref={(e) => this.email=e} required/>
                                         <label> Email </label>
                                     </div>
                                 </div>
                                 <div className = "wrapper" >
                                     <div className="input-data" style={{marginRight:"20px"}}>
-                                        <input type="text" ref={(e) => this.contact=e}/>
+                                        <input type="text" ref={(e) => this.contact=e} required/>
                                         <label> Contact Number </label>
                                     </div>
                                 </div>
                                 <div className = "wrapper" >
                                     <div className="input-data" style={{marginRight:"20px"}}>
-                                        <input type="text" ref={(e) => this.letter=e}/>
+                                        <input type="text" ref={(e) => this.letter=e} required/>
                                         <label> Message </label>
                                     </div>
                                 </div>
