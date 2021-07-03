@@ -45,7 +45,7 @@ import axios from "axios"
 //     } 
 // }
 
-export const onAddData= (fd) =>{
+export const onAddData = (fd) =>{
     return(dispatch) => {
         dispatch({
             type : `LOADING`
@@ -53,7 +53,7 @@ export const onAddData= (fd) =>{
 
         axios.post(`http://localhost:4000/data-system/upload-image`, fd)
         .then((res) => {
-            console.log(res)
+            // console.log(res)
             dispatch({
                 type: `ADD_SUCCESS`,
                 payload: res.data.message
@@ -68,6 +68,24 @@ export const onAddData= (fd) =>{
         })
     }
   
+}
+
+export const onDelete = (id) => {
+    return(dispatch) =>{
+        dispatch({
+            type: `LOADING`
+        })
+
+        axios.delete(`http://localhost:4000/data-system/delete-product/` + id)
+        .then((res)=>{
+            console.log(res)
+            
+        })
+        .catch((error)=>{
+            console.log(error)
+          
+        })
+    }
 }
 
 // export const onGetData = (data) => {
@@ -97,7 +115,7 @@ export const onGetData = () => {
     return(dispatch) => {
         axios.get(`http://localhost:4000/data-system/get-product`)
         .then((res) => {
-            console.log(res)
+            // console.log(res)
             dispatch({
                 type: `GET_SUCCESS`,
                 payload: res.data.detail

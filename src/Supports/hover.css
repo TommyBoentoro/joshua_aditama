@@ -91,9 +91,20 @@
 .imagehover img{
     transform:  scale(1);
     transition: 0.3s  ease-in-out;
+    
+}
+
+.imagehover {
+    color:#C4C4C4
 }
 
 .imagehover:hover img{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+.imagehover:hover {
+    color: black;
+}
+
+

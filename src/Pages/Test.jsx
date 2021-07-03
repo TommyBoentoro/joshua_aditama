@@ -31,55 +31,42 @@ class Test extends React.Component{
     }
 
     onGet = () => {
-        let token = localStorage.getItem("my-tkn")
+       
 
-        let data = {
-            token :token
-        }
-
-        this.props.onGetData(data)
+        this.props.onGetData()
     }
 
     render(){
 
-        // const settings = {
-        //     autoplay: true,
-        //     infinite:true,
-        //     speed:500,
-        //     slideToShow: 1,
-        //     slideToScroll: 1,
-        //     dots: true,
+        const settings = {
+           
+            infinite:true,
+            speed:500,
+            slideToShow: 1,
+            slideToScroll: 1,
+            dots: true,
             
-        // }
+        }
         return(
             <>
-            <div style={{paddingTop:"200px"}}>
-                {/* <Link to ='/'>
-                        <button  className="fontlato btn-1" style={{width:"143px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
-                            View more
-                        </button>
-                </Link> */}
-                <a href="/projectdetail">
-                        <button  className="fontlato btn-1" style={{width:"143px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
-                            View more
-                        </button>
-                </a>
-            </div>
+           
             {/* Test Slider */}
-                {/* <div className="container1">
-                    <Slider ref="slick" className="border"{...settings}>
-                       <img src={gambarHome1} alt="" />
-                       <img src={gambarHome1} alt="" />
-                       <img src={gambarHome1} alt="" />
+                <div >
+                    <Slider ref="slick" className="border"{...settings} >
+                       <div className="d-flex " style={{height:"700px", width:"100%"}}>
+                           <img src={gambarHome1} alt="" style={{width:"100%", height:"700px"}}/>
+                       </div>
+                       <div>
+                            <img src={background2} alt="" style={{width:"100%", height:"700px"}}/>
+                       </div>
+                   
                     
                     </Slider>
                 </div>
                 
             
 
-            <div className="border" style={{width:"100vh", height:"200px", marginTop:"200px"}}>
-                tommy
-            </div> */}
+           
 
                 {/* Test Hover Home */}
               {/* <div className="container d-flex bgcard" style={{height:"400px", position:"relative", top:"200px"}}>
@@ -119,7 +106,7 @@ class Test extends React.Component{
 
 
             {/* Test Maping */}
-            <div className="container d-flex flex-column justify-content-between" style={{marginTop:"200px"}}>
+            {/* <div className="container d-flex  justify-content-between" style={{paddingTop:"200px"}}>
                 {
                     this.props.project.data?
                     this.props.project.data.map((value,index) => {
@@ -136,7 +123,7 @@ class Test extends React.Component{
                                         value.image.map((val,idx) => {
                                             return(
                                                 <div key={idx} className="border" style={{width:"200px", height:"100px"}}>
-                                                    <img src={val.image} alt="image gagal"/>
+                                                    <img src={val.image} alt="image gagal" style={{width:"200px", height:"100px"}}/>
                                                 </div>
                                                 
                                             )
@@ -150,8 +137,56 @@ class Test extends React.Component{
                     :
                     null
                 }
+            </div> */}
 
-                {/* {
+            <div className="container" style={{paddingTop:"200px"}}>
+                <div>
+                    <div>
+                        <hr />
+                        {
+                            this.props.project.data?
+                            this.props.project.data.map((value,index) => {
+                                return(
+                                    <>
+                                        <div>
+                                            <div className="d-flex">
+                                                <div className="col-1">
+                                                    {index+1}
+                                                </div>
+                                                <div className="col">
+                                                    {value.title}
+                                                </div>
+                                                <div className="col">
+                                                    {value.description}
+                                                </div>
+                                                <div className="col">
+                                                    {
+                                                        value.image.map((val,idx) => {
+                                                            return(
+                                                                <div>
+                                                                    <img src={val.image} className="border" alt="" style={{width:"100px", height:"100px"}} />
+                                                                </div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                    </>
+                                )
+                            }) 
+                            :
+                            null
+                        }
+                    </div>
+                </div>
+            </div>
+
+           
+            
+
+            {/* {
                     this.props.project.data?
                     this.props.project.data.map((value,index) => {
                         if(index % 3 == 0){ 
@@ -196,7 +231,6 @@ class Test extends React.Component{
                     :
                         null
                 } */}
-            </div>
 
                 {/* Yang belum bisa */}
                 

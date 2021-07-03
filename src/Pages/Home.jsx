@@ -83,22 +83,31 @@ class Home extends React.Component{
             </div> */}
 
             <div className="container d-flex" style={{paddingTop:"166px"}}>
-                <div className="col-6" style={{marginTop:"54px"}}>
-                    <div className="fontlato" style={{fontSize: "14px", fontWeight:"700", letterSpacing:"0.025cm", lineHeight:"17px"}}>
-                        ABOUT US
+                <div className="col-6  row" style={{marginTop:"54px"}}>
+                    <div>
+                        <div className="fontlato" style={{fontSize: "14px", fontWeight:"700", letterSpacing:"0.025cm", lineHeight:"17px", fontStyle:"normal"}}>
+                            ABOUT US
+                        </div>
+                        <div className= "fontlato" style={{fontSize: "36px", lineHeight: "46.98px", fontStyle:"normal",  width: "403px", height: "94px", marginTop:"21px", fontWeight:"300", color:"#000000"}}>
+                            Turning spatial experience into a work of art
+                        </div>
+                        <div className="fontlato" style={{width:"474px", height:"248px", fontSize:"17px", marginTop:"19px", fontWeight:"400", color:"#8F8F8F", lineHeight: "180%", letterSpacing:"0.025cm"}}>
+                        Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. 
+                        We create a connection between art and human to experience interior and architectural spaces. 
+                        From commercial to personal spaces drive us to explore the specialty of each projects as works of art. 
+                        Brief, concept, and design implementation give a particular excitement for us to be explored together with you.
+                        </div>
+                        <div className="fontlato" style={{width:"474px", height:"248px", fontSize:"17px", marginTop:"19px", fontWeight:"300", color:"#8F8F8F", lineHeight: "180%", letterSpacing:"0.025cm"}}>
+                        Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. 
+                        We create a connection between art and human to experience interior and architectural spaces. 
+                        From commercial to personal spaces drive us to explore the specialty of each projects as works of art. 
+                        Brief, concept, and design implementation give a particular excitement for us to be explored together with you.
+                        </div>
+                        <div style={{color: "black", fontWeight:"400", marginTop:"20px", fontSize:"16px"}}>
+                            Read More
+                        </div>
                     </div>
-                    <div className= "fontlato" style={{fontSize: "36px", lineHeight: "46.98px", letterSpacing:"0.5%", width: "403px", height: "94px", marginTop:"21px", fontWeight:"300", color:"#000000"}}>
-                        Turning spatial experience into a work of art
-                    </div>
-                    <div className="fontlato" style={{width:"474px", height:"248px", fontSize:"17px", marginTop:"19px", fontWeight:"400", color:"#8F8F8F", lineHeight: "180%", letterSpacing:"0.025cm"}}>
-                    Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. 
-                    We create a connection between art and human to experience interior and architectural spaces. 
-                    From commercial to personal spaces drive us to explore the specialty of each projects as works of art. 
-                    Brief, concept, and design implementation give a particular excitement for us to be explored together with you.
-                    </div>
-                    <div style={{color: "#000000", fontWeight:"500", marginTop:"20px"}}>
-                        Read More
-                    </div>
+                    
                 </div>
                 <div className="col-6 backgroundhome">
                     
@@ -107,7 +116,7 @@ class Home extends React.Component{
 
             <div className="container" style={{marginTop:"193px"}}>
                 <div className="d-flex justify-content-center" style={{fontSize:"46px", fontWeight:"400"}}>
-                    My Projects
+                    Projects
                 </div>
             </div>
             <div>
@@ -136,7 +145,7 @@ class Home extends React.Component{
 
                     <div className="container d-flex flex-column fontlato align-items-center" style={{marginTop:"180px"}}>
                         <div style={{fontSize:"46px", fontWeight:"400"}}>
-                            My Services
+                            Services
                         </div>
                         <div className="col-10  " style={{marginTop:"80px"}}>
                             <div className="col d-flex ">
@@ -145,18 +154,18 @@ class Home extends React.Component{
                                         01.
                                     </div>
                                     <div style={{fontSize:"32px", fontWeight:"300", marginTop:"10px"}}>
-                                        Design Concultacy
+                                        Design Concultancy
                                     </div>
                                     <div className="col-6" style={{width:"100%", height:"1.5px", backgroundColor:"black", marginTop:"30px"}}> 
                                         {/* Garis */}
                                     </div>
-                                    <div style={{fontSize:"17px", fontWeight:"400", color:"#8F8F8F", width:"90%", marginTop:"30px"}}>
+                                    <div className="" style={{fontSize:"17px", fontWeight:"400", color:"#8F8F8F", width:"90%", marginTop:"30px"}}>
                                     As an interior-architecture design studio, we will provide integrated design process for prospective clients. 
                                     From brief-based ideas, design concept, design implementation, to construction drawing and details are executed as a design 
                                     language that is very content and unique for each projects.
                                     </div>
                                 </div>
-                                <div className="col-6 " style={{paddingLeft:"80px"}}>
+                                <div className="col-6 " style={{marginLeft:"80px"}}>
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         02.
                                     </div>
@@ -166,7 +175,7 @@ class Home extends React.Component{
                                     <div className="col-6" style={{width:"100%", height:"1.5px", backgroundColor:"black", marginTop:"30px"}}> 
                                         {/* Garis */}
                                     </div>
-                                    <div style={{fontSize:"17px", fontWeight:"400", color:"#8F8F8F", width:"90%", marginTop:"30px"}}>
+                                    <div  style={{fontSize:"17px", fontWeight:"400", color:"#8F8F8F", width:"90%", marginTop:"30px"}}>
                                     Providing a one-stop building solution for prospective clients in various scale. 
                                     With a strong design language and on-site experiences, we are ready to work simultaneously 
                                     with our competent and experienced partners.

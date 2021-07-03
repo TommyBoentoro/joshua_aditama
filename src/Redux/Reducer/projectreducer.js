@@ -1,7 +1,8 @@
 let initialState = {
     loading:false,
     message: null,
-    data: null
+    data: null,
+    messagedelete: null
 }
 
 const projectReducer = (state = initialState, action) => {
@@ -16,6 +17,10 @@ const projectReducer = (state = initialState, action) => {
             return{...state, data: action.payload, loading: false}
         case `GET_ERROR`:
             return{...state, data: action.payload, loading: false} 
+        case `DELETE_SUCCESS`:
+            return{...state, messagedelete: action.payload, loading: false}
+        case `DELETE_ERROR`:
+            return{...state, messagedelete: action.payload, loading : false}
         default:
             return state
     }

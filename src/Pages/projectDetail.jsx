@@ -3,6 +3,9 @@ import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+// Redux
+import { connect } from "react-redux";
+
 
 // Import Images
 import jumbotron from "./../Assets/jumbotron.JPG"
@@ -166,4 +169,10 @@ class ProjectDetail extends React.Component{
     }
 }
 
-export default ProjectDetail
+const mapStateToProps = (state) => {
+    return{
+        project: state.project
+    }
+}
+
+export default  connect(mapStateToProps, "") (ProjectDetail)

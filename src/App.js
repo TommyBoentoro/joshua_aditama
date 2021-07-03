@@ -25,22 +25,33 @@ const store = createStore(allReducer,applyMiddleware(thunk))
 
 function App (){
   return(
-    <Provider store={store}>
+    // <Provider store={store}>
+    //   <BrowserRouter>
+    //     <Navbar/>
+    //     <Switch>
+    //       <Route exact path = '/' component={Home}/>
+    //       <Route path = "/project" component = {Project}/>
+    //       <Route path = "/studio" component = {Studio}/>
+    //       <Route path = "/contactus" component = {ContactUs} />
+    //       <Route path = "/adminpage" component = {adminPage} />
+    //       <Route path = "/loginpage" component = {loginPage} />
+    //       <Route path = "/test" component = {Test} />
+    //       <Route path = "/projectdetail" component = {ProjectDetail}/>
+    //     </Switch>
+    //     <Footbar/>
+    //   </BrowserRouter>
+    // </Provider>
+
+      <Provider store={store}>
       <BrowserRouter>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Switch>
-          <Route exact path = '/' component={Home}/>
-          <Route path = "/project" component = {Project}/>
-          <Route path = "/studio" component = {Studio}/>
-          <Route path = "/contactus" component = {ContactUs} />
-          <Route path = "/adminpage" component = {adminPage} />
-          <Route path = "/loginpage" component = {loginPage} />
-          <Route path = "/test" component = {Test} />
-          <Route path = "/projectdetail" component = {ProjectDetail}/>
+          <Route exact path = '/' component={Studio}/>
+          
         </Switch>
         <Footbar/>
       </BrowserRouter>
-    </Provider>
+      </Provider>
     
   )
 }

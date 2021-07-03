@@ -39,13 +39,13 @@ class Navbar extends React.Component{
                     </div>
                     <div className = "d-flex flex-row">
                         <div>
-                            <a href="/project" className="fontlato" style={{color: "black"}}> PROJECT </a>
+                            <a href="/project" className="fontlato" style={{color: "black", fontWeight:"700"}}> PROJECT </a>
                         </div>
                         <div className="fontlato" style = {{marginRight: "45px", marginLeft: "45px"}}>
-                            <a href="/studio" className="fontlato" style={{color: "black"}}> STUDIO </a>
+                            <a href="/studio" className="fontlato" style={{color: "black", fontWeight:"700"}}> STUDIO </a>
                         </div>
                         <div className= "fontlato">
-                            <a href="/contactus" className="fontlato" style={{color: "black"}}> CONTACT US </a>
+                            <a href="/contactus" className="fontlato" style={{color: "black", fontWeight:"700"}}> CONTACT</a>
                         </div>
                     </div> 
                </div>

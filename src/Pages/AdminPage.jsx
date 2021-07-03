@@ -5,6 +5,7 @@ import {connect} from "react-redux"
 // Action
 import {onAddData} from "../Redux/Actions/projectaction" 
 import {onGetData} from "../Redux/Actions/projectaction"
+import {onDelete} from "../Redux/Actions/projectaction"
 
 class AdminPage extends React.Component{
 
@@ -15,6 +16,17 @@ class AdminPage extends React.Component{
 
     componentDidMount () {
         this.onGet()
+    }
+
+    onDeleteData = (idToDel) => {
+        let id = idToDel
+        let confirm = window.confirm(`Are you sure want to delete?`)
+
+        if(confirm === true){
+            this.props.onDelete(id)
+            window.location="/adminpage"
+        }
+       
     }
 
     onSubmit = () => {
@@ -68,7 +80,7 @@ class AdminPage extends React.Component{
             if(files.length > 3) throw {message: `Max select 3 images`}
 
             for (let i = 0; i<files.length; i++){
-                if(files[i].size > 100000 ) throw {message: `${files[i].name} more than 100kb`}
+                if(files[i].size > 10000000 ) throw {message: `${files[i].name} more than 10Mb`}
             }
 
             this.setState({images: files})
@@ -76,6 +88,8 @@ class AdminPage extends React.Component{
             this.setState({imageErrorMessage: error.message})
         }
     }
+
+    
 
 
     render(){
@@ -87,7 +101,7 @@ class AdminPage extends React.Component{
             )
         }
         return(
-            <div className ="container" style={{marginTop:"200px"}}>
+            <div className ="container" style={{paddingTop:"200px"}}>
                 <h2>
                     Add Data
                 </h2>
@@ -122,7 +136,7 @@ class AdminPage extends React.Component{
 
                 <br />
 
-                <div>
+                {/* <div>
                     {
                         this.props.project.data?
                         this.props.project.data.map((value,index) => {
@@ -153,6 +167,50 @@ class AdminPage extends React.Component{
                         :
                         null
                     }
+                </div> */}
+
+                <div className="container" >
+                    <table className="table mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Images</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                this.props.project.data?
+                                this.props.project.data.map((value,index) => {
+                                    return(
+                                        <tr key={index}>
+                                            <th>{index+1}</th>
+                                            <td>{value.title}</td>
+                                            <td>{value.description}</td>
+                                            <td className="row">
+                                                {
+                                                    value.image.map((val,idx)=>{
+                                                        return(
+                                                            <div key={idx}>
+                                                                <img src={val.image} alt="" style={{width:"100px", height:"100px"}} />
+                                                            </div>
+                                                        )
+                                                    })
+                                                }
+                                            </td>
+                                            <td>
+                                                <input type="button" value="Delete" className="btn btn-primary" onClick={()=> this.onDeleteData(value.id)} />
+                                            </td>
+                                        </tr>
+                                    )
+                                })
+                                :
+                                null
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
         )
@@ -160,7 +218,7 @@ class AdminPage extends React.Component{
 }
 
 const mapDispatchToProps = {
-    onAddData, onGetData
+    onAddData, onGetData, onDelete
 }
 
 const mapStateToProps = (state) => {

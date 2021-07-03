@@ -38,24 +38,24 @@ class Footbar extends React.Component{
                             <div className="col-6 d-flex">
                                 <div className="col-5">
                                     <div>
-                                        <a href="/" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Home </a>
+                                        <a href="/" className="fontlato " style={{color:"#656565", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Home </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <a href="/project" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Project </a>
+                                        <a href="/project" className="fontlato " style={{color:"#656565", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Project </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <a href="/studio" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Studio </a>
+                                        <a href="/studio" className="fontlato " style={{color:"#656565", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Studio </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <a href="/contactus" className="fontlato" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Contact </a>
+                                        <a href="/contactus" className="fontlato " style={{color:"#656565", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Contact </a>
                                     </div>
                                 </div>
                                 <div className="col-7 ">
                                     <div style={{fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px", fontWeight:"700"}} >
                                         Follow My Social Media
                                     </div>
-                                    <div style={{ marginTop:"30px"}}>
-                                        <a href="https://www.instagram.com/joshua_aditama/" style={{color: "black", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Instagram  </a>
+                                    <div  style={{ marginTop:"30px"}}>
+                                        <a href="https://www.instagram.com/joshua_aditama/"  style={{color:"#656565", fontWeight:"300", fontSize:"24px", letterSpacing:"0.02cm", lineHeight:"29px"}}> Instagram  </a>
                                     </div>
                                     
                                 </div>
