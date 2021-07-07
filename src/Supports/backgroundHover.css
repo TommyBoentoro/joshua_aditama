@@ -1,7 +1,6 @@
 .backgroundhover {
     background: url("../Assets/project/test1.png")no-repeat center /cover;
     transition: .5s;
-    
 }
 
 .hoverimage ul{
@@ -19,9 +18,6 @@
 }
 
 
-.hoversaya{
-    background-color: transparent;
-}
 
 .hoversaya:hover{
     background-color: white;
