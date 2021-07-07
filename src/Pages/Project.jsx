@@ -37,15 +37,17 @@ class Project extends React.Component{
     render(){
         return(
             <>
-                    <div className="border border-black bgproject" style={{width: "100%", height: "900px"}}>
+                    <div className="bgproject" style={{width: "100%", height: "900px"}}>
+                          <div className="overlay">
                             <div className="d-flex container flex-column fontlato justify-content-end" style={{height: "800px", color: "white"}}>
-                                <div style={{fontSize:"50px", fontWeight:"300", letterSpacing:"0.015cm"}}> 
-                                    Projects
+                                    <div style={{fontSize:"50px", fontWeight:"300", letterSpacing:"0.015cm"}}> 
+                                        Projects
+                                    </div>
+                                    <div className=" " style={{width:"100%", backgroundColor:"white", height:"3px", opacity:"100%", marginTop:"30px"}}>
+                                        
+                                    </div>
                                 </div>
-                                <div className=" " style={{width:"100%", backgroundColor:"white", height:"3px", opacity:"50%", marginTop:"30px"}}>
-                                    
-                                </div>
-                            </div>
+                          </div>
                     </div>
         
 
@@ -93,86 +95,14 @@ class Project extends React.Component{
             {/* Content */}
 
             <div className="container " >
-                <div className="row">
-                    {
-                        this.props.project.data?
-                        this.props.project.data.map((value,index)=>{
-                            if(index / 3 === 1){
+                {/* <div className="row">
+                   {
+                       this.props.project.data?
+                       this.props.project.data.map((value,index)=> {
+                            if(index + 1 === 1 || index + 1 === 9 || index + 1 === 17 ){ 
                                 return(
                                     <>
-                                    <div className="col-6"  style={{marginTop:"80px"}}>
-                                        <div >
-                                            {
-                                                value.image.map((val,idx)=>{
-                                                    
-                                                    return(
-                                                        <>
-                                                            <div className="image">
-                                                            <div className="imagehover" style={{overflow:"hidden"}}>
-                                                                <a href="/projectdetail"> <img src={val.image} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
-                                                            </div>
-                                                            </div>
-                                                        </>
-                                                    )
-                                                })
-                                            }
-                                        </div>
-                                        <div style={{marginTop:"40px"}}>
-                                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
-                                            Architect
-                                        </div >
-                                        <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                                {value.title}
-                                        </div>
-                                        <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
-                                                {value.description}
-                                        </div>
-                                        </div>
-                                    </div>
-                                        
-                                        
-                                    </>
-                                ) 
-                            }else if(index % 2 === 1){
-                                return(
-                                    <>
-                                    <div className="col-3"  style={{marginTop:"80px"}}>
-                                        <div >
-                                            {
-                                                value.image.map((val,idx)=>{
-                                                    
-                                                    return(
-                                                        <>
-                                                            <div className="image">
-                                                            <div className="imagehover" style={{overflow:"hidden"}}>
-                                                                <a href="/projectdetail"> <img src={val.image} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
-                                                            </div>
-                                                            </div>
-                                                        </>
-                                                    )
-                                                })
-                                            }
-                                        </div>
-                                        <div style={{marginTop:"40px"}}>
-                                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
-                                            Architect
-                                        </div >
-                                        <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                                {value.title}
-                                        </div>
-                                        <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
-                                                {value.description}
-                                        </div>
-                                        </div>
-                                    </div>
-                                        
-                                        
-                                    </>
-                                ) 
-                            }else if(index % 2 === 0){
-                                return(
-                                    <>
-                                    <div className="col-9"  style={{marginTop:"80px"}} >
+                                    <div className="col-9 image imagehover"  style={{marginTop:"80px"}} >
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
@@ -193,7 +123,7 @@ class Project extends React.Component{
                                             <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
                                             Interior
                                         </div >
-                                        <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
+                                        <div  style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
                                                 {value.title}
                                         </div>
                                         <div className="col-8" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
@@ -203,15 +133,86 @@ class Project extends React.Component{
                                     </div>
                                         
                                         
-                                    </>
-                                )
-                            }
-                            
-                        })
-                        :
-                        null
-                    }
-                </div>
+                                    </> 
+                            )}else if(index + 1 === 2 || index + 1 === 3 || index + 1 === 5 || index + 1 === 7 || index + 1 === 8 || index + 1 === 10
+                                || index + 1 === 11 || index + 1 === 13 || index + 1 === 15 || index + 1 === 16 || index + 1 === 18 || index + 1 === 19
+                                || index + 1 === 21 || index + 1 === 23 || index + 1 === 24){
+                                return(
+                                    <>
+                                    <div className="col-3 image imagehover"  style={{marginTop:"80px"}} >
+                                        <div>
+                                            {
+                                                value.image.map((val,idx)=>{
+                                                    
+                                                    return(
+                                                        <>
+                                                            <div className="image">
+                                                            <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
+                                                                <a href="/projectdetail"> <img src={val.image} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
+                                                            </div>
+                                                            </div>
+                                                        </>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{marginTop:"40px"}}>
+                                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                                            Interior
+                                        </div >
+                                        <div  style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
+                                                {value.title}
+                                        </div>
+                                        <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                                                {value.description}
+                                        </div>
+                                        </div>
+                                    </div>
+                                        
+                                        
+                                    </> 
+                            )} else if( index + 1 === 4 || index + 1 === 6 || index + 1 === 12 || index + 1 === 14 || index + 1 === 20 || index + 1 === 22){
+                                return(
+                                    <>
+                                    <div className="col-6 image imagehover"  style={{marginTop:"80px"}} >
+                                        <div>
+                                            {
+                                                value.image.map((val,idx)=>{
+                                                    
+                                                    return(
+                                                        <>
+                                                            <div className="image">
+                                                            <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
+                                                                <a href="/projectdetail"> <img src={val.image} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
+                                                            </div>
+                                                            </div>
+                                                        </>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <div style={{marginTop:"40px"}}>
+                                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                                            Interior
+                                        </div >
+                                        <div  style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
+                                                {value.title}
+                                        </div>
+                                        <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                                                {value.description}
+                                        </div>
+                                        </div>
+                                    </div>
+                                        
+                                        
+                                    </> 
+                            )}
+                       })
+                       :
+                       null
+                   }
+                </div> */}
+
                 <div className="row" style={{paddingTop:"80px"}}>
                     <div className="col-9 image imagehover">
                         <div style={{overflow:"hidden"}}>
@@ -221,17 +222,17 @@ class Project extends React.Component{
                             <div  style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem"}}>
                                Interior
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
+                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
                                 Openaire Semarang
                            </div>
-                           <div className="col-8" style={{marginTop:"12px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", }}>
+                           <div className="col-8" style={{marginTop:"12px", position:"relative", right:"15px", fontSize:"16px", fontWeight:"300", }}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
                         </div>
                     </div>
                     <div className="col-3">
-                         <div className="imagehover" style={{overflow:"hidden"}} >
+                         <div className="imagehover " style={{overflow:"hidden"}} >
                             <img src={project2} alt=""  style={{height:"360px", width:"100%"}} />
                         </div>
                         <div style={{marginTop:"40px"}}>

@@ -1,17 +1,24 @@
+:root{
+    --primary: hsla(0, 0%, 0%,);
+}
+
 .bgimg{
-    background: url("../Assets/jumbotron.JPG");
+    background: url("../Assets/project/test1.png");
     background-repeat: no-repeat;
-    background-size:cover;
-    height: 100%;
-    width: 100%;
    
- 
+    
+}
+
+.testbg{
+    background: url("../Assets/project/test1.png");
+    background-repeat: no-repeat;
 }
 
 .bgproject{
     background: url("../Assets//project/bgproject.png");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .fontlato{
@@ -95,4 +102,22 @@
     color: #656565;
 }
 
+.navbar-toggler{
+    background-color: darkorange;
+    border: none;
+    padding: 10px 6px;
+}
 
+.slidercss{
+    padding: 0;
+    margin: 0;
+}
+
+.overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .15)
+}

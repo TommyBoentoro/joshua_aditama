@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 // Redux
 import { connect } from "react-redux";
 
+import Slidertest from "./SliderTest";
 
 // Import Images
 import jumbotron from "./../Assets/jumbotron.JPG"
@@ -14,6 +15,7 @@ import fotoHome from "./../Assets/fotoHome-1.png"
 import project3 from "./../Assets/project/project3.png"
 import project4 from "./../Assets/project/project4.png"
 import project5 from "./../Assets/project/project5.png"
+import project6 from "./../Assets/2568963.jpg"
 
 class ProjectDetail extends React.Component{
     render(){
@@ -29,40 +31,40 @@ class ProjectDetail extends React.Component{
 
         return(
             <>
-            <div className="bgimg" style={{width:"100%", height:"900px"}}>
-                <div className="container d-flex flex-column justify-content-end  fontlato" style={{height:"100%"}}>
-                    <div style={{fontSize:"63px", fontWeight:"400", color:"white", paddingBottom:"60px", letterSpacing:"0.025cm"}}>
-                        Openaire Semarang
-                    </div>
-                    <div  style={{fontSize:"18px", fontWeight:"400", color:"white", paddingBottom:"70px" }}>
-                        <div className="row ">
-                            <div className="col d-flex justify-content-center">
-                                Client : Openaire Group
-                            </div>
-                            <div className="col d-flex justify-content-center">
-                                Category : Interior
-                            </div> 
-                            <div className="col d-flex justify-content-center">
-                                Location : Semarang, INA
-                            </div>
-                            <div className="col d-flex justify-content-center">
-                                Year : 2021
-                            </div>
-                            <div className="col d-flex justify-content-center">
-                            Status : Done
+            <div style={{width:"100%", height:"900px", backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center"}}>
+                <div className="overlay">
+                    <div className="container d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
+                        <div style={{fontSize:"63px", fontWeight:"400", color:"white", paddingBottom:"60px", letterSpacing:"0.025cm"}}>
+                            Openaire Semarang
+                        </div>
+                        <div  style={{fontSize:"18px", fontWeight:"400", color:"white", paddingBottom:"70px" }}>
+                            <div className="row ">
+                                <div className="col d-flex justify-content-center">
+                                    Client : Openaire Group
+                                </div>
+                                <div className="col d-flex justify-content-center">
+                                    Category : Interior
+                                </div> 
+                                <div className="col d-flex justify-content-center">
+                                    Location : Semarang, INA
+                                </div>
+                                <div className="col d-flex justify-content-center">
+                                    Year : 2021
+                                </div>
+                                <div className="col d-flex justify-content-center">
+                                Status : Done
+                                </div>
                             </div>
                         </div>
-
-                     
-                        
                     </div>
                 </div>
             </div>
-            <div className="container d-flex flex-column align-items-center fontlato" style={{marginTop:"200px"}}>
+
+            <div className="container d-flex flex-column align-items-center fontlato" style={{marginTop:"100px"}}>
                 <div className="col-10 fontlato" style={{fontSize:"32px", fontWeight:"300", letterSpacing:"0.03cm", lineHeight:"170%"}}>
                     Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. Cras ac fermentum ipsum. 
                 </div>
-                <div className="col-10" style={{marginTop:"50px", fontSize:"17px", fontWeight:"400", color:"#8F8F8F", lineHeight:"180%", letterSpacing:"0.025cm"}}>
+                <div className="col-10" style={{marginTop:"50px", fontSize:"18px", fontWeight:"300", color:"#8F8F8F", lineHeight:"180%", letterSpacing:"0.025cm"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa, quis efficitur velit lorem sed orci. 
@@ -79,8 +81,8 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="container " style={{marginTop:"130px"}}>
-                <Slider {...settings}>
+            <div  style={{marginTop:"130px"}}>
+                {/* <Slider {...settings}>
                     <div>
                         <img src={jumbotron} alt="Jumbotron" style={{height:"630px", width:"100%"}}/>
                     </div>
@@ -90,11 +92,12 @@ class ProjectDetail extends React.Component{
                     <div>
                         <img src={fotoHome} alt="" style={{height:"630px", width:"100%"}} />
                     </div>
-                </Slider>
+                </Slider> */}
+                <Slidertest/>
             </div>
 
-            <div className="container d-flex flex-column align-items-center fontlato" style={{marginTop:"100px"}}>
-                <div className="col-10" style={{marginTop:"50px", fontSize:"17px", fontWeight:"400", color:"#8F8F8F", lineHeight:"180%", letterSpacing:"0.025cm"}}>
+            <div className="container d-flex flex-column align-items-center fontlato" >
+                <div className="col-10" style={{marginTop:"50px", fontSize:"18px", fontWeight:"300", color:"#8F8F8F", lineHeight:"180%", letterSpacing:"0.025cm"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa
@@ -112,19 +115,19 @@ class ProjectDetail extends React.Component{
             
             <div className="container" style={{marginTop:"93px"}}>
                 <div className="row">
-                    <div className="col-3 " >
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project3} alt="" style={{height:"360px", width:"100%"}}/>
+                    <div className="col-3 image imagehover">
+                        <div style={{overflow:"hidden"}}>
+                            <a href="/projectdetail"> <img src={project3} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
                         </div>
                         <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
-                               Architect
+                            <div  style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem"}}>
+                               Interior
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
+                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
                                 Openaire Semarang
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           <div className="col-12" style={{marginTop:"12px", position:"relative", right:"15px", fontSize:"16px", fontWeight:"300", }}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                            </div>
                         </div>
                     </div>

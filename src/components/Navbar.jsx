@@ -32,10 +32,10 @@ class Navbar extends React.Component{
             //     </nav>     
             // </div>
 
-            <div id="navbar" className=" w-100 position-fixed py-5 d-flex" style={{transition:"0.3s", zIndex:1}}>
-               <div className="container d-flex justify-content-between">
+            <div id="navbar" className=" w-100 position-fixed py-5 d-flex " style={{transition:"0.3s", zIndex:1}}>
+               <div className="container d-flex justify-content-between ">
                     <div >
-                        <a href="/"> <img src={logo} alt="logo" /> </a>
+                        <a href="/"> <img src={logo} alt="logo"  /> </a>
                     </div>
                     <div className = "d-flex flex-row">
                         <div>

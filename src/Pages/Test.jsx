@@ -4,6 +4,7 @@ import {connect} from "react-redux"
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useState } from "react";
 
 // Action
 import { onGetData } from "../Redux/Actions/projectaction"
@@ -13,18 +14,62 @@ import logo from "./../Assets/logo-2.png"
 import gambarHome1 from "./../Assets/fotoHome-1.png"
 import background2 from "./../Assets/background-2.png"
 import gambarHome2 from "./../Assets/fotoHome-2.png"
+import astronaut1 from "./../Assets/astrounaut1.jpg"
+import astronaut2 from "./../Assets/astrounaut2.jpg"
+import astronaut3 from "./../Assets/astrounaut3.jpg"
 
 
 
 // Import css
 import "./../Supports/home.css"
 import "./../Supports/hover.css"
+import {FaArrowRight, FaArrowLeft} from "react-icons/fa"
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "none", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "none", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+    const images = [astronaut1, astronaut2, astronaut3]
+
+    const NextArrow = ({onClick}) => {
+        return(
+            <div className="arrow next" onClick={onClick}>
+                <FaArrowRight/>
+            </div>
+        )
+    }
+
+    
+
+    const PrevArrow = ({onClick}) => {
+        return(
+            <div className="arrow prev" onClick={onClick}>
+                <FaArrowLeft/>
+            </div>
+        )
+    }
 
 class Test extends React.Component{
-
-    // componentWillReceiveProps(){
-    //     this.refs.slick.innerSlider.onWindowResized()
-    //   }
+    
+   
 
     componentDidMount(){
         this.onGet()
@@ -38,35 +83,74 @@ class Test extends React.Component{
 
     render(){
 
-        const settings = {
+        // const settings = {
            
-            infinite:true,
-            speed:500,
-            slideToShow: 1,
-            slideToScroll: 1,
-            dots: true,
+        //     infinite:true,
+        //     lazyLoad: true,
+        //     speed:300,
+        //     slideToShow: 3,
+        //     sldieToScroll: 3,
+        //     dots: true,
+        //     centerMode:true,
+        //     centerPadding: 0,
+        //     nextArrow: <NextArrow/>,
+        //     prevArrow: <PrevArrow/>
             
-        }
+        // }
+
+        const settings = {
+            dots: true,
+            infinite: true,
+            Lazyload: true,
+            centerMode:true,
+            centerPadding:0,
+            speed: 500,
+            slidesToShow: 2,
+            nextArrow: <NextArrow/>,
+            prevArrow: <PrevArrow/>,
+            
+          };
         return(
             <>
            
             {/* Test Slider */}
-                <div >
-                    <Slider ref="slick" className="border"{...settings} >
-                       <div className="d-flex " style={{height:"700px", width:"100%"}}>
-                           <img src={gambarHome1} alt="" style={{width:"100%", height:"700px"}}/>
-                       </div>
-                       <div>
-                            <img src={background2} alt="" style={{width:"100%", height:"700px"}}/>
-                       </div>
-                   
-                    
+                <div className="my-5 container" >
+                    <Slider  {...settings} >
+                        {
+                            images.map((value,index) => {
+                                return(
+                                    <div  >
+                                        <img src={value} alt="" style={{width:"100%", height:"500px"}} />
+                                    </div>
+                                )
+                            })
+                        }
                     </Slider>
+                    
                 </div>
                 
             
 
            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 {/* Test Hover Home */}
               {/* <div className="container d-flex bgcard" style={{height:"400px", position:"relative", top:"200px"}}>
@@ -139,7 +223,7 @@ class Test extends React.Component{
                 }
             </div> */}
 
-            <div className="container" style={{paddingTop:"200px"}}>
+            {/* <div className="container" style={{paddingTop:"200px"}}>
                 <div>
                     <div>
                         <hr />
@@ -181,7 +265,7 @@ class Test extends React.Component{
                         }
                     </div>
                 </div>
-            </div>
+            </div> */}
 
            
             

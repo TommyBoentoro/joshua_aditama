@@ -13,6 +13,10 @@ import Test from "./Pages/Test"
 import Navbar from "./components/Navbar"
 import Footbar from "./components/Footer"
 import ProjectDetail from "./Pages/projectDetail"
+import Responsive from "./Pages/Responsive"
+import testslider from "./Pages/SliderTest"
+import Duaslider from "./Pages/SliderTestDua"
+
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -25,33 +29,27 @@ const store = createStore(allReducer,applyMiddleware(thunk))
 
 function App (){
   return(
-    // <Provider store={store}>
-    //   <BrowserRouter>
-    //     <Navbar/>
-    //     <Switch>
-    //       <Route exact path = '/' component={Home}/>
-    //       <Route path = "/project" component = {Project}/>
-    //       <Route path = "/studio" component = {Studio}/>
-    //       <Route path = "/contactus" component = {ContactUs} />
-    //       <Route path = "/adminpage" component = {adminPage} />
-    //       <Route path = "/loginpage" component = {loginPage} />
-    //       <Route path = "/test" component = {Test} />
-    //       <Route path = "/projectdetail" component = {ProjectDetail}/>
-    //     </Switch>
-    //     <Footbar/>
-    //   </BrowserRouter>
-    // </Provider>
-
-      <Provider store={store}>
+    <Provider store={store}>
       <BrowserRouter>
-        {/* <Navbar/> */}
+        <Navbar/>
         <Switch>
-          <Route exact path = '/' component={Studio}/>
-          
+          <Route exact path = '/' component={Home}/>
+          <Route path = "/project" component = {Project}/>
+          <Route path = "/studio" component = {Studio}/>
+          <Route path = "/contactus" component = {ContactUs} />
+          <Route path = "/adminpage" component = {adminPage} />
+          <Route path = "/loginpage" component = {loginPage} />
+          <Route path = "/test" component = {Test} />
+          <Route path = "/projectdetail" component = {ProjectDetail}/>
+          <Route path = "/responsive" component = {Responsive}/>
+          <Route path = "/slider" component = {testslider}/>
+          <Route path = "/dua" component = {Duaslider}/>
         </Switch>
         <Footbar/>
       </BrowserRouter>
-      </Provider>
+    </Provider>
+
+      
     
   )
 }
