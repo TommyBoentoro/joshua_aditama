@@ -20,30 +20,31 @@ import gambarHome2 from "./../Assets/fotoHome-2.png"
 
 // Import css
 import "./../Supports/home.css"
+import "./../Supports/projectResponsive.css"
 
 class Project extends React.Component{
 
-    componentDidMount(){
-        this.onGet()
-    }
+    // componentDidMount(){
+    //     this.onGet()
+    // }
 
-    onGet = () => {
+    // onGet = () => {
        
 
-        this.props.onGetData()
-    }
+    //     this.props.onGetData()
+    // }
 
 
     render(){
         return(
             <>
-                    <div className="bgproject" style={{width: "100%", height: "900px"}}>
+                    <div className="bgproject bgimageresponsive">
                           <div className="overlay">
-                            <div className="d-flex container flex-column fontlato justify-content-end" style={{height: "800px", color: "white"}}>
-                                    <div style={{fontSize:"50px", fontWeight:"300", letterSpacing:"0.015cm"}}> 
+                            <div className="d-flex container flex-column justify-content-end fontlato" style={{height:"100%", color: "white"}}>
+                                    <div className="fontbgproject" style={{ fontWeight:"300", letterSpacing:"0.015cm"}}> 
                                         Projects
                                     </div>
-                                    <div className=" " style={{width:"100%", backgroundColor:"white", height:"3px", opacity:"100%", marginTop:"30px"}}>
+                                    <div className="linebgproject" >
                                         
                                     </div>
                                 </div>
@@ -214,29 +215,29 @@ class Project extends React.Component{
                 </div> */}
 
                 <div className="row" style={{paddingTop:"80px"}}>
-                    <div className="col-9 image imagehover">
+                    <div className="col-md-9 image imagehover">
                         <div style={{overflow:"hidden"}}>
                             <a href="/projectdetail"> <img src={project9} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
                         </div>
                         <div style={{marginTop:"40px"}}>
-                            <div  style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem"}}>
+                            <div className="fontcategory" style={{lineHeight:"130.5%", letterSpacing:"0.06rem"}}>
                                Interior
                            </div >
                            <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
                                 Openaire Semarang
                            </div>
-                           <div className="col-8" style={{marginTop:"12px", position:"relative", right:"15px", fontSize:"16px", fontWeight:"300", }}>
+                           <div className="col-md-8" style={{marginTop:"12px", position:"relative", right:"15px", fontSize:"16px", fontWeight:"300", }}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
                         </div>
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-3">
                          <div className="imagehover " style={{overflow:"hidden"}} >
                             <img src={project2} alt=""  style={{height:"360px", width:"100%"}} />
                         </div>
                         <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                            <div style={{fontSize:"10px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
                                Architect
                            </div >
                            <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>

@@ -14,6 +14,8 @@ import gambarHome2 from "./../Assets/fotoHome-2.png"
 import Jumbotron from "./../Assets/jumbotron.JPG"
 import myService from "./../Assets/myService.png"
 import arrow from "./../Assets/arrow.png"
+import test1 from "./../Assets/project/test1.png"
+import jumbotron from './../Assets/jumbotron.JPG'
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
@@ -75,7 +77,7 @@ class Home extends React.Component{
             </div>
 
             {/* ABOUT US */}
-            <div className="container-fluid d-flex " style={{paddingTop:"166px"}}>
+            <div className="container-fluid d-flex border" style={{paddingTop:"166px"}}>
                <div className="container" >
                         <div className="col-6  row" style={{marginTop:"54px"}}>
                             <div>
@@ -85,14 +87,14 @@ class Home extends React.Component{
                                 <div className= "fontlato " style={{fontSize: "36px", lineHeight: "46.98px", fontStyle:"normal", height: "94px", marginTop:"21px", fontWeight:"300", color:"#000000"}}>
                                     Turning spatial experience into a work of art
                                 </div>
-                                <div className="fontlato" style={{width:"474px", height:"248px", fontSize:"18px", marginTop:"19px", fontWeight:"300", color:"#8F8F8F", lineHeight: "180%", letterSpacing:"0.025cm"}}>
+                                <div className="fontlato" style={{width:"474px", height:"248px", fontSize:"18px", marginTop:"21px", fontWeight:"300", color:"#8F8F8F", lineHeight: "180%", letterSpacing:"0.025cm"}}>
                                 Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. 
                                 We create a connection between art and human to experience interior and architectural spaces. 
                                 From commercial to personal spaces drive us to explore the specialty of each projects as works of art. 
                                 Brief, concept, and design implementation give a particular excitement for us to be explored together with you.
                                 </div>
                                 
-                                <div className="d-flex" style={{color: "black", fontWeight:"400", marginTop:"20px", fontSize:"16px"}}>
+                                <div className="d-flex" style={{color: "black", fontWeight:"400", marginTop:"30px", fontSize:"16px"}}>
                                     <div>
                                         Read More
                                     </div>
@@ -118,63 +120,42 @@ class Home extends React.Component{
             </div>
            
            {/* Hover Home */}
-           <div className="backgroundhover" style={{marginTop:"57px", height:"700px"}}>
+           <div className="backgroundhover" style={{marginTop:"0px", height:"700px"}}>
                 <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                     <ul className="border" style={{height:"700px", padding:"0", margin:"0"}}>
-                        <li className="col border d-flex align-items-end" style={{height:"700px", padding:"0", margin:"0"}} data-bg={gambarHome1}>
+                        <li className="col border d-flex align-items-end" style={{height:"700px", padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center thiswhite" style={{height:"200px", width:"100%"}}>
-                                <a style={{width:"100%"}} href="#">
-                                    <div className="col offset-2">
-                                        <div style={{fontSize:"16px", fontWeight:'700'}}>
-                                            Furniture
-                                        </div>
-                                        
-                                        <div style={{fontSize:'28px', fontWeight:300, marginTop:"10px"}}>
-                                            <div>
-                                            Tentrem Hotel,
-                                        </div>
-                                        <div>
-                                            Semarang
-                                        </div>
-                                        </div>
+                                <a  href="#">
+                                    <div style={{fontSize:"16px", fontWeight:'700'}}>
+                                        Furniture
+                                    </div>
+                                    
+                                    <div style={{fontSize:'28px', fontWeight:300, marginTop:"10px"}}>
+                                        Tentrem Hotel Semarang
                                     </div>
                                 </a>
                            </div>
                         </li>
-                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={Jumbotron}>
+                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={test1}>
                            <div className="hoversaya d-flex justify-content-center align-items-center" style={{height:"200px", width:"100%"}}>
-                                <a style={{width:"100%"}} href="#">
-                                    <div className="col offset-2">
-                                        <div style={{fontSize:"16px", fontWeight:'700'}}>
-                                            Architecture
-                                        </div>
-                                        <div style={{fontSize:'28px', fontWeight:300, marginTop:"10px"}}>
-                                            <div>
-                                            Eco Building,
-                                        </div>
-                                        <div>
-                                            Jakarta
-                                        </div>
-                                        </div>
+                                <a  href="#">
+                                    <div style={{fontSize:"16px", fontWeight:'700'}}>
+                                        Furniture
+                                    </div>
+                                    <div style={{fontSize:'28px', fontWeight:300, marginTop:"10px"}}>
+                                        Tentrem Hotel Semarang
                                     </div>
                                 </a>
                            </div>
                         </li>
-                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={gambarHome2}>
+                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center" style={{height:"200px", width:"100%"}}>
-                                <a style={{width:"100%"}}  href="#">
-                                    <div className="col offset-2">
-                                        <div style={{fontSize:"16px", fontWeight:'700'}}>
-                                            Interior
-                                        </div>
-                                        <div style={{fontSize:'28px', fontWeight:300, marginTop:"10px"}}>
-                                        <div>
-                                            Living Room,
-                                        </div>
-                                        <div>
-                                            Surabaya
-                                        </div>
-                                        </div>
+                                <a  href="#">
+                                    <div style={{fontSize:"16px", fontWeight:'700'}}>
+                                        Furniture
+                                    </div>
+                                    <div style={{fontSize:'28px', fontWeight:300, marginTop:"10px"}}>
+                                        Tentrem Hotel Semarang
                                     </div>
                                 </a>
                            </div>

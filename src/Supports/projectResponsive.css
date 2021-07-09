@@ -1,0 +1,50 @@
+.fontbgproject{
+    font-size: 50px;
+    padding-bottom: 20px ;
+}
+
+.linebgproject{
+    width: 100%;
+    background-color: white;
+    height: 3px;
+    opacity: 100%;
+    margin-bottom: 60px;
+}
+
+.fontcategory{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* Large */
+@media (max-width:1200px) {
+    
+    
+}
+
+/* Medium */
+@media (max-width:768px) {
+    .fontbgproject{
+        font-size: 21px;
+        padding-bottom: 15px;
+    }
+    
+    .linebgproject{
+        height: 1px;
+        margin-bottom: 25px;
+    }
+
+    .fontcategory{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+/* Small */
+@media (max-width:500px) {
+    
+    
+}
+

@@ -1,12 +1,11 @@
 import React from "react"
 import Slider from "react-slick"
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 
 // Redux
 import { connect } from "react-redux";
 
-import Slidertest from "./SliderTest";
 
 // Import Images
 import jumbotron from "./../Assets/jumbotron.JPG"
@@ -16,18 +15,46 @@ import project3 from "./../Assets/project/project3.png"
 import project4 from "./../Assets/project/project4.png"
 import project5 from "./../Assets/project/project5.png"
 import project6 from "./../Assets/2568963.jpg"
+import test1 from "./../Assets/project/test1.png"
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
+// Import CSS
+import "./../Supports/tiga.css"
+import "./../Supports/home.css"
+
+
+const NextArrow = ({ onClick }) => {
+    return (
+      <div className="arrow next" style={{display:"none"}} onClick={onClick}>
+        <FaArrowRight />
+      </div>
+    );
+  };
+
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <div className="arrow prev" style={{display:"none"}} onClick={onClick}>
+        <FaArrowLeft />
+      </div>
+    );
+  };
+
 
 class ProjectDetail extends React.Component{
     render(){
         
         const settings = {
-            autoplay: true,
-            infinite:true,
-            speed:500,
-            slideToShow: 1,
-            slideToScroll: 1,
-            dots: true
-        }
+            className: "center",
+            centerMode: true,
+            infinite: true,
+            centerPadding: "60px",
+            slidesToShow: 1,
+            speed: 500,
+            autoplay:true,
+            dots:true,
+            nextArrow: <NextArrow />,
+            prevArrow: <PrevArrow />,
+          };
 
         return(
             <>
@@ -81,19 +108,18 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div  style={{marginTop:"130px"}}>
-                {/* <Slider {...settings}>
+            <div  style={{marginTop:"130px"}}>   
+                <Slider {...settings}  >
                     <div>
-                        <img src={jumbotron} alt="Jumbotron" style={{height:"630px", width:"100%"}}/>
+                        <img className="opacityimage" src={jumbotron} style={{height:"700px", width:"100%", padding:"0 15px"}} alt="" />
                     </div>
                     <div >
-                       <img src={bgproject} alt="" style={{height:"630px", width:"100%"}} />
+                        <img className="opacityimage" src={bgproject} style={{height:"700px", width:"100%", padding:"0 15px"}} alt="" />
                     </div>
                     <div>
-                        <img src={fotoHome} alt="" style={{height:"630px", width:"100%"}} />
+                        <img className="opacityimage" src={test1} style={{height:"700px", width:"100%", padding:"0 15px"}} alt="" />
                     </div>
-                </Slider> */}
-                <Slidertest/>
+                </Slider>
             </div>
 
             <div className="container d-flex flex-column align-items-center fontlato" >

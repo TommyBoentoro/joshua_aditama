@@ -1,0 +1,213 @@
+.bgimageresponsive{
+    width: 100%;
+    height: 900px;
+}
+
+/* Page Contact us */
+    .fontheading{
+        font-size: 36px;
+    }
+
+    .fontsubheading{
+        font-size: 24px;
+    }
+
+    .fontbody{
+        font-size: 18px;
+    }
+
+    .footer{
+        margin-top: 177px;
+        padding-top: 80px;
+        height: 1054px;
+    }
+
+    .paddingcontact{
+        padding-top: 245px;
+    }
+
+    .marginInTouch{
+        margin-top: 0;
+    }
+
+    .marginphone{
+        margin-top: 40px;
+    }
+
+.footerdua{
+    margin-top: 223px;
+    padding:0px;
+}
+
+.fontservice-studio{
+    font-size: 46px;
+}
+
+.rights{
+    margin-top: 145px;
+
+}
+
+.follow{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* Page Studio */
+    .fontheadingstudio{
+        font-size: 50px;
+    }
+
+    .fontsubheading-studio{
+        font-size: 21px;
+    }
+
+    /* Card */
+    .textcard-body{
+        font-size: 17px;
+    }
+
+    .textcard-heading{
+        font-size: 32px;
+    }
+
+    .garis{
+        width: 100%;
+        height: 1.5px;
+        background-color: black;
+    }
+
+    .padding100{
+        padding-top: 100px;
+    }
+
+    .margin80{
+        margin-top: 80px;
+    }
+
+    .marginservice {
+        margin-top: 120px;
+    }
+
+    .margincard{
+        margin-top: 0;
+    }
+
+
+
+/* Large */
+@media (max-width:1200px) {
+    
+    
+}
+
+
+/* Medium */
+@media (max-width:768px) {
+    .fontheading{
+        font-size: 26px;
+    }
+
+    .fontsubheading{
+        font-size: 21px;
+    }
+
+    .fontbody{
+        font-size: 16px;
+    }
+
+    .fontheadingstudio{
+        font-size: 26px;
+    }
+
+    .fontsubheading-studio{
+        font-size: 18px;
+    }
+
+    .fontservice-studio{
+        font-size: 40px;
+    }
+
+    .padding100{
+        padding-top: 30px;
+    }
+    
+    .margin80{
+        margin-top: 30px;
+    }
+    
+
+    .textcard-body{
+        font-size: 15px;
+    }
+    
+    .textcard-heading{
+        font-size: 28px;
+    }
+
+    .garis{
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+    
+
+    .btn-1{
+        background-color: black;
+        color: white;
+    }
+
+    .footer{
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 700px;
+    }
+
+    .footerdua{
+        margin-top: 100px;
+        padding:0px;
+    }
+    
+    .rights{
+        margin-top: 75px;
+    
+    }
+
+    .follow{
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .bgimageresponsive{
+        width: 100%;
+        height: 300px;
+    }
+
+    .marginservice{
+        margin-top: 80px;
+    }
+
+    .margincard{
+        margin-top: 70px;
+    }
+
+    .paddingcontact{
+        padding-top: 140px;
+    }
+
+    .marginInTouch{
+        margin-top: 78px;
+    }
+
+    .marginphone{
+        margin-top: 25px;
+    }
+
+}
+
+
+/* Small */
+@media (max-width:500px) {
+    
+}

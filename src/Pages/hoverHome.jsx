@@ -2,6 +2,7 @@ import React from "react"
 import gambarHome1 from "./../Assets/fotoHome-1.png" 
 import jumbotron from './../Assets/jumbotron.JPG'
 import gambarHome2 from "./../Assets/fotoHome-2.png"
+import test1 from "./../Assets/project/test1.png"
 
 
 import "./../Supports/backgroundHover.css"
@@ -26,10 +27,16 @@ class Testdua extends React.Component{
                 </div>
             </div> */}
 
+             <div className="container" style={{marginTop:"193px"}}>
+                <div className="d-flex justify-content-center" style={{fontSize:"46px", fontWeight:"400"}}>
+                    Projects
+                </div>
+            </div>
+
             <div className="backgroundhover" style={{marginTop:"200px", height:"700px"}}>
                 <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                     <ul className="border" style={{height:"700px", padding:"0", margin:"0"}}>
-                        <li className="col border d-flex align-items-end" style={{height:"700px", padding:"0", margin:"0"}} data-bg={gambarHome1}>
+                        <li className="col border d-flex align-items-end" style={{height:"700px", padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center thiswhite" style={{height:"200px", width:"100%"}}>
                                 <a  href="#">
                                     <div style={{fontSize:"16px", fontWeight:'700'}}>
@@ -42,7 +49,7 @@ class Testdua extends React.Component{
                                 </a>
                            </div>
                         </li>
-                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={jumbotron}>
+                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={test1}>
                            <div className="hoversaya d-flex justify-content-center align-items-center" style={{height:"200px", width:"100%"}}>
                                 <a  href="#">
                                     <div style={{fontSize:"16px", fontWeight:'700'}}>
@@ -54,7 +61,7 @@ class Testdua extends React.Component{
                                 </a>
                            </div>
                         </li>
-                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={gambarHome2}>
+                        <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center" style={{height:"200px", width:"100%"}}>
                                 <a  href="#">
                                     <div style={{fontSize:"16px", fontWeight:'700'}}>

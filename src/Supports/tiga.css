@@ -1,0 +1,24 @@
+.slider{
+    display: flex;
+}
+
+.slider .items{
+    
+    height: 250px;
+    width: 350px;
+}
+
+.slider .items img{
+    width: 350px;
+    height: 250px;
+}
+
+.slick-center img{
+    opacity: 1;
+    transition: ease-in-out .3s ;
+}
+
+.opacityimage {
+    opacity: 0.3;
+    
+}

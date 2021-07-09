@@ -14,8 +14,8 @@ import Navbar from "./components/Navbar"
 import Footbar from "./components/Footer"
 import ProjectDetail from "./Pages/projectDetail"
 import Responsive from "./Pages/Responsive"
-import testslider from "./Pages/SliderTest"
-import Duaslider from "./Pages/SliderTestDua"
+import Tiga from "./Pages/tiga"
+import Testdua from "./Pages/hoverHome"
 
 
 // Redux
@@ -31,7 +31,7 @@ function App (){
   return(
     <Provider store={store}>
       <BrowserRouter>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Switch>
           <Route exact path = '/' component={Home}/>
           <Route path = "/project" component = {Project}/>
@@ -42,10 +42,11 @@ function App (){
           <Route path = "/test" component = {Test} />
           <Route path = "/projectdetail" component = {ProjectDetail}/>
           <Route path = "/responsive" component = {Responsive}/>
-          <Route path = "/slider" component = {testslider}/>
-          <Route path = "/dua" component = {Duaslider}/>
+          <Route path = "/tiga" component = {Tiga}/>
+          <Route path = "/testdua" component = {Testdua}/>
+          <Route path = "/navbar" component = {Navbar}/>
         </Switch>
-        <Footbar/>
+        {/* <Footbar/> */}
       </BrowserRouter>
     </Provider>
 
