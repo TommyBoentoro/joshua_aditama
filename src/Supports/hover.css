@@ -32,6 +32,18 @@
   
 }
 
+.btn-11{
+    background-color: rgba(32, 32, 32, 0 );
+    transition: ease-out .5s;
+}
+
+.btn-11:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  
+}
+
 .btn-2{
     background-color: transparent;
     color: black;
@@ -72,8 +84,6 @@
     
 }
 
-
-
 .wrapper .input-data label{
     position: absolute;
     bottom: 10px;
@@ -107,3 +117,30 @@
     color: black;
 }
 
+@media (max-width:768px){
+    .wrapper .input-data {
+        height: 30px;
+        width: 100%;
+        position: relative;
+    }
+
+    .btn-11{
+        background-color: black;
+        transition: ease-out .5s;
+        color: white;
+    }
+}
+
+@media (max-width:576px){
+    .wrapper .input-data {
+        height: 40px;
+        width: 100%;
+        position: relative;
+    }
+
+    .btn-11{
+        background-color: black;
+        transition: ease-out .5s;
+        color: white;
+    }
+}

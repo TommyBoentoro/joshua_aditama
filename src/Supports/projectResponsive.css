@@ -14,6 +14,65 @@
 .fontcategory{
     font-size: 14px;
     font-weight: 400;
+    line-height: 130.5%;
+    letter-spacing: 0.06rem;
+    
+}
+
+.fonttitle{
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 130.5%;
+    letter-spacing: 0.02rem;
+}
+
+.fontbodyproject{
+    font-size: 15px;
+    margin-top: 12px;
+    position: relative;
+    right: 15px;
+    font-weight: 300;
+}
+
+.paddingbody{
+    padding-top: 80px;
+}
+
+.imagecol-9{
+    height: 360px;
+    width: 100%;
+}
+
+.imagecol-3{
+    height: 360px;
+    width: 100%;
+}
+
+.imagecol-6{
+    height: 360px;
+    width: 100%;
+}
+
+.margincardbody{
+    margin-top: 40px;
+}
+
+.hiddendummy{
+    display: block;
+}
+
+.marginbutton{
+    margin-top: 127px;
+}
+
+.buttonview{
+    width: 143px;
+    height: 52px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: normal;
+    border: 1px solid black;
 }
 
 
@@ -25,6 +84,60 @@
 
 /* Medium */
 @media (max-width:768px) {
+    .imagecol-9{
+        height: 220px;
+        width: 100%;
+    }
+    
+    .imagecol-3{
+        height: 220px;
+        width: 100%;
+    }
+    
+    .imagecol-6{
+        height: 220px;
+        width: 100%;
+    }
+
+    .fontcategory{
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 130.5%;
+        letter-spacing: 0.06rem;
+        
+    }
+
+    .fonttitle{
+        font-size: 14px;
+        margin-top: 8px;
+        font-weight: 400;
+        line-height: 130.5%;
+        letter-spacing: 0.02rem;
+    }
+    
+    .fontbodyproject{
+        font-size: 9px;
+        margin-top: 8px;
+        position: relative;
+        right: 15px;
+        font-weight: 300;
+        width: 100%;
+    }
+
+    .margincardbody{
+        margin-top: 20px;
+    }
+
+    .hiddendummy{
+        display: none;
+    }
+    
+    
+}
+
+
+/* Small */
+@media (max-width:576px) {
     .fontbgproject{
         font-size: 21px;
         padding-bottom: 15px;
@@ -36,15 +149,49 @@
     }
 
     .fontcategory{
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 12px;
     }
-}
 
-
-/* Small */
-@media (max-width:500px) {
+    .fonttitle{
+        font-size: 16px;
+        margin-top: 12px;
+    }
     
+    .fontbodyproject{
+        font-size: 12px;
+    }
+    
+
+    .paddingbody{
+        padding-top: 40px;
+    }
+
+    .imagecol-9{
+        height: 150px;
+        width: 100%;
+    }
+
+    .imagecol-6{
+        height: 208px;
+        width: 100%;
+    }
+
+    .imagecol-3{
+        height: 388px;
+        width: 100%;
+    }
+
+    .margincardbody{
+        margin-top: 30px;
+    }
+    
+    .hiddendummy{
+        display: none;
+    }
+
+    .marginbutton{
+        margin-top: 80px;
+    }
     
 }
 

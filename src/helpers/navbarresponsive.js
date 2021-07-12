@@ -1,9 +1,9 @@
-function navbarToggle() {
+const navbarToggle = () => {
     const menuToggle = document.querySelector(".menu-toggle input");
-    const nav = document.querySelectorAll("nav ul")
+    const nav = document.querySelector("nav ul")
 
-    menuToggle.addEventListener("click", function(){
-        nav.classList.toggle()
+    menuToggle.addEventListener(`click`, () => {
+        nav.classList.toggle("nav ul")
     })
 }
 

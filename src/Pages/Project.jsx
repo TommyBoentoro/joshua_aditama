@@ -38,18 +38,20 @@ class Project extends React.Component{
     render(){
         return(
             <>
-                    <div className="bgproject bgimageresponsive">
-                          <div className="overlay">
-                            <div className="d-flex container flex-column justify-content-end fontlato" style={{height:"100%", color: "white"}}>
-                                    <div className="fontbgproject" style={{ fontWeight:"300", letterSpacing:"0.015cm"}}> 
+                <div className="bgproject bgimageresponsive">
+                        <div className="overlay">
+                        <div className="container px-md-3 px-5 fontlato" style={{height:"100%", color: "white"}}>
+                                <div className="d-flex flex-column justify-content-end" style={{height:"100%"}}>
+                                    <div className="fontbgproject " style={{ fontWeight:"300", letterSpacing:"0.015cm"}}> 
                                         Projects
                                     </div>
                                     <div className="linebgproject" >
                                         
                                     </div>
                                 </div>
-                          </div>
-                    </div>
+                            </div>
+                        </div>
+                </div>
         
 
                 {/*  */}
@@ -95,7 +97,7 @@ class Project extends React.Component{
 
             {/* Content */}
 
-            <div className="container " >
+            <div className="container px-md-3 px-5" >
                 {/* <div className="row">
                    {
                        this.props.project.data?
@@ -214,74 +216,75 @@ class Project extends React.Component{
                    }
                 </div> */}
 
-                <div className="row" style={{paddingTop:"80px"}}>
-                    <div className="col-md-9 image imagehover">
+                <div className="row">
+                    <div className="col-sm-9 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}}>
-                            <a href="/projectdetail"> <img src={project9} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
+                            <a href="/projectdetail"> <img src={project9} alt="logo" className="imagecol-9" /> </a>
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div className="fontcategory" style={{lineHeight:"130.5%", letterSpacing:"0.06rem"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory">
                                Interior
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
+                           <div className="fonttitle ">
                                 Openaire Semarang
                            </div>
-                           <div className="col-md-8" style={{marginTop:"12px", position:"relative", right:"15px", fontSize:"16px", fontWeight:"300", }}>
+                           <div className="col-md-8 col-12 fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
-                         <div className="imagehover " style={{overflow:"hidden"}} >
-                            <img src={project2} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                         <div style={{overflow:"hidden"}} >
+                            <img src={project2} alt="" className="imagecol-3" />
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"10px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                Openaire Semarang
+                           <div className="fonttitle " >
+                                Openaire 
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className="col-md-8  col-12  fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
                     </div>
-                    <div className="col-3 " style={{marginTop:"80px"}}>
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project3} alt="" style={{height:"360px", width:"100%"}}/>
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project3} alt="" className="imagecol-3"/>
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
+                           <div className="fonttitle">
                                 Openaire Semarang
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className="col-md-8 fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
                     </div>
-                    <div className="col-6 " style={{marginTop:"80px"}}>
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project4} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="col-sm-6 px-md-3 px-sm-1 px-3  image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project4} alt="" className="imagecol-6"  />
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory">
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
+                           <div className="fonttitle">
                                 Openaire Semarang
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className="col-12 fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
                         </div>
                     </div>
-                    <div className="col-3 " style={{marginTop:"80px"}}>
+
+                    <div className="col-3 hiddendummy" style={{marginTop:"80px"}}>
                         <div className="imagehover" style={{overflow:"hidden"}} >
                             <img src={project5} alt=""  style={{height:"360px", width:"100%"}} />
                         </div>
@@ -297,7 +300,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-6 " style={{marginTop:"80px"}}>
+                    <div className="col-6 hiddendummy" style={{marginTop:"80px"}}>
                         <div className="imagehover" style={{overflow:"hidden"}} >
                             <img src={project6} alt=""  style={{height:"360px", width:"100%"}} />
                         </div>
@@ -314,7 +317,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-3 " style={{marginTop:"80px"}}>
+                    <div className="col-3 hiddendummy" style={{marginTop:"80px"}}>
                         <div className="imagehover" style={{overflow:"hidden"}} >
                             <img src={project7} alt=""  style={{height:"360px", width:"100%"}} />
                         </div>
@@ -330,7 +333,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-3 " style={{marginTop:"80px"}}>
+                    <div className="col-3 hiddendummy" style={{marginTop:"80px"}}>
                         <div className="imagehover" style={{overflow:"hidden"}} >
                             <img src={project8} alt=""  style={{height:"360px", width:"100%"}} />
                         </div>
@@ -352,8 +355,8 @@ class Project extends React.Component{
 
             {/*  */}
 
-            <div className=" d-flex justify-content-center " style={{marginTop: "127px"}}>
-                <button className="fontlato btn-1" style={{width:"143px", height: "52px", borderRadius: "40px", fontSize:"13px", fontWeight:"normal", border:"1px solid black" }}>
+            <div className=" d-flex justify-content-center marginbutton" >
+                <button className="fontlato btn-11 buttonview">
                     View more
                 </button>
             </div>

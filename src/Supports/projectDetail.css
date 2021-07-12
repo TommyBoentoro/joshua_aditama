@@ -1,0 +1,229 @@
+.backgroundimg{
+    width: 100%;
+    height: 900px;
+}
+
+.fontbgheading{
+    font-size: 63px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 60px;
+    letter-spacing: 0.025cm;
+}
+
+.fontbgbody{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.fontheading{
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.03cm;
+    line-height: 170%;
+}
+
+.fontproject{
+    font-size: 46px;
+    font-weight: 400;
+    margin-top: 93px;
+}
+
+.fontbody{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8F8F8F;
+    line-height: 180%;
+    letter-spacing: 0.025cm;
+}
+
+.fontbody-dua{
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8F8F8F;
+    line-height: 180%;
+    letter-spacing: 0.025cm;
+}
+
+.marginrelated {
+    margin-top: 93px;
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+}
+
+.paddingbg{
+    padding-bottom: 70px;
+}
+
+.marginbodyheading{
+    margin-top: 100px;
+}
+
+.margincard{
+    margin-top: 0;
+}
+
+/* Slick */
+
+.slickheight{
+    height: 700px;
+    width: 100%;
+    padding: 0 15px
+}
+
+.marginslick{
+    margin-top: 130px;
+}
+
+/* Large */
+@media (max-width:1200px) {
+    
+    
+}
+
+/* Medium */
+@media (max-width:768px) {
+    .backgroundimg{
+        width: 100%;
+        height: 480px;
+    }
+
+    .fontbgheading{
+        font-size: 36px;
+        font-weight: 400;
+        color: white;
+        padding-bottom: 20px;
+        letter-spacing: 0.025cm;
+    }
+
+    .paddingbg{
+        padding-bottom: 40px;
+    }
+
+    .fontbgbody{
+        font-size: 12px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .marginbodyheading{
+        margin-top: 60px;
+    }
+
+    .fontheading{
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: 0.03cm;
+        line-height: 170%;
+    }
+
+    .fontbody{
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #8F8F8F;
+        line-height: 180%;
+        letter-spacing: 0.025cm;
+    }
+    
+    /* Slick */
+    .marginslick{
+        margin-top: 50px;
+    }
+
+    .slickheight{
+        height: 346px;
+        width: 100%;
+        padding: 0 15px
+    }
+
+    .fontbody-dua{
+        margin-top: 50px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #8F8F8F;
+        line-height: 180%;
+        letter-spacing: 0.025cm;
+    }
+    
+    .marginrelated {
+        margin-top: 50px;
+    }
+
+    .fontproject{
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 80px;
+    }
+    
+    
+    
+}
+
+/* Small */
+@media (max-width:500px) {
+    .backgroundimg{
+        width: 100%;
+        height: 300px;
+    }
+
+    .fontbgheading{
+        display: none;
+    }
+
+    .status{
+        display:none
+    }
+
+    .paddingbg{
+        padding-bottom: 20px;
+    }
+
+    .fontbgbody{
+        font-size: 12px;
+        /* Harus nya 9px */
+    }
+
+    .marginbodyheading{
+        margin-top: 30px;
+    }
+
+    .fontheading{
+        font-size: 24px;
+    }
+
+    .fontbody{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .fontproject{
+        font-size: 30px;
+        margin-top: 85px;
+    }
+    
+    
+    .fontbody-dua{
+        font-size: 15px; 
+    }
+
+    .slickheight{
+        height: 180px;
+        
+    }
+
+    .marginslick{
+        margin-top: 50px;
+    }
+
+    .margincard{
+        margin-top: 50px;
+    }
+    
+}

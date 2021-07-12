@@ -21,6 +21,8 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 // Import CSS
 import "./../Supports/tiga.css"
 import "./../Supports/home.css"
+import "./../Supports/projectDetail.css"
+import "./../Supports/projectResponsive.css"
 
 
 const NextArrow = ({ onClick }) => {
@@ -58,28 +60,28 @@ class ProjectDetail extends React.Component{
 
         return(
             <>
-            <div style={{width:"100%", height:"900px", backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center"}}>
+            <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center"}}>
                 <div className="overlay">
-                    <div className="container d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
-                        <div style={{fontSize:"63px", fontWeight:"400", color:"white", paddingBottom:"60px", letterSpacing:"0.025cm"}}>
+                    <div className="container  px-md-3 px-sm-0 px-5 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
+                        <div className="fontbgheading" >
                             Openaire Semarang
                         </div>
-                        <div  style={{fontSize:"18px", fontWeight:"400", color:"white", paddingBottom:"70px" }}>
-                            <div className="row ">
-                                <div className="col d-flex justify-content-center">
+                        <div className="paddingbg fontbgbody" >
+                            <div className="row px-sm-0 px-3">
+                                <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
                                     Client : Openaire Group
                                 </div>
-                                <div className="col d-flex justify-content-center">
+                                <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
                                     Category : Interior
                                 </div> 
-                                <div className="col d-flex justify-content-center">
+                                <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
                                     Location : Semarang, INA
                                 </div>
-                                <div className="col d-flex justify-content-center">
+                                <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
                                     Year : 2021
                                 </div>
-                                <div className="col d-flex justify-content-center">
-                                Status : Done
+                                <div className="status col-sm">
+                                    Status : Done
                                 </div>
                             </div>
                         </div>
@@ -87,11 +89,11 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="container d-flex flex-column align-items-center fontlato" style={{marginTop:"100px"}}>
-                <div className="col-10 fontlato" style={{fontSize:"32px", fontWeight:"300", letterSpacing:"0.03cm", lineHeight:"170%"}}>
+            <div className="fontlato  container px-md-3 px-sm-0 px-5 d-flex flex-column align-items-center fontlato marginbodyheading" >
+                <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-3" >
                     Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. Cras ac fermentum ipsum. 
                 </div>
-                <div className="col-10" style={{marginTop:"50px", fontSize:"18px", fontWeight:"300", color:"#8F8F8F", lineHeight:"180%", letterSpacing:"0.025cm"}}>
+                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa, quis efficitur velit lorem sed orci. 
@@ -108,22 +110,22 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div  style={{marginTop:"130px"}}>   
+            <div className="marginslick"  >   
                 <Slider {...settings}  >
                     <div>
-                        <img className="opacityimage" src={jumbotron} style={{height:"700px", width:"100%", padding:"0 15px"}} alt="" />
+                        <img className="opacityimage slickheight" src={jumbotron} alt="" />
                     </div>
                     <div >
-                        <img className="opacityimage" src={bgproject} style={{height:"700px", width:"100%", padding:"0 15px"}} alt="" />
+                        <img className="opacityimage slickheight" src={bgproject} alt="" />
                     </div>
                     <div>
-                        <img className="opacityimage" src={test1} style={{height:"700px", width:"100%", padding:"0 15px"}} alt="" />
+                        <img className="opacityimage slickheight" src={test1} alt="" />
                     </div>
                 </Slider>
             </div>
 
-            <div className="container d-flex flex-column align-items-center fontlato" >
-                <div className="col-10" style={{marginTop:"50px", fontSize:"18px", fontWeight:"300", color:"#8F8F8F", lineHeight:"180%", letterSpacing:"0.025cm"}}>
+            <div className="  container px-md-3 px-sm-0 px-5 d-flex flex-column align-items-center fontlato" >
+                <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-3" >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa
@@ -135,57 +137,57 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="conatiner d-flex justify-content-center fontlato" style={{fontSize:"46px", fontWeight:"400", marginTop:"93px"}}>
+            <div className="container d-flex justify-content-center fontlato fontproject">
                 Related Project
             </div>
             
-            <div className="container" style={{marginTop:"93px"}}>
-                <div className="row">
-                    <div className="col-3 image imagehover">
-                        <div style={{overflow:"hidden"}}>
-                            <a href="/projectdetail"> <img src={project3} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
+            <div className="container px-md-3 px-sm-0 px-5 marginrelated" >
+                <div className="row ">
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover">
+                         <div style={{overflow:"hidden"}} >
+                            <img src={project3} alt="" className="imagecol-3" />
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div  style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem"}}>
-                               Interior
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
+                               Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
-                                Openaire Semarang
+                           <div className="fonttitle" >
+                                Openaire 
                            </div>
-                           <div className="col-12" style={{marginTop:"12px", position:"relative", right:"15px", fontSize:"16px", fontWeight:"300", }}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                           <div className="col-md-8 fontbodyproject">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
                     </div>
-                    <div className="col-6 " >
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project4} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="col-sm-6 px-md-3 px-sm-1 px-3 image imagehover margincard">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project4} alt="" className="imagecol-6"  />
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory">
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
+                           <div className="fonttitle">
                                 Openaire Semarang
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className="col-12 fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
                         </div>
                     </div>
-                    <div className="col-3 " >
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project5} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover margincard">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project5} alt="" className="imagecol-3"/>
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                Openaire Semarang
+                           <div className="fonttitle">
+                                Openaire
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className="col-md-8 fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>

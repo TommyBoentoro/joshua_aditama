@@ -7,16 +7,27 @@ import SvgLike from "../Pages/Logo"
 // JS
 import navbarToggle from "../helpers/navbarresponsive"
 import scrollFunction from "../helpers/navbarScroll"
+import myFunction from"./../helpers/navbarW3.js"
 
 import "./../Supports/navbar.css"
+import "./../Supports/navbarW3.css"
 
 class Navbar extends React.Component{
 
+
+    // onClickIcon = ( ) => {
+    //     myFunction()
+    //     console.log(`Masuk`)
+    // }
     
 
+    // myFunction()
+    // navbarToggle()
+
     componentDidMount(){
-        navbarToggle()
-        // window.onscroll = function() {scrollFunction()}
+        
+        window.onscroll = function() {scrollFunction()}
+       
     }
 
     render(){
@@ -25,7 +36,7 @@ class Navbar extends React.Component{
          
             <>
                 {/* <SvgLike/> */}
-                {/* <div id="navbar" className=" w-100 position-fixed py-5 d-flex " style={{transition:"0.3s", zIndex:1}}>
+                <div id="navbar" className=" w-100 position-fixed py-5 d-flex " style={{transition:"0.3s", zIndex:1}}>
                     <div className="container d-flex justify-content-between">
                             <div >
                                 <a href="/"> <img src={logo} alt="logo"  /> </a>
@@ -42,11 +53,11 @@ class Navbar extends React.Component{
                                 </div>
                             </div> 
                     </div>
-                </div> */}
+                </div>
                 
 
                 {/* Navbar UNPAS */}
-               <div className="containerluar">
+               {/* <div className="containerluar">
                     <nav className="container">
                         <div className="logo">
                             <h3>Test</h3>
@@ -59,14 +70,27 @@ class Navbar extends React.Component{
                         </ul>
 
                         <div className="menu-toggle">
-                            <input type="checkbox" />
+                            <input type="checkbox"/>
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
                     </nav>
-               </div>
+               </div> */}
 
+               {/* Navbar W3 */}
+               {/* <div className="topnav" id="myTopnav">
+                    <a href="#home" className="active">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="javascript:void(0);" className="icon">
+                        <i class="fa fa-bars"  onclick={() => this. onClickIcon()}></i>
+                        <button onClick={()=> this.onClickIcon()} >Test</button>
+                    </a>
+                </div> */}
+
+                
             </>
             
         )

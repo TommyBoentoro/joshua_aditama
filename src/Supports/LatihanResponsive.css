@@ -1,0 +1,25 @@
+.fontLatihan {
+    font-size: 36px;
+}
+
+/* Large */
+@media (max-width:1200px) {
+    
+}
+
+
+/* Medium */
+@media (max-width:768px) {
+    .fontLatihan {
+        font-size: 26px;
+    }
+}
+
+
+/* Small */
+@media (max-width:575px) {
+    .fontLatihan {
+        font-size: 18px;
+        color: red;
+    }
+}
