@@ -41,6 +41,12 @@
     font-weight: 300;
     letter-spacing: 0.02cm;
     line-height: 29px;
+    text-decoration: none;
+}
+
+.fontsubheading-footer:hover{
+    color: #656565;
+    text-decoration: underline;
 }
 
 
@@ -296,6 +302,7 @@
         font-weight: 300;
         letter-spacing: 0.02cm;
         line-height: 29px;
+        
     }
 
     .follow{
@@ -327,7 +334,7 @@
 
     .footer{
         margin-top: 110px;
-        padding-top: 80px;
+        padding-top: 0px;
         height: 1054px;
     }
     
