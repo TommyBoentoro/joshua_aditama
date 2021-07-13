@@ -20,6 +20,8 @@ import jumbotron from './../Assets/jumbotron.JPG'
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
 
+// Icon
+import {IoIosArrowDropright} from 'react-icons/io';
 
 // Import css
 import "./../Supports/home.css"
@@ -98,10 +100,11 @@ class Home extends React.Component{
                                 
                                 <div className="d-flex fontReadMore">
                                     <div>
-                                        Read More
+                                        <a href="/studio" style={{color:"black"}}>Read More</a>
                                     </div>
-                                    <div style={{marginLeft:"25px"}}>
-                                        <img src={arrow} alt="" />
+                                    
+                                    <div style={{marginLeft:"15px"}}>
+                                        <a style={{color:"black"}} href="/studio"><IoIosArrowDropright/></a>
                                     </div>
                                 </div>
                                 
@@ -141,7 +144,7 @@ class Home extends React.Component{
                                         Furniture
                                     </div>
                                     <div className="fonthoverbody">
-                                        Tentrem Hotel Semarang
+                                        Taman Anggrek
                                     </div>
                                 </a>
                            </div>
@@ -153,7 +156,7 @@ class Home extends React.Component{
                                         Furniture
                                     </div>
                                     <div className="fonthoverbody">
-                                        Tentrem Hotel Semarang
+                                        Books N Beyond
                                     </div>
                                 </a>
                            </div>

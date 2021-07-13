@@ -152,12 +152,14 @@
     .fonthoverheading{
         font-size: 12px;
         font-weight: 700;
+        margin-left: 10px;
     }
 
     .fonthoverbody{
         font-size: 20px;
         font-weight: 300;
         margin-top: 8px;
+        margin-left: 10px;
     }
 
     .projectcardheight{
@@ -223,12 +225,14 @@
     .fonthoverheading{
     font-size: 13px;
     font-weight: 700;
+    margin-left: 5px;
 }
 
     .fonthoverbody{
-        font-size: 21px;
+        font-size: 15px;
         font-weight: 300;
         margin-top: 10px;
+        margin-left: 5px;
     }
 
     .marginhome{
