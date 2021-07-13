@@ -221,14 +221,14 @@ class Project extends React.Component{
                         <div style={{overflow:"hidden"}}>
                             <a href="/projectdetail"> <img src={project9} alt="logo" className="imagecol-9" /> </a>
                         </div>
-                        <div className="margincardbody">
+                        <div className="margincardbody ">
                             <div className="fontcategory">
                                Interior
                            </div >
                            <div className="fonttitle ">
                                 Openaire Semarang
                            </div>
-                           <div className="col-md-8 col-12 fontbodyproject">
+                           <div className="col-md-8 col-12 px-0  fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
@@ -243,9 +243,9 @@ class Project extends React.Component{
                                Architect
                            </div >
                            <div className="fonttitle " >
-                                Openaire 
+                                Binong
                            </div>
-                           <div className="col-md-8  col-12  fontbodyproject">
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
@@ -259,9 +259,9 @@ class Project extends React.Component{
                                Architect
                            </div >
                            <div className="fonttitle">
-                                Openaire Semarang
+                                SPM
                            </div>
-                           <div className="col-md-8 fontbodyproject">
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
@@ -275,9 +275,9 @@ class Project extends React.Component{
                                Architect
                            </div >
                            <div className="fonttitle">
-                                Openaire Semarang
+                                Mangga Dua
                            </div>
-                           <div className="col-12 fontbodyproject">
+                           <div className="col-12 px-0   fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>

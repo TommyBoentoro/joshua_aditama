@@ -152,7 +152,7 @@ class ProjectDetail extends React.Component{
                                Architect
                            </div >
                            <div className="fonttitle" >
-                                Openaire 
+                                Openaire
                            </div>
                            <div className="col-md-8 fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

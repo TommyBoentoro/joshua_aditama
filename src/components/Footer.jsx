@@ -22,14 +22,14 @@ class Footbar extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className=" col-sm-6 col-md-6 ">
+                                <div className=" col-sm-6">
                                     <div className="fontfooterheading ">
                                         FEEL FREE TO KEEP IN TOUCH WITH US
                                     </div>
                                     <div className="fontfooterbody ">
                                         We are looking forward to explore the uniqueness of upcoming projects, together with you!
                                     </div>
-                                    <div style={{marginTop:"30px"}}>
+                                    <div style={{marginTop:"25px"}}>
                                         <a href="/contactus">
                                             <button  className="btn-11" style={{borderRadius:"40px", width:"119px", height: "52px",  fontWeight:"400", fontSize:"13px", border:"1px solid black"}}>
                                                 Inquiry Now

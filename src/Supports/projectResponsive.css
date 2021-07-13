@@ -30,8 +30,6 @@
 .fontbodyproject{
     font-size: 15px;
     margin-top: 12px;
-    position: relative;
-    right: 15px;
     font-weight: 300;
 }
 
@@ -118,8 +116,6 @@
     .fontbodyproject{
         font-size: 9px;
         margin-top: 8px;
-        position: relative;
-        right: 15px;
         font-weight: 300;
         width: 100%;
     }
