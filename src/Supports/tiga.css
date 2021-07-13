@@ -3,7 +3,6 @@
 }
 
 .slider .items{
-    
     height: 250px;
     width: 350px;
 }
@@ -15,10 +14,11 @@
 
 .slick-center img{
     opacity: 1;
-    transition: ease-in-out .3s ;
+    transition:ease-in .5s;
+    transform: scaleY(1)
 }
 
 .opacityimage {
     opacity: 0.3;
-    
+    transform: scaleY(0.9)
 }
