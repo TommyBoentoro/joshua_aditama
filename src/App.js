@@ -46,10 +46,10 @@ function App (){
           <Route path = "/responsive" component = {Responsive}/>
           <Route path = "/tiga" component = {Tiga}/>
           <Route path = "/testdua" component = {Testdua}/>
-          <Route path = "/navbar" component = {NavbarDev}/>
+          <Route path = "/navbar" component = {Navbar}/>
           <Route path = "/latihan" component = {LatihanResponsive}/>
         </Switch>
-        <Footbar/>
+        {/* <Footbar/> */}
       </BrowserRouter>
     </Provider>
 

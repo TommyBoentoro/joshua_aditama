@@ -3,8 +3,35 @@ body{
     overflow-x: hidden;
 }
 
+.navbarnavbar{
+    transition: all 1s;
+}
+
 .containerluar{
     background-color: brown;
+}
+
+.displayhomenavbar{
+    display: none;
+}
+
+.fontnavbar {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navbarbody{
+    display: flex;
+}
+
+.logowidthnavbar {
+    width: 100%;
+}
+
+.marginnavbarmiddle{
+    margin: 0 45px;
 }
 
 /* Hamburger Menu */
@@ -30,11 +57,17 @@ body{
 .menu-toggle span{
     display: block;
     width: 28px;
-    height: 3px;
+    height: 2px;
     background-color: black;
     border-radius: 3px;
     transition: all .5s;
+    margin: 5px;
 }
+
+.spanduaburger{
+    width: 14px;
+}
+
 
 /* Hamburger menu animation */
 
@@ -47,7 +80,7 @@ body{
 }
 
 .menu-toggle input:checked ~ span:nth-child(2){
-   transform: rotate(45deg) translate(-1px, -1px);
+   transform: rotate(45deg) translate(-2px, -5px);
 }
 
 .menu-toggle input:checked ~ span:nth-child(3){
@@ -55,7 +88,7 @@ body{
  }
 
 .menu-toggle input:checked ~ span:nth-child(4){
-   transform: rotate(-45deg) translate(-1px, 0);
+   transform: rotate(-45deg) ;
 }
 
 nav{
@@ -88,6 +121,25 @@ nav ul li a:hover{
     nav ul{
         width: 50%;
     }
+
+    .displayhomenavbar{
+        display: none;
+    }
+
+
+    .logowidthnavbar {
+        width: 80%;
+    }
+
+    .fontnavbar {
+        color: black;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .marginnavbarmiddle{
+        margin: 0 25px;
+    }
 }
 
 @media (max-width: 576px){
@@ -95,22 +147,74 @@ nav ul li a:hover{
         position: absolute;
         right: 0;
         top:0;
-        background-color: brown;
+        background-color: salmon;
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         z-index: -1;
         width: 100%;
-        transform: translateX(100%);
+        opacity: 0;
+        display: none;
         transition: all 1s;
     }
 
+    .displayhomenavbar{
+        display: block;
+    }
+
+    .navbarnavbar {
+        transition: all 1s;
+    }
+
+    .navbarbody{
+       position: absolute;
+       right: 0;
+       top: 0;
+       height: 100vh;
+       background: url("../Assets/background-3.png");
+       width: 100%;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+       z-index: -1;
+       display:flex;
+       opacity: 0;
+       transform: translateY(-100%);
+       transition: all 1s;
+       padding: 200px 0;
+       
+    }
+
+    .active{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    .logowidthnavbar {
+        width: 70%;
+    }
+
     nav ul.slide{
-        transform: translateX(0);
+        opacity: 1;
     }
 
     .menu-toggle{
-        display: flex;
+        display: block;
     }
+
+    .marginnavbarmiddle{
+        margin: 0;
+    }
+
+    .fontnavbar{
+        font-weight: 300;
+        font-size: 32px;
+    }
+
+    .fontnavbar:hover {
+        text-decoration: none;
+    }
+
+
 }

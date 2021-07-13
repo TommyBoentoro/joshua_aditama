@@ -3,25 +3,15 @@ import navSlide from "../helpers/navbarDev"
 import "./../Supports/navbarDev.css"
 
 
+
 class NavbarDev extends React.Component{
 
-    onClickBurger = () => {
-        const burger = document.querySelector(`.burger`)
-        const nav = document.querySelector(`.nav-links`)
-        console.log(`Masuk`)
-
-        burger.addEventListener(`click`, () => {
-            nav.classList.toggle(`nav-active`)
-        })
+    state = {
+        clicked: false
     }
 
-    onTest = () => {
-        console.log(`Masuk`)
-    }
-
-    onClickIcon = () => {
-        navSlide()
-        console.log(`Masuk`)
+    handleClick = () => {
+        this.setState({clicked: !this.state.clicked})
     }
 
     render(){
@@ -33,7 +23,7 @@ class NavbarDev extends React.Component{
                         <div className="logo">
                             <h4>The Nav</h4>
                         </div>
-                        <ul className="nav-links">
+                        <ul className={this.state.clicked? `nav-links nav-active`: `nav-links`}>
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -44,12 +34,16 @@ class NavbarDev extends React.Component{
                                 <a href="#">Work</a>
                             </li>
                         </ul>
-                        <div className="burger" onclick={() => this. onClickBurger()}>
+                        <div className="burger">
                             <div className="line1"></div>
                             <div className="line2"></div>
                             <div className="line3"></div>
                         </div>
-                        <button onClick={()=> this.onClickIcon()} >Test</button>
+                        <div onClick={this.handleClick}>
+                            <div className={this.state.clicked ? `testburger` : `testsilang`}> </div>
+                        </div>
+
+
                     </nav>
 
                    

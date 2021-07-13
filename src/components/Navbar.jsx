@@ -24,6 +24,14 @@ class Navbar extends React.Component{
     // myFunction()
     // navbarToggle()
 
+    state = {
+        clicked : false
+    }
+
+    handleClick = () => {
+        this.setState({clicked: !this.state.clicked})
+    }
+
     componentDidMount(){
         
         window.onscroll = function() {scrollFunction()}
@@ -37,39 +45,51 @@ class Navbar extends React.Component{
             <>
                 {/* <SvgLike/> */}
                 <div id="navbar" className=" w-100 position-fixed py-5 d-flex " style={{transition:"0.3s", zIndex:1}}>
-                    <div className="container d-flex justify-content-between">
-                            <div >
-                                <a href="/"> <img src={logo} alt="logo"  /> </a>
+                    <div className="container d-flex justify-content-between ">
+                            <div>
+                                <a  href="/"> <img src={logo} alt="logo" className="logowidthnavbar" /> </a>
                             </div>
-                            <div className = "d-flex flex-row">
+                            <div className = {this.state.clicked ? `navbarbody active` : `navbarbody`}>
                                 <div>
-                                    <a href="/project" className="fontlato" style={{color: "black", fontWeight:"700"}}> PROJECT </a>
+                                    <a href="/" className="fontlato fontnavbar displayhomenavbar" style={{color:"black"}}> HOME</a>
                                 </div>
-                                <div className="fontlato" style = {{marginRight: "45px", marginLeft: "45px"}}>
-                                    <a href="/studio" className="fontlato" style={{color: "black", fontWeight:"700"}}> STUDIO </a>
+                                <div>
+                                    <a href="/project" className="fontlato fontnavbar " style={{color:"black"}}> PROJECT </a>
                                 </div>
-                                <div className= "fontlato">
-                                    <a href="/contactus" className="fontlato" style={{color: "black", fontWeight:"700"}}> CONTACT</a>
+                                <div className="marginnavbarmiddle">
+                                    <a href="/studio" className="fontlato fontnavbar" style={{color:"black"}} > STUDIO </a>
+                                
+                                </div>
+                                <div >
+                                    <a href="/contactus" className="fontlato fontnavbar" style={{color:"black"}} > CONTACT</a>
                                 </div>
                             </div> 
+                            <div className="menu-toggle" onClick={this.handleClick}>
+                                <input type="checkbox"/>
+                                <span></span>
+                                <span style={{width:"20px", marginLeft:"12px"}}></span>
+                                <span></span>
+                            </div>
+
+
                     </div>
                 </div>
                 
 
                 {/* Navbar UNPAS */}
-               {/* <div className="containerluar">
+               {/* <div className="containerluar" style={{paddingTop:"2000px"}}>
                     <nav className="container">
                         <div className="logo">
                             <h3>Test</h3>
                         </div>
 
-                        <ul>
+                        <ul className={this.state.clicked? `nav ul slide` : `nav ul`}>
                             <li><a href="">PROJECT</a></li>
                             <li><a href="">STUDIO</a></li>
                             <li><a href="">CONTACT</a></li>
                         </ul>
 
-                        <div className="menu-toggle">
+                        <div className="menu-toggle" onClick={this.handleClick}>
                             <input type="checkbox"/>
                             <span></span>
                             <span></span>
