@@ -25,7 +25,7 @@ class Studio extends React.Component{
                     {/* Content */}
                     
                     {/* 1 */}
-                    <div className="container  px-md-3 px-sm-0 px-5  fontlato stylecontainer" >
+                    <div className="container  px-md-3 px-sm-0 px-4 fontlato stylecontainer" >
                         <div className=" col-lg-11 col-12 d-flex fontheadingstudio padding100 px-md-3 px-sm-0 px-3"  style={{ fontWeight:"300"}}>
                             Turning Spatial Experience Into a work of art.
                         </div>
@@ -56,8 +56,8 @@ class Studio extends React.Component{
                         <div className="fontservice-studio" style={{ fontWeight:"400"}}>
                             Services
                         </div>
-                        <div className="col-md-12 col-lg-10  col-12 px-md-3 px-sm-0 px-4 margintopcard" >
-                            <div className="col d-sm-flex px-md-3 px-sm-0 px-4">
+                        <div className="col-md-12 col-lg-10  col-12 px-md-3 px-sm-0 px-0 margintopcard" >
+                            <div className="col d-sm-flex px-md-3 px-sm-0 px-3">
                                 <div className="col-md-6  px-md-3 px-sm-0 px-3">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         01.
@@ -68,7 +68,7 @@ class Studio extends React.Component{
                                     <div className="col-sm-6 col-9 mt-md-4 mt-3 garis" > 
                                         {/* Garis */}
                                     </div>
-                                    <div className="textcard-body mt-md-4 mt-3 " style={{ fontWeight:"300", color:"#8F8F8F",letterSpacing:"0.025cm"}}>
+                                    <div className="textcard-body mt-md-4 mt-3 " style={{ color:"#8F8F8F",letterSpacing:"0.025cm"}}>
                                     As an interior-architecture design studio, we will provide integrated design process for prospective clients. 
                                     From brief-based ideas, design concept, design implementation, to construction drawing and details are executed as a design 
                                     language that is very content and unique for each projects.
@@ -84,7 +84,7 @@ class Studio extends React.Component{
                                     <div className="col-md-6 col-9 mt-md-4 mt-3 garis"> 
                                         {/* Garis */}
                                     </div>
-                                    <div className="textcard-body  mt-md-4 mt-3" style={{fontWeight:"300", color:"#8F8F8F",letterSpacing:"0.025cm"}}>
+                                    <div className="textcard-body  mt-md-4 mt-3" style={{color:"#8F8F8F",letterSpacing:"0.025cm"}}>
                                     Providing a one-stop building solution for prospective clients in various scale. 
                                     With a strong design language and on-site experiences, we are ready to work simultaneously 
                                     with our competent and experienced partners.

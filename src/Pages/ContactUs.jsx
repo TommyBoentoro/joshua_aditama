@@ -30,7 +30,7 @@ class ContactUs extends React.Component{
         return(
             <div className="container  px-md-3 px-0" >
                 <div >
-                    <div className="d-flex flex-row  px-md-3 px-sm-0 px-5 fontlato container justify-content-center paddingcontact" >
+                    <div className="d-flex flex-row  px-md-3 px-sm-0 px-4 fontlato container justify-content-center paddingcontact" >
                         <div className="col-md-10 col-sm-12 ">
                                 <div className="row"> 
                                     <div className="col-sm-4 col-12">

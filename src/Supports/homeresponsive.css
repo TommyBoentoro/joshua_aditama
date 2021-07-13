@@ -7,6 +7,11 @@
     margin-top: 140px;
 }
 
+.fontprojecthome{
+    font-size: 46px;
+    font-weight: 400;
+}
+
 .marginhome{
     padding-top: 125px;
 }
@@ -85,6 +90,11 @@
 
 /* Medium */
 @media (max-width:768px) {
+
+    .fontprojecthome{
+        font-size: 30px;
+        font-weight: 400;
+    }
 
     .bgsliderhome{
         width: 100%;
@@ -181,6 +191,11 @@
 
     .marginproject{
         margin-top: 60px;
+    }
+
+    .fontprojecthome{
+        font-size: 40px;
+        font-weight: 400;
     }
 
     .fontAbout {

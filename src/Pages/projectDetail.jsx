@@ -90,10 +90,10 @@ class ProjectDetail extends React.Component{
             </div>
 
             <div className="fontlato  container px-md-3 px-sm-0 px-5 d-flex flex-column align-items-center fontlato marginbodyheading" >
-                <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-3" >
+                <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-1" >
                     Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. Cras ac fermentum ipsum. 
                 </div>
-                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-3">
+                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa, quis efficitur velit lorem sed orci. 
@@ -125,7 +125,7 @@ class ProjectDetail extends React.Component{
             </div>
 
             <div className="  container px-md-3 px-sm-0 px-5 d-flex flex-column align-items-center fontlato" >
-                <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-3" >
+                <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-" >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa
@@ -154,7 +154,7 @@ class ProjectDetail extends React.Component{
                            <div className="fonttitle" >
                                 Openaire
                            </div>
-                           <div className="col-md-8 fontbodyproject">
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
@@ -170,7 +170,7 @@ class ProjectDetail extends React.Component{
                            <div className="fonttitle">
                                 Openaire Semarang
                            </div>
-                           <div className="col-12 fontbodyproject">
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
@@ -187,7 +187,7 @@ class ProjectDetail extends React.Component{
                            <div className="fonttitle">
                                 Openaire
                            </div>
-                           <div className="col-md-8 fontbodyproject">
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>

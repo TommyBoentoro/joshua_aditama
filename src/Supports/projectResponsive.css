@@ -149,16 +149,19 @@
 
     .fontcategory{
         font-size: 12px;
+        color: #8F8F8F;
     }
 
     .fonttitle{
         font-size: 16px;
         margin-top: 12px;
+        color: #8F8F8F;
     }
     
     .fontbodyproject{
         font-size: 12px;
-        color: black;
+        color: #8F8F8F;
+
     }
     
 

@@ -295,7 +295,7 @@ class Project extends React.Component{
                            <div className="fonttitle">
                                 SPM
                            </div>
-                           <div className=" fontbodyproject">
+                           <div className="fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>

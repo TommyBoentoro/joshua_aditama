@@ -201,6 +201,7 @@
     .fontbody{
         font-size: 15px;
         margin-top: 30px;
+        font-weight: 400;
     }
 
     .fontproject{
@@ -211,6 +212,7 @@
     
     .fontbody-dua{
         font-size: 15px; 
+        font-weight: 400;
     }
 
     .slickheight{

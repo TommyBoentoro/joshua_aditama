@@ -84,14 +84,14 @@ class Home extends React.Component{
         
                <div className="container px-md-3 px-sm-0 px-3 marginhome d-flex justify-content-center" >
                         <div className="col-sm-10 col-12  px-md-3 px-sm-0 px-3" >
-                            <div className="col-md px-md-3 px-sm-0 px-3">
+                            <div className="col-md px-md-3 px-sm-0 px-1">
                                 <div className="fontlato fontAbout" >
                                     ABOUT US
                                 </div>
-                                <div className= "fontlato col-md-7 col-10 px-0 fontHeadingHome">
+                                <div className= "fontlato col-md-8  col-12 px-0 fontHeadingHome">
                                     Turning spatial experience into a work of art
                                 </div>
-                                <div className="fontlato col-11 px-0 fontHomeBody">
+                                <div className="fontlato col-12 col-sm-11 px-0 fontHomeBody">
                                 Joshua Aditama + partners is a multidiciplinary design studio which focused on spatial experience. 
                                 We create a connection between art and human to experience interior and architectural spaces. 
                                 From commercial to personal spaces drive us to explore the specialty of each projects as works of art. 
@@ -115,7 +115,7 @@ class Home extends React.Component{
           
 
             <div className="container marginproject">
-                <div className="d-flex justify-content-center" style={{fontSize:"46px", fontWeight:"400"}}>
+                <div className="d-flex justify-content-center fontprojecthome">
                     Projects
                 </div>
             </div>
@@ -187,8 +187,8 @@ class Home extends React.Component{
                         <div className="fontservice-studio" style={{ fontWeight:"400"}}>
                             Services 
                         </div>
-                        <div className=" col-md-12 col-lg-10 col-12 px-md-3 px-sm-0 px-4 margintopcard" >
-                            <div className="col d-sm-flex px-md-3 px-sm-0 px-4">
+                        <div className=" col-md-12 col-lg-10 col-12 px-md-3 px-sm-0 px-0 margintopcard" >
+                            <div className="col d-sm-flex px-md-3 px-sm-0 px-3">
                                 <div className="col-md-6  px-md-3 px-sm-2 px-3 ">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         01.
@@ -199,7 +199,7 @@ class Home extends React.Component{
                                     <div className="col-md-6 col-9 mt-md-4 mt-3 garis" > 
                                         {/* Garis */}
                                     </div>
-                                    <div className="textcard-body mt-md-4 mt-3 " style={{ fontWeight:"300", color:"#8F8F8F",letterSpacing:"0.025cm"}}>
+                                    <div className="textcard-body mt-md-4 mt-3 " style={{color:"#8F8F8F",letterSpacing:"0.025cm"}}>
                                     As an interior-architecture design studio, we will provide integrated design process for prospective clients. 
                                     From brief-based ideas, design concept, design implementation, to construction drawing and details are executed as a design 
                                     language that is very content and unique for each projects.
@@ -215,7 +215,7 @@ class Home extends React.Component{
                                     <div className="col-md-6 col-9 mt-md-4 mt-3 garis"> 
                                         {/* Garis */}
                                     </div>
-                                    <div className="textcard-body  mt-md-4 mt-3" style={{fontWeight:"300", color:"#8F8F8F",letterSpacing:"0.025cm"}}>
+                                    <div className="textcard-body  mt-md-4 mt-3" style={{color:"#8F8F8F",letterSpacing:"0.025cm"}}>
                                     Providing a one-stop building solution for prospective clients in various scale. 
                                     With a strong design language and on-site experiences, we are ready to work simultaneously 
                                     with our competent and experienced partners.

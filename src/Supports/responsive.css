@@ -151,6 +151,7 @@
     .textcard-body{
         font-size: 17px;
         width: 90%;
+        font-weight: 300;
     }
 
     .textcard-heading{
@@ -254,6 +255,7 @@
     .textcard-body{
         font-size: 12px;
         width: 100%;
+        font-weight: 300;
     }
 
     .paddingcontact{
@@ -388,7 +390,7 @@
 
     .fontbodystudio{
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 0.025cm;
         margin-top: 30px;
         color: #8F8F8F;
@@ -413,6 +415,8 @@
 
     .textcard-body{
         font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.025cm;
     }
     
     .textcard-heading{

@@ -51,17 +51,17 @@ class Navbar extends React.Component{
                             </div>
                             <div className = {this.state.clicked ? `navbarbody active` : `navbarbody`}>
                                 <div>
-                                    <a href="/" className="fontlato fontnavbar displayhomenavbar" style={{color:"black"}}> HOME</a>
+                                    <a href="/" className="fontlato fontnavbar displayhomenavbar" style={{color:"black"}}> Home</a>
                                 </div>
                                 <div>
-                                    <a href="/project" className="fontlato fontnavbar " style={{color:"black"}}> PROJECT </a>
+                                    <a href="/project" className="fontlato fontnavbar " style={{color:"black"}}> Project </a>
                                 </div>
                                 <div className="marginnavbarmiddle">
-                                    <a href="/studio" className="fontlato fontnavbar" style={{color:"black"}} > STUDIO </a>
+                                    <a href="/studio" className="fontlato fontnavbar" style={{color:"black"}} > Studio </a>
                                 
                                 </div>
                                 <div >
-                                    <a href="/contactus" className="fontlato fontnavbar" style={{color:"black"}} > CONTACT</a>
+                                    <a href="/contactus" className="fontlato fontnavbar" style={{color:"black"}} > Contact</a>
                                 </div>
                             </div> 
                             <div className="menu-toggle" onClick={this.handleClick}>
