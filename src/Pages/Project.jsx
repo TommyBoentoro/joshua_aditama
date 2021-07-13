@@ -228,7 +228,7 @@ class Project extends React.Component{
                            <div className="fonttitle ">
                                 Openaire Semarang
                            </div>
-                           <div className="col-md-8 col-12 px-0  fontbodyproject">
+                           <div className="col-md-8 col-12 px-0  fontbodyproject ">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
@@ -245,7 +245,7 @@ class Project extends React.Component{
                            <div className="fonttitle " >
                                 Binong
                            </div>
-                           <div className=" fontbodyproject">
+                           <div className=" fontbodyproject ">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
@@ -284,67 +284,67 @@ class Project extends React.Component{
                         </div>
                     </div>
 
-                    <div className="col-3 hiddendummy" style={{marginTop:"80px"}}>
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project5} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project5} alt="" className="imagecol-3"/>
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                Openaire Semarang
+                           <div className="fonttitle">
+                                SPM
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
                     </div>
-                    <div className="col-6 hiddendummy" style={{marginTop:"80px"}}>
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project6} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="hiddendummy col-sm-6 px-md-3 px-sm-1 px-3  image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project6} alt="" className="imagecol-6"  />
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory">
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                Openaire Semarang
+                           <div className="fonttitle">
+                                Mangga Dua
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className="col-12 px-0   fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
                         </div>
                     </div>
-                    <div className="col-3 hiddendummy" style={{marginTop:"80px"}}>
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project7} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project7} alt="" className="imagecol-3"/>
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                Openaire Semarang
+                           <div className="fonttitle">
+                                SPM
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
                     </div>
-                    <div className="col-3 hiddendummy" style={{marginTop:"80px"}}>
-                        <div className="imagehover" style={{overflow:"hidden"}} >
-                            <img src={project8} alt=""  style={{height:"360px", width:"100%"}} />
+                    <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <img src={project8} alt="" className="imagecol-3"/>
                         </div>
-                        <div style={{marginTop:"40px"}}>
-                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
                                Architect
                            </div >
-                           <div style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem", color:"black"}}>
-                                Openaire Semarang
+                           <div className="fonttitle">
+                                SPM
                            </div>
-                           <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                           <div className=" fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
