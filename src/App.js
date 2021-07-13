@@ -49,7 +49,7 @@ function App (){
           <Route path = "/navbar" component = {Navbar}/>
           <Route path = "/latihan" component = {LatihanResponsive}/>
         </Switch>
-        {/* <Footbar/> */}
+        <Footbar/>
       </BrowserRouter>
     </Provider>
 
