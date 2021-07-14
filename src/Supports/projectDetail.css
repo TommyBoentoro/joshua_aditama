@@ -126,9 +126,9 @@
     .fontbody{
         margin-top: 20px;
         font-size: 12px;
-        font-weight: 300;
+        font-weight: 400;
         color: #8F8F8F;
-        line-height: 180%;
+        line-height: 170%;
         letter-spacing: 0.025cm;
     }
     
@@ -146,7 +146,7 @@
     .fontbody-dua{
         margin-top: 50px;
         font-size: 12px;
-        font-weight: 300;
+        font-weight: 400;
         color: #8F8F8F;
         line-height: 180%;
         letter-spacing: 0.025cm;
@@ -167,7 +167,7 @@
 }
 
 /* Small */
-@media (max-width:500px) {
+@media (max-width:576px) {
     .backgroundimg{
         width: 100%;
         height: 300px;
@@ -186,7 +186,7 @@
     }
 
     .fontbgbody{
-        font-size: 12px;
+        font-size: 10px;
         /* Harus nya 9px */
     }
 
@@ -195,7 +195,8 @@
     }
 
     .fontheading{
-        font-size: 24px;
+        font-size: 21px;
+        letter-spacing: 0.015cm;
     }
 
     .fontbody{

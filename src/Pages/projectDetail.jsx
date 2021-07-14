@@ -53,7 +53,7 @@ class ProjectDetail extends React.Component{
             slidesToShow: 1,
             speed: 500,
             autoplay:true,
-            dots:true,
+            dots: true,
             nextArrow: <NextArrow />,
             prevArrow: <PrevArrow />,
           };
@@ -62,12 +62,12 @@ class ProjectDetail extends React.Component{
             <>
             <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center"}}>
                 <div className="overlay">
-                    <div className="container  px-md-3 px-sm-0 px-5 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
+                    <div className="container  px-md-3 px-sm-0 px-5  d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
                         <div className="fontbgheading" >
                             Openaire Semarang
                         </div>
                         <div className="paddingbg fontbgbody" >
-                            <div className="row px-sm-0 px-3">
+                            <div className="row px-sm-0 px-1 ">
                                 <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
                                     Client : Openaire Group
                                 </div>
@@ -91,7 +91,7 @@ class ProjectDetail extends React.Component{
 
             <div className="fontlato  container px-md-3 px-sm-0 px-5 d-flex flex-column align-items-center fontlato marginbodyheading" >
                 <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-1" >
-                    Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. Cras ac fermentum ipsum. 
+                    Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. 
                 </div>
                 <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 

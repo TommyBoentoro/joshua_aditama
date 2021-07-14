@@ -40,7 +40,7 @@ const NextArrow = ({ onClick }) => {
 
   const PrevArrow = ({ onClick }) => {
     return (
-      <div className="arrow prev" style={{display:"none"}} onClick={onClick}>
+      <div className="arrow prev"  style={{display:"none"}} onClick={onClick}>
         <FaArrowLeft />
       </div>
     );
@@ -59,9 +59,11 @@ class Home extends React.Component{
             autoplay: true,
             slideToShow: 1,
             slideToScroll: 1,
-            dots: true,
-            nextArrow: <NextArrow />,
-            prevArrow: <PrevArrow />,
+            fade: true,
+            dots: false,
+            arrow: false
+            // nextArrow: <NextArrow />,
+            // prevArrow: <PrevArrow />,
         }
 
         return(
@@ -183,13 +185,13 @@ class Home extends React.Component{
                     </a>
                 </div>
 
-                <div className="container d-flex flex-column fontlato align-items-center marginservicehome">
+                <div className="container  px-md-3 px-sm-0 px-3 d-flex flex-column fontlato align-items-center marginservicehome">
                         <div className="fontservice-studio" style={{ fontWeight:"400"}}>
                             Services 
                         </div>
                         <div className=" col-md-12 col-lg-10 col-12 px-md-3 px-sm-0 px-0 margintopcard" >
                             <div className="col d-sm-flex px-md-3 px-sm-0 px-3">
-                                <div className="col-md-6  px-md-3 px-sm-2 px-3 ">
+                                <div className="col-md-6  px-md-3 px-sm-0 px-3 ">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         01.
                                     </div>

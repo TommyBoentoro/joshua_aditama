@@ -14,7 +14,7 @@ class Footbar extends React.Component{
                         <div>
                             <img className="gambarfooter gambarfootersmall" src={gambarHome2} alt="" />
                         </div>
-                        <div className=" container-md px-md-3 px-5">
+                        <div className="container-md px-md-3 px-5">
                            <div className="row d-md-flex flex-row-reverse">
                                 <div className="col-sm-6 col-md-6 col-12 gambarfooterlarge">
                                     <div className="col-12  d-flex justify-content-end px-md-3 px-sm-0">

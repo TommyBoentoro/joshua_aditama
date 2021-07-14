@@ -52,20 +52,20 @@ class Studio extends React.Component{
                     </div>
 
                     {/* 2 */}
-                    <div className="container d-flex flex-column fontlato align-items-center marginservice">
+                    <div className="px-md-3 px-sm-0 px-3 container d-flex flex-column fontlato align-items-center marginservice">
                         <div className="fontservice-studio" style={{ fontWeight:"400"}}>
                             Services
                         </div>
                         <div className="col-md-12 col-lg-10  col-12 px-md-3 px-sm-0 px-0 margintopcard" >
                             <div className="col d-sm-flex px-md-3 px-sm-0 px-3">
-                                <div className="col-md-6  px-md-3 px-sm-0 px-3">
+                                <div className="col-md-6 col  px-md-3 px-sm-0 px-3">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         01.
                                     </div>
                                     <div className="textcard-heading mt-1" style={{fontWeight:"300", }}>
                                         Design Concultancy
                                     </div>
-                                    <div className="col-sm-6 col-9 mt-md-4 mt-3 garis" > 
+                                    <div className="col-md-6 col-9 mt-md-4 mt-3 garis" > 
                                         {/* Garis */}
                                     </div>
                                     <div className="textcard-body mt-md-4 mt-3 " style={{ color:"#8F8F8F",letterSpacing:"0.025cm"}}>
@@ -74,7 +74,7 @@ class Studio extends React.Component{
                                     language that is very content and unique for each projects.
                                     </div>
                                 </div>
-                                <div className="col-sm-6 margincard ml-md-5 px-md-3 px-sm-3 px-3 " >
+                                <div className="col-sm-6 margincard ml-md-5 px-md-3 px-sm-3 px-3 ">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         02.
                                     </div>

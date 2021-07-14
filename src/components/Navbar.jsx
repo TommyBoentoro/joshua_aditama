@@ -45,7 +45,7 @@ class Navbar extends React.Component{
             <>
                 {/* <SvgLike/> */}
                 <div id="navbar" className=" w-100 position-fixed py-5 d-flex " style={{transition:"0.3s", zIndex:1}}>
-                    <div className="container d-flex justify-content-between ">
+                    <div className="container d-flex justify-content-between px-md-3 px-sm-0 px-3">
                             <div>
                                 <a  href="/"> <img src={logo} alt="logo" className="logowidthnavbar" /> </a>
                             </div>

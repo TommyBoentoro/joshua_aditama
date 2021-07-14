@@ -40,7 +40,7 @@ class Project extends React.Component{
             <>
                 <div className="bgproject bgimageresponsive">
                         <div className="overlay">
-                        <div className="container px-md-3 px-5 fontlato" style={{height:"100%", color: "white"}}>
+                        <div className="container px-md-3 px-sm-0 px-5 fontlato" style={{height:"100%", color: "white"}}>
                                 <div className="d-flex flex-column justify-content-end" style={{height:"100%"}}>
                                     <div className="fontbgproject " style={{ fontWeight:"300", letterSpacing:"0.015cm"}}> 
                                         Projects
@@ -97,7 +97,7 @@ class Project extends React.Component{
 
             {/* Content */}
 
-            <div className="container px-md-3 px-5" >
+            <div className="container px-md-3 px-sm-3 px-5" >
                 {/* <div className="row">
                    {
                        this.props.project.data?

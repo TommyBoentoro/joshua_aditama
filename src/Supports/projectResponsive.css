@@ -102,7 +102,7 @@
         font-weight: 400;
         line-height: 130.5%;
         letter-spacing: 0.06rem;
-        color: black;
+        color: #8F8F8F;
         
     }
 
@@ -112,15 +112,15 @@
         font-weight: 400;
         line-height: 130.5%;
         letter-spacing: 0.02rem;
-        color: black;
+        color: #8F8F8F;
     }
     
     .fontbodyproject{
         font-size: 9px;
         margin-top: 8px;
-        font-weight: 300;
+        font-weight: 400;
         width: 100%;
-        color: black;
+        color: #8F8F8F;
     }
 
     .margincardbody{
@@ -161,6 +161,7 @@
     .fontbodyproject{
         font-size: 12px;
         color: #8F8F8F;
+        font-weight: 400;
 
     }
     
