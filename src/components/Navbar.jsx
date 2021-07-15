@@ -50,7 +50,7 @@ class Navbar extends React.Component{
                                 <a  href="/"> <img src={logo} alt="logo" className="logowidthnavbar" /> </a>
                             </div>
                             <div className = {this.state.clicked ? `navbarbody active` : `navbarbody`}>
-                                <div>
+                                <div style={{marginTop:"-120px"}}>
                                     <a href="/" className="fontlato fontnavbar displayhomenavbar" style={{color:"black"}}> Home</a>
                                 </div>
                                 <div>
@@ -70,8 +70,6 @@ class Navbar extends React.Component{
                                 <span style={{width:"20px", marginLeft:"12px"}}></span>
                                 <span></span>
                             </div>
-
-
                     </div>
                 </div>
                 

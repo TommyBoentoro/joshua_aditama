@@ -29,6 +29,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./../Supports/backgroundHover.css"
 import "./../Supports/homeresponsive.css"
 import "./../Supports/responsive.css"
+import "./../Supports/empat.css"
 
 const NextArrow = ({ onClick }) => {
     return (
@@ -46,6 +47,7 @@ const NextArrow = ({ onClick }) => {
     );
   };
 
+
 class Home extends React.Component{
 
     
@@ -55,13 +57,13 @@ class Home extends React.Component{
 
     render () {
 
-        const settings = {
+        const settings1 = {
             autoplay: true,
             slideToShow: 1,
             slideToScroll: 1,
             fade: true,
-            dots: false,
-            arrow: false
+            dots: true,
+            arrow: false,
             // nextArrow: <NextArrow />,
             // prevArrow: <PrevArrow />,
         }
@@ -69,17 +71,14 @@ class Home extends React.Component{
         return(
            <> 
             <div>
-                <Slider {...settings}>
+                <Slider {...settings1}>
                     <div>
-                        <div style={{position:"absolute",  color:"red", bottom:"100px", left:"50px"}}>hello</div>
                         <img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/>
                     </div>
                     <div>
-                        <div style={{position:"absolute",  color:"red", bottom:"100px", left:"50px"}}>hello</div>
                         <img src={gambarHome1} alt="" className="bgsliderhome" />
                     </div>
                     <div>
-                        <div style={{position:"absolute",  color:"red", bottom:"100px", left:"50px"}}>hello</div>
                        <img src={background2} alt="" className="bgsliderhome"  />
                     </div>
                 </Slider>
