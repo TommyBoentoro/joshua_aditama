@@ -71,12 +71,15 @@ class Home extends React.Component{
             <div>
                 <Slider {...settings}>
                     <div>
+                        <div style={{position:"absolute",  color:"red", bottom:"100px", left:"50px"}}>hello</div>
                         <img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/>
                     </div>
                     <div>
+                        <div style={{position:"absolute",  color:"red", bottom:"100px", left:"50px"}}>hello</div>
                         <img src={gambarHome1} alt="" className="bgsliderhome" />
                     </div>
                     <div>
+                        <div style={{position:"absolute",  color:"red", bottom:"100px", left:"50px"}}>hello</div>
                        <img src={background2} alt="" className="bgsliderhome"  />
                     </div>
                 </Slider>
@@ -134,7 +137,7 @@ class Home extends React.Component{
                                     </div>
                                     
                                     <div className="fonthoverbody">
-                                        Tentrem Hotel Semarang
+                                        Tentrem Hotel
                                     </div>
                                 </a>
                            </div>

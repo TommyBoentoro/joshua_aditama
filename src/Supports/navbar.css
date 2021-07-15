@@ -181,16 +181,16 @@ nav ul li a:hover{
        align-items: center;
        z-index: -1;
        display:flex;
-       opacity: 0;
-       transform: translateY(-100%);
        transition: all 1s;
        padding: 200px 0;
+       visibility: hidden;
+       opacity: 0;
        
     }
 
     .active{
-        transform: translateY(0%);
         opacity: 1;
+        visibility: visible;
     }
 
     .logowidthnavbar {
