@@ -183,7 +183,7 @@
 
 
 /* Small */
-@media (max-width:500px) {
+@media (max-width:576px) {
     .bgsliderhome{
         width: 100%;
         height: 300px;

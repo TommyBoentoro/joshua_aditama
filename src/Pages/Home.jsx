@@ -15,6 +15,7 @@ import Jumbotron from "./../Assets/jumbotron.JPG"
 import myService from "./../Assets/myService.png"
 import arrow from "./../Assets/arrow.png"
 import test1 from "./../Assets/project/test1.png"
+import project6 from "./../Assets/project/project6.png"
 import jumbotron from './../Assets/jumbotron.JPG'
 
 // Helpers
@@ -30,19 +31,20 @@ import "./../Supports/backgroundHover.css"
 import "./../Supports/homeresponsive.css"
 import "./../Supports/responsive.css"
 import "./../Supports/empat.css"
+import {IoIosArrowDropleft} from "react-icons/io"
 
 const NextArrow = ({ onClick }) => {
     return (
-      <div className="arrow next" style={{display:"none"}} onClick={onClick}>
-        <FaArrowRight />
+      <div className="arrow next"  onClick={onClick}>
+        <IoIosArrowDropright />
       </div>
     );
   };
 
   const PrevArrow = ({ onClick }) => {
     return (
-      <div className="arrow prev"  style={{display:"none"}} onClick={onClick}>
-        <FaArrowLeft />
+      <div className="arrow prev"  onClick={onClick}>
+        <IoIosArrowDropleft />
       </div>
     );
   };
@@ -63,9 +65,9 @@ class Home extends React.Component{
             slideToScroll: 1,
             fade: true,
             dots: true,
-            arrow: false,
-            // nextArrow: <NextArrow />,
-            // prevArrow: <PrevArrow />,
+            dotsClass: "slickDots-home",
+            nextArrow: <NextArrow />,
+            prevArrow: <PrevArrow />,
         }
 
         return(
@@ -76,7 +78,7 @@ class Home extends React.Component{
                         <img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/>
                     </div>
                     <div>
-                        <img src={gambarHome1} alt="" className="bgsliderhome" />
+                        <img src={project6} alt="" className="bgsliderhome" />
                     </div>
                     <div>
                        <img src={background2} alt="" className="bgsliderhome"  />
@@ -87,7 +89,7 @@ class Home extends React.Component{
             {/* ABOUT US */}
         
                <div className="container px-md-3 px-sm-0 px-3 marginhome d-flex justify-content-center" >
-                        <div className="col-sm-10 col-12  px-md-3 px-sm-0 px-3" >
+                        <div className="col-sm-10 col-12 px-md-3 px-sm-0 px-3" >
                             <div className="col-md px-md-3 px-sm-0 px-1">
                                 <div className="fontlato fontAbout" >
                                     ABOUT US

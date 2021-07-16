@@ -52,8 +52,7 @@ class Project extends React.Component{
                             </div>
                         </div>
                 </div>
-        
-
+                
                 {/*  */}
                 {/* <div className="d-flex flex-row justify-content-between" style={{width:"100%", marginTop:"74px"}}>
                     <div className="border fontlato" style={{width:"1050px", height:"557px", marginLeft:"130px"}}>

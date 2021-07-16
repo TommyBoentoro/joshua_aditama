@@ -1,0 +1,134 @@
+.slickDots-home{
+    display: flex !important;
+    justify-content: start;
+    list-style: none;
+    margin: 0 100px;
+    padding: 0;
+    position: relative;
+    height: 0;
+}
+
+.slickDots-home li{
+    margin: 5px;
+    position: relative;
+    bottom: 80px;
+    width: 80%;
+}
+
+.slickDots-home button {
+    width: 100%;
+    height: 5px;
+    border: none;
+    text-decoration: none;
+    opacity: 0.5;
+    color: blue;
+    background-color: white;
+    text-indent: -999999px;
+}
+
+.slickDots-home li.slick-active button{
+    
+    opacity: 1;
+}
+
+.slick-slider{
+    position: relative;
+}
+
+.slick-slider .prev{
+    position: absolute;
+    width: 60px;
+    z-index: 10;
+    text-align: center;
+    top: 450px;
+    left: 0;
+    cursor: pointer;
+    color: white;
+    transform: scale(2.5);
+}
+
+.slick-slider .next{
+    position: absolute;
+    z-index: 10;
+    width: 60px;
+    text-align: center;
+    bottom: 450px;
+    right: 0;
+    color: white;
+    transform: scale(2.5);
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+
+    .slick-slider .prev{
+        position: absolute;
+        width: 60px;
+        z-index: 10;
+        text-align: center;
+        top: 240px;
+        left: 0;
+        cursor: pointer;
+        color: white;
+        transform: scale(2);
+    }
+    
+    .slick-slider .next{
+        position: absolute;
+        z-index: 10;
+        width: 60px;
+        text-align: center;
+        bottom: 240px;
+        right: 0;
+        color: white;
+        transform: scale(2);
+        cursor: pointer;
+    }
+
+    .slickDots-home{
+        display: flex !important;
+        justify-content: start;
+        list-style: none;
+        margin: 0 75px;
+        padding: 0;
+        position: relative;
+    }
+}
+
+@media (max-width:576px){
+
+        
+    .slick-slider .prev{
+        position: absolute;
+        width: 60px;
+        z-index: 10;
+        text-align: center;
+        top: 150px;
+        left: 0;
+        cursor: pointer;
+        color: white;
+        transform: scale(2);
+    }
+    
+    .slick-slider .next{
+        position: absolute;
+        z-index: 10;
+        width: 60px;
+        text-align: center;
+        bottom: 150px;
+        right: 0;
+        color: white;
+        transform: scale(2);
+        cursor: pointer;
+    }
+
+    .slickDots-home{
+        display: flex !important;
+        justify-content: start;
+        list-style: none;
+        margin: 0 30px;
+        padding: 0;
+        position: relative;
+        background-color: red;
+    }
+}

@@ -25,21 +25,7 @@ import "./../Supports/projectDetail.css"
 import "./../Supports/projectResponsive.css"
 
 
-const NextArrow = ({ onClick }) => {
-    return (
-      <div className="arrow next" style={{display:"none"}} onClick={onClick}>
-        <FaArrowRight />
-      </div>
-    );
-  };
 
-  const PrevArrow = ({ onClick }) => {
-    return (
-      <div className="arrow prev" style={{display:"none"}} onClick={onClick}>
-        <FaArrowLeft />
-      </div>
-    );
-  };
 
 
 class ProjectDetail extends React.Component{
@@ -54,8 +40,7 @@ class ProjectDetail extends React.Component{
             speed: 500,
             autoplay:true,
             dots: true,
-            nextArrow: <NextArrow />,
-            prevArrow: <PrevArrow />,
+            arrow: false,
           };
 
         return(

@@ -27,13 +27,17 @@
     transform: scaleY(0.9)
 }
 
+.slick{
+    display: flex;
+}
+
 .slick-dots{
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
-
     list-style-type: none;
+
 }
 
 .slick-dots li{
@@ -45,12 +49,10 @@
     width: 10px !important;
     height: 10px !important;
     padding: 0;
-
     border: none;
     border-radius: 100%;
     background-color: red;
     border: 1px solid black !important;
-
     text-indent: -99999px;
 
    
