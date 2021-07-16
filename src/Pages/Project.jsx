@@ -49,7 +49,7 @@ class Project extends React.Component{
                                         
                                     </div>
                                 </div>
-                            </div>
+                            </div>.
                         </div>
                 </div>
                 
