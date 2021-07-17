@@ -59,6 +59,42 @@
     cursor: pointer;
 }
 
+.ularrow{
+    display: flex;
+    margin: 20px;
+}
+
+.ularrow li{
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    background: #262626;
+    margin: 0 10px;
+    /* border-radius: 50%; */
+    transition: .5s;
+}
+
+.ularrow li:hover{
+    background: blue;
+}
+
+.ularrow li span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #fff;
+    transition: .5s;
+}
+
+.ularrow li.arrowNext span{
+    top: 40px;
+    right:20%;
+    transform: translateY(-50%) rotate(-45deg);
+    /* border-left: none;
+    border-top: none; */
+
+}
+
 @media (max-width:768px){
 
     .slick-slider .prev{
@@ -130,5 +166,18 @@
         padding: 0;
         position: relative;
         background-color: red;
+        top:40px;
     }
+
+    .slickDots-home button {
+        width: 100%;
+        height: 3px;
+        border: none;
+        text-decoration: none;
+        opacity: 0.5;
+        color: blue;
+        background-color: white;
+        text-indent: -999999px;
+    }
+    
 }

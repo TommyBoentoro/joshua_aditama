@@ -1,6 +1,7 @@
 .backgroundimg{
     width: 100%;
     height: 900px;
+    object-fit: cover;
 }
 
 .fontbgheading{
@@ -74,7 +75,8 @@
 .slickheight{
     height: 700px;
     width: 100%;
-    padding: 0 15px
+    padding: 0 15px;
+    object-fit: cover;
 }
 
 .marginslick{
@@ -140,7 +142,8 @@
     .slickheight{
         height: 346px;
         width: 100%;
-        padding: 0 15px
+        padding: 0 15px;
+        object-fit: cover;
     }
 
     .fontbody-dua{
@@ -220,6 +223,7 @@
 
     .slickheight{
         height: 180px;
+        object-fit: cover;
         
     }
 

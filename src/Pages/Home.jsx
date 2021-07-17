@@ -41,10 +41,21 @@ const NextArrow = ({ onClick }) => {
     );
   };
 
+//   const PrevArrow = ({ onClick }) => {
+//     return (
+//       <div className="arrow prev"  onClick={onClick}>
+//         <IoIosArrowDropleft />
+//       </div>
+//     );
+//   };
+
   const PrevArrow = ({ onClick }) => {
     return (
-      <div className="arrow prev"  onClick={onClick}>
-        <IoIosArrowDropleft />
+      <div onClick={onClick}>
+        <ul className="ularrow">
+            <li className="arrowPrev"><span></span></li>
+            <li className="arrowNext"><span></span></li>
+        </ul>
       </div>
     );
   };
@@ -66,8 +77,9 @@ class Home extends React.Component{
             fade: true,
             dots: true,
             dotsClass: "slickDots-home",
-            nextArrow: <NextArrow />,
-            prevArrow: <PrevArrow />,
+            // nextArrow: <NextArrow />,
+            // prevArrow: <PrevArrow />,
+            arrow: false
         }
 
         return(
@@ -89,7 +101,7 @@ class Home extends React.Component{
             {/* ABOUT US */}
         
                <div className="container px-md-3 px-sm-0 px-3 marginhome d-flex justify-content-center" >
-                        <div className="col-sm-10 col-12 px-md-3 px-sm-0 px-3" >
+                        <div className="col-sm-10 col-12 px-md-3 px-sm-0 px-" >
                             <div className="col-md px-md-3 px-sm-0 px-1">
                                 <div className="fontlato fontAbout" >
                                     ABOUT US
@@ -193,8 +205,8 @@ class Home extends React.Component{
                         <div className="fontservice-studio" style={{ fontWeight:"400"}}>
                             Services 
                         </div>
-                        <div className=" col-md-12 col-lg-10 col-12 px-md-3 px-sm-0 px-0 margintopcard" >
-                            <div className="col d-sm-flex px-md-3 px-sm-0 px-3">
+                        <div className=" col-md-12  col-lg-10 col-12 px-md-3 px-sm-0 px-0 margintopcard" >
+                            <div className="col d-sm-flex px-md-3 px-sm-0 px-0 ">
                                 <div className="col-md-6  px-md-3 px-sm-0 px-3 ">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         01.

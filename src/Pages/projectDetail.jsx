@@ -47,12 +47,12 @@ class ProjectDetail extends React.Component{
             <>
             <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center"}}>
                 <div className="overlay">
-                    <div className="container  px-md-3 px-sm-0 px-5  d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
+                    <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
                         <div className="fontbgheading" >
                             Openaire Semarang
                         </div>
                         <div className="paddingbg fontbgbody" >
-                            <div className="row px-sm-0 px-1 ">
+                            <div className="row px-sm-0 px-2 ">
                                 <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
                                     Client : Openaire Group
                                 </div>
@@ -74,11 +74,11 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="fontlato  container px-md-3 px-sm-0 px-5 d-flex flex-column align-items-center fontlato marginbodyheading" >
-                <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-1" >
+            <div className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
+                <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-2" >
                     Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. 
                 </div>
-                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-1">
+                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa, quis efficitur velit lorem sed orci. 
@@ -109,8 +109,8 @@ class ProjectDetail extends React.Component{
                 </Slider>
             </div>
 
-            <div className="  container px-md-3 px-sm-0 px-5 d-flex flex-column align-items-center fontlato" >
-                <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-" >
+            <div className="  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
+                <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-2" >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
                     Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa
@@ -126,9 +126,9 @@ class ProjectDetail extends React.Component{
                 Related Project
             </div>
             
-            <div className="container px-md-3 px-sm-0 px-5 marginrelated" >
+            <div className="container px-md-3 px-sm-0 px-4 marginrelated" >
                 <div className="row ">
-                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover">
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-2 image imagehover">
                          <div style={{overflow:"hidden"}} >
                             <img src={project3} alt="" className="imagecol-3" />
                         </div>

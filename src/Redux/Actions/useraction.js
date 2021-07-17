@@ -7,7 +7,8 @@ export const onUserLogin = (data) => {
         })
         axios.post(`http://localhost:4000/user-system/login`,data)
         .then((res) => {
-            console.log(res.data)
+            console.log(res.data.data.token)
+            console.log(res.data.message)
             if(res.data.error === false){
 
                 localStorage.setItem("my-tkn", res.data.data.token)
@@ -26,7 +27,7 @@ export const onUserLogin = (data) => {
             console.log(err)
             dispatch({
                 type: `USER_ERROR`,
-                payload: err.response.data.message
+                payload: `username & password doesn't match`     //err.response.data.message
             })
         })
     }
@@ -58,6 +59,25 @@ export const onSubmitMessage = (name, email, contact, letter) => {
                 }
             )
         })
+    } 
+}
+
+export const onUserLogout = (data) => {
+    return(dispatch) => {
+        dispatch({
+            type: `LOADING`
+        })
+
+        axios.post(`http://localhost:4000/user-system/logout`,data)
+        .then((res) => {
+            console.log(res.data)
+            if(res.data.error === false){
+                localStorage.removeItem("my-tkn")
+            }
+        })
+        .catch((err)=> {
+            console.log(err)
+        })
     }
-    
+  
 }

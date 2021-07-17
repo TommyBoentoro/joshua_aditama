@@ -88,38 +88,19 @@ export const onDelete = (id) => {
     }
 }
 
-// export const onGetData = (data) => {
-//     return(dispatch) => {
-        
-//         axios.post(`http://localhost:4000/data-system/getData`, data)
-//         .then((res) => {
-//             // console.log(res.data.message)
-//             // dispatch({
-//             //     type: `GET_SUCCESS`,
-//             //     payload: res.data.Data
-//             // })
-          
-          
-//         })
-//         .catch((err)=>{
-//             console.log(err)
-//         //     dispatch({
-//         //        type: `GET_ERROR`,
-//         //        payload: err.res.data.messgae
-//         //    })
-//         })
-//     }
-// }
-
 export const onGetData = () => {
     return(dispatch) => {
         axios.get(`http://localhost:4000/data-system/get-product`)
         .then((res) => {
             // console.log(res)
-            dispatch({
-                type: `GET_SUCCESS`,
-                payload: res.data.detail
-            })
+            try {
+                dispatch({
+                    type: `GET_SUCCESS`,
+                    payload: res.data.detail
+                })
+            } catch (error) {
+                console.log(error,res)
+            }
         })
         .catch((err) => {
             console.log(err)
@@ -129,6 +110,20 @@ export const onGetData = () => {
             })
         })
     }
-    
-
 }
+
+// export const onUserLogout = (data) => {
+//     return(dispatch) => {
+//         dispatch({
+//             type: `LOADING`
+//         })
+//         axios.post(`http://localhost:4000/user-system/logout`,data)
+//         .then((res) => {
+//             console.log(res.data)
+//         })
+//         .catch((err)=> {
+//             console.log(err)
+//         })
+//     }
+  
+// }

@@ -43,16 +43,19 @@
 .imagecol-9{
     height: 360px;
     width: 100%;
+    object-fit: cover;
 }
 
 .imagecol-3{
     height: 360px;
     width: 100%;
+    object-fit: cover;
 }
 
 .imagecol-6{
     height: 360px;
     width: 100%;
+    object-fit: cover;
 }
 
 .margincardbody{
@@ -88,16 +91,19 @@
     .imagecol-9{
         height: 220px;
         width: 100%;
+        object-fit: cover;
     }
     
     .imagecol-3{
         height: 220px;
         width: 100%;
+        object-fit: cover;
     }
     
     .imagecol-6{
         height: 220px;
         width: 100%;
+        object-fit: cover;
     }
 
     .fontcategory{
@@ -176,16 +182,19 @@
     .imagecol-9{
         height: 150px;
         width: 100%;
+        object-fit: cover;
     }
 
     .imagecol-6{
         height: 208px;
         width: 100%;
+        object-fit: cover;
     }
 
     .imagecol-3{
         height: 388px;
         width: 100%;
+        object-fit: cover;
     }
 
     .margincardbody{

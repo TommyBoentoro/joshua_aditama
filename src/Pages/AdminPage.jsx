@@ -6,12 +6,14 @@ import {connect} from "react-redux"
 import {onAddData} from "../Redux/Actions/projectaction" 
 import {onGetData} from "../Redux/Actions/projectaction"
 import {onDelete} from "../Redux/Actions/projectaction"
+import {onUserLogout} from "../Redux/Actions/useraction"
 
 class AdminPage extends React.Component{
 
     state = {
         imageErrorMessage: "",
-        images: null
+        images: null,
+        is_login: false
     }
 
     componentDidMount () {
@@ -62,15 +64,7 @@ class AdminPage extends React.Component{
     }
 
     onGet = () => {
-        // let token = localStorage.getItem("my-tkn")
-
-        // let data = {
-        //     token : token
-        // }
-        
         this.props.onGetData()
-
-        
     }
 
     onImageValidation = (e) =>{
@@ -89,7 +83,14 @@ class AdminPage extends React.Component{
         }
     }
 
-    
+    onLogOut = () => {
+        let data = {
+            token : localStorage.getItem("my-tkn")
+        }
+        console.log(data)
+        this.props.onUserLogout(data)
+        window.location = "/loginpage"
+    }
 
 
     render(){
@@ -102,9 +103,21 @@ class AdminPage extends React.Component{
         }
         return(
             <div className ="container" style={{paddingTop:"200px"}}>
-                <h2>
-                    Add Data
-                </h2>
+                <div className="d-flex justify-content-between">
+                    <h2>
+                        Add Data
+                    </h2>
+                    {
+                        this.state.is_login?
+                        null
+                        :
+                        <div>
+                            You must login first
+                        </div>
+                    }
+
+                    <input type="button" value="LogOut" onClick={() => this. onLogOut()} className="btn btn-danger" />
+                </div>
                 <div className="form-group">
                     <label>Title</label>
                     <input type="text" ref={(e)=> this.title=e} className="form-control" placeholder= "Input Title"/>
@@ -119,7 +132,7 @@ class AdminPage extends React.Component{
                     <input type="button" value = "choose File" className="btn btn-success" onClick={() => this.files.click()} />
                 </div>
                 <br />
-                <button type="submit" onClick={() => this. onSubmit()} class="btn btn-primary">Submit</button>
+                <button type="submit" onClick={() => this. onSubmit()} disabled={this.state.is_login?false : true} class="btn btn-primary">Submit</button>
 
                     <h6 className="mt-1 text-danger">
                         {
@@ -133,41 +146,7 @@ class AdminPage extends React.Component{
                     </div>
                 <hr />
                 <br />
-
                 <br />
-
-                {/* <div>
-                    {
-                        this.props.project.data?
-                        this.props.project.data.map((value,index) => {
-                            return(
-                                <>
-                                <div key={index}>
-                                    <h4>
-                                        {value.title}
-                                    </h4>
-                                    <p>
-                                        {value.description}
-                                    </p>
-                                </div>
-                                   
-                                    {
-                                        value.image.map((val,idx) => {
-                                            return(
-                                                <div key={idx}>
-                                                    <img  src={val.image} alt="" className="border" style={{width:"100px"}} />
-                                                </div>
-                                                    
-                                            )
-                                        })
-                                    }
-                                </>
-                            )
-                        })
-                        :
-                        null
-                    }
-                </div> */}
 
                 <div className="container" >
                     <table className="table mt-3">
@@ -218,12 +197,13 @@ class AdminPage extends React.Component{
 }
 
 const mapDispatchToProps = {
-    onAddData, onGetData, onDelete
+    onAddData, onGetData, onDelete, onUserLogout
 }
 
 const mapStateToProps = (state) => {
     return{
-        project: state.project
+        project: state.project,
+        user: state.user
     }
 }
 

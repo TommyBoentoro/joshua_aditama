@@ -7,11 +7,16 @@ import {onUserLogin} from "../Redux/Actions/useraction"
 
 class LoginPage extends React.Component{
 
+    state = {
+        is_login: false
+    }
+
     onLogin = () => {
         let data = {
             username : this.username.value,
             password : this.password.value
         }
+        this.setState({is_login: true})
         this.props.onUserLogin(data)
     }
 
@@ -40,7 +45,7 @@ class LoginPage extends React.Component{
                         <input type="button" onClick={() => this.onLogin()} value="login" className="btn btn-primary" />
                     </div>
                     
-                    <h6 className="mt-1 text-danger">
+                    <h6 className="mt-3 text-danger">
                         {
                             this.props.user.message  
                         }
