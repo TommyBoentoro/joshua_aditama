@@ -100,9 +100,9 @@ class Home extends React.Component{
 
             {/* ABOUT US */}
         
-               <div className="container px-md-3 px-sm-0 px-3 marginhome d-flex justify-content-center" >
-                        <div className="col-sm-10 col-12 px-md-3 px-sm-0 px-" >
-                            <div className="col-md px-md-3 px-sm-0 px-1">
+               <div className="container px-md-3 px-sm-0 px-3  marginhome d-flex justify-content-center" >
+                        <div className="col-sm-10 col-12 px-md-3 px-sm-0 px-0" >
+                            <div className="col-md px-md-3 px-sm-0 px-0">
                                 <div className="fontlato fontAbout" >
                                     ABOUT US
                                 </div>
@@ -207,7 +207,7 @@ class Home extends React.Component{
                         </div>
                         <div className=" col-md-12  col-lg-10 col-12 px-md-3 px-sm-0 px-0 margintopcard" >
                             <div className="col d-sm-flex px-md-3 px-sm-0 px-0 ">
-                                <div className="col-md-6  px-md-3 px-sm-0 px-3 ">
+                                <div className="col-md-6  px-md-3 px-sm-0 px-0 ">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         01.
                                     </div>
@@ -223,7 +223,7 @@ class Home extends React.Component{
                                     language that is very content and unique for each projects.
                                     </div>
                                 </div>
-                                <div className=" col-sm-6 margincard ml-md-5 px-md-3 px-sm-2 px-3" >
+                                <div className=" col-sm-6 margincard ml-md-5 px-md-3 px-sm-2 px-0" >
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         02.
                                     </div>

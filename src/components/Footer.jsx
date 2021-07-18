@@ -14,7 +14,7 @@ class Footbar extends React.Component{
                         <div>
                             <img className="gambarfooter gambarfootersmall" src={gambarHome2} alt="" />
                         </div>
-                        <div className="container-md px-md-3 px-sm-5 px-5">
+                        <div className="container-md px-md-3 px-sm-5 px-4">
                            <div className="row d-md-flex flex-row-reverse">
                                 <div className="col-sm-6 col-md-6 col-12 gambarfooterlarge">
                                     <div className="col-12  d-flex justify-content-end px-md-3 px-sm-0">
@@ -22,7 +22,7 @@ class Footbar extends React.Component{
                                     </div>
                                 </div>
 
-                                <div className=" col-sm-6 px-md3 px-sm-3 px-0">
+                                <div className=" col-sm-6 px-md3 px-sm-3 px-2">
                                     <div className="fontfooterheading ">
                                         FEEL FREE TO KEEP IN TOUCH WITH US
                                     </div>
@@ -41,7 +41,7 @@ class Footbar extends React.Component{
                            </div>
                         </div>
 
-                        <div className="container px-md-3 px-sm-0 px-4 d-sm-flex footerdua">
+                        <div className="container px-md-3 px-sm-0 px-2 d-sm-flex footerdua">
                             <div className="col-md-6 d-sm-flex d-none px-md-3 px-sm-0 px-0">
                                 <a href="/"> <img src={logo} alt="logo" className="logowidth"/> </a>
                             </div>
