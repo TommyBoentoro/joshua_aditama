@@ -45,7 +45,7 @@ class ProjectDetail extends React.Component{
 
         return(
             <>
-            <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center"}}>
+            <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}>
                 <div className="overlay">
                     <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
                         <div className="fontbgheading" >
@@ -74,7 +74,7 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
+            <div style={{overflow:"hidden"}} className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
                 <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-2" >
                     Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. 
                 </div>
@@ -95,7 +95,7 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="marginslick"  >   
+            <div className="marginslick" style={{overflow:"hidden"}}  >   
                 <Slider {...settings}  >
                     <div>
                         <img className="opacityimage slickheight" src={jumbotron} alt="" />
@@ -109,7 +109,7 @@ class ProjectDetail extends React.Component{
                 </Slider>
             </div>
 
-            <div className="  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
+            <div style={{overflow:"hidden"}} className="container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
                 <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-2" >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
                     Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
@@ -122,11 +122,11 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="container d-flex justify-content-center fontlato fontproject">
+            <div style={{overflow:"hidden"}} className="container d-flex justify-content-center fontlato fontproject">
                 Related Project
             </div>
             
-            <div className="container px-md-3 px-sm-0 px-4 marginrelated" >
+            <div style={{overflow:"hidden"}} className="container px-md-3 px-sm-0 px-4 marginrelated" >
                 <div className="row ">
                     <div className="col-sm-3 px-md-3 px-sm-1 px-4 image imagehover">
                          <div style={{overflow:"hidden"}} >
