@@ -28,7 +28,7 @@ class ContactUs extends React.Component{
 
     render(){
         return(
-            <div className="container  px-md-3 px-0" >
+            <div className="container px-md-3 px-0" >
                 <div >
                     <div className="d-flex flex-row  px-md-3 px-sm-0 px-4 fontlato container justify-content-center paddingcontact" >
                         <div className="col-md-10 col-sm-12 ">

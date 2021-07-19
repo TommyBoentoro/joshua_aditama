@@ -33,13 +33,13 @@ import "./../Supports/responsive.css"
 import "./../Supports/empat.css"
 import {IoIosArrowDropleft} from "react-icons/io"
 
-const NextArrow = ({ onClick }) => {
-    return (
-      <div className="arrow next"  onClick={onClick}>
-        <IoIosArrowDropright />
-      </div>
-    );
-  };
+// const NextArrow = ({ onClick }) => {
+//     return (
+//       <div className="arrow next"  onClick={onClick}>
+//         <IoIosArrowDropright />
+//       </div>
+//     );
+//   };
 
 //   const PrevArrow = ({ onClick }) => {
 //     return (
@@ -52,8 +52,17 @@ const NextArrow = ({ onClick }) => {
   const PrevArrow = ({ onClick }) => {
     return (
       <div onClick={onClick}>
-        <ul className="ularrow">
+        <ul className="ularrowPrev">
             <li className="arrowPrev"><span></span></li>
+        </ul>
+      </div>
+    );
+  };
+
+  const NextArrow = ({ onClick }) => {
+    return (
+      <div onClick={onClick}>
+        <ul className="ularrowNext">
             <li className="arrowNext"><span></span></li>
         </ul>
       </div>
@@ -77,17 +86,18 @@ class Home extends React.Component{
             fade: true,
             dots: true,
             dotsClass: "slickDots-home",
-            // nextArrow: <NextArrow />,
-            // prevArrow: <PrevArrow />,
+            nextArrow: <NextArrow />,
+            prevArrow: <PrevArrow />,
             arrow: false
         }
 
         return(
            <> 
             <div>
+                <div className="opacitySlider"></div>
                 <Slider {...settings1}>
                     <div>
-                        <img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/>
+                        <a href="/project"><img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/></a>
                     </div>
                     <div>
                         <img src={project6} alt="" className="bgsliderhome" />
@@ -100,8 +110,8 @@ class Home extends React.Component{
 
             {/* ABOUT US */}
         
-               <div className="container px-md-3 px-sm-0 px-3  marginhome d-flex justify-content-center" >
-                        <div className="col-sm-10 col-12 px-md-3 px-sm-0 px-0" >
+               <div className="container px-md-3 px-sm-0 px-3 marginhome d-flex justify-content-center" >
+                        <div className="col-sm-10 col-12 px-md-3 px-sm-0 px-3" >
                             <div className="col-md px-md-3 px-sm-0 px-0">
                                 <div className="fontlato fontAbout" >
                                     ABOUT US
@@ -201,12 +211,12 @@ class Home extends React.Component{
                     </a>
                 </div>
 
-                <div className="container  px-md-3 px-sm-0 px-3 d-flex flex-column fontlato align-items-center marginservicehome">
+                <div className="container px-md-3 px-sm-0 px-3 d-flex flex-column fontlato align-items-center marginservicehome">
                         <div className="fontservice-studio" style={{ fontWeight:"400"}}>
                             Services 
                         </div>
-                        <div className=" col-md-12  col-lg-10 col-12 px-md-3 px-sm-0 px-0 margintopcard" >
-                            <div className="col d-sm-flex px-md-3 px-sm-0 px-0 ">
+                        <div className=" col-md-12 col-lg-10 col-12 px-md-3 px-sm-0 px-2 margintopcard" >
+                            <div className="col d-sm-flex px-md-3 px-sm-0 px-2 ">
                                 <div className="col-md-6  px-md-3 px-sm-0 px-0 ">
                                     <div style={{fontSize:"16px", fontWeight:"700"}}> {/* CARD */}
                                         01.

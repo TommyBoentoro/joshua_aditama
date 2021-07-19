@@ -128,7 +128,7 @@ class ProjectDetail extends React.Component{
             
             <div className="container px-md-3 px-sm-0 px-4 marginrelated" >
                 <div className="row ">
-                    <div className="col-sm-3 px-md-3 px-sm-1 px-2 image imagehover">
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-4 image imagehover">
                          <div style={{overflow:"hidden"}} >
                             <img src={project3} alt="" className="imagecol-3" />
                         </div>

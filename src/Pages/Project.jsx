@@ -40,8 +40,8 @@ class Project extends React.Component{
             <>
                 <div className="bgproject bgimageresponsive">
                         <div className="overlay">
-                        <div className="container px-md-3 px-sm-0 px-5 fontlato" style={{height:"100%", color: "white"}}>
-                                <div className="d-flex flex-column justify-content-end" style={{height:"100%"}}>
+                        <div className="container px-md-3 px-sm-0 px-4 fontlato" style={{height:"100%", color: "white"}}>
+                                <div className="d-flex flex-column justify-content-end px-md-3 px-sm-3 px-2" style={{height:"100%"}}>
                                     <div className="fontbgproject " style={{ fontWeight:"300", letterSpacing:"0.015cm"}}> 
                                         Projects
                                     </div>
@@ -96,7 +96,7 @@ class Project extends React.Component{
 
             {/* Content */}
 
-            <div className="container px-md-3 px-sm-3 px-5" >
+            <div className="container px-md-3 px-sm-4 px-5" >
                 {/* <div className="row">
                    {
                        this.props.project.data?
@@ -216,7 +216,7 @@ class Project extends React.Component{
                 </div> */}
 
                 <div className="row">
-                    <div className="col-sm-9 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}}>
                             <a href="/projectdetail"> <img src={project9} alt="logo" className="imagecol-9" /> </a>
                         </div>
@@ -233,7 +233,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                          <div style={{overflow:"hidden"}} >
                             <img src={project2} alt="" className="imagecol-3" />
                         </div>
@@ -249,7 +249,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
                             <img src={project3} alt="" className="imagecol-3"/>
                         </div>
@@ -265,7 +265,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 px-md-3 px-sm-1 px-3  image imagehover paddingbody">
+                    <div className="col-sm-6 px-md-3 px-sm-1 px-0  image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
                             <img src={project4} alt="" className="imagecol-6"  />
                         </div>
