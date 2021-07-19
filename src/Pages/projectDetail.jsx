@@ -39,7 +39,7 @@ class ProjectDetail extends React.Component{
             slidesToShow: 1,
             speed: 500,
             autoplay:true,
-            dots: true,
+            dots:true,
             arrow: false,
           };
 
@@ -95,7 +95,7 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="marginslick" style={{overflow:"hidden"}}  >   
+            <div className="marginslick px-0"   >   
                 <Slider {...settings}  >
                     <div>
                         <img className="opacityimage slickheight" src={jumbotron} alt="" />

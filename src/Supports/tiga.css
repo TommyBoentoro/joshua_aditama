@@ -24,7 +24,7 @@
 
 .opacityimage {
     opacity: 0.3;
-    transform: scaleY(0.9)
+    transform: scaleY(0.9) scaleX(0.97)
 }
 
 .slick{
