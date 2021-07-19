@@ -89,12 +89,12 @@
 
 @media (max-width:576px) {
     .slick-center {
-        transform: scale(1.25);
+        transform: scale(1.37);
     }
 
     .opacityimage {
         opacity: 0.3;
-        transform: scale(0.85)
+        transform: scaleY(0.85) scaleX(0.78)
     }
 
     .slick-dots button {

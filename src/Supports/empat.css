@@ -6,7 +6,7 @@
     padding: 0;
     position: relative;
     height: 0px;
-    z-index: 2;
+   
 }
 
 .slick-slider{
@@ -70,7 +70,7 @@
     background-color: black;
     position: absolute;
     opacity: 0.2;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* Arrow Prev */
@@ -80,9 +80,9 @@
     top: 450px;
     left: 5%;
     padding-left: 0;
-    z-index: 2;
     position: absolute;
     cursor: pointer;
+    z-index: 1;
 }
 
 .ularrowPrev li{
@@ -135,8 +135,8 @@
     right: 5%;
     padding-right: 0;
     position: absolute;
-    z-index: 2;
     cursor: pointer;
+    z-index: 1;
 }
 
 .ularrowNext li{
@@ -258,8 +258,8 @@
         background-color: black;
         position: absolute;
         opacity: 5%;
-        z-index: 2;
         top: 41%;
+        z-index: 1;
     }
 }
 
@@ -277,6 +277,7 @@
         color: white;
         transform: scale(2);
     }
+
     .slickDots-home button {
         width: 100%;
         height: 1px;
@@ -316,6 +317,7 @@
         position: relative;
         background-color: red;
         top:40px;
+        z-index: 1;
     }
 
     .slickDots-home button {
@@ -327,6 +329,7 @@
         color: blue;
         background-color: white;
         text-indent: -999999px;
+        
     }
 
     .ularrowPrev{
@@ -353,7 +356,7 @@
         background-color: black;
         position: absolute;
         opacity: 5%;
-        z-index: 2;
         top: 26%;
+        z-index: 1
     }
 }

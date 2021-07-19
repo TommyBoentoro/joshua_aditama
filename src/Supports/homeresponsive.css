@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    z-index: -2;
 }
 
 .marginproject{
@@ -101,7 +102,8 @@
         width: 100%;
         height: 480px;
         object-fit: cover;
-        cursor: pointer;
+        z-index: -1;
+    
     }
 
     .marginhome{
@@ -188,8 +190,10 @@
 /* Small */
 @media (max-width:576px) {
     .bgsliderhome{
+        position:relative;
         width: 100%;
         height: 300px;
+        z-index: -2 !important;
     }
 
     .marginproject{

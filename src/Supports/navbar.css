@@ -59,7 +59,7 @@ body{
     top: -5px;
     opacity: 0;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 }
 
 .menu-toggle span{
@@ -190,14 +190,14 @@ nav ul li a:hover{
        display:flex;
        transition: all 1s;
        padding: 200px 0;
-       visibility: hidden;
+       visibility:hidden;
        opacity: 0;
        
     }
 
     .active{
         opacity: 1;
-        visibility: visible;
+        visibility:visible;
     }
 
     .logowidthnavbar {
