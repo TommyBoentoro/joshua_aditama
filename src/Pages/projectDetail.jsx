@@ -144,7 +144,7 @@ class ProjectDetail extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 px-md-3 px-sm-1 px-3 image imagehover margincard">
+                    <div className="col-sm-6 px-md-3 px-sm-1 px-4 image imagehover margincard">
                         <div style={{overflow:"hidden"}} >
                             <img src={project4} alt="" className="imagecol-6"  />
                         </div>
@@ -161,7 +161,7 @@ class ProjectDetail extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-3 px-md-3 px-sm-1 px-3 image imagehover margincard">
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-4 image imagehover margincard">
                         <div style={{overflow:"hidden"}} >
                             <img src={project5} alt="" className="imagecol-3"/>
                         </div>
