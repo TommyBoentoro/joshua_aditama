@@ -287,11 +287,12 @@
         background-color: white;
         text-indent: -999999px;
         transition: all 0.5s;
+        transform: scaleY(0.5);
     }
     
     .slickDots-home li.slick-active button{
         opacity: 1;
-        transform: scaleY(1.5);
+        transform: scaleY(0.75);
     }
     
     .slick-slider .next{
