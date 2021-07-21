@@ -24,7 +24,25 @@ import "./../Supports/home.css"
 import "./../Supports/projectDetail.css"
 import "./../Supports/projectResponsive.css"
 
+// Import Icon
+import {IoIosArrowDropright} from 'react-icons/io';
+import {IoIosArrowDropleft} from "react-icons/io"
 
+const NextArrow = ({ onClick }) => {
+    return (
+      <div className="arrow next" style={{display:"none"}} onClick={onClick}>
+        <IoIosArrowDropright />
+      </div>
+    );
+  };
+
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <div className="arrow prev" style={{display:"none"}}  onClick={onClick}>
+        <IoIosArrowDropleft />
+      </div>
+    );
+  };
 
 
 
@@ -40,7 +58,8 @@ class ProjectDetail extends React.Component{
             speed: 500,
             autoplay:true,
             dots:true,
-            arrow: false,
+            nextArrow: <NextArrow />,
+            prevArrow: <PrevArrow />,
           };
 
         return(
@@ -95,12 +114,12 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="marginslick" style={{overflow:"-moz-hidden-unscrollable"}}  >   
-                <Slider {...settings}  >
+            <div className="marginslick" >   
+                <Slider {...settings}>
                     <div>
                         <img className="opacityimage slickheight" src={jumbotron} alt="" />
                     </div>
-                    <div >
+                    <div>
                         <img className="opacityimage slickheight" src={bgproject} alt="" />
                     </div>
                     <div>

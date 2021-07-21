@@ -24,6 +24,7 @@ import hoverTextFunction from "../helpers/textSliderHome";
 
 // Icon
 import {IoIosArrowDropright} from 'react-icons/io';
+import {IoIosArrowDropleft} from "react-icons/io"
 
 // Import css
 import "./../Supports/home.css"
@@ -32,7 +33,7 @@ import "./../Supports/backgroundHover.css"
 import "./../Supports/homeresponsive.css"
 import "./../Supports/responsive.css"
 import "./../Supports/empat.css"
-import {IoIosArrowDropleft} from "react-icons/io"
+
 
 // const NextArrow = ({ onClick }) => {
 //     return (

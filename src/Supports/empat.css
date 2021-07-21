@@ -314,11 +314,11 @@ li.slick-active:hover + .textDots{
 
     .opacitySlider{
         width: 100%;
-        height: 10vh;
+        height: 100px;
         background-image: linear-gradient(transparent, black);
         position: absolute;
         opacity: 1;
-        top: 42%;
+        top: 380px;
         z-index: 1;
     }
 }
@@ -432,11 +432,11 @@ li.slick-active:hover + .textDots{
 
     .opacitySlider{
         width: 100%;
-        height: 8vh;
+        height: 70px;
         background-image: linear-gradient(transparent, black);
         position: absolute;
         opacity: 1;
-        top: 25%;
+        top: 230px;
         z-index: 1
     }
 }
