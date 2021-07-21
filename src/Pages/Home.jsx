@@ -84,7 +84,7 @@ class Home extends React.Component{
     render () {
 
         const settings1 = {
-            autoplay: true,
+            autoplay: false,
             slideToShow: 1,
             slideToScroll: 1,
             fade: true,
@@ -108,18 +108,18 @@ class Home extends React.Component{
         return(
            <> 
             <div>
-                <div className="opacitySlider"></div>
                 <Slider {...settings1}>
                     <div>
+                        <div className="opacitySlider"></div>
                         <div className="sliderDots">
                             <div className="textDots fontlato">
-                                <div className="col" style={{zIndex:"999"}}>
+                                <div className="col" style={{opacity:"1"}}>
                                     Project 1
                                 </div>
-                                <div className="col">
+                                <div className="col" style={{opacity:"0.5"}}>
                                     Project 2
                                 </div>
-                                <div className="col">
+                                <div className="col" style={{opacity:"0.5"}}>
                                     Project 3
                                 </div>
                             </div>
@@ -127,15 +127,16 @@ class Home extends React.Component{
                         <a href="/project"><img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/></a>
                     </div>
                     <div>
+                        <div className="opacitySlider"></div>
                         <div className="sliderDots">
                             <div className="textDots fontlato">
-                                <div className="col">
+                                <div className="col" style={{opacity:"0.5"}}>
                                     Project 1
                                 </div>
-                                <div className="col">
+                                <div className="col" style={{opacity:"1"}}>
                                     Project 2
                                 </div>
-                                <div className="col">
+                                <div className="col" style={{opacity:"0.5"}}>
                                     Project 3
                                 </div>
                             </div>
@@ -143,15 +144,16 @@ class Home extends React.Component{
                         <img src={project6} alt="" className="bgsliderhome" />
                     </div>
                     <div>
+                        <div className="opacitySlider"></div>
                         <div className="sliderDots" >
                             <div className="textDots fontlato" >
-                                <div className="col">
+                                <div className="col" style={{opacity:"0.5"}}>
                                     Project 1
                                 </div>
-                                <div className="col">
+                                <div className="col" style={{opacity:"0.5"}}>
                                     Project 2
                                 </div>
-                                <div className="col">
+                                <div className="col" style={{opacity:"1"}}>
                                     Project 3
                                 </div>
                             </div>
