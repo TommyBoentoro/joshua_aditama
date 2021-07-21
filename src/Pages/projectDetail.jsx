@@ -95,7 +95,7 @@ class ProjectDetail extends React.Component{
                 </div>
             </div>
 
-            <div className="marginslick px-0"   >   
+            <div className="marginslick" style={{overflow:"-moz-hidden-unscrollable"}}  >   
                 <Slider {...settings}  >
                     <div>
                         <img className="opacityimage slickheight" src={jumbotron} alt="" />

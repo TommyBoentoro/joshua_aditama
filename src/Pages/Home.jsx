@@ -20,6 +20,7 @@ import jumbotron from './../Assets/jumbotron.JPG'
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
+import hoverTextFunction from "../helpers/textSliderHome";
 
 // Icon
 import {IoIosArrowDropright} from 'react-icons/io';
@@ -75,12 +76,14 @@ class Home extends React.Component{
     
     componentDidMount(){
         hoverFunction()
+        hoverTextFunction()
+
     }
 
     render () {
 
         const settings1 = {
-            autoplay: true,
+            autoplay: false,
             slideToShow: 1,
             slideToScroll: 1,
             fade: true,
@@ -97,12 +100,51 @@ class Home extends React.Component{
                 <div className="opacitySlider"></div>
                 <Slider {...settings1}>
                     <div>
+                        <div className="sliderDots">
+                            <div className="textDots fontlato">
+                                <div>
+                                    Project 1
+                                </div>
+                                <div>
+                                    Project 2
+                                </div>
+                                <div>
+                                    Project 3
+                                </div>
+                            </div>
+                        </div>
                         <a href="/project"><img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/></a>
                     </div>
                     <div>
+                        <div className="sliderDots">
+                            <div className="textDots fontlato">
+                                <div>
+                                    Project 1
+                                </div>
+                                <div>
+                                    Project 2
+                                </div>
+                                <div>
+                                    Project 3
+                                </div>
+                            </div>
+                        </div>
                         <img src={project6} alt="" className="bgsliderhome" />
                     </div>
                     <div>
+                        <div className="sliderDots">
+                            <div className="textDots fontlato">
+                                <div>
+                                    Project 1
+                                </div>
+                                <div>
+                                    Project 2
+                                </div>
+                                <div>
+                                    Project 3
+                                </div>
+                            </div>
+                        </div>
                        <img src={background2} alt="" className="bgsliderhome"  />
                     </div>
                 </Slider>

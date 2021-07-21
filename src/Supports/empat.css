@@ -7,7 +7,6 @@
     position: relative;
     height: 0px;
     z-index: 2;
-   
 }
 
 .slick-slider{
@@ -40,6 +39,10 @@
     transform: scaleY(1.5);
 }
 
+li.slick-active:hover + .textDots{
+    color: red;
+}
+
 
 .slick-slider .prev{
     position: absolute;
@@ -65,21 +68,21 @@
     cursor: pointer;
 }
 
-.opacitySlider{
+/* .opacitySlider{
     width: 100%;
     height: 20vh;
     background-color: black;
     position: absolute;
-    opacity: 0.1;
+    opacity: 0.5;
     z-index: 1;
     bottom: 0;
-}
+} */
 
 /* Arrow Prev */
 
 .ularrowPrev{
     display: flex;
-    top: 450px;
+    top: 50%;
     left: 5%;
     padding-left: 0;
     position: absolute;
@@ -133,7 +136,7 @@
 
 .ularrowNext{
     display: flex;
-    top: 450px ;
+    top: 50% ;
     right: 5%;
     padding-right: 0;
     position: absolute;
@@ -183,6 +186,40 @@
     border: none;
     opacity: 0.85;
 }
+
+/* Slider Dots */
+
+.sliderDots {
+    display: flex;
+    position: absolute;
+    top: 860px;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+}
+
+.textDots {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.5;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    transition: all 0.3s;
+}
+
+.textDots2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    opacity: 1;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    transition: all 0.3s;
+}
+
 
 
 @media (max-width:768px){
