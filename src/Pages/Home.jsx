@@ -132,8 +132,8 @@ class Home extends React.Component{
                         <img src={project6} alt="" className="bgsliderhome" />
                     </div>
                     <div>
-                        <div className="sliderDots">
-                            <div className="textDots fontlato">
+                        <div className="sliderDots" >
+                            <div className="textDots fontlato" style={{zIndex:"999"}} >
                                 <div>
                                     Project 1
                                 </div>
@@ -194,7 +194,7 @@ class Home extends React.Component{
            <div className="backgroundhover imagehoverproject" >
                 <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                     <ul className="listhover" style={{padding:"0", margin:"0"}}>
-                        <li className="col d-flex align-items-end borderhover" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
+                        <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
                                 <a  href="#">
                                     <div className="fonthoverheading" >
@@ -207,7 +207,7 @@ class Home extends React.Component{
                                 </a>
                            </div>
                         </li>
-                        <li className="col  d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
+                        <li className="col  d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={test1}>
                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
                                 <a  href="#">
                                     <div className="fonthoverheading">
@@ -219,7 +219,7 @@ class Home extends React.Component{
                                 </a>
                            </div>
                         </li>
-                        <li className="col  d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
+                        <li className="col  d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
                                 <a  href="#">
                                     <div className="fonthoverheading">

@@ -6,7 +6,7 @@
     padding: 0;
     position: relative;
     height: 0px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .slick-slider{
@@ -68,15 +68,15 @@ li.slick-active:hover + .textDots{
     cursor: pointer;
 }
 
-/* .opacitySlider{
+.opacitySlider{
     width: 100%;
     height: 20vh;
-    background-color: black;
+    background-image: linear-gradient(transparent,black);
     position: absolute;
-    opacity: 0.5;
+    opacity:1;
     z-index: 1;
     bottom: 0;
-} */
+}
 
 /* Arrow Prev */
 
@@ -124,7 +124,6 @@ li.slick-active:hover + .textDots{
     border-top: none;
     border-left: none;
 }
-
 
 .ularrowPrev li:hover{
     background: white;
@@ -202,7 +201,7 @@ li.slick-active:hover + .textDots{
     font-size: 18px;
     font-weight: 400;
     color: white;
-    opacity: 0.5;
+    opacity: 1;
     display: flex;
     width: 80%;
     justify-content: space-around;
@@ -272,31 +271,53 @@ li.slick-active:hover + .textDots{
         margin: 0 75px;
         padding: 0;
         position: relative;
+        top: 30px;
     }
 
     .ularrowPrev{
-        top: 200px;
+        top: 45%;
     }
 
     .ularrowNext{
-        top: 200px;
+        top: 45%;
     }
 
     .ularrowPrev li{
         transform: scale(0.7);
     }
 
+    .ularrowPrev li span:hover{
+        border: 1px solid #8F8F8F;
+        border-top: none;
+        border-left: none;
+    }
+    
+    .ularrowPrev li:hover{
+        background: transparent;
+        border: 1px solid #8F8F8F;
+    }
    
     .ularrowNext li{
         transform: scale(0.7);
     }
 
+    .ularrowNext li span:hover{
+        border: 1px solid #8F8F8F;
+        border-top: none;
+        border-left: none;
+    }
+    
+    .ularrowNext li:hover{
+        background: transparent;
+        border: 1px solid #8F8F8F;
+    }
+
     .opacitySlider{
         width: 100%;
         height: 10vh;
-        background-color: black;
+        background-image: linear-gradient(transparent, black);
         position: absolute;
-        opacity: 8%;
+        opacity: 1;
         top: 42%;
         z-index: 1;
     }
@@ -367,18 +388,38 @@ li.slick-active:hover + .textDots{
         opacity: 0.5;
         color: blue;
         background-color: white;
-        text-indent: -999999px;
-        
+        text-indent: -999999px; 
     }
 
     .ularrowPrev{
-        top: 125px;
+        top: 45%;
+    }
+
+    .ularrowPrev li span:hover{
+        border: 1px solid #8F8F8F;
+        border-top: none;
+        border-left: none;
+    }
+    
+    .ularrowPrev li:hover{
+        background: transparent;
+        border: 1px solid #8F8F8F;
+    }
+
+    .ularrowNext li span:hover{
+        border: 1px solid #8F8F8F;
+        border-top: none;
+        border-left: none;
+    }
+    
+    .ularrowNext li:hover{
+        background: transparent;
+        border: 1px solid #8F8F8F;
     }
 
     .ularrowNext{
-        top: 125px;
+        top: 45%
     }
-    
 
     .ularrowPrev li{
         transform: scale(0.6);
@@ -391,11 +432,11 @@ li.slick-active:hover + .textDots{
 
     .opacitySlider{
         width: 100%;
-        height: 5%;
-        background-color: black;
+        height: 8vh;
+        background-image: linear-gradient(transparent, black);
         position: absolute;
-        opacity: 8%;
-        top: 26%;
+        opacity: 1;
+        top: 25%;
         z-index: 1
     }
 }
