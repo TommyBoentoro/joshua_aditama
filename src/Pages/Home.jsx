@@ -77,7 +77,7 @@ class Home extends React.Component{
     
     componentDidMount(){
         hoverFunction()
-        hoverTextFunction()
+        // hoverTextFunction()
 
     }
 
@@ -103,13 +103,13 @@ class Home extends React.Component{
                     <div>
                         <div className="sliderDots">
                             <div className="textDots fontlato">
-                                <div>
+                                <div className="col" style={{zIndex:"999"}}>
                                     Project 1
                                 </div>
-                                <div>
+                                <div className="col">
                                     Project 2
                                 </div>
-                                <div>
+                                <div className="col">
                                     Project 3
                                 </div>
                             </div>
@@ -119,13 +119,13 @@ class Home extends React.Component{
                     <div>
                         <div className="sliderDots">
                             <div className="textDots fontlato">
-                                <div>
+                                <div className="col">
                                     Project 1
                                 </div>
-                                <div>
+                                <div className="col">
                                     Project 2
                                 </div>
-                                <div>
+                                <div className="col">
                                     Project 3
                                 </div>
                             </div>
@@ -134,14 +134,14 @@ class Home extends React.Component{
                     </div>
                     <div>
                         <div className="sliderDots" >
-                            <div className="textDots fontlato" style={{zIndex:"999"}} >
-                                <div>
+                            <div className="textDots fontlato" >
+                                <div className="col">
                                     Project 1
                                 </div>
-                                <div>
+                                <div className="col">
                                     Project 2
                                 </div>
-                                <div>
+                                <div className="col">
                                     Project 3
                                 </div>
                             </div>
@@ -195,43 +195,50 @@ class Home extends React.Component{
            <div className="backgroundhover imagehoverproject" >
                 <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                     <ul className="listhover" style={{padding:"0", margin:"0"}}>
-                        <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
-                           <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
-                                <a  href="#">
-                                    <div className="fonthoverheading" >
-                                        Furniture
-                                    </div>
-                                    
-                                    <div className="fonthoverbody">
-                                        Tentrem Hotel
-                                    </div>
-                                </a>
-                           </div>
-                        </li>
-                        <li className="col  d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={test1}>
-                           <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
-                                <a  href="#">
-                                    <div className="fonthoverheading">
-                                        Furniture
-                                    </div>
-                                    <div className="fonthoverbody">
-                                        Taman Anggrek
-                                    </div>
-                                </a>
-                           </div>
-                        </li>
-                        <li className="col  d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
-                           <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
-                                <a  href="#">
-                                    <div className="fonthoverheading">
-                                        Furniture
-                                    </div>
-                                    <div className="fonthoverbody">
-                                        Books N Beyond
-                                    </div>
-                                </a>
-                           </div>
-                        </li>
+                        
+                            <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
+                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
+                                    <a  href="#">
+                                        <div className="fonthoverheading" >
+                                            Furniture
+                                        </div>
+                                        
+                                        <div className="fonthoverbody">
+                                            Tentrem Hotel
+                                        </div>
+                                    </a>
+                            </div>
+                            </li>
+                        
+                        
+                            <li className="col d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
+                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
+                                    <a  href="#">
+                                        <div className="fonthoverheading">
+                                            Furniture
+                                        </div>
+                                        <div className="fonthoverbody">
+                                            Taman Anggrek
+                                        </div>
+                                    </a>
+                            </div>
+                            </li>
+                        
+                        
+                            <li className="col d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
+                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
+                                    <a  href="#">
+                                        <div className="fonthoverheading">
+                                            Furniture
+                                        </div>
+                                        <div className="fonthoverbody">
+                                            Books N Beyond
+                                        </div>
+                                    </a>
+                            </div>
+                            </li>
+                        
+                        
                         
                     </ul>
                 </div>

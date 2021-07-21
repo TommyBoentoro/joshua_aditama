@@ -18,11 +18,13 @@ import astronaut1 from "./../Assets/astrounaut1.jpg"
 import astronaut2 from "./../Assets/astrounaut2.jpg"
 import astronaut3 from "./../Assets/astrounaut3.jpg"
 
-
+// import Function 
+import testClick from "../helpers/testClick";
 
 // Import css
 import "./../Supports/home.css"
 import "./../Supports/hover.css"
+import "./../Supports/test.css"
 import {FaArrowRight, FaArrowLeft} from "react-icons/fa"
 
 function SampleNextArrow(props) {
@@ -69,52 +71,39 @@ function SampleNextArrow(props) {
 
 class Test extends React.Component{
     
-   
-
     componentDidMount(){
-        this.onGet()
+        testClick()
     }
 
-    onGet = () => {
+    // onClick = () => {
+    //     testClick()
+    // }
+
+    // onGet = () => {
        
 
-        this.props.onGetData()
-    }
+    //     this.props.onGetData()
+    // }
 
     render(){
 
-        // const settings = {
-           
-        //     infinite:true,
-        //     lazyLoad: true,
-        //     speed:300,
-        //     slideToShow: 3,
-        //     sldieToScroll: 3,
-        //     dots: true,
-        //     centerMode:true,
-        //     centerPadding: 0,
-        //     nextArrow: <NextArrow/>,
-        //     prevArrow: <PrevArrow/>
-            
-        // }
 
-        const settings = {
-            dots: true,
-            infinite: true,
-            Lazyload: true,
-            centerMode:true,
-            centerPadding:0,
-            speed: 500,
-            slidesToShow: 2,
-            nextArrow: <NextArrow/>,
-            prevArrow: <PrevArrow/>,
-            
-          };
         return(
             <>
-           
+
+            {/* Handle Click Css */}
+            <div className="container d-flex justify-content-between" style={{marginTop:"200px"}}>
+                <div className="textClick">
+                    Text Click
+                </div>
+                <div>
+                    <input className="buttonClick"  type="button" value="Click Me"/>
+                </div>
+            </div>
+
+
             {/* Test Slider */}
-                <div className="my-5 container" >
+                {/* <div className="my-5 container" >
                     <Slider  {...settings} >
                         {
                             images.map((value,index) => {
@@ -127,7 +116,7 @@ class Test extends React.Component{
                         }
                     </Slider>
                     
-                </div>
+                </div> */}
                 
             
 

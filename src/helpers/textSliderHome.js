@@ -1,9 +1,11 @@
 function hoverTextFunction () {
-    const body = document.querySelector(".slick-active"); // Ini slick active
-    const text = document.querySelector(".textdots") // ini css pertama yg opacity nya 0,5
+    const body = document.querySelector(".slickDots-home"); // Ini slick active
+    const text = document.querySelector(".textDots") // ini css pertama yg opacity nya 0,5
 
     body.addEventListener("click", () => {
-        text.classList.replace(".textdots", ".textdots2") //Saya mau replace jadi textdots2
+        //Saya mau replace jadi textdots2
+        return document.querySelector(".textDots").className = "textDots2"
+        // text.classList.toggle("textDots2")
     })
 }
 

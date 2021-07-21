@@ -1,0 +1,18 @@
+.buttonClick{
+    width: 200px;
+    height: 100px;
+    color: red;
+    border-radius: 20px;
+    font-size: 2rem;
+    background-color: black;
+}
+
+.textClick{
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+.textClicked2{
+    font-size: 1.5rem;
+    color: red
+}

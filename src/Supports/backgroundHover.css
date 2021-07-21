@@ -18,8 +18,7 @@
 }
 
 .hoversaya:hover{
-    background-color: white;
-    opacity: 70%;
+    background-image: linear-gradient(transparent, white);
     cursor: pointer;
 }   
 
