@@ -35,21 +35,21 @@ import "./../Supports/responsive.css"
 import "./../Supports/empat.css"
 
 
-// const NextArrow = ({ onClick }) => {
-//     return (
-//       <div className="arrow next"  onClick={onClick}>
-//         <IoIosArrowDropright />
-//       </div>
-//     );
-//   };
+const NextArrow1 = ({ onClick }) => {
+    return (
+      <div className="arrow next" style={{display:"none"}}  onClick={onClick}>
+        <IoIosArrowDropright />
+      </div>
+    );
+  };
 
-//   const PrevArrow = ({ onClick }) => {
-//     return (
-//       <div className="arrow prev"  onClick={onClick}>
-//         <IoIosArrowDropleft />
-//       </div>
-//     );
-//   };
+  const PrevArrow1 = ({ onClick }) => {
+    return (
+      <div className="arrow prev" style={{display: "none"}} onClick={onClick}>
+        <IoIosArrowDropleft />
+      </div>
+    );
+  };
 
   const PrevArrow = ({ onClick }) => {
     return (
@@ -84,7 +84,7 @@ class Home extends React.Component{
     render () {
 
         const settings1 = {
-            autoplay: false,
+            autoplay: true,
             slideToShow: 1,
             slideToScroll: 1,
             fade: true,
@@ -93,6 +93,16 @@ class Home extends React.Component{
             nextArrow: <NextArrow />,
             prevArrow: <PrevArrow />,
             arrow: false
+        }
+
+        const settings2 = {
+            autoplay: true,
+            slideToShow: 1,
+            slideToscroll : 1,
+            fade:true,
+            dots:false,
+            nextArrow: <NextArrow1/>,
+            prevArrow: <PrevArrow1/>
         }
 
         return(
@@ -192,7 +202,8 @@ class Home extends React.Component{
             </div>
            
            {/* Hover Home */}
-           <div className="backgroundhover imagehoverproject" >
+           <div className="hoverHomeNonMobile">
+            <div className="backgroundhover imagehoverproject" >
                 <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                     <ul className="listhover" style={{padding:"0", margin:"0"}}>
                         
@@ -242,6 +253,55 @@ class Home extends React.Component{
                         
                     </ul>
                 </div>
+            </div>
+           </div>
+           
+
+            <div className="hoverHomeMobile">
+                <Slider {...settings2}>
+                    <div>
+                        <div className="textSliderMobile-home fontlato">
+                            <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                Furniture
+                            </div>
+                            <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                Tentrem Hotel
+                            </div>
+                        </div>
+                        <div className="backgroundSliderMobile-home">
+                            {/* Kotak gradient */}
+                        </div>
+                        <img src={Jumbotron} alt="" className="bgSliderMobile-home" />
+                    </div>
+                    <div>
+                        <div className="textSliderMobile-home fontlato">
+                            <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                Architect
+                            </div>
+                            <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                Taman Anggrek
+                            </div>
+                        </div>
+                        <div className="backgroundSliderMobile-home">
+                            {/* Kotak gradient */}
+                        </div>
+                        <img src={project6} alt="" className="bgSliderMobile-home" />
+                    </div>
+                    <div>
+                        <div className="textSliderMobile-home fontlato">
+                            <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                Furniture
+                            </div>
+                            <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                Books N Beyond
+                            </div>
+                        </div>
+                        <div className="backgroundSliderMobile-home">
+                            {/* Kotak gradient */}
+                        </div>
+                        <img src={test1} alt="" className="bgSliderMobile-home" />
+                    </div>
+                </Slider>
             </div>
 
 
