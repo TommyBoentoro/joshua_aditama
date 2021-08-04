@@ -96,11 +96,13 @@
 
 .image {
     display: inline-block;
+    width: 100%;
 }
 
 .imagehover img{
     transform:  scale(1);
     transition: 0.3s  ease-in-out;
+    object-fit: cover;
     
 }
 

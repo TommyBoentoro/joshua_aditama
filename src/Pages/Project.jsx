@@ -24,15 +24,15 @@ import "./../Supports/projectResponsive.css"
 
 class Project extends React.Component{
 
-    // componentDidMount(){
-    //     this.onGet()
-    // }
+    componentDidMount(){
+        this.onGet()
+    }
 
-    // onGet = () => {
+    onGet = () => {
        
 
-    //     this.props.onGetData()
-    // }
+        this.props.onGetData()
+    }
 
 
     render(){
@@ -97,40 +97,47 @@ class Project extends React.Component{
             {/* Content */}
 
             <div className="container px-md-3 px-sm-4 px-5" >
-                {/* <div className="row">
+                <div className="row">
                    {
                        this.props.project.data?
                        this.props.project.data.map((value,index)=> {
                             if(index + 1 === 1 || index + 1 === 9 || index + 1 === 17 ){ 
                                 return(
                                     <>
-                                    <div className="col-9 image imagehover"  style={{marginTop:"80px"}} >
+                                    <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody image imagehover">
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
+                                                    if(idx === 0){
+                                                        return(
+                                                            <>
+                                                                
+                                                                <div className="image">
+                                                                    <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
+                                                                        <Link to = {"/projectdetail/"}>
+                                                                            <img src={val.image} alt="logo"  className="imagecol-9" />
+                                                                        </Link>
+                                                                    </div>
+                                                                </div>
+                                                            </>
+                                                        )
+                                                    }
                                                     
-                                                    return(
-                                                        <>
-                                                            <div className="image">
-                                                            <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
-                                                                <a href="/projectdetail"> <img src={val.image} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
-                                                            </div>
-                                                            </div>
-                                                        </>
-                                                    )
                                                 })
                                             }
                                         </div>
-                                        <div style={{marginTop:"40px"}}>
-                                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
-                                            Interior
-                                        </div >
-                                        <div  style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
+                                        <div className="margincardbody">
+                                            <div className="fontcategory">
+                                                {value.category}
+                                            </div >
+                                            <div className="fontcategory">
+                                            </div>
+                                            <div  className="fonttitle">
                                                 {value.title}
-                                        </div>
-                                        <div className="col-8" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                                            </div>
+                                            <div className="col-md-8 col-12 px-0  fontbodyproject">
                                                 {value.description}
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                         
@@ -141,31 +148,33 @@ class Project extends React.Component{
                                 || index + 1 === 21 || index + 1 === 23 || index + 1 === 24){
                                 return(
                                     <>
-                                    <div className="col-3 image imagehover"  style={{marginTop:"80px"}} >
+                                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
-                                                    
-                                                    return(
-                                                        <>
-                                                            <div className="image">
-                                                            <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
-                                                                <a href="/projectdetail"> <img src={val.image} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
-                                                            </div>
-                                                            </div>
-                                                        </>
-                                                    )
+                                                    if(idx===0){
+                                                        return(
+                                                            <>
+                                                                <div className="image">
+                                                                <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
+                                                                    <a href="/projectdetail"> <img src={val.image} alt="logo" className="imagecol-3"/> </a>
+                                                                </div>
+                                                                </div>
+                                                            </>
+                                                        )
+                                                    }
+                                                   
                                                 })
                                             }
                                         </div>
-                                        <div style={{marginTop:"40px"}}>
-                                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
-                                            Interior
+                                        <div className="margincardbody">
+                                            <div className="fontcategory">
+                                            {value.category}
                                         </div >
-                                        <div  style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
+                                        <div className="fonttitle">
                                                 {value.title}
                                         </div>
-                                        <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                                        <div className="fontbodyproject">
                                                 {value.description}
                                         </div>
                                         </div>
@@ -176,33 +185,35 @@ class Project extends React.Component{
                             )} else if( index + 1 === 4 || index + 1 === 6 || index + 1 === 12 || index + 1 === 14 || index + 1 === 20 || index + 1 === 22){
                                 return(
                                     <>
-                                    <div className="col-6 image imagehover"  style={{marginTop:"80px"}} >
+                                    <div className="col-sm-6 px-md-3 px-sm-1 px-0  image imagehover paddingbody">
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
+                                                    if(idx === 0){
+                                                        return(
+                                                            <>
+                                                                <div className="image">
+                                                                <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
+                                                                    <a href="/projectdetail"> <img src={val.image} alt="logo"  className="imagecol-6" /> </a>
+                                                                </div>
+                                                                </div>
+                                                            </>
+                                                        )
+                                                    }
                                                     
-                                                    return(
-                                                        <>
-                                                            <div className="image">
-                                                            <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
-                                                                <a href="/projectdetail"> <img src={val.image} alt="logo"  style={{height:"360px", width:"100%"}} /> </a>
-                                                            </div>
-                                                            </div>
-                                                        </>
-                                                    )
                                                 })
                                             }
                                         </div>
-                                        <div style={{marginTop:"40px"}}>
-                                            <div style={{fontSize:"14px", fontWeight:"400",  lineHeight:"130.5%", letterSpacing:"0.06rem", color:"black"}}>
-                                            Interior
-                                        </div >
-                                        <div  style={{marginTop:"15px", fontSize:"24px", fontWeight:"300",  lineHeight:"130.5%", letterSpacing:"0.02rem"}}>
+                                        <div className="margincardbody">
+                                            <div className="fontcategory">
+                                                {value.category}
+                                            </div >
+                                            <div className="fontcategory">
                                                 {value.title}
-                                        </div>
-                                        <div className="col-12" style={{marginTop:"15px", position:"relative", right:"15px", fontSize:"15px", fontWeight:"400", color:"#C4C4C4"}}>
+                                            </div>
+                                            <div className="col-12 px-0 fontbodyproject">
                                                 {value.description}
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                         
@@ -213,21 +224,21 @@ class Project extends React.Component{
                        :
                        null
                    }
-                </div> */}
+                </div>
 
                 <div className="row">
                     <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}}>
                             <a href="/projectdetail"> <img src={project9} alt="logo" className="imagecol-9" /> </a>
                         </div>
-                        <div className="margincardbody ">
+                        <div className="margincardbody">
                             <div className="fontcategory">
                                Interior
                            </div >
-                           <div className="fonttitle ">
+                           <div className="fonttitle">
                                 Openaire Semarang
                            </div>
-                           <div className="col-md-8 col-12 px-0  fontbodyproject ">
+                           <div className="col-md-8 col-12 px-0  fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
@@ -244,7 +255,7 @@ class Project extends React.Component{
                            <div className="fonttitle " >
                                 Binong
                            </div>
-                           <div className=" fontbodyproject ">
+                           <div className="fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
@@ -273,10 +284,10 @@ class Project extends React.Component{
                             <div className="fontcategory">
                                Architect
                            </div >
-                           <div className="fonttitle">
+                           <div className="fontcategory">
                                 Mangga Dua
                            </div>
-                           <div className="col-12 px-0   fontbodyproject">
+                           <div className="col-12 px-0 fontbodyproject">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>

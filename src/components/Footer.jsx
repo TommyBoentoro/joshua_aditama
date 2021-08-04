@@ -3,22 +3,24 @@ import logo from "./../Assets/logo-2.png"
 import gambarHome2 from "./../Assets/fotoHome-2.png"
 import {Link} from "react-router-dom"
 
+// Images
+import inquiry from "./../Assets/INQUIRY_NOW.jpg"
+
 // CSS
 import "./../Supports/responsive.css"
-
 
 class Footbar extends React.Component{
     render(){
         return(
                     <div className="background3 fontlato footer" style={{height:"100%"}}>
                         <div>
-                            <img className="gambarfooter gambarfootersmall" src={gambarHome2} alt="" style={{objectFit:"cover"}} />
+                            <img className="gambarfooter gambarfootersmall" src={inquiry} alt="" style={{objectFit:"cover"}} />
                         </div>
                         <div className="container-md px-md-3 px-sm-5 px-4">
                            <div className="row d-md-flex flex-row-reverse">
                                 <div className="col-sm-6 col-md-6 col-12 gambarfooterlarge">
                                     <div className="col-12  d-flex justify-content-end px-md-3 px-sm-0">
-                                        <img  src={gambarHome2} alt="" className="gambarfooter" style={{width:"100%", objectFit:"cover"}}/>
+                                        <img  src={inquiry} alt="" className="gambarfooter" style={{width:"100%", objectFit:"cover"}}/>
                                     </div>
                                 </div>
 

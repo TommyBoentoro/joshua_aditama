@@ -31,7 +31,7 @@ class Studio extends React.Component{
                         </div>
                         <div className="col-lg-11 col-12 px-md-3 px-sm-0 px-2 d-flex flex-column margin80" >
                             <div className="fontsubheading-studio" style={{fontWeight:"700", letterSpacing:"0.025cm", lineHeight:"100%"}}>
-                                Joshua Aditama, Sarjana Seni
+                                Joshua Aditama, B.Des.
                             </div>
                             <div className="fontbodystudio" style={{fontWeight:"400", letterSpacing:"0.025cm", marginTop:"10px",color:"black"}}>
                                 Principal Designer

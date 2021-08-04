@@ -15,7 +15,7 @@
 }
 
 .bgproject{
-    background: url("../Assets//project/bgproject.png");
+    background: url("../Assets//project/PROJECTS.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -57,7 +57,7 @@
 }
 
 .backgroundstudio1 {
-    background: url("../Assets//Studio//jumbotron1.png");
+    background: url("../Assets//Studio//STUDIO.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -105,5 +105,5 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .15)
+    background: rgba(0, 0, 0, .2)
 }

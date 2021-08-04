@@ -34,6 +34,11 @@ import "./../Supports/homeresponsive.css"
 import "./../Supports/responsive.css"
 import "./../Supports/empat.css"
 
+// Redux
+import {connect} from "react-redux"
+import {onGetData} from "../Redux/Actions/projectaction"
+import { ConsoleWriter } from "istanbul-lib-report";
+
 
 const NextArrow1 = ({ onClick }) => {
     return (
@@ -74,14 +79,18 @@ const NextArrow1 = ({ onClick }) => {
 
 class Home extends React.Component{
 
-    
     componentDidMount(){
         hoverFunction()
+        this.onGet()
         // hoverTextFunction()
+    }
+
+    onGet = () => {
+        this.props.onGetData()
 
     }
 
-    render () {
+    render (){
 
         const settings1 = {
             autoplay: false,
@@ -107,12 +116,12 @@ class Home extends React.Component{
 
         return(
            <> 
-            <div>
+            {/* <div>
                 <Slider {...settings1}>
                     <div>
                         <div className="opacitySlider"></div>
                         <div className="sliderDots">
-                            <div className="textDots fontlato">
+                            <div className="textDots fontlato border">
                                 <div className="col" style={{opacity:"1"}}>
                                     Project 1
                                 </div>
@@ -161,7 +170,48 @@ class Home extends React.Component{
                        <img src={background2} alt="" className="bgsliderhome"  />
                     </div>
                 </Slider>
-            </div>
+            </div> */}
+
+            <Slider {...settings1}>
+                {
+                    this.props.project.data?
+                    this.props.project.data.map((value,index) => {
+                        return(
+                            <div>
+                                <div className="opacitySlider"></div>
+                                <div className="sliderDots">
+                                    <div className="textDots fontlato">
+                                    <div className="col" style={{opacity:"0.5"}}>
+                                        Project 1
+                                    </div>
+                                    <div className="col" style={{opacity:"0.5"}}>
+                                        Project 2
+                                    </div>
+                                    <div className="col" style={{opacity:"1"}}>
+                                        Project 3
+                                    </div>
+                                    </div>
+                                </div>
+                                {
+                                    value.image.map((val,idx)=>{
+                                        if(idx === 0){
+                                            return(
+                                                <div>
+                                                    <img src={val.image} alt=""  className="bgsliderhome"  />
+                                                </div>
+                                            )
+                                        }
+                                        
+                                    })
+                                }
+                                
+                            </div>
+                        )
+                    })
+                    :
+                    null
+                }
+            </Slider>
 
             {/* ABOUT US */}
         
@@ -204,11 +254,10 @@ class Home extends React.Component{
             </div>
            
            {/* Hover Home */}
-           <div className="hoverHomeNonMobile">
-            <div className="backgroundhover imagehoverproject" >
-                <div className="hoverimage" style={{padding:"0", margin:"0"}}>
-                    <ul className="listhover" style={{padding:"0", margin:"0"}}>
-                        
+            <div className="hoverHomeNonMobile">
+                <div className="backgroundhover imagehoverproject" >
+                    <div className="hoverimage" style={{padding:"0", margin:"0"}}>
+                        <ul className="listhover" style={{padding:"0", margin:"0"}}>
                             <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
                             <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
                                     <a  href="#">
@@ -222,8 +271,6 @@ class Home extends React.Component{
                                     </a>
                             </div>
                             </li>
-                        
-                        
                             <li className="col d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
                             <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
                                     <a  href="#">
@@ -236,8 +283,6 @@ class Home extends React.Component{
                                     </a>
                             </div>
                             </li>
-                        
-                        
                             <li className="col d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
                             <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
                                     <a  href="#">
@@ -250,59 +295,87 @@ class Home extends React.Component{
                                     </a>
                             </div>
                             </li>
-                        
-                        
-                        
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-           </div>
-           
+
+            {/* <div className="hoverHomeNonMobile"> -- INI MAPPING HOVER BACKGROUND TAPI MASIH GAGAL DI DATA-BG
+                <div className="backgroundhover imagehoverproject" >
+                    <div className="hoverimage" style={{padding:"0", margin:"0"}}>
+                        <ul className="listhover" style={{padding:"0", margin:"0"}}>
+                            {
+                                this.props.project.data?
+                                this.props.project.data.map((value,index)=>{
+                                    return(
+                                        <>
+                                            {
+                                                value.image.map((val,idx) => {
+                                                    return(
+                                                        <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={test1}>
+                                                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
+                                                                    <a  href="#">
+                                                                        <div className="fonthoverheading" >
+                                                                            {value.category}
+                                                                        </div>
+                                                                        
+                                                                        <div className="fonthoverbody">
+                                                                            {value.title}
+                                                                        </div>
+                                                                    </a>
+                                                            </div>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </>
+                                    )
+                                })
+                                :
+                                null
+                            }
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div> */}
+
 
             <div className="hoverHomeMobile">
                 <Slider {...settings2}>
-                    <div>
-                        <div className="textSliderMobile-home fontlato">
-                            <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                Furniture
-                            </div>
-                            <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                Tentrem Hotel
-                            </div>
-                        </div>
-                        <div className="backgroundSliderMobile-home">
-                            {/* Kotak gradient */}
-                        </div>
-                        <img src={Jumbotron} alt="" className="bgSliderMobile-home" />
-                    </div>
-                    <div>
-                        <div className="textSliderMobile-home fontlato">
-                            <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                Architect
-                            </div>
-                            <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                Taman Anggrek
-                            </div>
-                        </div>
-                        <div className="backgroundSliderMobile-home">
-                            {/* Kotak gradient */}
-                        </div>
-                        <img src={project6} alt="" className="bgSliderMobile-home" />
-                    </div>
-                    <div>
-                        <div className="textSliderMobile-home fontlato">
-                            <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                Furniture
-                            </div>
-                            <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                Books N Beyond
-                            </div>
-                        </div>
-                        <div className="backgroundSliderMobile-home">
-                            {/* Kotak gradient */}
-                        </div>
-                        <img src={test1} alt="" className="bgSliderMobile-home" />
-                    </div>
+                    {
+                        this.props.project.data?
+                        this.props.project.data.map((value,index) => {
+                            return(
+                                <div>
+                                    <div className="textSliderMobile-home fontlato">
+                                        <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                            {value.category}
+                                        </div>
+                                        <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                            {value.title}
+                                        </div>
+                                    </div>
+                                    <div className="backgroundSliderMobile-home">
+                                        {/* Kotak gradient */}
+                                    </div>
+                                    {
+                                        value.image.map((val,idx) => {
+                                            if(idx === 0){
+                                                return(
+                                                    <div>
+                                                        <img src={val.image} className="bgSliderMobile-home" alt="" />
+                                                    </div>
+                                                )
+                                            }
+                                        })
+                                    }
+                                </div>
+                            )
+                        })
+                        :
+                        null
+                    }
                 </Slider>
             </div>
 
@@ -370,5 +443,15 @@ class Home extends React.Component{
     }
 }
 
-export default Home
+const mapDispatchToProps = {
+    onGetData
+}
+
+const mapStateToProps = (state) => {
+    return{
+        project: state.project
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps) (Home)
 

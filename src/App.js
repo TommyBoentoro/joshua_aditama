@@ -30,6 +30,7 @@ import allReducer from "./Redux/Reducer/index"
 const store = createStore(allReducer,applyMiddleware(thunk))
 
 function App (){
+  document.title="Joshua Aditama"
   return(
     <Provider store={store}>
       <BrowserRouter>

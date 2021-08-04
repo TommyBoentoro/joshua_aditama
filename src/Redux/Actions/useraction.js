@@ -73,6 +73,7 @@ export const onUserLogout = (data) => {
             console.log(res.data)
             if(res.data.error === false){
                 localStorage.removeItem("my-tkn")
+                window.location='/adminpage'
             }
         })
         .catch((err)=> {
@@ -80,4 +81,23 @@ export const onUserLogout = (data) => {
         })
     }
   
+}
+
+export const onChangePassword = (dataToSend) => {
+    return(dispatch) => {
+        dispatch({
+            type: `LOADING`
+        })
+
+        axios.post(`http://localhost:4000/user-system/change`, dataToSend)
+        .then((res) =>{
+            console.log(res.data)
+            if(res.data.error === false){
+                alert(`Change Password Success`)
+            }
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    }
 }
