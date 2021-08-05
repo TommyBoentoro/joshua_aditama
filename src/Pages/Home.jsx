@@ -6,7 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import { useHistory } from "react-router-dom";
 
 
+
 // import Image
+import dummy from "./../Assets/project/dummy.JPG"
 import logo from "./../Assets/logo-2.png"
 import gambarHome1 from "./../Assets/fotoHome-1.png"
 import background2 from "./../Assets/background-2.JPG"
@@ -93,7 +95,7 @@ class Home extends React.Component{
     render (){
 
         const settings1 = {
-            autoplay: false,
+            autoplay: true,
             slideToShow: 1,
             slideToScroll: 1,
             fade: true,
@@ -176,37 +178,33 @@ class Home extends React.Component{
                 {
                     this.props.project.data?
                     this.props.project.data.map((value,index) => {
-                        return(
-                            <div>
-                                <div className="opacitySlider"></div>
-                                <div className="sliderDots">
-                                    <div className="textDots fontlato">
-                                    <div className="col" style={{opacity:"0.5"}}>
-                                        Project 1
-                                    </div>
-                                    <div className="col" style={{opacity:"0.5"}}>
-                                        Project 2
-                                    </div>
-                                    <div className="col" style={{opacity:"1"}}>
-                                        Project 3
-                                    </div>
-                                    </div>
+                        if(index < 3){
+                            return(
+                                <div>
+                                    <div className="opacitySlider"></div>
+                                    {/* <div className="sliderDots">
+                                        <div className="textDots fontlato">
+                                            <div className="col" style={{opacity:"0.5"}}>
+                                                Project {index+1}
+                                            </div>
+                                        </div>
+                                    </div> */}
+                                    {
+                                        value.image.map((val,idx)=>{
+                                            if(idx === 2){
+                                                return(
+                                                    <div>
+                                                        <img src={val.image} alt=""  className="bgsliderhome"  />
+                                                    </div>
+                                                )
+                                            }
+                                            
+                                        })
+                                    }
+                                    
                                 </div>
-                                {
-                                    value.image.map((val,idx)=>{
-                                        if(idx === 0){
-                                            return(
-                                                <div>
-                                                    <img src={val.image} alt=""  className="bgsliderhome"  />
-                                                </div>
-                                            )
-                                        }
-                                        
-                                    })
-                                }
-                                
-                            </div>
-                        )
+                            )
+                        }
                     })
                     :
                     null
@@ -258,43 +256,54 @@ class Home extends React.Component{
                 <div className="backgroundhover imagehoverproject" >
                     <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                         <ul className="listhover" style={{padding:"0", margin:"0"}}>
-                            <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
-                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
-                                    <a  href="#">
-                                        <div className="fonthoverheading" >
-                                            Furniture
-                                        </div>
-                                        
-                                        <div className="fonthoverbody">
-                                            Tentrem Hotel
-                                        </div>
-                                    </a>
-                            </div>
+                            <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
+                                <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >
+                                        <a  href="#">
+                                            <div className="fonthoverheading" >
+                                                Architecture, Interior, Landscape
+                                            </div>
+                                            
+                                            <div className="fonthoverbody">
+                                                OPENAIRE
+                                            </div>
+                                        </a>
+                                </div>
+                                {/* <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
+                                        <a  href="#">
+                                            <div className="fonthoverheading" >
+                                                Architecture, Interior, Landscape
+                                            </div>
+                                            
+                                            <div className="fonthoverbody">
+                                                OPENAIRE
+                                            </div>
+                                        </a>
+                                </div> */}
                             </li>
-                            <li className="col d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
-                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
-                                    <a  href="#">
-                                        <div className="fonthoverheading">
-                                            Furniture
-                                        </div>
-                                        <div className="fonthoverbody">
-                                            Taman Anggrek
-                                        </div>
-                                    </a>
-                            </div>
+                            {/* <li className="col d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
+                                <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
+                                        <a  href="#">
+                                            <div className="fonthoverheading">
+                                                Furniture
+                                            </div>
+                                            <div className="fonthoverbody">
+                                                Taman Anggrek
+                                            </div>
+                                        </a>
+                                </div>
                             </li>
                             <li className="col d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
-                            <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
-                                    <a  href="#">
-                                        <div className="fonthoverheading">
-                                            Furniture
-                                        </div>
-                                        <div className="fonthoverbody">
-                                            Books N Beyond
-                                        </div>
-                                    </a>
-                            </div>
-                            </li>
+                                <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
+                                        <a  href="#">
+                                            <div className="fonthoverheading">
+                                                Furniture
+                                            </div>
+                                            <div className="fonthoverbody">
+                                                Books N Beyond
+                                            </div>
+                                        </a>
+                                </div>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

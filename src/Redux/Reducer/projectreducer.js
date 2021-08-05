@@ -17,6 +17,10 @@ const projectReducer = (state = initialState, action) => {
             return{...state, data: action.payload, loading: false}
         case `GET_ERROR`:
             return{...state, data: action.payload, loading: false} 
+        case `GETDETAIL_SUCCESS`:
+            return{...state, data: action.payload, loading:false}
+        case `GETDETAIL_ERROR`:
+            return{...state, data:action.payload, loading:false}
         case `DELETE_SUCCESS`:
             return{...state, messagedelete: action.payload, loading: false}
         case `DELETE_ERROR`:

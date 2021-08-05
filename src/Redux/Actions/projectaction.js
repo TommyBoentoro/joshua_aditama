@@ -99,7 +99,7 @@ export const onGetData = () => {
                     payload: res.data.detail
                 })
             } catch (error) {
-                console.log(error,res)
+                console.log(error)
             }
         })
         .catch((err) => {
@@ -107,6 +107,35 @@ export const onGetData = () => {
             dispatch({
                 type:`GET_ERROR`,
                 payload: err.res.data.message
+            })
+        })
+    }
+}
+
+export const onGetDetailProject = (idProduct) => {
+    return(dispatch) => {
+
+        dispatch({
+            type: `LOADING`
+        })
+
+        axios.get(`http://localhost:4000/data-system/project-detail/${idProduct}`)
+        .then((res) => {
+            console.log(res.data.detail)
+            try {
+                dispatch({
+                    type: `GETDETAIL_SUCCESS`,
+                    payload: res.data.detail
+                })
+            } catch (error) {
+                console.log(error)
+            }
+        })
+        .catch((err) => {
+            console.log(err)
+            dispatch({
+                type:`GET_ERROR`,
+                payload:err.res.data.message
             })
         })
     }

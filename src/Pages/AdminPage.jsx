@@ -94,7 +94,6 @@ class AdminPage extends React.Component{
     
     onGet = () => {
         this.props.onGetData()
-
     }
 
     onImageValidation = (e) =>{

@@ -111,10 +111,9 @@ class Project extends React.Component{
                                                     if(idx === 0){
                                                         return(
                                                             <>
-                                                                
                                                                 <div className="image">
                                                                     <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
-                                                                        <Link to = {"/projectdetail/"}>
+                                                                        <Link to ={`/projectdetail/${value.id}`}>
                                                                             <img src={val.image} alt="logo"  className="imagecol-9" />
                                                                         </Link>
                                                                     </div>
@@ -136,7 +135,7 @@ class Project extends React.Component{
                                                 {value.title}
                                             </div>
                                             <div className="col-md-8 col-12 px-0  fontbodyproject">
-                                                {value.description}
+                                                {value.head_description}
                                             </div>
                                         </div>
                                     </div>
@@ -157,7 +156,9 @@ class Project extends React.Component{
                                                             <>
                                                                 <div className="image">
                                                                 <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
-                                                                    <a href="/projectdetail"> <img src={val.image} alt="logo" className="imagecol-3"/> </a>
+                                                                    <Link to ={`/projectdetail/${value.id}`}>
+                                                                        <img src={val.image} alt="logo"  className="imagecol-3" />
+                                                                    </Link>
                                                                 </div>
                                                                 </div>
                                                             </>
@@ -175,7 +176,7 @@ class Project extends React.Component{
                                                 {value.title}
                                         </div>
                                         <div className="fontbodyproject">
-                                                {value.description}
+                                                {value.head_description}
                                         </div>
                                         </div>
                                     </div>
@@ -194,7 +195,9 @@ class Project extends React.Component{
                                                             <>
                                                                 <div className="image">
                                                                 <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
-                                                                    <a href="/projectdetail"> <img src={val.image} alt="logo"  className="imagecol-6" /> </a>
+                                                                    <Link to ={`/projectdetail/${value.id}`}>
+                                                                        <img src={val.image} alt="logo" className="imagecol-6" />
+                                                                    </Link>
                                                                 </div>
                                                                 </div>
                                                             </>
@@ -212,7 +215,7 @@ class Project extends React.Component{
                                                 {value.title}
                                             </div>
                                             <div className="col-12 px-0 fontbodyproject">
-                                                {value.description}
+                                                {value.head_description}
                                             </div>
                                         </div>
                                     </div>
@@ -226,7 +229,7 @@ class Project extends React.Component{
                    }
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}}>
                             <a href="/projectdetail"> <img src={project9} alt="logo" className="imagecol-9" /> </a>
@@ -360,7 +363,7 @@ class Project extends React.Component{
                         </div>
                     </div>
                     
-                </div>
+                </div> */}
             </div>
 
             {/*  */}

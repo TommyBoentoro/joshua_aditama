@@ -43,7 +43,7 @@ function App (){
           <Route path = "/adminpage" component = {adminPage} />
           <Route path = "/loginpage" component = {loginPage} />
           <Route path = "/test" component = {Test} />
-          <Route path = "/projectdetail" component = {ProjectDetail}/>
+          <Route path = "/projectdetail/:idProduct" component = {ProjectDetail}/>
           <Route path = "/responsive" component = {Responsive}/>
           <Route path = "/tiga" component = {Tiga}/>
           <Route path = "/testdua" component = {Testdua}/>

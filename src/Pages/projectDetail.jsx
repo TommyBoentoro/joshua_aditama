@@ -6,6 +6,8 @@ import Slider from "react-slick"
 // Redux
 import { connect } from "react-redux";
 
+// Action
+import {onGetDetailProject} from "../Redux/Actions/projectaction"
 
 // Import Images
 import jumbotron from "./../Assets/jumbotron.JPG"
@@ -16,7 +18,7 @@ import project4 from "./../Assets/project/project4.png"
 import project5 from "./../Assets/project/project5.png"
 import project6 from "./../Assets/2568963.jpg"
 import test1 from "./../Assets/project/test1.png"
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft, FaRegHandScissors, FaDove } from "react-icons/fa";
 
 // Import CSS
 import "./../Supports/tiga.css"
@@ -47,8 +49,20 @@ const NextArrow = ({ onClick }) => {
 
 
 class ProjectDetail extends React.Component{
+
+    componentDidMount(){
+        this.onGetDetail()
+    }
+
+    onGetDetail = () => {
+        let idProduct = window.location.pathname.split(`/`)[2]
+        console.log(idProduct)
+
+        this.props.onGetDetailProject(idProduct)
+    }
+
     render(){
-        
+
         const settings = {
             className: "center",
             centerMode: true,
@@ -64,7 +78,7 @@ class ProjectDetail extends React.Component{
 
         return(
             <>
-            <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}>
+            {/* <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}>
                 <div className="overlay">
                     <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
                         <div className="fontbgheading" >
@@ -91,57 +105,126 @@ class ProjectDetail extends React.Component{
                         </div>
                     </div>
                 </div>
+            </div> */}
+
+            <div>
+                {
+                    this.props.project.data?
+                    this.props.project.data.map((value,index) =>{
+                        return(
+                            <>
+                            <div>
+                                {
+                                    value.image.map((val,idx) => {
+                                        if(idx === 0){
+                                            return(
+                                                <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}> 
+                                                    <div className="overlay">
+                                                        <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
+                                                            <div className="fontbgheading" >
+                                                                {value.title}
+                                                            </div>
+                                                            <div className="paddingbg fontbgbody" >
+                                                                <div className="row px-sm-0 px-2 ">
+                                                                    {/* <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                                                        Client : Openaire Group
+                                                                    </div> */}
+                                                                    <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                                                        Category : {value.category}
+                                                                    </div> 
+                                                                    <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                                                        Location : {value.location}
+                                                                    </div>
+                                                                    <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                                                        Year : {value.year}
+                                                                    </div>
+                                                                    <div className="status col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                                                        Status : {value.status}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                        
+                                    })
+                                }
+                            </div>
+                            </>
+                            
+                        )
+                    })
+                    :
+                    null
+                }
             </div>
 
-            <div style={{overflow:"hidden"}} className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
-                <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-2" >
-                    Nam sit amet elementum libero. Nulla facilisi. Aenean vulputate venenatis ligula eu cursus. Nunc rhoncus sapien at malesuada posuere. 
-                </div>
-                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
-                    Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                    Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa, quis efficitur velit lorem sed orci. 
-                    Suspendisse eget tempor ex, id bibendum massa. 
-                    Phasellus a pulvinar erat. Pellentesque purus quam, tristique at posuere vitae, venenatis eu turpis. Suspendisse quis nisi sit amet purus suscipit tempus. Sed sed faucibus eros. 
-                    Suspendisse placerat mauris et nisl egestas ultricies.
-                <br/>
-                <br/>
-                    Sed consectetur, nibh nec dapibus lacinia, dui elit consequat lacus, quis vestibulum diam quam sit amet ante. Phasellus et volutpat nibh, quis fermentum dui. 
-                    Duis tristique vestibulum urna ac egestas. Aliquam lectus ipsum, iaculis venenatis pellentesque a, congue quis eros. Aliquam sit amet lacus malesuada, interdum tellus et, 
-                    fringilla enim. Aenean viverra, dui eget pellentesque maximus, metus ipsum aliquam lacus, nec sagittis mi ex sed sem. Vivamus eu ornare nunc. Fusce ligula libero, pretium 
-                    non suscipit venenatis, maximus non mi. Pellentesque pulvinar justo ligula, malesuada interdum est dapibus vel. Donec sollicitudin urna non lectus feugiat imperdiet sit amet a 
-                    eros.
-                </div>
+            <div>
+                {
+                    this.props.project.data?
+                    this.props.project.data.map((value,index) => {
+                        return(
+                            <div style={{overflow:"hidden"}} className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
+                                <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-2" >
+                                    {value.head_description}
+                                </div>
+                                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-2">
+                                    {value.description}
+                                <br/>
+                                </div>
+                            </div>
+                        )
+                    })
+                    :
+                    null
+                }
             </div>
 
-            <div className="marginslick" >   
+            <div className="marginslick">
                 <Slider {...settings}>
-                    <div>
-                        <img className="opacityimage slickheight" src={jumbotron} alt="" />
-                    </div>
-                    <div>
-                        <img className="opacityimage slickheight" src={bgproject} alt="" />
-                    </div>
-                    <div>
-                        <img className="opacityimage slickheight" src={test1} alt="" />
-                    </div>
+                    {
+                        this.props.project.data?
+                        this.props.project.data.map((value,index) => {
+                            if(index === 0){
+                                return value.image.map((val,idx) => {
+                                    if (idx < 3){
+                                        return(
+                                            <div>
+                                                <img src={val.image} className="opacityimage slickheight" alt="" />
+                                            </div>
+                                        )
+                                    }
+                                })
+                            }
+                        })
+                        :
+                        null
+                    }
                 </Slider>
             </div>
 
-            <div style={{overflow:"hidden"}} className="container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
-                <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-2" >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit tellus, egestas sodales sodales vitae, facilisis vel nisi. Praesent vitae faucibus augue. 
-                    Suspendisse quis mauris mauris. Quisque sit amet tristique leo. Proin luctus iaculis mauris non tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                    Nulla ligula ante, dapibus vitae dolor tristique, mollis sodales ex. Donec aliquam, magna non ullamcorper iaculis, nibh elit feugiat massa
-                <br/>
-                <br/>
-                    Sed consectetur, nibh nec dapibus lacinia, dui elit consequat lacus, quis vestibulum diam quam sit amet ante. Phasellus et volutpat nibh, quis fermentum dui. 
-                    Duis tristique vestibulum urna ac egestas. Aliquam lectus ipsum, iaculis venenatis pellentesque a, congue quis eros. Aliquam sit amet lacus malesuada, interdum tellus et, 
-                    fringilla enim. Aenean viverra, dui eget pellentesque maximus, metus ipsum aliquam lacus, nec sagittis mi ex sed sem. Vivamus eu ornare nunc eros.
-                </div>
-            </div>
+            {
+                this.props.project.data?
+                this.props.project.data.map((value,index) => {
+                    return(
+                        <div style={{overflow:"hidden"}} className="container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
+                            <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-2" >
+                               {value.descriptionDua}
+                            <br/>
+                            <br/>
+                                
+                            </div>
+                        </div>
+                    )
+                })
+                :
+                null
+            }
 
-            <div style={{overflow:"hidden"}} className="container d-flex justify-content-center fontlato fontproject">
+            {/* <div style={{overflow:"hidden"}} className="container d-flex justify-content-center fontlato fontproject">
                 Related Project
             </div>
             
@@ -197,11 +280,15 @@ class ProjectDetail extends React.Component{
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
                 
             </>
         )
     }
+}
+
+const mapDispatchToProps = {
+    onGetDetailProject
 }
 
 const mapStateToProps = (state) => {
@@ -210,4 +297,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default  connect(mapStateToProps, "") (ProjectDetail)
+export default  connect(mapStateToProps, mapDispatchToProps) (ProjectDetail)
