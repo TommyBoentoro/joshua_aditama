@@ -48,8 +48,8 @@ class AdminPage extends React.Component{
             let descriptionDua = this.descriptionDua.value
             let user_id = 1
 
-            if(!title || !description || !user_id || !status || !location || !category || !year || !headDescritpion || !descriptionDua) throw {message:`All data must be filled`}
-            if(!this.state.images) throw {message: `Select image`}
+            if(!title || !description || !user_id || !status || !location || !category || !year || !headDescritpion || !descriptionDua) throw new Error (`All data must be filled`)
+            if(!this.state.images) throw new Error ("Select image")
             let addData = {
                 title : this.title.value,
                 status : this.status.value,
@@ -99,10 +99,10 @@ class AdminPage extends React.Component{
         const files = e.target.files
 
         try {
-            if(files.length > 3) throw {message: `Max select 3 images`}
+            if(files.length > 3) throw new Error (`Max select 3 images`)
 
             for (let i = 0; i<files.length; i++){
-                if(files[i].size > 10000000 ) throw {message: `${files[i].name} more than 10Mb`}
+                if(files[i].size > 10000000 ) throw new Error (`${files[i].name} more than 10Mb`)
             }
 
             this.setState({images: files})
@@ -147,9 +147,8 @@ class AdminPage extends React.Component{
                             You must login first
                         </h4>
                     }
-                    
                     <CreateModal/>
-                    <input type="button" value="LogOut" disabled={this.state.is_login?false : true} onClick={() => this. onLogOut()} className="btn btn-danger" />
+                    <input type="button" value="LogOut" disabled={this.state.is_login?false:true} onClick={() => this. onLogOut()} className="btn btn-danger" />
                 </div>
                 <div className="form-group">
                     <label>Title</label>
@@ -183,13 +182,12 @@ class AdminPage extends React.Component{
                     <label>Description dua</label>
                     <input type="text" ref={(e)=> this.descriptionDua=e} className="form-control" placeholder= "Input Description dua"/>
                 </div>
-                
                 <div>
                     <input type="file" ref={(e) => this.files = e} onChange={this.onImageValidation} multiple style={{display: "none"}} />
                     <input type="button" value = "choose File" className="btn btn-success" onClick={() => this.files.click()} />
                 </div>
                 <br />
-                <button type="submit" onClick={() => this. onSubmit()} disabled={this.state.is_login?false : true} class="btn btn-primary">Submit</button> 
+                <button type="submit" onClick={() =>this. onSubmit()} disabled={this.state.is_login?false:true} class="btn btn-primary">Submit</button> 
                     <h6 className="mt-1 text-danger">
                         {
                             this.props.project.message
@@ -204,7 +202,6 @@ class AdminPage extends React.Component{
                 <br />
                 <br />
             </div>
-
             <div className="container-fluid" >
                     <table className="table mt-3">
                         <thead>
