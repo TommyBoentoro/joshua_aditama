@@ -18,29 +18,6 @@ import testClick from "../helpers/testClick";
 import "./../Supports/home.css"
 import "./../Supports/hover.css"
 import "./../Supports/test.css"
-import {FaArrowRight, FaArrowLeft} from "react-icons/fa"
-
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "none", background: "black" }}
-        onClick={onClick}
-      />
-    );
-  }
-  
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "none", background: "black" }}
-        onClick={onClick}
-      />
-    );
-  }
 
     const images = [astronaut1, astronaut2, astronaut3]
 
