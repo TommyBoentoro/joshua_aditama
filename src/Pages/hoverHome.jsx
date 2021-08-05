@@ -1,7 +1,5 @@
 import React from "react"
-import gambarHome1 from "./../Assets/fotoHome-1.png" 
 import jumbotron from './../Assets/jumbotron.JPG'
-import gambarHome2 from "./../Assets/fotoHome-2.png"
 import test1 from "./../Assets/project/test1.png"
 
 
@@ -38,7 +36,7 @@ class Testdua extends React.Component{
                     <ul className="border" style={{height:"700px", padding:"0", margin:"0"}}>
                         <li className="col border d-flex align-items-end" style={{height:"700px", padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center thiswhite" style={{height:"200px", width:"100%"}}>
-                                <a  href="#">
+                                <a  href="">
                                     <div style={{fontSize:"16px", fontWeight:'700'}}>
                                         Furniture
                                     </div>
@@ -51,7 +49,7 @@ class Testdua extends React.Component{
                         </li>
                         <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={test1}>
                            <div className="hoversaya d-flex justify-content-center align-items-center" style={{height:"200px", width:"100%"}}>
-                                <a  href="#">
+                                <a  href="">
                                     <div style={{fontSize:"16px", fontWeight:'700'}}>
                                         Furniture
                                     </div>
@@ -63,7 +61,7 @@ class Testdua extends React.Component{
                         </li>
                         <li className="col border d-flex align-items-end justify-content-center" style={{height:"700px", padding:"0", margin:"0"}} data-bg={jumbotron}>
                            <div className="hoversaya d-flex justify-content-center align-items-center" style={{height:"200px", width:"100%"}}>
-                                <a  href="#">
+                                <a  href="">
                                     <div style={{fontSize:"16px", fontWeight:'700'}}>
                                         Furniture
                                     </div>

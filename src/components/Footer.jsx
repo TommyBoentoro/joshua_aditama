@@ -1,7 +1,5 @@
 import React from "react"
 import logo from "./../Assets/logo-2.png"
-import gambarHome2 from "./../Assets/fotoHome-2.png"
-import {Link} from "react-router-dom"
 
 // Images
 import inquiry from "./../Assets/INQUIRY_NOW.jpg"

@@ -1,19 +1,12 @@
 import React from "react"
-import {Link} from "react-router-dom"
 import {connect} from "react-redux"
-import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useState } from "react";
 
 // Action
 import { onGetData } from "../Redux/Actions/projectaction"
 
 // import Image
-import logo from "./../Assets/logo-2.png"
-import gambarHome1 from "./../Assets/fotoHome-1.png"
-import background2 from "./../Assets/background-2.png"
-import gambarHome2 from "./../Assets/fotoHome-2.png"
 import astronaut1 from "./../Assets/astrounaut1.jpg"
 import astronaut2 from "./../Assets/astrounaut2.jpg"
 import astronaut3 from "./../Assets/astrounaut3.jpg"
@@ -51,23 +44,6 @@ function SampleNextArrow(props) {
 
     const images = [astronaut1, astronaut2, astronaut3]
 
-    const NextArrow = ({onClick}) => {
-        return(
-            <div className="arrow next" onClick={onClick}>
-                <FaArrowRight/>
-            </div>
-        )
-    }
-
-    
-
-    const PrevArrow = ({onClick}) => {
-        return(
-            <div className="arrow prev" onClick={onClick}>
-                <FaArrowLeft/>
-            </div>
-        )
-    }
 
 class Test extends React.Component{
     

@@ -11,14 +11,6 @@ import {onGetDetailProject} from "../Redux/Actions/projectaction"
 
 // Import Images
 import jumbotron from "./../Assets/jumbotron.JPG"
-import bgproject from "./../Assets/project/bgproject.png"
-import fotoHome from "./../Assets/fotoHome-1.png"
-import project3 from "./../Assets/project/project3.png"
-import project4 from "./../Assets/project/project4.png"
-import project5 from "./../Assets/project/project5.png"
-import project6 from "./../Assets/2568963.jpg"
-import test1 from "./../Assets/project/test1.png"
-import { FaArrowRight, FaArrowLeft, FaRegHandScissors, FaDove } from "react-icons/fa";
 
 // Import CSS
 import "./../Supports/tiga.css"
@@ -113,12 +105,12 @@ class ProjectDetail extends React.Component{
                     this.props.project.data.map((value,index) =>{
                         return(
                             <>
-                            <div>
+                            <div key={index}>
                                 {
                                     value.image.map((val,idx) => {
                                         if(idx === 0){
                                             return(
-                                                <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}> 
+                                                <div key={idx} className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}> 
                                                     <div className="overlay">
                                                         <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
                                                             <div className="fontbgheading" >
@@ -167,7 +159,7 @@ class ProjectDetail extends React.Component{
                     this.props.project.data?
                     this.props.project.data.map((value,index) => {
                         return(
-                            <div style={{overflow:"hidden"}} className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
+                            <div key={index} style={{overflow:"hidden"}} className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
                                 <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-2" >
                                     {value.head_description}
                                 </div>
@@ -192,7 +184,7 @@ class ProjectDetail extends React.Component{
                                 return value.image.map((val,idx) => {
                                     if (idx < 3){
                                         return(
-                                            <div>
+                                            <div key={idx}>
                                                 <img src={val.image} className="opacityimage slickheight" alt="" />
                                             </div>
                                         )
@@ -210,7 +202,7 @@ class ProjectDetail extends React.Component{
                 this.props.project.data?
                 this.props.project.data.map((value,index) => {
                     return(
-                        <div style={{overflow:"hidden"}} className="container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
+                        <div key={index} style={{overflow:"hidden"}} className="container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
                             <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-2" >
                                {value.descriptionDua}
                             <br/>

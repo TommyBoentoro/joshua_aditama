@@ -13,11 +13,6 @@ import Test from "./Pages/Test"
 import Navbar from "./components/Navbar"
 import Footbar from "./components/Footer"
 import ProjectDetail from "./Pages/projectDetail"
-import Responsive from "./Pages/Responsive"
-import Tiga from "./Pages/tiga"
-import Testdua from "./Pages/hoverHome"
-import LatihanResponsive from "./Pages/LatihanResponsive"
-import NavbarDev from "./components/NavbarDev"
 
 
 // Redux
@@ -44,11 +39,6 @@ function App (){
           <Route path = "/loginpage" component = {loginPage} />
           <Route path = "/test" component = {Test} />
           <Route path = "/projectdetail/:idProduct" component = {ProjectDetail}/>
-          <Route path = "/responsive" component = {Responsive}/>
-          <Route path = "/tiga" component = {Tiga}/>
-          <Route path = "/testdua" component = {Testdua}/>
-          <Route path = "/navbar" component = {Navbar}/>
-          <Route path = "/latihan" component = {LatihanResponsive}/>
         </Switch>
         <Footbar/>
       </BrowserRouter>

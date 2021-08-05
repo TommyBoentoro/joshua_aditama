@@ -1,5 +1,4 @@
 import React from "react"
-import { findRenderedDOMComponentWithClass } from "react-dom/cjs/react-dom-test-utils.production.min"
 import {connect} from "react-redux"
 
 // Action

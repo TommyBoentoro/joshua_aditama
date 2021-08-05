@@ -1,13 +1,8 @@
 import React from "react"
-import {Link} from "react-router-dom"
 import logo from "./../Assets/logo-2.png"
 
-import SvgLike from "../Pages/Logo"
-
 // JS
-import navbarToggle from "../helpers/navbarresponsive"
 import scrollFunction from "../helpers/navbarScroll"
-import myFunction from"./../helpers/navbarW3.js"
 
 import "./../Supports/navbar.css"
 import "./../Supports/navbarW3.css"

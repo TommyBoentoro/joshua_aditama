@@ -1,9 +1,5 @@
 import React from "react"
-import {Link} from "react-router-dom"
 import {connect } from "react-redux"
-
-//Import Images
-import logo from "./../Assets/logo-2.png"
 
 // Import Css
 import "./../Supports/responsive.css"

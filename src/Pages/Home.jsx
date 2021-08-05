@@ -1,28 +1,15 @@
 import React from "react"
-import {Link, Redirect} from "react-router-dom"
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useHistory } from "react-router-dom";
 
 
 
 // import Image
 import dummy from "./../Assets/project/dummy.JPG"
-import logo from "./../Assets/logo-2.png"
-import gambarHome1 from "./../Assets/fotoHome-1.png"
-import background2 from "./../Assets/background-2.JPG"
-import gambarHome2 from "./../Assets/fotoHome-2.png"
-import Jumbotron from "./../Assets/jumbotron.JPG"
-import myService from "./../Assets/myService.png"
-import arrow from "./../Assets/arrow.png"
-import test1 from "./../Assets/project/test1.png"
-import project6 from "./../Assets/project/project6.png"
-import jumbotron from './../Assets/jumbotron.JPG'
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
-import hoverTextFunction from "../helpers/textSliderHome";
 
 // Icon
 import {IoIosArrowDropright} from 'react-icons/io';
@@ -30,7 +17,6 @@ import {IoIosArrowDropleft} from "react-icons/io"
 
 // Import css
 import "./../Supports/home.css"
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./../Supports/backgroundHover.css"
 import "./../Supports/homeresponsive.css"
 import "./../Supports/responsive.css"
@@ -39,8 +25,6 @@ import "./../Supports/empat.css"
 // Redux
 import {connect} from "react-redux"
 import {onGetData} from "../Redux/Actions/projectaction"
-import { ConsoleWriter } from "istanbul-lib-report";
-
 
 const NextArrow1 = ({ onClick }) => {
     return (
@@ -180,7 +164,7 @@ class Home extends React.Component{
                     this.props.project.data.map((value,index) => {
                         if(index < 3){
                             return(
-                                <div>
+                                <div key={index}>
                                     <div className="opacitySlider"></div>
                                     {/* <div className="sliderDots">
                                         <div className="textDots fontlato">
@@ -193,8 +177,8 @@ class Home extends React.Component{
                                         value.image.map((val,idx)=>{
                                             if(idx === 2){
                                                 return(
-                                                    <div>
-                                                        <img src={val.image} alt=""  className="bgsliderhome"  />
+                                                    <div key={idx}>
+                                                        <img src={val.image} alt=""  className="bgsliderhome"/>
                                                     </div>
                                                 )
                                             }
@@ -258,7 +242,7 @@ class Home extends React.Component{
                         <ul className="listhover" style={{padding:"0", margin:"0"}}>
                             <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
                                 <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >
-                                        <a  href="#">
+                                        <a  href="">
                                             <div className="fonthoverheading" >
                                                 Architecture, Interior, Landscape
                                             </div>
@@ -356,7 +340,7 @@ class Home extends React.Component{
                         this.props.project.data?
                         this.props.project.data.map((value,index) => {
                             return(
-                                <div>
+                                <div key={index}>
                                     <div className="textSliderMobile-home fontlato">
                                         <div style={{fontSize:"13px", fontWeight:"700"}}>
                                             {value.category}
@@ -372,7 +356,7 @@ class Home extends React.Component{
                                         value.image.map((val,idx) => {
                                             if(idx === 0){
                                                 return(
-                                                    <div>
+                                                    <div key={idx}>
                                                         <img src={val.image} className="bgSliderMobile-home" alt="" />
                                                     </div>
                                                 )

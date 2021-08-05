@@ -4,7 +4,7 @@ import React from "react"
 function SvgLike(){
     return(
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-            viewBox="0 0 272 23" style="enable-background:new 0 0 272 23;" >
+            viewBox="0 0 272 23" >
         {/* <style type="text/css">
             .st0{fill:#939598;}
             .st1{fill:#939598;stroke:#939598;stroke-miterlimit:10;}

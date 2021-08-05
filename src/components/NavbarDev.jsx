@@ -1,5 +1,4 @@
 import React from "react"
-import navSlide from "../helpers/navbarDev"
 import "./../Supports/navbarDev.css"
 
 
@@ -25,13 +24,13 @@ class NavbarDev extends React.Component{
                         </div>
                         <ul className={this.state.clicked? `nav-links nav-active`: `nav-links`}>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="">Home</a>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="">About</a>
                             </li>
                             <li>
-                                <a href="#">Work</a>
+                                <a href="">Work</a>
                             </li>
                         </ul>
                         <div className="burger">

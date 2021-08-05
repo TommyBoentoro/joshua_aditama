@@ -4,19 +4,14 @@ import Slider from "react-slick";
 // import 'slick-carousel/slick/slick-theme.css';
 
 // Import Image
-import astronaut1 from "./../Assets/astrounaut1.jpg"
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import jumbotron from "./../Assets/jumbotron.JPG"
 import bgproject from "./../Assets/project/bgproject.png"
-import fotoHome from "./../Assets/fotoHome-1.png"
 import test1 from "./../Assets/project/test1.png"
 
 // Import CSS
 import "./../Supports/tiga.css"
 import "./../Supports/home.css"
-
-// Import JS
-import multipleSlick from "./../helpers/slick"
 
 const NextArrow = ({ onClick }) => {
     return (

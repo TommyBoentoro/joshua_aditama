@@ -5,19 +5,6 @@ import {Link} from "react-router-dom"
 import { connect } from "react-redux"
 import { onGetData } from "../Redux/Actions/projectaction"
 
-// Import Image
-import logo from "./../Assets/logo-2.png"
-import project1 from "./../Assets/project/project1.png"
-import project2 from "./../Assets/project/project2.png"
-import project3 from "./../Assets/project/project3.png"
-import project4 from "./../Assets/project/project4.png"
-import project5 from "./../Assets/project/project5.png"
-import project6 from "./../Assets/project/project6.png"
-import project7 from "./../Assets/project/project7.png"
-import project8 from "./../Assets/project/project8.png"
-import project9 from "./../Assets/project/project9.png"
-import gambarHome2 from "./../Assets/fotoHome-2.png"
-
 // Import css
 import "./../Supports/home.css"
 import "./../Supports/projectResponsive.css"
@@ -104,14 +91,14 @@ class Project extends React.Component{
                             if(index + 1 === 1 || index + 1 === 9 || index + 1 === 17 ){ 
                                 return(
                                     <>
-                                    <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody image imagehover">
+                                    <div key={index} className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody image imagehover">
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
                                                     if(idx === 0){
                                                         return(
                                                             <>
-                                                                <div className="image">
+                                                                <div key={idx} className="image">
                                                                     <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
                                                                         <Link to ={`/projectdetail/${value.id}`}>
                                                                             <img src={val.image} alt="logo"  className="imagecol-9" />
@@ -148,13 +135,13 @@ class Project extends React.Component{
                                 return(
                                     <>
                                     <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                                        <div>
+                                        <div key={index}>
                                             {
                                                 value.image.map((val,idx)=>{
                                                     if(idx===0){
                                                         return(
                                                             <>
-                                                                <div className="image">
+                                                                <div key={idx} className="image">
                                                                 <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
                                                                     <Link to ={`/projectdetail/${value.id}`}>
                                                                         <img src={val.image} alt="logo"  className="imagecol-3" />
@@ -186,14 +173,14 @@ class Project extends React.Component{
                             )} else if( index + 1 === 4 || index + 1 === 6 || index + 1 === 12 || index + 1 === 14 || index + 1 === 20 || index + 1 === 22){
                                 return(
                                     <>
-                                    <div className="col-sm-6 px-md-3 px-sm-1 px-0  image imagehover paddingbody">
+                                    <div key={index} className="col-sm-6 px-md-3 px-sm-1 px-0  image imagehover paddingbody">
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
                                                     if(idx === 0){
                                                         return(
                                                             <>
-                                                                <div className="image">
+                                                                <div key={idx} className="image">
                                                                 <div className="imagehover" style={{overflow:"hidden", width:"100%"}}>
                                                                     <Link to ={`/projectdetail/${value.id}`}>
                                                                         <img src={val.image} alt="logo" className="imagecol-6" />

@@ -1,13 +1,4 @@
 import React from "react"
-import {Link} from "react-router-dom"
-
-// Import Image
-
-import gambarHome1 from "./../Assets/fotoHome-1.png"
-import background3 from "./../Assets/background-3.png"
-import myService from "./../Assets/myService.png"
-
-
 
 // Import CSS
 import "./../Supports/home.css"
