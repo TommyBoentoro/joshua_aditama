@@ -367,6 +367,8 @@ class Home extends React.Component{
                                                             <img src={val.image} className="bgSliderMobile-home" alt="" />
                                                         </div>
                                                     )
+                                                }else{
+                                                    return null
                                                 }
                                             })
                                         }

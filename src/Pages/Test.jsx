@@ -6,11 +6,6 @@ import 'slick-carousel/slick/slick-theme.css';
 // Action
 import { onGetData } from "../Redux/Actions/projectaction"
 
-// import Image
-import astronaut1 from "./../Assets/astrounaut1.jpg"
-import astronaut2 from "./../Assets/astrounaut2.jpg"
-import astronaut3 from "./../Assets/astrounaut3.jpg"
-
 // import Function 
 import testClick from "../helpers/testClick";
 
