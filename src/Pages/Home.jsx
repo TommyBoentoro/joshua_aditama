@@ -246,7 +246,7 @@ class Home extends React.Component{
                             <ul className="listhover" style={{padding:"0", margin:"0"}}>
                                 <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
                                     <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >    
-                                        <a href="">
+                                        <a href="/projectdetail/155">
                                             <div className="fonthoverheading" >
                                                 Architecture, Interior, Landscape
                                             </div>
