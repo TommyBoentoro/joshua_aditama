@@ -181,6 +181,8 @@ class Home extends React.Component{
                                                         <img src={val.image} alt=""  className="bgsliderhome"/>
                                                     </div>
                                                 )
+                                            }else{
+                                                return null
                                             }
                                             
                                         })

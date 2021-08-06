@@ -19,9 +19,6 @@ import "./../Supports/home.css"
 import "./../Supports/hover.css"
 import "./../Supports/test.css"
 
-    const images = [astronaut1, astronaut2, astronaut3]
-
-
 class Test extends React.Component{
     
     componentDidMount(){
