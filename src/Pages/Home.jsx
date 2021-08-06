@@ -190,6 +190,8 @@ class Home extends React.Component{
                                     
                                 </div>
                             )
+                        }else{
+                            return null
                         }
                     })
                     :
