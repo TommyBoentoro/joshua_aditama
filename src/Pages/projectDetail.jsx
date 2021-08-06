@@ -182,7 +182,7 @@ class ProjectDetail extends React.Component{
                     {
                         this.props.project.data?
                         this.props.project.data.map((value,index) => {
-                            if(index !== 0){
+                            if(index === 0){
                                 return value.image.map((val,idx) => {                                 
                                     return(
                                         <div key={idx}>
