@@ -241,7 +241,6 @@ class Home extends React.Component{
            
            {/* Hover Home */}
             <div className="hoverHomeNonMobile">
-                <a href="/projectdetail/155">
                     <div className="backgroundhover imagehoverproject" >
                         <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                             <ul className="listhover" style={{padding:"0", margin:"0"}}>
@@ -296,7 +295,6 @@ class Home extends React.Component{
                             </ul>
                         </div>
                     </div>
-                </a>
             </div>
 
             {/* <div className="hoverHomeNonMobile"> -- INI MAPPING HOVER BACKGROUND TAPI MASIH GAGAL DI DATA-BG

@@ -95,7 +95,7 @@ class Project extends React.Component{
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
-                                                    if(idx !== 0)return null;{
+                                                    if(idx === 0){
                                                         return(
                                                             <>
                                                                 <div key={idx} className="image">
@@ -107,6 +107,8 @@ class Project extends React.Component{
                                                                 </div>
                                                             </>
                                                         )
+                                                    }else{
+                                                        return null
                                                     }
                                                     
                                                 })
@@ -138,7 +140,7 @@ class Project extends React.Component{
                                         <div key={index}>
                                             {
                                                 value.image.map((val,idx)=>{
-                                                    if(idx !== 0)return null;{
+                                                    if(idx === 0){
                                                         return(
                                                             <>
                                                                 <div key={idx} className="image">
@@ -150,6 +152,8 @@ class Project extends React.Component{
                                                                 </div>
                                                             </>
                                                         )
+                                                    }else{
+                                                        return null
                                                     }
                                                    
                                                 })
@@ -177,7 +181,7 @@ class Project extends React.Component{
                                         <div>
                                             {
                                                 value.image.map((val,idx)=>{
-                                                    if(idx !== 0)return null;{
+                                                    if(idx === 0){
                                                         return(
                                                             <>
                                                                 <div key={idx} className="image">
@@ -189,6 +193,8 @@ class Project extends React.Component{
                                                                 </div>
                                                             </>
                                                         )
+                                                    }else{
+                                                        return null
                                                     }
                                                     
                                                 })
