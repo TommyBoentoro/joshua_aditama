@@ -148,7 +148,7 @@ class AdminPage extends React.Component{
                         </h4>
                     }
                     <CreateModal/>
-                    <input type="button" value="LogOut" disabled={this.state.is_login?false:true} onClick={() => this. onLogOut()} className="btn btn-danger" />
+                    <input type="button" value="LogOut" disabled={this.state.is_login?false:true} onClick={()=>this.onLogOut()} className="btn btn-danger"/>
                 </div>
                 <div className="form-group">
                     <label>Title</label>
@@ -187,7 +187,7 @@ class AdminPage extends React.Component{
                     <input type="button" value = "choose File" className="btn btn-success" onClick={() => this.files.click()} />
                 </div>
                 <br />
-                <button type="submit" onClick={() =>this. onSubmit()} disabled={this.state.is_login?false:true} class="btn btn-primary">Submit</button> 
+                <button type="submit" onClick={()=>this.onSubmit()} disabled={this.state.is_login?false:true} class="btn btn-primary">Submit</button> 
                     <h6 className="mt-1 text-danger">
                         {
                             this.props.project.message
