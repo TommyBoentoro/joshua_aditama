@@ -1,5 +1,5 @@
 .backgroundhover {
-    background: url("../Assets/project/test1.png")no-repeat center /cover;
+    background: url("../Assets/project/dummy.JPG")no-repeat center /cover;
     transition: .5s;
 }
 
@@ -20,6 +20,7 @@
 .hoversaya:hover{
     background-image: linear-gradient(transparent, white);
     cursor: pointer;
+    text-decoration: none;
 }   
 
 .hoverimage ul li a{

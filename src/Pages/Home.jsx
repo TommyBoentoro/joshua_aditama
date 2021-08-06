@@ -175,7 +175,7 @@ class Home extends React.Component{
                                     </div> */}
                                     {
                                         value.image.map((val,idx)=>{
-                                            if(idx === 2){
+                                            if(idx === 0){
                                                 return(
                                                     <div key={idx}>
                                                         <img src={val.image} alt=""  className="bgsliderhome"/>
@@ -237,12 +237,13 @@ class Home extends React.Component{
            
            {/* Hover Home */}
             <div className="hoverHomeNonMobile">
-                <div className="backgroundhover imagehoverproject" >
-                    <div className="hoverimage" style={{padding:"0", margin:"0"}}>
-                        <ul className="listhover" style={{padding:"0", margin:"0"}}>
-                            <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
-                                <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >
-                                        <a  href="">
+                <a href="/projectdetail/155">
+                    <div className="backgroundhover imagehoverproject" >
+                        <div className="hoverimage" style={{padding:"0", margin:"0"}}>
+                            <ul className="listhover" style={{padding:"0", margin:"0"}}>
+                                <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
+                                    <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >    
+                                        <a href="">
                                             <div className="fonthoverheading" >
                                                 Architecture, Interior, Landscape
                                             </div>
@@ -251,46 +252,47 @@ class Home extends React.Component{
                                                 OPENAIRE
                                             </div>
                                         </a>
-                                </div>
-                                {/* <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
-                                        <a  href="#">
-                                            <div className="fonthoverheading" >
-                                                Architecture, Interior, Landscape
-                                            </div>
-                                            
-                                            <div className="fonthoverbody">
-                                                OPENAIRE
-                                            </div>
-                                        </a>
-                                </div> */}
-                            </li>
-                            {/* <li className="col d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
-                                <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
-                                        <a  href="#">
-                                            <div className="fonthoverheading">
-                                                Furniture
-                                            </div>
-                                            <div className="fonthoverbody">
-                                                Taman Anggrek
-                                            </div>
-                                        </a>
-                                </div>
-                            </li>
-                            <li className="col d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
-                                <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
-                                        <a  href="#">
-                                            <div className="fonthoverheading">
-                                                Furniture
-                                            </div>
-                                            <div className="fonthoverbody">
-                                                Books N Beyond
-                                            </div>
-                                        </a>
-                                </div>
-                            </li> */}
-                        </ul>
+                                    </div>
+                                    {/* <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
+                                            <a  href="#">
+                                                <div className="fonthoverheading" >
+                                                    Architecture, Interior, Landscape
+                                                </div>
+                                                
+                                                <div className="fonthoverbody">
+                                                    OPENAIRE
+                                                </div>
+                                            </a>
+                                    </div> */}
+                                </li>
+                                {/* <li className="col d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
+                                    <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
+                                            <a  href="#">
+                                                <div className="fonthoverheading">
+                                                    Furniture
+                                                </div>
+                                                <div className="fonthoverbody">
+                                                    Taman Anggrek
+                                                </div>
+                                            </a>
+                                    </div>
+                                </li>
+                                <li className="col d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
+                                    <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
+                                            <a  href="#">
+                                                <div className="fonthoverheading">
+                                                    Furniture
+                                                </div>
+                                                <div className="fonthoverbody">
+                                                    Books N Beyond
+                                                </div>
+                                            </a>
+                                    </div>
+                                </li> */}
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             {/* <div className="hoverHomeNonMobile"> -- INI MAPPING HOVER BACKGROUND TAPI MASIH GAGAL DI DATA-BG
@@ -341,28 +343,30 @@ class Home extends React.Component{
                         this.props.project.data.map((value,index) => {
                             return(
                                 <div key={index}>
-                                    <div className="textSliderMobile-home fontlato">
-                                        <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                            {value.category}
+                                    <a href="/projectdetail/155">
+                                        <div className="textSliderMobile-home fontlato">
+                                            <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                                {value.category}
+                                            </div>
+                                            <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                                {value.title}
+                                            </div>
                                         </div>
-                                        <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                            {value.title}
+                                        <div className="backgroundSliderMobile-home">
+                                            {/* Kotak gradient */}
                                         </div>
-                                    </div>
-                                    <div className="backgroundSliderMobile-home">
-                                        {/* Kotak gradient */}
-                                    </div>
-                                    {
-                                        value.image.map((val,idx) => {
-                                            if(idx === 0){
-                                                return(
-                                                    <div key={idx}>
-                                                        <img src={val.image} className="bgSliderMobile-home" alt="" />
-                                                    </div>
-                                                )
-                                            }
-                                        })
-                                    }
+                                        {
+                                            value.image.map((val,idx) => {
+                                                if(idx === 1){
+                                                    return(
+                                                        <div key={idx}>
+                                                            <img src={val.image} className="bgSliderMobile-home" alt="" />
+                                                        </div>
+                                                    )
+                                                }
+                                            })
+                                        }
+                                    </a>
                                 </div>
                             )
                         })

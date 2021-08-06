@@ -99,7 +99,7 @@ class AdminPage extends React.Component{
         const files = e.target.files
 
         try {
-            if(files.length > 3) throw new Error (`Max select 3 images`)
+            if(files.length > 10) throw new Error (`Max select 10 images`)
 
             for (let i = 0; i<files.length; i++){
                 if(files[i].size > 10000000 ) throw new Error (`${files[i].name} more than 10Mb`)

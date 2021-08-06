@@ -108,7 +108,7 @@ class ProjectDetail extends React.Component{
                             <div key={index}>
                                 {
                                     value.image.map((val,idx) => {
-                                        if(index !== 0)return null;{
+                                        if(idx !== 0)return null;{
                                             return(
                                                 <div key={idx} className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}> 
                                                     <div className="overlay">
@@ -181,14 +181,12 @@ class ProjectDetail extends React.Component{
                         this.props.project.data?
                         this.props.project.data.map((value,index) => {
                             if(index !== 0)return null;{
-                                return value.image.map((val,idx) => {
-                                    if(idx > 3)return null;{
-                                        return(
-                                            <div key={idx}>
-                                                <img src={val.image} className="opacityimage slickheight" alt="" />
-                                            </div>
-                                        )
-                                    }
+                                return value.image.map((val,idx) => {                                 
+                                    return(
+                                        <div key={idx}>
+                                            <img src={val.image} className="opacityimage slickheight" alt="" />
+                                        </div>
+                                    )
                                 })
                             }
                         })
