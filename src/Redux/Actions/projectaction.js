@@ -51,7 +51,7 @@ export const onAddData = (fd) =>{
             type : `LOADING`
         })
 
-        axios.post(`https://joshua-website-back-end.herokuapp.com/data-system/upload-image`, fd)
+        axios.post(`https://backend-joshua.herokuapp.com/data-system/upload-image`, fd)
         .then((res) => {
             // console.log(res)
             dispatch({
@@ -76,7 +76,7 @@ export const onDelete = (id) => {
             type: `LOADING`
         })
 
-        axios.delete(`https://joshua-website-back-end.herokuapp.com/data-system/delete-product/` + id)
+        axios.delete(`https://backend-joshua.herokuapp.com/data-system/delete-product/` + id)
         .then((res)=>{
             console.log(res)
             
@@ -90,7 +90,7 @@ export const onDelete = (id) => {
 
 export const onGetData = () => {
     return(dispatch) => {
-        axios.get(`https://joshua-website-back-end.herokuapp.com/data-system/get-product`)
+        axios.get(`https://backend-joshua.herokuapp.com/data-system/get-product`)
         // http://localhost:4000
         .then((res) => {
             // console.log(res)
@@ -120,7 +120,7 @@ export const onGetDetailProject = (idProduct) => {
             type: `LOADING`
         })
 
-        axios.get(`https://joshua-website-back-end.herokuapp.com/data-system/project-detail/${idProduct}`)
+        axios.get(`https://backend-joshua.herokuapp.com/data-system/project-detail/${idProduct}`)
         .then((res) => {
             console.log(res.data.detail)
             try {

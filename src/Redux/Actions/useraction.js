@@ -5,7 +5,7 @@ export const onUserLogin = (data) => {
         dispatch({
             type: `LOADING`
         })
-        axios.post(`https://joshua-website-back-end.herokuapp.com/user-system/login`,data)
+        axios.post(`https://backend-joshua.herokuapp.com/user-system/login`,data)
         .then((res) => {
             console.log(res.data.data.token)
             console.log(res.data.message)
@@ -40,7 +40,7 @@ export const onSubmitMessage = (name, email, contact, letter) => {
         //         type: `LOADING`
         //     }
         // )
-        axios.post(`https://joshua-website-back-end.herokuapp.com/user-system/send-email`, {name: name, email: email, contact: contact, letter: letter})
+        axios.post(`https://backend-joshua.herokuapp.com/user-system/send-email`, {name: name, email: email, contact: contact, letter: letter})
         .then((res) => {
             console.log(res)
             dispatch(
@@ -68,7 +68,7 @@ export const onUserLogout = (data) => {
             type: `LOADING`
         })
 
-        axios.post(`https://joshua-website-back-end.herokuapp.com/user-system/logout`,data)
+        axios.post(`https://backend-joshua.herokuapp.com/user-system/logout`,data)
         .then((res) => {
             console.log(res.data)
             if(res.data.error === false){
@@ -89,7 +89,7 @@ export const onChangePassword = (dataToSend) => {
             type: `LOADING`
         })
 
-        axios.post(`https://joshua-website-back-end.herokuapp.com/user-system/change`, dataToSend)
+        axios.post(`https://backend-joshua.herokuapp.com/user-system/change`, dataToSend)
         .then((res) =>{
             console.log(res.data)
             if(res.data.error === false){
