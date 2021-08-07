@@ -25,6 +25,7 @@ export const onUserLogin = (data) => {
         })
         .catch((err)=>{
             console.log(err)
+            console.log(err)
             dispatch({
                 type: `USER_ERROR`,
                 payload: `username & password doesn't match`     //err.response.data.message
