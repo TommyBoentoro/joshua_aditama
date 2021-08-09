@@ -18,7 +18,7 @@ class Studio extends React.Component{
                     {/* 1 */}
                     <div className="container  px-md-3 px-sm-0 px-4 fontlato stylecontainer" >
                         <div className=" col-lg-11 col-12 d-flex fontheadingstudio padding100 px-md-3 px-sm-0 px-2"  style={{ fontWeight:"300"}}>
-                            Turning Spatial Experience Into a work of art.
+                            Turning spatial experience into a work of art.
                         </div>
                         <div className="col-lg-11 col-12 px-md-3 px-sm-0 px-2 d-flex flex-column margin80" >
                             <div className="fontsubheading-studio" style={{fontWeight:"700", letterSpacing:"0.025cm", lineHeight:"100%"}}>
