@@ -7,7 +7,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import dummy from "./../Assets/project/dummy.JPG"
 import openaire from "../Assets/project/OPENAIRE/thumbnail.JPG";
 import linds from "../Assets/project/LINDS/COVER.jpg"
-import lindsdua from "../Assets/project/LINDS/01.jpg"
 import stradaCoffee from "../Assets/project/STRADA COFFEE/COVER.jpg"
 
 // Helpers
