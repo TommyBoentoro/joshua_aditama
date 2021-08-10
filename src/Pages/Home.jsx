@@ -260,7 +260,7 @@ class Home extends React.Component{
                                     </div>
                                    
                                 </li>
-                                <li className="col d-flex align-items-end  borderhover" style={{padding:"0", margin:"0"}} data-bg={lindsdua}>
+                                <li className="col d-flex align-items-end  borderhover" style={{padding:"0", margin:"0"}} data-bg={linds}>
                                     <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight " >
                                             <a  href="/linds">
                                                 <div className="fonthoverheading">
