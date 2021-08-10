@@ -209,6 +209,10 @@ li.slick-active:hover + .textDots{
     justify-content: start;
 }
 
+.satusatu{
+    opacity: 1;
+}
+
 .textDots2 {
     font-size: 18px;
     font-weight: 400;

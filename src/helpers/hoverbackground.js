@@ -6,6 +6,7 @@ function hoverFunction() {
         el.addEventListener("mouseover", ()=>{
             let bg = el.getAttribute("data-bg");
             body.style.background = `url(${bg})no-repeat center /cover`
+            
         })
     })
 }
