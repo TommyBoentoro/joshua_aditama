@@ -30,6 +30,12 @@
     margin: 220px 25px;
     z-index: 1;
     color: black;
+    text-decoration: none;
+}
+
+.textSliderMobile-home:hover{
+    color: black;
+    text-decoration: none;
 }
 
 .textSliderMobile-home div{

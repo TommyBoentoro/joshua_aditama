@@ -12,7 +12,13 @@ import Footbar from "./components/Footer"
 
 // ProjectDetail
 import Openaire from "./Pages/projectdetail/openaire"
-
+import HouseE from "./Pages/projectdetail/houseE"
+import HouseKM from "./Pages/projectdetail/houseKM "
+import Linds from "./Pages/projectdetail/linds"
+import Omnia from "./Pages/projectdetail/omnia"
+import SenayanCafe from "./Pages/projectdetail/senayanCafe"
+import StradaCoffee from "./Pages/projectdetail/stradaCoffee"
+import Zamia from "./Pages/projectdetail/zamia"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -40,6 +46,13 @@ function App (){
 
           {/* Project Detail */}
           <Route path = "/openaire" component = {Openaire} />
+          <Route path = "/housee" component = {HouseE} />
+          <Route path = "/housekm" component = {HouseKM} />
+          <Route path = "/linds" component = {Linds} />
+          <Route path = "/omnia" component = {Omnia} />
+          <Route path = "/senayancafe" component = {SenayanCafe} />
+          <Route path = "/stradacoffee" component = {StradaCoffee}/>
+          <Route path = "/zamia" component = {Zamia}/>
 
         </Switch>
         <Footbar/>

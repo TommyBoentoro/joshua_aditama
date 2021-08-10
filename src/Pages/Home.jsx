@@ -6,8 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 // import Image
 import dummy from "./../Assets/project/dummy.JPG"
 import openaire from "../Assets/project/OPENAIRE/thumbnail.JPG";
-import empat from "../Assets/project/OPENAIRE/4.JPG"
-import lima from "../Assets/project/OPENAIRE/5.JPG"
+import linds from "../Assets/project/LINDS/COVER.jpg"
+import lindsdua from "../Assets/project/LINDS/01.jpg"
+import stradaCoffee from "../Assets/project/STRADA COFFEE/COVER.jpg"
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
@@ -108,7 +109,7 @@ class Home extends React.Component{
                     <div>
                         <div className="opacitySlider"></div>
                         <div className="sliderDots">
-                            {/* <div className="textDots fontlato border">
+                            <div className="textDots fontlato">
                                 <div className="col" style={{opacity:"1"}}>
                                     Project 1
                                 </div>
@@ -118,11 +119,11 @@ class Home extends React.Component{
                                 <div className="col" style={{opacity:"0.5"}}>
                                     Project 3
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
-                        <a href="/openaire"><img src={openaire} alt="Jumbotron" className="bgsliderhome"/></a>
+                        <img src={openaire} alt="Jumbotron" className="bgsliderhome"/>
                     </div>
-                    {/* <div>
+                    <div>
                         <div className="opacitySlider"></div>
                         <div className="sliderDots">
                             <div className="textDots fontlato">
@@ -137,7 +138,7 @@ class Home extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <a href="/openaire"><img src={openaire} alt="Jumbotron" className="bgsliderhome"/></a>v
+                        <img src={linds} alt="Jumbotron" className="bgsliderhome"/>
                     </div>
                     <div>
                         <div className="opacitySlider"></div>
@@ -154,8 +155,8 @@ class Home extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <a href="/openaire"><img src={openaire} alt="Jumbotron" className="bgsliderhome"/></a>
-                    </div> */}
+                        <img src={stradaCoffee} alt="Jumbotron" className="bgsliderhome"/>
+                    </div>
                 </Slider>
             </div>
 
@@ -257,42 +258,32 @@ class Home extends React.Component{
                                             </div>
                                         </a>
                                     </div>
-                                    {/* <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight" >
-                                            <a  href="#">
-                                                <div className="fonthoverheading" >
-                                                    Architecture, Interior, Landscape
-                                                </div>
-                                                
-                                                <div className="fonthoverbody">
-                                                    OPENAIRE
-                                                </div>
-                                            </a>
-                                    </div> */}
+                                   
                                 </li>
-                                {/* <li className="col d-flex align-items-end justify-content-center borderhover" style={{padding:"0", margin:"0"}} data-bg={test1}>
-                                    <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight " >
-                                            <a  href="#">
+                                <li className="col d-flex align-items-end  borderhover" style={{padding:"0", margin:"0"}} data-bg={lindsdua}>
+                                    <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight " >
+                                            <a  href="/linds">
                                                 <div className="fonthoverheading">
-                                                    Furniture
+                                                    Architecture, Interior
                                                 </div>
                                                 <div className="fonthoverbody">
-                                                    Taman Anggrek
+                                                    LIND'S ICE CREAM
                                                 </div>
                                             </a>
                                     </div>
                                 </li>
-                                <li className="col d-flex align-items-end justify-content-center borderhover border" style={{padding:"0", margin:"0"}} data-bg={jumbotron}>
-                                    <div className="hoversaya d-flex justify-content-center align-items-center projectcardheight ">
-                                            <a  href="#">
+                                <li className="col d-flex align-items-end  borderhover border" style={{padding:"0", margin:"0"}} data-bg={stradaCoffee}>
+                                    <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight ">
+                                            <a  href="/stradacoffee">
                                                 <div className="fonthoverheading">
-                                                    Furniture
+                                                    Architecture, Interior
                                                 </div>
                                                 <div className="fonthoverbody">
-                                                    Books N Beyond
+                                                    STRADA COFFEE
                                                 </div>
                                             </a>
                                     </div>
-                                </li> */}
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -359,40 +350,42 @@ class Home extends React.Component{
                         </a>
                     </div>
                     <div>
-                        <a href="/openaire">
+                        <a href="/linds">
                             <div className="textSliderMobile-home fontlato">
                                 <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                    Architecture, Interior, Landscape
+                                    Architecture, Interior
                                 </div>
                                 <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                    OPENAIRE
+                                    LIND'S ICE CREAM
                                 </div>
                             </div>
                             <div className="backgroundSliderMobile-home">
                                 {/* Kotak gradient */}
                             </div>
                             <div>
-                                <img src= {empat} className="bgSliderMobile-home" alt="" />
+                                <img src= {linds} className="bgSliderMobile-home" alt="" />
                             </div>
                         </a>
+                       
                     </div>
                     <div>
-                        <a href="/openaire">
-                            <div className="textSliderMobile-home fontlato">
-                                <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                    Architecture, Interior, Landscape
-                                </div>
-                                <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                    OPENAIRE
-                                </div>
+                            <div className="fontlato">
+                                <a href="/stradacoffe" className="textSliderMobile-home ">
+                                    <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                        Architecture, Interior
+                                    </div>
+                                    <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                        STRADA COFFEE
+                                    </div>
+                                </a>
                             </div>
                             <div className="backgroundSliderMobile-home">
                                 {/* Kotak gradient */}
                             </div>
                             <div>
-                                <img src= {lima} className="bgSliderMobile-home" alt="" />
+                                <img src= {stradaCoffee} className="bgSliderMobile-home" alt="" />
                             </div>
-                        </a>
+                        
                     </div>
                 </Slider>
             </div>

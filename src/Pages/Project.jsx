@@ -11,6 +11,14 @@ import "./../Supports/projectResponsive.css"
 
 // Import IMAGES
 import openaire from "./../Assets/project/OPENAIRE/thumbnail.JPG"
+import houseE from "./../Assets/project/HOUSE E/COVER.JPG"
+import houseKM from "./../Assets/project/HOUSE KM/COVER.jpeg"
+import linds from "./../Assets/project/LINDS/COVER.jpg"
+import omnia from "./../Assets/project/OMNIA/COVER.jpg"
+import senayanCafe from "./../Assets/project/SENAYAN CAFE/COVER.jpg"
+import stradaCoffee from "./../Assets/project/STRADA COFFEE/COVER.jpg"
+import zamia from "./../Assets/project/ZAMIA/COVER.jpg"
+
 
 class Project extends React.Component{
 
@@ -244,131 +252,144 @@ class Project extends React.Component{
                         </div>
                     </div>
 
-                    {/* <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                          <div style={{overflow:"hidden"}} >
-                            <img src="" alt="" className="imagecol-3" />
+                            <a href="/housee"><img src={houseE} alt="" className="imagecol-3" /></a>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
-                               Architect
+                               Interior Design
                            </div >
                            <div className="fonttitle " >
-                                Binong
+                                HOUSE E
                            </div>
                            <div className="fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            A renovation of an old house, with minor changing in
+                            architectural elements to go with modern luxury living
+                            concept.
                            </div>
                         </div>
-                    </div> */}
-                    {/* <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                    </div>
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src="" alt="" className="imagecol-3"/>
+                            <a href="/housekm"><img src={houseKM} alt="" className="imagecol-3"/></a>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
-                               Architect
+                               Architecture
                            </div >
                            <div className="fonttitle">
-                                SPM
+                                HOUSE KM
                            </div>
                            <div className=" fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           A formal play of two-storey private villa in one monolithic roof shape.
                            </div>
                         </div>
                     </div>
                     <div className="col-sm-6 px-md-3 px-sm-1 px-0  image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src="" alt="" className="imagecol-6"  />
+                            <a href="/linds"><img src={linds} alt="" className="imagecol-6"/></a>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory">
-                               Architect
+                               Architecture, Interior
                            </div >
-                           <div className="fontcategory">
-                                Mangga Dua
+                           <div className="fonttitle">
+                                LIND'S ICE CREAM
                            </div>
                            <div className="col-12 px-0 fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
-                                Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
+                            Lind’s Ice Cream is having a new look for its first ice
+                            cream shop, preserving the identity of vintage local
+                            artisan ice cream shop. The old building is where Lind’s
+                            opened its first shop.
                            </div>
                         </div>
                     </div>
 
-                    <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className=" col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src="" alt="" className="imagecol-3"/>
+                            <a href="/omnia"><img src={omnia} alt="" className="imagecol-3"/></a>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
-                               Architect
+                               Architecture
                            </div >
                            <div className="fonttitle">
-                                SPM
+                                OMNIA
                            </div>
                            <div className="fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Representing teamwork and togetherness in its
+                            architectural shape and form, combines with
+                            vernacular elements.
                            </div>
                         </div>
                     </div>
-                    <div className="hiddendummy col-sm-6 px-md-3 px-sm-1 px-3  image imagehover paddingbody">
+                    <div className=" col-sm-6 px-md-3 px-sm-1 px-3  image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src="" alt="" className="imagecol-6"  />
+                            <a href="/senayancafe"><img src={senayanCafe} alt="" className="imagecol-6"/></a>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory">
-                               Architect
+                               Architecture
                            </div >
                            <div className="fonttitle">
-                                Mangga Dua
+                                SENAYAN CAFE
                            </div>
                            <div className="col-12 px-0   fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
-                                Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
-                           </div>
-                        </div>
-                    </div> */}
-                    {/* <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
-                        <div style={{overflow:"hidden"}} >
-                            <img src="" alt="" className="imagecol-3"/>
-                        </div>
-                        <div className="margincardbody">
-                            <div className="fontcategory" >
-                               Architect
-                           </div >
-                           <div className="fonttitle">
-                                SPM
-                           </div>
-                           <div className=" fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Located in Gelora Bung Karno, Senayan Cafe targeted a
+
+                            luxury cafe and bar. The site area is a private man-
+                            made grass fields with ponds which give a big
+
+                            advantage for the architecture.
                            </div>
                         </div>
                     </div>
-                    <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className=" col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src="" alt="" className="imagecol-3"/>
+                            <a href="/stradacoffee"><img src={stradaCoffee} alt="" className="imagecol-3"/></a>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
-                               Architect
+                               Architecture, Interior
                            </div >
                            <div className="fonttitle">
-                                SPM
+                                STRADA COFFEE
                            </div>
                            <div className=" fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Bringing a new modern coffee culture into its coffee
+                            shop, Strada Coffee redesigns its space to be more
+                            spacious and modern.
                            </div>
                         </div>
-                    </div> */}
+                    </div>
+                    <div className=" col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <a href="/zamia"><img src={zamia} alt="" className="imagecol-3"/></a>
+                        </div>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
+                               Architecture
+                           </div >
+                           <div className="fonttitle">
+                                ZAMIA
+                           </div>
+                           <div className=" fontbodyproject">
+                            A small flower and pottery shop that elevate its original
+                            workshop to be an artisanal shop for local consumers.
+                           </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             {/*  */}
 
-            <div className=" d-flex justify-content-center marginbutton" >
+            {/* <div className=" d-flex justify-content-center marginbutton" >
                 <button className="fontlato btn-11 buttonview">
                     View more
                 </button>
-            </div>
+            </div> */}
             </>
         )
     }
