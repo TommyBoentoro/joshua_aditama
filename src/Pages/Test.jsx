@@ -43,6 +43,9 @@ class Test extends React.Component{
                 </div>
                 <div>
                     <input className="buttonClick"  type="button" value="Click Me"/>
+                    <div>
+                        test
+                    </div>
                 </div>
             </div>
 

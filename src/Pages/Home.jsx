@@ -68,14 +68,14 @@ class Home extends React.Component{
 
     componentDidMount(){
         hoverFunction()
-        // this.onGet()
+        this.onGet()
         // hoverTextFunction()
     }
 
-    // onGet = () => {
-    //     this.props.onGetData()
+    onGet = () => {
+        this.props.onGetData()
 
-    // }
+    }
 
     render (){
 
