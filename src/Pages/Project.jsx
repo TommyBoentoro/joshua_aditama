@@ -22,13 +22,13 @@ import zamia from "./../Assets/project/ZAMIA/COVER.jpg"
 
 class Project extends React.Component{
 
-    // componentDidMount(){
-    //     this.onGet()
-    // }
+    componentDidMount(){
+        this.onGet()
+    }
 
-    // onGet = () => {
-    //     this.props.onGetData()
-    // }
+    onGet = () => {
+        this.props.onGetData()
+    }
 
 
     render(){
