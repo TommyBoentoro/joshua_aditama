@@ -9,17 +9,18 @@ import { onGetData } from "../Redux/Actions/projectaction"
 import "./../Supports/home.css"
 import "./../Supports/projectResponsive.css"
 
+// Import IMAGES
+import openaire from "./../Assets/project/OPENAIRE/thumbnail.JPG"
+
 class Project extends React.Component{
 
-    componentDidMount(){
-        this.onGet()
-    }
+    // componentDidMount(){
+    //     this.onGet()
+    // }
 
-    onGet = () => {
-       
-
-        this.props.onGetData()
-    }
+    // onGet = () => {
+    //     this.props.onGetData()
+    // }
 
 
     render(){
@@ -224,27 +225,28 @@ class Project extends React.Component{
                    }
                 </div>
 
-                {/* <div className="row">
+                <div className="row">
                     <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}}>
-                            <a href="/projectdetail"> <img src={project9} alt="logo" className="imagecol-9" /> </a>
+                            <a href="/openaire"> <img src={openaire} alt="logo" className="imagecol-9" /> </a>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory">
-                               Interior
+                               Architecture, Interior, Landscape
                            </div >
                            <div className="fonttitle">
-                                Openaire Semarang
+                                OPENAIRE
                            </div>
                            <div className="col-md-8 col-12 px-0  fontbodyproject">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet nibh a neque dignissim, a ullamcorper ligula tincidunt.
-                                Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
+                           A 7000 square meters consists of a restaurant, a concept store, bars, and outdoor attractions, incorporating man-made nature into its structure. 
+                           Tons of planted real trees and plants give an experience of open air architecture.
                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+
+                    {/* <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                          <div style={{overflow:"hidden"}} >
-                            <img src={project2} alt="" className="imagecol-3" />
+                            <img src="" alt="" className="imagecol-3" />
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
@@ -257,10 +259,10 @@ class Project extends React.Component{
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
-                    </div>
-                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                    </div> */}
+                    {/* <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src={project3} alt="" className="imagecol-3"/>
+                            <img src="" alt="" className="imagecol-3"/>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
@@ -276,7 +278,7 @@ class Project extends React.Component{
                     </div>
                     <div className="col-sm-6 px-md-3 px-sm-1 px-0  image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src={project4} alt="" className="imagecol-6"  />
+                            <img src="" alt="" className="imagecol-6"  />
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory">
@@ -294,7 +296,7 @@ class Project extends React.Component{
 
                     <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src={project5} alt="" className="imagecol-3"/>
+                            <img src="" alt="" className="imagecol-3"/>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
@@ -310,7 +312,7 @@ class Project extends React.Component{
                     </div>
                     <div className="hiddendummy col-sm-6 px-md-3 px-sm-1 px-3  image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src={project6} alt="" className="imagecol-6"  />
+                            <img src="" alt="" className="imagecol-6"  />
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory">
@@ -324,10 +326,10 @@ class Project extends React.Component{
                                 Praesent ac sapien mollis, tristique lacus non, aliquet nisi.
                            </div>
                         </div>
-                    </div>
-                    <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    </div> */}
+                    {/* <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src={project7} alt="" className="imagecol-3"/>
+                            <img src="" alt="" className="imagecol-3"/>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
@@ -343,7 +345,7 @@ class Project extends React.Component{
                     </div>
                     <div className="hiddendummy col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
-                            <img src={project8} alt="" className="imagecol-3"/>
+                            <img src="" alt="" className="imagecol-3"/>
                         </div>
                         <div className="margincardbody">
                             <div className="fontcategory" >
@@ -356,9 +358,8 @@ class Project extends React.Component{
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            </div>
                         </div>
-                    </div>
-                    
-                </div> */}
+                    </div> */}
+                </div>
             </div>
 
             {/*  */}

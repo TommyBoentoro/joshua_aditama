@@ -3,10 +3,9 @@ import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-
-
 // import Image
 import dummy from "./../Assets/project/dummy.JPG"
+import openaire from "../Assets/project/OPENAIRE/thumbnail.JPG";
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
@@ -67,14 +66,14 @@ class Home extends React.Component{
 
     componentDidMount(){
         hoverFunction()
-        this.onGet()
+        // this.onGet()
         // hoverTextFunction()
     }
 
-    onGet = () => {
-        this.props.onGetData()
+    // onGet = () => {
+    //     this.props.onGetData()
 
-    }
+    // }
 
     render (){
 
@@ -102,12 +101,12 @@ class Home extends React.Component{
 
         return(
            <> 
-            {/* <div>
+            <div>
                 <Slider {...settings1}>
                     <div>
                         <div className="opacitySlider"></div>
                         <div className="sliderDots">
-                            <div className="textDots fontlato border">
+                            {/* <div className="textDots fontlato border">
                                 <div className="col" style={{opacity:"1"}}>
                                     Project 1
                                 </div>
@@ -117,11 +116,11 @@ class Home extends React.Component{
                                 <div className="col" style={{opacity:"0.5"}}>
                                     Project 3
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
-                        <a href="/project"><img src={Jumbotron} alt="Jumbotron" className="bgsliderhome"/></a>
+                        <a href="/openaire"><img src={openaire} alt="Jumbotron" className="bgsliderhome"/></a>
                     </div>
-                    <div>
+                    {/* <div>
                         <div className="opacitySlider"></div>
                         <div className="sliderDots">
                             <div className="textDots fontlato">
@@ -136,7 +135,7 @@ class Home extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <img src={project6} alt="" className="bgsliderhome" />
+                        <a href="/openaire"><img src={openaire} alt="Jumbotron" className="bgsliderhome"/></a>v
                     </div>
                     <div>
                         <div className="opacitySlider"></div>
@@ -153,10 +152,10 @@ class Home extends React.Component{
                                 </div>
                             </div>
                         </div>
-                       <img src={background2} alt="" className="bgsliderhome"  />
-                    </div>
+                        <a href="/openaire"><img src={openaire} alt="Jumbotron" className="bgsliderhome"/></a>
+                    </div> */}
                 </Slider>
-            </div> */}
+            </div>
 
             <Slider {...settings1}>
                 {
@@ -246,7 +245,7 @@ class Home extends React.Component{
                             <ul className="listhover" style={{padding:"0", margin:"0"}}>
                                 <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
                                     <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >    
-                                        <a href="/projectdetail/155">
+                                        <a href="/openaire">
                                             <div className="fonthoverheading" >
                                                 Architecture, Interior, Landscape
                                             </div>

@@ -4,10 +4,6 @@ import Slider from "react-slick";
 // import 'slick-carousel/slick/slick-theme.css';
 
 // Import Image
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import jumbotron from "./../Assets/jumbotron.JPG"
-import bgproject from "./../Assets/project/bgproject.png"
-import test1 from "./../Assets/project/test1.png"
 
 // Import CSS
 import "./../Supports/tiga.css"

@@ -1,6 +1,4 @@
 import React from "react"
-import jumbotron from './../Assets/jumbotron.JPG'
-import test1 from "./../Assets/project/test1.png"
 
 
 import "./../Supports/backgroundHover.css"

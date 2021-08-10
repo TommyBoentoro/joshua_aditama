@@ -70,7 +70,7 @@ class ProjectDetail extends React.Component{
 
         return(
             <>
-            {/* <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}>
+            <div className="backgroundimg" style={{backgroundImage:`url(${jumbotron})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}>
                 <div className="overlay">
                     <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
                         <div className="fontbgheading" >
@@ -97,7 +97,7 @@ class ProjectDetail extends React.Component{
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             <div>
                 {
@@ -165,7 +165,7 @@ class ProjectDetail extends React.Component{
                                 <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-2" >
                                     {value.head_description}
                                 </div>
-                                <div className="col-md-10 col-12 fontbody  px-md-3 px-sm-0 px-2">
+                                <div className="col-md-10 col-12 fontbody px-md-3 px-sm-0 px-2">
                                     {value.description}
                                 <br/>
                                 </div>
