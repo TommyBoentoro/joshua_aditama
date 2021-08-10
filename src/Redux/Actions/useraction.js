@@ -36,12 +36,12 @@ export const onUserLogin = (data) => {
 
 export const onSubmitMessage = (name, email, contact, letter) => {
     return(dispatch) => {
-        // dispatch(
-        //     {
-        //         type: `LOADING`
-        //     }
-        // )
-        axios.post(`http://localhost:4000/user-system/send-email`, {name: name, email: email, contact: contact, letter: letter})
+        dispatch(
+            {
+                type: `LOADING`
+            }
+        )
+        axios.post(`https://backend-joshua.herokuapp.com/user-system/send-email`, {name: name, email: email, contact: contact, letter: letter})
         .then((res) => {
             console.log(res)
             dispatch(
