@@ -3,11 +3,6 @@ import Slider from "react-slick"
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
 
-// Redux
-import { connect } from "react-redux";
-
-// Action
-import {onGetDetailProject} from "../../Redux/Actions/projectaction"
 
 // Import Images
 import openaire from "./../../Assets/project/OPENAIRE/thumbnail.JPG"
