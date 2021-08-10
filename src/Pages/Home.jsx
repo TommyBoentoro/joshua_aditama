@@ -6,6 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 // import Image
 import dummy from "./../Assets/project/dummy.JPG"
 import openaire from "../Assets/project/OPENAIRE/thumbnail.JPG";
+import empat from "../Assets/project/OPENAIRE/4.JPG"
+import lima from "../Assets/project/OPENAIRE/5.JPG"
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
@@ -336,6 +338,64 @@ class Home extends React.Component{
                 </div>
             </div> */}
 
+            <div className="hoverHomeMobile">
+                <Slider {...settings2}>
+                    <div>
+                        <a href="/openaire">
+                            <div className="textSliderMobile-home fontlato">
+                                <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                    Category: Architecture
+                                </div>
+                                <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                    OPENAIRE
+                                </div>
+                            </div>
+                            <div className="backgroundSliderMobile-home">
+                                {/* Kotak gradient */}
+                            </div>
+                            <div>
+                                <img src= {openaire} className="bgSliderMobile-home" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/openaire">
+                            <div className="textSliderMobile-home fontlato">
+                                <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                    Architecture, Interior, Landscape
+                                </div>
+                                <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                    OPENAIRE
+                                </div>
+                            </div>
+                            <div className="backgroundSliderMobile-home">
+                                {/* Kotak gradient */}
+                            </div>
+                            <div>
+                                <img src= {empat} className="bgSliderMobile-home" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/openaire">
+                            <div className="textSliderMobile-home fontlato">
+                                <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                    Architecture, Interior, Landscape
+                                </div>
+                                <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                    OPENAIRE
+                                </div>
+                            </div>
+                            <div className="backgroundSliderMobile-home">
+                                {/* Kotak gradient */}
+                            </div>
+                            <div>
+                                <img src= {lima} className="bgSliderMobile-home" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </Slider>
+            </div>
 
             <div className="hoverHomeMobile">
                 <Slider {...settings2}>
