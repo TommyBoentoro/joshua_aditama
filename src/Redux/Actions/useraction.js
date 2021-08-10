@@ -41,7 +41,7 @@ export const onSubmitMessage = (name, email, contact, letter) => {
         //         type: `LOADING`
         //     }
         // )
-        axios.post(`https://backend-joshua.herokuapp.com/user-system/send-email`, {name: name, email: email, contact: contact, letter: letter})
+        axios.post(`http://localhost:4000/user-system/send-email`, {name: name, email: email, contact: contact, letter: letter})
         .then((res) => {
             console.log(res)
             dispatch(
@@ -53,12 +53,7 @@ export const onSubmitMessage = (name, email, contact, letter) => {
         })
         .catch((err) => {
             
-            dispatch(
-                {
-                    type: `MESSAGE_ERROR`,
-                    payload:err.data.message
-                }
-            )
+            console.log(err)
         })
     } 
 }
