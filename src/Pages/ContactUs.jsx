@@ -39,6 +39,14 @@ class ContactUs extends React.Component{
                                         <div className="fontsubheadingnumber" style = {{marginTop: "20px",  color:"#8f8f8f", fontWeight:"700"}}>
                                             +62 811 2610045
                                         </div>
+                                        <div className="fontbodyphone marginphone" style = {{fontWeight:"normal" , color:"#8f8f8f"}}>
+                                            Email
+                                        </div>
+                                        <a href="mailto:Jaditama@gmail.com" className="fontsubheadingnumber">
+                                            <div  style = {{marginTop: "20px",  color:"#8f8f8f", fontWeight:"700"}}>
+                                                Jaditama@gmail.com
+                                            </div>
+                                        </a>
                                     </div>
 
                                     <div className="col-sm-8 col-12 marginInTouch " >
