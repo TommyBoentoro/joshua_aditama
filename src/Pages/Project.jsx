@@ -37,7 +37,7 @@ class Project extends React.Component{
                 <div className="bgproject bgimageresponsive">
                         <div className="overlay">
                         <div className="container px-md-3 px-sm-0 px-4 fontlato" style={{height:"100%", color: "white"}}>
-                                <div className="d-flex flex-column justify-content-end px-md-3 px-sm-3 px-2" style={{height:"100%"}}>
+                                <div className="d-flex flex-column justify-content-end px-md-0 px-sm-3 px-2" style={{height:"100%"}}>
                                     <div className="fontbgproject " style={{ fontWeight:"300", letterSpacing:"0.015cm"}}> 
                                         Projects
                                     </div>

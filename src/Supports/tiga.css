@@ -14,17 +14,17 @@
 
 .slick-center img{
     opacity: 1;
-    transition:ease-in .5s;
+    transition:ease-out .5s;
     transform: scaleY(1)
 }
 
 .slick-center {
-    transform: scale(1);
+    transform: scaleX(0.8);
 }
 
 .opacityimage {
     opacity: 0.3;
-    transform: scaleY(0.9) scaleX(0.97)
+    transform: scaleY(0.9) scaleX(1.15)
 }
 
 .slick{

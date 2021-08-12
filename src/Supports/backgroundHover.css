@@ -18,7 +18,10 @@
 }
 
 .hoversaya{
-    text-decoration: nonde;
+    text-decoration: none;
+    background-image: linear-gradient(transparent, white);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .hoversaya:hover{

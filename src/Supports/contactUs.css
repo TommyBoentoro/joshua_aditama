@@ -24,9 +24,9 @@
 /* Body */
 
 .textwhatsapp{
-    margin-top: 170px;
+    margin-top: 145px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     color: #8F8F8F;
     ;
 }
@@ -34,7 +34,7 @@
 .textWaNumber{
     margin-top: 10px;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 400;
     color: #8F8F8F;
 }
 
@@ -58,14 +58,14 @@
     .textwhatsapp{
         margin-top: 170px;
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 300;
         color: #8F8F8F;
     }
 
     .textWaNumber{
         margin-top: 10px;
         font-size: 21px;
-        font-weight: 700;
+        font-weight: 400;
         color: #8F8F8F;
     }
     
@@ -92,14 +92,14 @@
     .textwhatsapp{
         margin-top: 41px;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 300;
         color: #8F8F8F;
     }
 
     .textWaNumber{
         margin-top: 5px;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 400;
         color: #8F8F8F;
     }
     
