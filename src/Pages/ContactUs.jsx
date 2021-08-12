@@ -102,7 +102,7 @@ class ContactUs extends React.Component{
 
             <div className="displayContactUs">
                 <div className="container d-flex flex-column align-items-center fontlato">
-                    <div className="marginContact text-contactus col-sm-8 col-md-12 col-10 px-0">
+                    <div className="marginContact text-contactus col-sm-8 col-md-12 col-12 px-0">
                         <div className="d-flex justify-content-center">
                             <div>
                                 For new
