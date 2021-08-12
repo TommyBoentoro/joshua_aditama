@@ -46,35 +46,69 @@
     text-decoration: none;
 }
 
-.displayContactUs{
-    display: block;
-}
-
-.displayContactUs2{
-    display: none;
-}
 
 @media (max-width:768px) {
+    .text-contactus{
+        color: black;
+        font-size: 28px;
+        font-weight: 300;
+        text-align: center;
+    }
 
-    .displayContactUs{
-        display: none;
-    }    
+    .textwhatsapp{
+        margin-top: 170px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #8F8F8F;
+    }
 
-    .displayContactUs2{
-        display: block;
+    .textWaNumber{
+        margin-top: 10px;
+        font-size: 21px;
+        font-weight: 700;
+        color: #8F8F8F;
     }
     
+    .textWaNumber:hover{
+        margin-top: 10px;
+        font-size: 21px;
+        font-weight: 700;
+        color: #8F8F8F;
+        text-decoration: none;
+    }
 }
 
 @media (max-width:576px) {
+    .text-contactus{
+        color: black;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 150.5%;
+        text-align: center;
+        letter-spacing: -0.01em;
+    }
 
-    .displayContactUs{
-        display: none;
-    }    
+    .textwhatsapp{
+        margin-top: 41px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #8F8F8F;
+    }
 
-    .displayContactUs2{
-        display: block;
+    .textWaNumber{
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #8F8F8F;
     }
     
+    .textWaNumber:hover{
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #8F8F8F;
+        text-decoration: none;
+    }
 }
 
