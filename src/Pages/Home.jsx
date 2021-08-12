@@ -8,6 +8,7 @@ import dummy from "./../Assets/project/dummy.JPG"
 import openaire from "../Assets/project/OPENAIRE/thumbnail.JPG";
 import linds from "../Assets/project/LINDS/COVER.jpg"
 import stradaCoffee from "../Assets/project/STRADA COFFEE/COVER.jpg"
+import inquiry from "./../Assets/INQUIRY_NOW.jpg"
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
@@ -489,6 +490,10 @@ class Home extends React.Component{
                             </div>
                         </div>
                     </div>
+
+                    
+
+                    
            
            </>
         )

@@ -1,6 +1,6 @@
 .backgroundhover {
     background: url("../Assets/project/dummy.JPG")no-repeat center /cover;
-    transition: .5s;
+    transition: ease-out 1s;
 }
 
 .hoverimage ul{

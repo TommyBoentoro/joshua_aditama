@@ -1,0 +1,47 @@
+.marginContact{
+    margin-top: 218px;
+}
+
+.text-contactus{
+    color: black;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 63.21px;
+    text-align: center;
+}
+
+.button-contact{
+    margin-top: 50px;
+    height: 52px;
+    width: 124px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* Body */
+
+.textwhatsapp{
+    margin-top: 170px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #8F8F8F;
+    ;
+}
+
+.textWaNumber{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #8F8F8F;
+}
+
+.textWaNumber:hover{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #8F8F8F;
+    text-decoration: none;
+}
