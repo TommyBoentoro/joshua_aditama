@@ -26,7 +26,7 @@ class ContactUs extends React.Component{
     render(){
         return(
             <>
-            {/* <div className="container px-md-3 px-0" >
+            <div className="container px-md-3 px-0 displayContactUs2" >
                 <div >
                     <div className="d-flex flex-row px-md-3 px-sm-0 px-4 fontlato container justify-content-center paddingcontact" >
                         <div className="col-md-12 col-sm-12">
@@ -57,7 +57,7 @@ class ContactUs extends React.Component{
                                         </a>
                                     </div>
 
-                                    <div className="col-sm-8 col-12 marginInTouch " >
+                                    {/* <div className="col-sm-8 col-12 marginInTouch " >
                                         <div  className = "fontlato mx-sm-4 fontheadingcontact" style={{  fontWeight:"400"}}>
                                             Get In Touch
                                         </div>
@@ -93,69 +93,73 @@ class ContactUs extends React.Component{
                                                 }
                                             </h6>
                                         </div>
-                                    </div>                                   
+                                    </div>                                    */}
                             </div>
                         </div>
                     </div>       
                 </div>
-            </div> */}
-
-            <div className="container d-flex flex-column align-items-center fontlato">
-                <div className="marginContact text-contactus col-8 px-0">
-                    <div className="d-flex justify-content-center">
-                        <div>
-                            For new
-                        </div>
-                        <div className="px-2" style={{fontWeight:"400"}}>
-                            project
-                        </div>
-                        <div>
-                            inquiries,
-                        </div>
-                    </div>
-                    <div className="d-flex justify-content-center">
-                        <div>
-                            please do not hesitate to
-                        </div>
-                        <div className="px-2" style={{fontWeight:"400"}}>
-                            contact us
-                        </div>
-                        <div>
-                            via
-                        </div>
-                    </div>
-                    <div>
-                        whatsapp number or kindly drop an email
-                    </div>
-                </div>
-                <a href="mailto:Jaditama@gmail.com">
-                    <input type="button" value="Contact now" className="button-contact fontlato"/>
-                </a>
             </div>
 
-            <div className="container d-flex justify-content-between fontlato">
-                <div>
-                    <div className="d-flex justify-content-center textwhatsapp">
-                        WHATSAPP
+            <div className="displayContactUs">
+                <div className="container d-flex flex-column align-items-center fontlato">
+                    <div className="marginContact text-contactus col-8 px-0">
+                        <div className="d-flex justify-content-center">
+                            <div>
+                                For new
+                            </div>
+                            <div className="px-2" style={{fontWeight:"400"}}>
+                                project
+                            </div>
+                            <div>
+                                inquiries,
+                            </div>
+                        </div>
+                        <div className="d-flex justify-content-center">
+                            <div>
+                                please do not hesitate to
+                            </div>
+                            <div className="px-2" style={{fontWeight:"400"}}>
+                                contact us
+                            </div>
+                            <div>
+                                via
+                            </div>
+                        </div>
+                        <div>
+                            whatsapp number or kindly drop an email
+                        </div>
                     </div>
-                    <div className="textWaNumber">
-                        +62 811 2610045
-                    </div>
+                    <a href="mailto:Jaditama@gmail.com">
+                        <input type="button" value="Contact now" className="button-contact fontlato"/>
+                    </a>
                 </div>
-                <div>
-                    <div className="d-flex justify-content-center textwhatsapp">
-                        EMAIL
-                    </div>
-                    <div className="textWaNumber">
-                        Jaditama@gmail.com
-                    </div>
-                </div>
-                <div>
-                    <div className="d-flex justify-content-center textwhatsapp">
-                        INSTAGRAM
+            </div>
+
+            <div className="displayContactUs">
+                <div className="container d-flex justify-content-between fontlato displayContact">
+                    <div>
+                        <div className="d-flex justify-content-center textwhatsapp">
+                            WHATSAPP
+                        </div>
+                        <div className="textWaNumber">
+                            +62 811 2610045
+                        </div>
                     </div>
                     <div>
-                        <a  className="textWaNumber" href="https://www.instagram.com/joshua_aditama/">@joshua_aditama</a>
+                        <div className="d-flex justify-content-center textwhatsapp">
+                            EMAIL
+                        </div>
+                        <div className="textWaNumber">
+                            Jaditama@gmail.com
+                        </div>
+                    </div>
+                    <div>
+                        <div className="d-flex justify-content-center textwhatsapp">
+                            INSTAGRAM
+                        </div>
+                        <div>
+                            <a  className="textWaNumber" href="https://www.instagram.com/joshua_aditama/">@joshua_aditama</a>
+                        </div>
                     </div>
                 </div>
             </div>

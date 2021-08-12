@@ -45,3 +45,36 @@
     color: #8F8F8F;
     text-decoration: none;
 }
+
+.displayContactUs{
+    display: block;
+}
+
+.displayContactUs2{
+    display: none;
+}
+
+@media (max-width:768px) {
+
+    .displayContactUs{
+        display: none;
+    }    
+
+    .displayContactUs2{
+        display: block;
+    }
+    
+}
+
+@media (max-width:576px) {
+
+    .displayContactUs{
+        display: none;
+    }    
+
+    .displayContactUs2{
+        display: block;
+    }
+    
+}
+
