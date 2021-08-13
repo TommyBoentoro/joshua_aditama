@@ -336,9 +336,10 @@ class Home extends React.Component{
                 </div>
             </div> */}
 
+
             <div className="hoverHomeMobile">
                 <Slider {...settings2}>
-                    <div>
+                    <div className="border">
                         <a href="/openaire">
                             <div className="textSliderMobile-home fontlato">
                                 <div style={{fontSize:"13px", fontWeight:"700"}}>
@@ -348,15 +349,18 @@ class Home extends React.Component{
                                     OPENAIRE
                                 </div>
                             </div>
-                            <div className="backgroundSliderMobile-home">
-                                {/* Kotak gradient */}
-                            </div>
-                            <div>
-                                <img src= {openaire} className="bgSliderMobile-home" alt="" />
+                        </a>
+                        <a href="/openaire">
+                            <div className="backgroundSliderMobile-homeOpenaire">
+                            
                             </div>
                         </a>
+                        <div>
+                            <img src= {openaire} className="bgSliderMobile-home" alt="" />
+                        </div>
+                        
                     </div>
-                    <div>
+                    <div className="border">
                         <a href="/linds">
                             <div className="textSliderMobile-home fontlato">
                                 <div style={{fontSize:"13px", fontWeight:"700"}}>
@@ -366,33 +370,31 @@ class Home extends React.Component{
                                     LIND'S ICE CREAM
                                 </div>
                             </div>
-                            <div className="backgroundSliderMobile-home">
-                                {/* Kotak gradient */}
+                        </a>
+                            <div className="backgroundSliderMobile-homeLinds">
+                            
                             </div>
-                            <div>
-                                <img src= {linds} className="bgSliderMobile-home" alt="" />
+                        <div>
+                            <img src= {linds} className="bgSliderMobile-home" alt="" />
+                        </div>
+                    </div>
+                    <div className="border">
+                        <a href="/stradacoffee">
+                            <div className="fontlato textSliderMobile-home">
+                                <div style={{fontSize:"13px", fontWeight:"700"}}>
+                                    Architecture, Interior
+                                </div>
+                                <div  style={{fontSize:"21px", fontWeight:"300"}}>
+                                    STRADA COFFEE
+                                </div>
                             </div>
                         </a>
-                       
-                    </div>
-                    <div>
-                            <div className="fontlato">
-                                <a href="/stradacoffe" className="textSliderMobile-home ">
-                                    <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                        Architecture, Interior
-                                    </div>
-                                    <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                        STRADA COFFEE
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="backgroundSliderMobile-home">
-                                {/* Kotak gradient */}
-                            </div>
-                            <div>
-                                <img src= {stradaCoffee} className="bgSliderMobile-home" alt="" />
-                            </div>
-                        
+                        <div className="backgroundSliderMobile-homeStrada">
+                            
+                        </div>
+                        <div>
+                            <img src= {stradaCoffee} className="bgSliderMobile-home" alt="" />
+                        </div>
                     </div>
                 </Slider>
             </div>
