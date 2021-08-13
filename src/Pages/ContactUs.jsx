@@ -2,12 +2,13 @@ import React from "react"
 import {connect } from "react-redux"
 
 // Import Css
-import "./../Supports/responsive.css"
 import "./../Supports/home.css"
 import "./../Supports/hover.css"
 import "./../Supports/contactUs.css"
+import "./../Supports/responsive.css"
 
-
+// Import Image
+import logo from "./../Assets/logo-2.png"
 
 // Import Action
 import { onSubmitMessage } from "../Redux/Actions/useraction"
@@ -163,6 +164,46 @@ class ContactUs extends React.Component{
                     </div>
                 </div>
             </div>
+
+            {/* Footer */}
+            <div className="background3 fontlato footer" style={{height:"100%"}}>
+                        <div className="container-md px-md-3 px-sm-5 px-4 d-sm-flex footerdua">
+                            <div className="col-md-6 d-sm-flex d-none px-md-3 px-sm-0 px-0">
+                                <a href="/"> <img src={logo} alt="logo" className="logowidth"/> </a>
+                            </div>
+                            <div className="col-sm-6 col-12 d-sm-flex px-md-3 px-2">
+                                <div className="col-sm-5 col-12 text-md-left px-md-3 px-0">
+                                    <div>
+                                        <a href="/" className=" fontsubheading-footer"> Home </a>
+                                    </div>
+                                    <div style={{marginTop:"30px"}}>
+                                        <a href="/project" className="fontsubheading-footer"> Project </a>
+                                    </div>
+                                    <div style={{marginTop:"30px"}}>
+                                        <a href="/studio" className="fontsubheading-footer" > Studio </a>
+                                    </div>
+                                    <div style={{marginTop:"30px"}}>
+                                        <a href="/contactus" className="fontsubheading-footer"> Contact </a>
+                                    </div>
+                                </div>
+                                <div className="col-sm-7 col-12 text-md-left py-md-0 py-sm-0 py-5 px-md-3 px-0">
+                                    <div className="follow socialmedia1" style={{ letterSpacing:"0.02cm", lineHeight:"29px"}} >
+                                        Follow My Social Media
+                                    </div>
+                                    <div className="follow socialmedia2" style={{ letterSpacing:"0.02cm", lineHeight:"29px"}} >
+                                        Social Media
+                                    </div>
+                                    <div  style={{ marginTop:"30px"}}>
+                                        <a href="https://www.instagram.com/joshua_aditama/" className="fontsubheading-footer"> Instagram  </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div className="d-flex justify-content-center fontlato rights" style={{ fontSize:"11px", fontWeight:"300"}}>
+                            © 2021 Joshua Aditama. All Rights Reserved
+                        </div>
+                    </div>
             </>
             
            

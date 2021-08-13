@@ -55,7 +55,7 @@ function App (){
           <Route path = "/zamia" component = {Zamia}/>
 
         </Switch>
-        <Footbar/>
+        {/* <Footbar/> */}
       </BrowserRouter>
     </Provider>
 

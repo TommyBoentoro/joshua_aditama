@@ -7,9 +7,11 @@ import satu from "./../../Assets/project/LINDS/01.jpg"
 import dua from "./../../Assets/project/LINDS/02.jpg"
 import tiga from "./../../Assets/project/LINDS/04.jpg"
 
+// Import Footer
+import Footbar from "../../components/Footer"
+
 // Import CSS
 import "./../../"
-
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
@@ -148,6 +150,8 @@ class Linds extends React.Component{
                             original brand identity itself.
                         </div>
                     </div>
+
+                    <Footbar/>
                 </>
             )
         }

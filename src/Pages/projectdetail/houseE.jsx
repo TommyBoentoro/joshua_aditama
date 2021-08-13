@@ -12,11 +12,13 @@ import lima from "./../../Assets/project/HOUSE E/5.JPG"
 
 // Import CSS
 import "./../../"
-
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
 import "./../../Supports/projectResponsive.css"
+
+// import Footer
+import Footbar from "../../components/Footer"
 
 // Import Icon
 import {IoIosArrowDropright} from 'react-icons/io';
@@ -63,17 +65,17 @@ class HouseE extends React.Component{
                                     HOUSE E
                                 </div>
                                 <div className="paddingbg fontbgbody" >
-                                    <div className="row px-sm-0 px-2 ">
-                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className="row px-sm-0 px-2">
+                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Category: Interior Design
                                         </div>
-                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Location: Semarang,INA
                                         </div> 
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Year: 2021
                                         </div>
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Status: Design Proposal
                                         </div>
                                         {/* <div className="status col-sm">
@@ -146,7 +148,7 @@ class HouseE extends React.Component{
     
                         </Slider>
                     </div>
-    
+                    <Footbar/>
                 </>
             )
         }

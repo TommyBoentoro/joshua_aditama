@@ -23,9 +23,9 @@
 }
 
 .footer{
-    margin-top: 177px;
-    padding-top: 80px;
-    height: 1054px;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 200px;
 }
 
 .fontfooterheading{
@@ -124,8 +124,8 @@
 }
 
 .rights{
-    margin-top: 145px;
-
+    height: 145px;
+    padding-top: 90px;
 }
 
 .follow{
@@ -337,12 +337,12 @@
     }
 
     .footerdua{
-        margin-top: 138px;
+        margin-top: 50px;
         padding:0px;
     }
 
     .rights{
-        margin-top: 110px;
+        margin-top: 0px;
     
     }
 
@@ -504,7 +504,8 @@
     }
 
     .rights{
-        margin-top: 60px;
+        margin-top: 0px;
+        padding-top: 40px;
     
     }
 

@@ -9,6 +9,9 @@ import { onGetData } from "../Redux/Actions/projectaction"
 import "./../Supports/home.css"
 import "./../Supports/projectResponsive.css"
 
+// Import Footer
+import Footbar from "../components/Footer"
+
 // Import IMAGES
 import openaire from "./../Assets/project/OPENAIRE/thumbnail.JPG"
 import houseE from "./../Assets/project/HOUSE E/COVER.JPG"
@@ -382,6 +385,8 @@ class Project extends React.Component{
                     </div>
                 </div>
             </div>
+
+            <Footbar/>
 
             {/*  */}
 

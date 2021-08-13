@@ -4,6 +4,9 @@ import React from "react"
 import "./../Supports/home.css"
 import "./../Supports/responsive.css"
 
+// Import Footer
+import Footbar from "../components/Footer"
+
 class Studio extends React.Component{
     render(){
         return(
@@ -84,6 +87,7 @@ class Studio extends React.Component{
                             </div>
                         </div>
                     </div>
+                    <Footbar/>
             </>
         )
     }

@@ -10,9 +10,11 @@ import empat from "./../../Assets/project/SENAYAN CAFE/1.jpg"
 import lima from "./../../Assets/project/SENAYAN CAFE/R.jpg"
 import enam from "./../../Assets/project/SENAYAN CAFE/2.jpg"
 
+// Import Footer
+import Footbar from "../../components/Footer" 
+
 // Import CSS
 import "./../../"
-
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
@@ -64,16 +66,16 @@ class SenayanCafe extends React.Component{
                                 </div>
                                 <div className="paddingbg fontbgbody" >
                                     <div className="row px-sm-0 px-2 ">
-                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Category: Architecture
                                         </div>
-                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Location: Jakarta,INA
                                         </div> 
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Year: 2020
                                         </div>
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Status: Design Proposal
                                         </div>
                                         {/* <div className="status col-sm">
@@ -152,6 +154,7 @@ class SenayanCafe extends React.Component{
     
                         </Slider>
                     </div>
+                    <Footbar/>
                 </>
             )
         }

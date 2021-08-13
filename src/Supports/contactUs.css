@@ -19,6 +19,7 @@
     border-radius: 40px;
     font-weight: 400;
     font-size: 13px;
+    border: none;
 }
 
 /* Body */
@@ -81,7 +82,7 @@
 @media (max-width:576px) {
     .text-contactus{
         color: black;
-        font-size: 24px;
+        font-size: 21px;
         font-weight: 300;
         text-align: center;
         line-height: 150.5%;

@@ -8,9 +8,11 @@ import dua from "./../../Assets/project/OMNIA/2.jpg"
 import tiga from "./../../Assets/project/OMNIA/3.jpg"
 import empat from "./../../Assets/project/OMNIA/4.jpg"
 
+// import footer
+import Footbar from "../../components/Footer"
+
 // Import CSS
 import "./../../"
-
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
@@ -62,16 +64,16 @@ class Omnia extends React.Component{
                                 </div>
                                 <div className="paddingbg fontbgbody" >
                                     <div className="row px-sm-0 px-2 ">
-                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Category: Architecture
                                         </div>
-                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Location: Bali,INA
                                         </div> 
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Year: 2018
                                         </div>
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Status: Completed
                                         </div>
                                         {/* <div className="status col-sm">
@@ -145,7 +147,7 @@ class Omnia extends React.Component{
     
                         </Slider>
                     </div>
-    
+                <Footbar/>
                 </>
             )
         }

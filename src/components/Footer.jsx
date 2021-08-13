@@ -48,16 +48,16 @@ class Footbar extends React.Component{
                             <div className="col-sm-6 col-12 d-sm-flex px-md-3 px-2">
                                 <div className="col-sm-5 col-12 text-md-left px-md-3 px-0">
                                     <div>
-                                        <a href="/" className="fontlato fontsubheading-footer"> Home </a>
+                                        <a href="/" className="fontsubheading-footer"> Home </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <a href="/project" className="fontlato fontsubheading-footer"> Project </a>
+                                        <a href="/project" className="fontsubheading-footer"> Project </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <a href="/studio" className="fontlato fontsubheading-footer" > Studio </a>
+                                        <a href="/studio" className="fontsubheading-footer" > Studio </a>
                                     </div>
                                     <div style={{marginTop:"30px"}}>
-                                        <a href="/contactus" className="fontlato fontsubheading-footer"> Contact </a>
+                                        <a href="/contactus" className="fontsubheading-footer"> Contact </a>
                                     </div>
                                 </div>
                                 <div className="col-sm-7 col-12 text-md-left py-md-0 py-sm-0 py-5 px-md-3 px-0">

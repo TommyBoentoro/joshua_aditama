@@ -9,6 +9,8 @@ import openaire from "../Assets/project/OPENAIRE/thumbnail.JPG";
 import linds from "../Assets/project/LINDS/COVER.jpg"
 import stradaCoffee from "../Assets/project/STRADA COFFEE/COVER.jpg"
 
+// Footer
+import Footbar from "../components/Footer";
 
 // Helpers
 import hoverFunction from "../helpers/hoverbackground"
@@ -21,8 +23,8 @@ import {IoIosArrowDropleft} from "react-icons/io"
 import "./../Supports/home.css"
 import "./../Supports/backgroundHover.css"
 import "./../Supports/homeresponsive.css"
-import "./../Supports/responsive.css"
 import "./../Supports/empat.css"
+import "./../Supports/responsive.css"
 
 // Redux
 import {connect} from "react-redux"
@@ -490,11 +492,7 @@ class Home extends React.Component{
                             </div>
                         </div>
                     </div>
-
-                    
-
-                    
-           
+                    <Footbar/>
            </>
         )
     }

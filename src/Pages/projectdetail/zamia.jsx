@@ -6,9 +6,11 @@ import zamia from "./../../Assets/project/ZAMIA/COVER.jpg"
 import satu from "./../../Assets/project/ZAMIA/01.jpg"
 import dua from "./../../Assets/project/ZAMIA/02.jpg"
 
+// Import footer
+import Footbar from "../../components/Footer"
+
 // Import CSS
 import "./../../"
-
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
@@ -60,16 +62,16 @@ class Zamia extends React.Component{
                                 </div>
                                 <div className="paddingbg fontbgbody" >
                                     <div className="row px-sm-0 px-2 ">
-                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Category: Architecture
                                         </div>
-                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Location: Semarang,INA
                                         </div> 
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Year: 2019
                                         </div>
-                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                        <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                             Status: Design Proposal
                                         </div>
                                         {/* <div className="status col-sm">
@@ -139,6 +141,8 @@ class Zamia extends React.Component{
                             feeling to the shop.
                         </div>
                     </div>
+
+                    <Footbar/>
                 </>
             )
         }

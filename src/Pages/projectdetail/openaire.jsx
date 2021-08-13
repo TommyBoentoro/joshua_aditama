@@ -15,10 +15,12 @@ import enam from "./../../Assets/project/OPENAIRE/6.JPG"
 import tujuh from "./../../Assets/project/OPENAIRE/7.JPG"
 import delapan from "./../../Assets/project/OPENAIRE/8.JPG"
 
+// import Footer
+import Footbar from "../../components/Footer"
+
 
 // Import CSS
 import "./../../"
-
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
@@ -181,7 +183,7 @@ class Openaire extends React.Component{
                         materials and fixtures despite artificial materials
                     </div>
                 </div>
-
+                <Footbar/>
             </>
         )
     }

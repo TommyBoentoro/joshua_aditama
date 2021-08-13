@@ -10,9 +10,11 @@ import empat from "./../../Assets/project/STRADA COFFEE/4.jpg"
 import lima from "./../../Assets/project/STRADA COFFEE/5.jpg"
 import enam from "./../../Assets/project/STRADA COFFEE/6.jpg"
 
+// import Footer
+import Footbar from "../../components/Footer"
+
 // Import CSS
 import "./../../"
-
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
@@ -157,6 +159,7 @@ class StradaCoffee extends React.Component{
                             used to engage with the existing floor, wall, and ceiling finishes.
                         </div>
                     </div>
+                    <Footbar/>
                 </>
             )
         }
