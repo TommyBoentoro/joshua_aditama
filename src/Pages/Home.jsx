@@ -245,25 +245,27 @@ class Home extends React.Component{
            
            {/* Hover Home */}
             <div className="hoverHomeNonMobile">
-                    <div className="backgroundhover imagehoverproject" >
+                    <div className="backgroundhover imagehoverproject fontlato" >
                         <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                             <ul className="listhover" style={{padding:"0", margin:"0"}}>
                                 <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
-                                    <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >    
-                                        <a href="/openaire">
-                                            <div className="fonthoverheading" >
-                                                Architecture, Interior, Landscape
-                                            </div>
-                                            
-                                            <div className="fonthoverbody">
-                                                OPENAIRE
-                                            </div>
-                                        </a>
-                                    </div>
-                                   
+                                    <a href="/openaire" style={{width:"100%"}}>
+                                        <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >    
+                                            <a href="/openaire">
+                                                <div className="fonthoverheading">
+                                                    Architecture, Interior, Landscape
+                                                </div>
+                                                
+                                                <div className="fonthoverbody">
+                                                    OPENAIRE
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </a> 
                                 </li>
-                                <li className="col d-flex align-items-end  borderhover" style={{padding:"0", margin:"0"}} data-bg={linds}>
-                                    <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight " >
+                                <li className="col d-flex align-items-end  borderhover border" style={{padding:"0", margin:"0"}} data-bg={linds}>
+                                    <a href="/linds" style={{width:"100%"}}>
+                                        <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight " >
                                             <a  href="/linds">
                                                 <div className="fonthoverheading">
                                                     Architecture, Interior
@@ -272,10 +274,12 @@ class Home extends React.Component{
                                                     LIND'S ICE CREAM
                                                 </div>
                                             </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li className="col d-flex align-items-end  borderhover border" style={{padding:"0", margin:"0"}} data-bg={stradaCoffee}>
-                                    <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight ">
+                                    <a href="/stradacoffee" style={{width:"100%"}}>
+                                        <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight ">
                                             <a  href="/stradacoffee">
                                                 <div className="fonthoverheading">
                                                     Architecture, Interior
@@ -284,7 +288,8 @@ class Home extends React.Component{
                                                     STRADA COFFEE
                                                 </div>
                                             </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

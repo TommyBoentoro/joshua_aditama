@@ -51,21 +51,23 @@
 @media (max-width:768px) {
     .text-contactus{
         color: black;
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 300;
         text-align: center;
+        line-height: 150.5%;
+        letter-spacing: -0.02em;
     }
 
     .textwhatsapp{
-        margin-top: 170px;
-        font-size: 15px;
+        margin-top: 125px;
+        font-size: 14px;
         font-weight: 300;
         color: #8F8F8F;
     }
 
     .textWaNumber{
         margin-top: 10px;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 400;
         color: #8F8F8F;
     }
@@ -82,12 +84,11 @@
 @media (max-width:576px) {
     .text-contactus{
         color: black;
-        font-size: 21px;
+        font-size: 23px;
         font-weight: 300;
         text-align: center;
         line-height: 150.5%;
-        text-align: center;
-        letter-spacing: -0.01em;
+        letter-spacing: -0.05em;
     }
 
     .textwhatsapp{
