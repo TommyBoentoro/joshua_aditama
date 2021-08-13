@@ -166,7 +166,7 @@ class ContactUs extends React.Component{
             </div>
 
             {/* Footer */}
-            <div className="background3 fontlato footer" style={{height:"100%"}}>
+            <div className="background3 fontlato footer22" style={{height:"100%"}}>
                         <div className="container-md px-md-3 px-sm-5 px-4 d-sm-flex footerdua">
                             <div className="col-md-6 d-sm-flex d-none px-md-3 px-sm-0 px-0">
                                 <a href="/"> <img src={logo} alt="logo" className="logowidth"/> </a>
