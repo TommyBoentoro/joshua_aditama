@@ -8,7 +8,6 @@ import ContactUs from "./Pages/ContactUs"
 import Project from "./Pages/Project"
 import Studio from "./Pages/Studio"
 import Navbar from "./components/Navbar"
-import Footbar from "./components/Footer"
 
 // ProjectDetail
 import Openaire from "./Pages/projectdetail/openaire"
