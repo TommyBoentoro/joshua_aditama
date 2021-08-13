@@ -15,7 +15,7 @@
 .slick-center img{
     opacity: 1;
     transition:ease-out .5s;
-    transform: scaleY(1)
+    transform: scaleY(0.8)
 }
 
 .slick-center {
@@ -24,7 +24,7 @@
 
 .opacityimage {
     opacity: 0.3;
-    transform: scaleY(0.9) scaleX(1.15)
+    transform: scaleY(0.7) scaleX(1.15)
 }
 
 .slick{
