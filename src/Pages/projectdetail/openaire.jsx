@@ -56,7 +56,7 @@ class Openaire extends React.Component{
         centerPadding: "60px",
         slidesToShow: 1,
         speed: 500,
-        autoplay:true,
+        autoplay:false,
         dots:true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,

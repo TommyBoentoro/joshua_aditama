@@ -80,12 +80,16 @@
     }
 
     .slick-center {
-        transform: scale(1.18);
+        transform: scaleX(1.18);
     }
 
     .opacityimage {
         opacity: 0.3;
-        transform: scale(0.89)
+        transform: scaleY(0.7) ScaleX(0.89)
+    }
+
+    .slick-dots li{
+        margin: 30px 0.2rem;
     }
 }
 
@@ -110,6 +114,10 @@
         background-color: red;
         border: 1px solid black !important;
         text-indent: -99999px;
+    }
+
+    .slick-dots li{
+        margin: -50px 0.2rem;
     }
 
 }

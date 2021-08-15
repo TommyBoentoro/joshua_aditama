@@ -137,18 +137,18 @@
     
     /* Slick */
     .marginslick{
-        margin-top: 25px;
+        margin-top: 0px;
     }
 
     .slickheight{
         height: 346px;
         width: 100%;
         padding: 0 15px;
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .fontbody-dua{
-        margin-top: 50px;
+        margin-top: 20px;
         font-size: 12px;
         font-weight: 400;
         color: #8F8F8F;
@@ -220,7 +220,7 @@
 
     .slickheight{
         height: 180px;
-        object-fit: cover;
+        object-fit: fill;
         
     }
 
@@ -231,6 +231,7 @@
     .margincard{
         margin-top: 50px;
     }
+
 
     
 }
