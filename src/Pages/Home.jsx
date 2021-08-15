@@ -113,13 +113,13 @@ class Home extends React.Component{
                         <div className="sliderDots">
                             <div className="textDots fontlato">
                                 <div className="col" style={{opacity:"1"}}>
-                                    Project 1
+                                    Openaire
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Project 2
+                                    Lind's Ice Cream
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Project 3
+                                    Strada Coffee
                                 </div>
                             </div>
                         </div>
@@ -130,13 +130,13 @@ class Home extends React.Component{
                         <div className="sliderDots">
                             <div className="textDots fontlato">
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Project 1
+                                    Openaire
                                 </div>
                                 <div className="col" style={{opacity:"1"}}>
-                                    Project 2
+                                    Lind's Ice Cream
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Project 3
+                                    Strada Coffee
                                 </div>
                             </div>
                         </div>
@@ -147,13 +147,13 @@ class Home extends React.Component{
                         <div className="sliderDots" >
                             <div className="textDots fontlato" >
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Project 1
+                                    Openaire
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Project 2
+                                    Lind's Ice Cream
                                 </div>
                                 <div className="col" style={{opacity:"1"}}>
-                                    Project 3
+                                    Strada Coffee
                                 </div>
                             </div>
                         </div>
