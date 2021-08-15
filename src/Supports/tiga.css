@@ -100,7 +100,7 @@
 
     .opacityimage {
         opacity: 0.3;
-        transform: scaleY(0.85) scaleX(0.85)
+        transform: scaleY(0.85) scaleX(0.7)
     }
 
     .slick-dots button {
