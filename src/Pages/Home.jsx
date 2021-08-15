@@ -116,7 +116,7 @@ class Home extends React.Component{
                                     Openaire
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Lind's Ice Cream
+                                    Lind's
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
                                     Strada Coffee
@@ -133,7 +133,7 @@ class Home extends React.Component{
                                     Openaire
                                 </div>
                                 <div className="col" style={{opacity:"1"}}>
-                                    Lind's Ice Cream
+                                    Lind's
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
                                     Strada Coffee
@@ -150,7 +150,7 @@ class Home extends React.Component{
                                     Openaire
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Lind's Ice Cream
+                                    Lind's
                                 </div>
                                 <div className="col" style={{opacity:"1"}}>
                                     Strada Coffee

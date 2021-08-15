@@ -143,8 +143,8 @@
     .slickheight{
         height: 346px;
         width: 100%;
-        padding: 0 15px;
-        object-fit: fill;
+       
+        object-fit: cover;
     }
 
     .fontbody-dua{
@@ -214,18 +214,18 @@
     .fontbody-dua{
         font-size: 15px; 
         font-weight: 400;
-        margin-top: 65px;
+        margin-top: 45px;
         
     }
 
     .slickheight{
-        height: 180px;
-        object-fit: fill;
+        height: 200px;
+        object-fit: cover;
         
     }
 
     .marginslick{
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .margincard{

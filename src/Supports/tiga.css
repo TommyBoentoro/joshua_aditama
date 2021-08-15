@@ -80,27 +80,27 @@
     }
 
     .slick-center {
-        transform: scaleX(1.18);
+        transform: scaleX(1.05) scaleY(1.05);
     }
 
     .opacityimage {
         opacity: 0.3;
-        transform: scaleY(0.7) ScaleX(0.89)
+        transform: scaleY(0.75) ScaleX(0.89)
     }
 
     .slick-dots li{
-        margin: 30px 0.2rem;
+        margin: 15px 0.2rem;
     }
 }
 
 @media (max-width:576px) {
     .slick-center {
-        transform: scale(1.37);
+        transform: scaleY(1.4) scaleX(1.25);
     }
 
     .opacityimage {
         opacity: 0.3;
-        transform: scaleY(0.85) scaleX(0.78)
+        transform: scaleY(0.85) scaleX(0.85)
     }
 
     .slick-dots button {
