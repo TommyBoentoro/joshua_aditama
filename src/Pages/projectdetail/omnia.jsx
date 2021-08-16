@@ -74,7 +74,7 @@ class Omnia extends React.Component{
                                             Year: 2018
                                         </div>
                                         <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
-                                            Status: Completed
+                                            Status: Design proposal
                                         </div>
                                         {/* <div className="status col-sm">
                                             Status : Done
