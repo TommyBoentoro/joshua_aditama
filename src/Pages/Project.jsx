@@ -309,7 +309,7 @@ class Project extends React.Component{
                         </div>
                     </div>
 
-                    <div className=" col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
                             <a href="/omnia"><img src={omnia} alt="" className="imagecol-3"/></a>
                         </div>
@@ -327,7 +327,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className=" col-sm-6 px-md-3 px-sm-1 px-3  image imagehover paddingbody">
+                    <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
                             <a href="/senayancafe"><img src={senayanCafe} alt="" className="imagecol-6"/></a>
                         </div>
@@ -348,7 +348,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className=" col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
                             <a href="/stradacoffee"><img src={stradaCoffee} alt="" className="imagecol-3"/></a>
                         </div>
@@ -366,7 +366,7 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
-                    <div className=" col-sm-3 px-md-3 px-sm-1 px-3 image imagehover paddingbody">
+                    <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
                             <a href="/zamia"><img src={zamia} alt="" className="imagecol-3"/></a>
                         </div>
