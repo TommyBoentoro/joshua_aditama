@@ -246,7 +246,7 @@ class Project extends React.Component{
                                Architecture, Interior, Landscape
                            </div >
                            <div className="fonttitle">
-                                OPENAIRE TEST
+                                OPENAIRE
                            </div>
                            <div className="col-md-8 col-12 px-0  fontbodyproject">
                            A 7000 square meters consists of a restaurant, a concept store, bars, and outdoor attractions, incorporating man-made nature into its structure. 

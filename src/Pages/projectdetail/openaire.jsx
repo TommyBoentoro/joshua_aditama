@@ -5,15 +5,18 @@ import Slider from "react-slick"
 
 
 // Import Images
-import openaire from "./../../Assets/project/OPENAIRE/thumbnail.JPG"
-import satu from "./../../Assets/project/OPENAIRE/1.JPG"
-import dua from "./../../Assets/project/OPENAIRE/2.JPG"
-import tiga from "./../../Assets/project/OPENAIRE/3.JPG"
-import empat from "./../../Assets/project/OPENAIRE/4.JPG"
-import lima from "./../../Assets/project/OPENAIRE/5.JPG"
-import enam from "./../../Assets/project/OPENAIRE/6.JPG"
-import tujuh from "./../../Assets/project/OPENAIRE/7.JPG"
-import delapan from "./../../Assets/project/OPENAIRE/8.JPG"
+import openaire from "./../../Assets/project/OPENAIRE/thumbnail.jpg"
+import satu from "./../../Assets/project/OPENAIRE/1.jpg"
+import dua from "./../../Assets/project/OPENAIRE/2.jpg"
+import tiga from "./../../Assets/project/OPENAIRE/3.jpg"
+import empat from "./../../Assets/project/OPENAIRE/4.jpg"
+import lima from "./../../Assets/project/OPENAIRE/5.jpg"
+import enam from "./../../Assets/project/OPENAIRE/6.jpg"
+import tujuh from "./../../Assets/project/OPENAIRE/7.jpg"
+import delapan from "./../../Assets/project/OPENAIRE/8.jpg"
+import sembilan from "./../../Assets/project/OPENAIRE/9.jpg"
+import sepuluh from "./../../Assets/project/OPENAIRE/10.jpg"
+import sebelas from "./../../Assets/project/OPENAIRE/11.jpg"
 
 // import Footer
 import Footbar from "../../components/Footer"
@@ -56,7 +59,7 @@ class Openaire extends React.Component{
         centerPadding: "60px",
         slidesToShow: 1,
         speed: 500,
-        autoplay:false,
+        autoplay:true,
         dots:true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
@@ -168,6 +171,15 @@ class Openaire extends React.Component{
                         </div>
                         <div>
                             <img src={delapan} className="opacityimage slickheight" alt="" />
+                        </div>
+                        <div>
+                            <img src={sembilan} className="opacityimage slickheight" alt="" />
+                        </div>
+                        <div>
+                            <img src={sepuluh} className="opacityimage slickheight" alt="" />
+                        </div>
+                        <div>
+                            <img src={sebelas} className="opacityimage slickheight" alt="" />
                         </div>
 
                     </Slider>
