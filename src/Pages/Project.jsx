@@ -13,7 +13,7 @@ import "./../Supports/projectResponsive.css"
 import Footbar from "../components/Footer"
 
 // Import IMAGES
-import openaire from "./../Assets/project/OPENAIRE/thumbnail.JPG"
+import openaire from "./../Assets/project/OPENAIRE/baru/openaire-1.jpg"
 import houseE from "./../Assets/project/HOUSE E/COVER.JPG"
 import houseKM from "./../Assets/project/HOUSE KM/COVER.jpeg"
 import linds from "./../Assets/project/LINDS/COVER.jpg"
