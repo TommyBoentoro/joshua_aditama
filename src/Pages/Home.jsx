@@ -363,13 +363,13 @@ class Home extends React.Component{
                         
                     </div>
                     <div className="border">
-                        <a href="/linds">
+                        <a href="/lindspapandayan">
                             <div className="textSliderMobile-home fontlato">
                                 <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                    Architecture, Interior
+                                    Interior
                                 </div>
                                 <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                    LIND'S ICE CREAM
+                                    LIND'S ICE CREAM PAPANDAYAN
                                 </div>
                             </div>
                         </a>
@@ -377,17 +377,17 @@ class Home extends React.Component{
                             
                             </div>
                         <div>
-                            <img src= {linds} className="bgSliderMobile-home" alt="" />
+                            <img src= {lindspapandayan} className="bgSliderMobile-home" alt="" />
                         </div>
                     </div>
                     <div className="border">
-                        <a href="/stradacoffee">
+                        <a href="/tabebuya">
                             <div className="fontlato textSliderMobile-home">
                                 <div style={{fontSize:"13px", fontWeight:"700"}}>
-                                    Architecture, Interior
+                                    Architecture
                                 </div>
                                 <div  style={{fontSize:"21px", fontWeight:"300"}}>
-                                    STRADA COFFEE
+                                    TABEBUYA
                                 </div>
                             </div>
                         </a>
@@ -395,7 +395,7 @@ class Home extends React.Component{
                             
                         </div>
                         <div>
-                            <img src= {stradaCoffee} className="bgSliderMobile-home" alt="" />
+                            <img src= {tabebuya} className="bgSliderMobile-home" alt="" />
                         </div>
                     </div>
                 </Slider>
