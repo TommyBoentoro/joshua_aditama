@@ -1,11 +1,13 @@
 import React from "react"
 import Slider from "react-slick"
 
-// Import Images
-import linds from "./../../Assets/project/LINDS/COVER.jpg"
-import satu from "./../../Assets/project/LINDS/01.jpg"
-import dua from "./../../Assets/project/LINDS/02.jpg"
-import tiga from "./../../Assets/project/LINDS/04.jpg"
+import surfing from "./../../Assets/project/SURFING_RESORT/thumbnail.jpg"
+import satu from "./../../Assets/project/SURFING_RESORT/surfing-1.jpg"
+import dua from "./../../Assets/project/SURFING_RESORT/surfing-2.jpg"
+import tiga from "./../../Assets/project/SURFING_RESORT/surfing-3.jpg"
+import empat from "./../../Assets/project/SURFING_RESORT/surfing-4.jpg"
+import lima from "./../../Assets/project/SURFING_RESORT/surfing-5.jpg"
+import enam from "./../../Assets/project/SURFING_RESORT/surfing-6.jpg"
 
 // Import Footer
 import Footbar from "../../components/Footer"
@@ -37,7 +39,7 @@ const NextArrow = ({ onClick }) => {
     );
   };
 
-class Linds extends React.Component{
+class surfingResort extends React.Component{
     render(){
 
         const settings = {
@@ -55,25 +57,25 @@ class Linds extends React.Component{
     
             return(
                 <>
-                    <div className="backgroundimg" style={{backgroundImage:`url(${linds})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}>
+                    <div className="backgroundimg" style={{backgroundImage:`url(${surfing})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition:"center center", overflow:"hidden"}}>
                         <div className="overlay">
                             <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{height:"100%"}}>
                                 <div className="fontbgheading" >
-                                    LIND'S ICE CREAM
+                                    R's SURFING RESORT
                                 </div>
                                 <div className="paddingbg fontbgbody" >
                                     <div className="row px-sm-0 px-2 ">
                                         <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
-                                            Category: Architecture, Interior
+                                            Category: Architecture
                                         </div>
                                         <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
-                                            Location: Semarang,INA
+                                            Location: Bali,INA
                                         </div> 
                                         <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
-                                            Year: 2021
+                                            Year: 2018
                                         </div>
                                         <div className="col-sm  col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
-                                            Status: Under Construction
+                                            Status: Proposal
                                         </div>
                                     </div>
                                 </div>
@@ -83,18 +85,13 @@ class Linds extends React.Component{
     
                     <div style={{overflow:"hidden"}} className="fontlato  container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato marginbodyheading" >
                         <div className="col-md-10  col-12 fontheading px-md-3 px-sm-0 px-2" >
-                            Lind’s Ice Cream is having a new look for its first ice
-                            cream shop, preserving the identity of vintage local
-                            artisan ice cream shop. The old building is where Lind’s
-                            opened its first shop.
+                            Interpreting ocean waves as an architecture.
                         </div>
                         <div className="col-md-10 col-12 fontbody px-md-3 px-sm-0 px-2">
-                            The original building was an old house that has been renovated several times. The owner
-                            feels that this legendary ice cream shop needs a new look, especially for the interior space.
-                            The existing layout has few problems, giving an ‘old’ and ‘dark’ feeling that seemed not
-                            pleasing anymore for nowadays.
-                         
-                           
+                            The project is located in Canggu, Bali that has direct access to the beach. It is a common
+                            beach for people doing surf. We had a chance to design a surfing resort for surfers who
+                            spend days surfing, where they can rest and have a room for another day of surfing. The
+                            resort provides rooms, yoga shala, restaurant, and a surf shop.
                         </div>
                     </div>
     
@@ -102,7 +99,7 @@ class Linds extends React.Component{
                     <div className="marginslick">
                         <Slider {...settings}>
                             <div>
-                                <img src={linds} className="opacityimage slickheight" alt="" />
+                                <img src={surfing} className="opacityimage slickheight" alt="" />
                             </div>
                             <div>
                                 <img src={satu} className="opacityimage slickheight" alt="" />
@@ -113,16 +110,24 @@ class Linds extends React.Component{
                             <div>
                                 <img src={tiga} className="opacityimage slickheight" alt="" />
                             </div>
+                            <div>
+                                <img src={empat} className="opacityimage slickheight" alt="" />
+                            </div>
+                            <div>
+                                <img src={lima} className="opacityimage slickheight" alt="" />
+                            </div>
+                            <div>
+                                <img src={enam} className="opacityimage slickheight" alt="" />
+                            </div>
     
                         </Slider>
                     </div>
     
                     <div style={{overflow:"hidden"}} className=" container px-md-3 px-sm-0 px-4 d-flex flex-column align-items-center fontlato" >
                         <div className="col-md-10 col-12 fontbody-dua  px-md-3 px-sm-0 px-2" >
-                            The new layout plan removes some walls that caused ambiguity of the existing space, giving
-                            more spacious seating area, also with a new bar design. To recall the feeling of legendary ice
-                            cream shop for customers, vintage-look materials and finishings are chosen to represent the
-                            original brand identity itself.
+                            Interpreting ocean waves into an idea of roof structure gives a unique architecture for the
+                            resort masterplan. It also blends nicely with local traditional roof structure in Bali. <br /><br />
+                            Worked with Alexis Dornier Architecture
                         </div>
                     </div>
 
@@ -132,4 +137,4 @@ class Linds extends React.Component{
         }
 }
 
-export default Linds
+export default surfingResort

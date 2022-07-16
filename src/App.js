@@ -18,6 +18,10 @@ import Omnia from "./Pages/projectdetail/omnia"
 import SenayanCafe from "./Pages/projectdetail/senayanCafe"
 import StradaCoffee from "./Pages/projectdetail/stradaCoffee"
 import Zamia from "./Pages/projectdetail/zamia"
+import wongart from "./Pages/projectdetail/wong_art"
+import lindsPapandayan from "./Pages/projectdetail/linds_papandayan"
+import tabebuya from "./Pages/projectdetail/tabebuya"
+import surfingResort from "./Pages/projectdetail/surfing_resort"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -52,7 +56,10 @@ function App (){
           <Route path = "/senayancafe" component = {SenayanCafe} />
           <Route path = "/stradacoffee" component = {StradaCoffee}/>
           <Route path = "/zamia" component = {Zamia}/>
-
+          <Route path = "/wongart" component = {wongart}/>
+          <Route path = "/lindspapandayan" component = {lindsPapandayan}/>
+          <Route path = "/tabebuya" component = {tabebuya}/>
+          <Route path = "/surfing_resort" component = {surfingResort}/>
         </Switch>
         {/* <Footbar/> */}
       </BrowserRouter>

@@ -21,6 +21,10 @@ import omnia from "./../Assets/project/OMNIA/COVER.jpg"
 import senayanCafe from "./../Assets/project/SENAYAN CAFE/COVER.jpg"
 import stradaCoffee from "./../Assets/project/STRADA COFFEE/COVER.jpg"
 import zamia from "./../Assets/project/ZAMIA/COVER.jpg"
+import wongart from "./../Assets/project/WONG_ART/thumbnail.jpg"
+import lindspapandayan from "./../Assets/project/LINDS_PAPANDAYAN/thumbnail.jpg"
+import tabebuya from "./../Assets/project/TABEBUYA/thumbnail.JPG"
+import surfing from "./../Assets/project/SURFING_RESORT/thumbnail.jpg"
 
 
 class Project extends React.Component{
@@ -273,6 +277,59 @@ class Project extends React.Component{
                            </div>
                         </div>
                     </div>
+
+                    {/* New */}
+                    <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <a href="/wongart"><img src={wongart} alt="" className="imagecol-3"/></a>
+                        </div>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
+                               Interior
+                           </div >
+                           <div className="fonttitle">
+                                WONG ART
+                           </div>
+                           <div className=" fontbodyproject">
+                           The new location for Wong Art where home baked pastries and foods are served like home.
+                           </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-6 px-md-3 px-sm-1 px-0  image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <a href="/lindspapandayan"><img src={lindspapandayan} alt="" className="imagecol-6"/></a>
+                        </div>
+                        <div className="margincardbody">
+                            <div className="fontcategory">
+                               Interior
+                           </div >
+                           <div className="fonttitle">
+                                LIND'S ICE CREAM PAPANDAYAN
+                           </div>
+                           <div className="col-12 px-0 fontbodyproject">
+                           An Art-Deco interior style is being used as a renovation concept for Lind’s Ice Cream Restaurant.
+                           </div>
+                        </div>
+                    </div>
+
+                    <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}} >
+                            <a href="/tabebuya"><img src={tabebuya} alt="" className="imagecol-3"/></a>
+                        </div>
+                        <div className="margincardbody">
+                            <div className="fontcategory" >
+                               Architecture
+                           </div >
+                           <div className="fonttitle">
+                                TABEBUYA RESORT
+                           </div>
+                           <div className="fontbodyproject">
+                           A modern luxury resort located in a seaside bay,provides Restaurant, Bars, and Private Suite Villas.
+                           </div>
+                        </div>
+                    </div>
+                    {/*  */}
+
                     <div className="col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                         <div style={{overflow:"hidden"}} >
                             <a href="/housekm"><img src={houseKM} alt="" className="imagecol-3"/></a>
@@ -380,6 +437,23 @@ class Project extends React.Component{
                            <div className=" fontbodyproject">
                             A small flower and pottery shop that elevate its original
                             workshop to be an artisanal shop for local consumers.
+                           </div>
+                        </div>
+                    </div>
+
+                    <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                        <div style={{overflow:"hidden"}}>
+                            <a href="/surfing_resort"> <img src={surfing} alt="logo" className="imagecol-9" /> </a>
+                        </div>
+                        <div className="margincardbody">
+                            <div className="fontcategory">
+                               Architecture
+                           </div >
+                           <div className="fonttitle">
+                                R's SURFING RESORT
+                           </div>
+                           <div className="col-md-8 col-12 px-0  fontbodyproject">
+                           Interpreting ocean waves as an architecture.
                            </div>
                         </div>
                     </div>
