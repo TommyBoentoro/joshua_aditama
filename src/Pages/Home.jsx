@@ -5,9 +5,6 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // import Image
 import openaire from "../Assets/project/OPENAIRE/baru/openaire-1.jpg";
-import linds from "../Assets/project/LINDS/COVER.jpg"
-import stradaCoffee from "../Assets/project/STRADA COFFEE/COVER.jpg"
-
 import tabebuya from "../Assets/project/TABEBUYA/thumbnail.JPG"
 import lindspapandayan from "../Assets/project/LINDS_PAPANDAYAN/thumbnail.jpg"
 
