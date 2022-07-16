@@ -4,10 +4,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // import Image
-import dummy from "./../Assets/project/dummy.JPG"
 import openaire from "../Assets/project/OPENAIRE/baru/openaire-1.jpg";
 import linds from "../Assets/project/LINDS/COVER.jpg"
 import stradaCoffee from "../Assets/project/STRADA COFFEE/COVER.jpg"
+
+import tabebuya from "../Assets/project/TABEBUYA/thumbnail.JPG"
+import lindspapandayan from "../Assets/project/LINDS_PAPANDAYAN/thumbnail.jpg"
 
 // Footer
 import Footbar from "../components/Footer";
@@ -116,10 +118,10 @@ class Home extends React.Component{
                                     Openaire
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Lind's
+                                    Lind's Papandayan
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Strada Coffee
+                                    Tabebuya
                                 </div>
                             </div>
                         </div>
@@ -133,14 +135,14 @@ class Home extends React.Component{
                                     Openaire
                                 </div>
                                 <div className="col" style={{opacity:"1"}}>
-                                    Lind's
+                                    Lind's Papandayan
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Strada Coffee
+                                    Tabebuya
                                 </div>
                             </div>
                         </div>
-                        <img src={linds} alt="Jumbotron" className="bgsliderhome"/>
+                        <img src={lindspapandayan} alt="Jumbotron" className="bgsliderhome"/>
                     </div>
                     <div>
                         <div className="opacitySlider"></div>
@@ -150,14 +152,14 @@ class Home extends React.Component{
                                     Openaire
                                 </div>
                                 <div className="col" style={{opacity:"0.5"}}>
-                                    Lind's
+                                    Lind's Papandayan
                                 </div>
                                 <div className="col" style={{opacity:"1"}}>
-                                    Strada Coffee
+                                    Tabebuya
                                 </div>
                             </div>
                         </div>
-                        <img src={stradaCoffee} alt="Jumbotron" className="bgsliderhome"/>
+                        <img src={tabebuya} alt="Jumbotron" className="bgsliderhome"/>
                     </div>
                 </Slider>
             </div>
@@ -248,7 +250,7 @@ class Home extends React.Component{
                     <div className="backgroundhover imagehoverproject fontlato" >
                         <div className="hoverimage" style={{padding:"0", margin:"0"}}>
                             <ul className="listhover" style={{padding:"0", margin:"0"}}>
-                                <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={dummy}>
+                                <li className="col d-flex align-items-end borderhover border" style={{padding:"0", margin:"0"}} data-bg={openaire}>
                                     <a href="/openaire" style={{width:"100%"}}>
                                         <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight" >    
                                             <a href="/openaire">
@@ -263,29 +265,29 @@ class Home extends React.Component{
                                         </div>
                                     </a> 
                                 </li>
-                                <li className="col d-flex align-items-end  borderhover border" style={{padding:"0", margin:"0"}} data-bg={linds}>
-                                    <a href="/linds" style={{width:"100%"}}>
+                                <li className="col d-flex align-items-end  borderhover border" style={{padding:"0", margin:"0"}} data-bg={lindspapandayan}>
+                                    <a href="/lindspapandayan" style={{width:"100%"}}>
                                         <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight " >
-                                            <a  href="/linds">
+                                            <a  href="/lindspapandayan">
                                                 <div className="fonthoverheading">
-                                                    Architecture, Interior
+                                                    Interior
                                                 </div>
                                                 <div className="fonthoverbody">
-                                                    LIND'S ICE CREAM
+                                                    LIND'S ICE CREAM PAPANDAYAN
                                                 </div>
                                             </a>
                                         </div>
                                     </a>
                                 </li>
-                                <li className="col d-flex align-items-end  borderhover border" style={{padding:"0", margin:"0"}} data-bg={stradaCoffee}>
-                                    <a href="/stradacoffee" style={{width:"100%"}}>
+                                <li className="col d-flex align-items-end  borderhover border" style={{padding:"0", margin:"0"}} data-bg={tabebuya}>
+                                    <a href="/tabebuya" style={{width:"100%"}}>
                                         <div className="hoversaya d-flex justify-content-start px-5 align-items-center projectcardheight ">
-                                            <a  href="/stradacoffee">
+                                            <a  href="/tabebuya">
                                                 <div className="fonthoverheading">
-                                                    Architecture, Interior
+                                                    Architecture
                                                 </div>
                                                 <div className="fonthoverbody">
-                                                    STRADA COFFEE
+                                                    TABEBUYA
                                                 </div>
                                             </a>
                                         </div>
