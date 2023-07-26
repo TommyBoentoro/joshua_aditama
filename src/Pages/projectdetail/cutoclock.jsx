@@ -3,16 +3,6 @@ import Slider from "react-slick"
 
 // Import Images
 import cover from "./../../Assets/project/CUTOCLOCK/cover.jpg"
-import satu from "./../../Assets/project/CUTOCLOCK/1.jpg"
-import dua from "./../../Assets/project/CUTOCLOCK/2.jpg"
-import tiga from "./../../Assets/project/CUTOCLOCK/3.jpg"
-import empat from "./../../Assets/project/CUTOCLOCK/4.jpg"
-import lima from "./../../Assets/project/CUTOCLOCK/5.jpg"
-import enam from "./../../Assets/project/CUTOCLOCK/6.jpg"
-import tujuh from "./../../Assets/project/CUTOCLOCK/7.jpg"
-
-
-
 
 // Import Footer
 import Footbar from "../../components/Footer"
@@ -97,27 +87,6 @@ class cutoclock extends React.Component {
                     <Slider {...settings}>
                         <div>
                             <img src={cover} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={satu} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={dua} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={tiga} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={empat} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={lima} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={enam} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={tujuh} className="opacityimage slickheight" alt="" />
                         </div>
                     </Slider>
                 </div>
