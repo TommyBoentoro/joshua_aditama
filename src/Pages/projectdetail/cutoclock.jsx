@@ -10,7 +10,7 @@ import empat from "./../../Assets/project/CUTOCLOCK/4.jpg"
 import lima from "./../../Assets/project/CUTOCLOCK/5.jpg"
 import enam from "./../../Assets/project/CUTOCLOCK/6.jpg"
 import tujuh from "./../../Assets/project/CUTOCLOCK/7.jpg"
-import delapan from "./../../Assets/project/CUTOCLOCK/8.JPG"
+
 
 
 
@@ -118,12 +118,6 @@ class cutoclock extends React.Component {
                         </div>
                         <div>
                             <img src={tujuh} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={delapan} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={sembilan} className="opacityimage slickheight" alt="" />
                         </div>
                     </Slider>
                 </div>
