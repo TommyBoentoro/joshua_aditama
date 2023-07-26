@@ -23,6 +23,7 @@ import lindsPapandayan from "./Pages/projectdetail/linds_papandayan"
 import tabebuya from "./Pages/projectdetail/tabebuya"
 import surfingResort from "./Pages/projectdetail/surfing_resort"
 import Birdnest from "./Pages/projectdetail/birdnest"
+import cutoclock from "./Pages/projectdetail/cutoclock"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -62,6 +63,7 @@ function App (){
           <Route path = "/tabebuya" component = {tabebuya}/>
           <Route path = "/surfing_resort" component = {surfingResort}/>
           <Route path = "/birdnest" component = {Birdnest}/>
+          <Route path = "/cutoclock" component = {cutoclock}/>
         </Switch>
         {/* <Footbar/> */}
       </BrowserRouter>
