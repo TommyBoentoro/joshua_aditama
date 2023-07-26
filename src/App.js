@@ -28,6 +28,7 @@ import Amaya from "./Pages/projectdetail/houseamaya"
 import GrahaPadma from "./Pages/projectdetail/housegrahapadma"
 import HilagoBali from "./Pages/projectdetail/househilagobali"
 import HilagoIndustrial from "./Pages/projectdetail/househilagoindustrial"
+import HouseMb from "./Pages/projectdetail/housemb"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -72,6 +73,7 @@ function App (){
           <Route path = "/housegrahapadma" component = {GrahaPadma}/>
           <Route path = "/hilagobali" component = {HilagoBali}/>
           <Route path = "/hilagoindustrial" component = {HilagoIndustrial}/>
+          <Route path = "/housemb" component = {HouseMb}/>
         </Switch>
         {/* <Footbar/> */}
       </BrowserRouter>
