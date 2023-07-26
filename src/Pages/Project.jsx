@@ -26,6 +26,9 @@ import lindspapandayan from "./../Assets/project/LINDS_PAPANDAYAN/thumbnail.jpg"
 import tabebuya from "./../Assets/project/TABEBUYA/thumbnail.JPG"
 import surfing from "./../Assets/project/SURFING_RESORT/thumbnail.jpg"
 import birdnest from "./../Assets/project/BIRDNEST/1.jpg"
+import cut from "./../Assets/project/CUTOCLOK/cover.jpg"
+import amaya from "./../Assets/project/HOUSE_AMAYA/cover.jpg"
+import graha from "./../Assets/project/HOUSE_GRAHA_PADMA/cover.jpg"
 
 
 class Project extends React.Component {
@@ -475,6 +478,56 @@ class Project extends React.Component {
                                 <div className=" fontbodyproject">
                                     An architecture where it corresponds the existing site
                                     and nature.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/cutoclock"><img src={cut} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    CUT O'CLOCK
+                                </div>
+                                <div className="fontbodyproject">
+                                    A modern luxury barbershop.
+                                    Black and Wood.
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/houseamaya"><img src={amaya} alt="" className="imagecol-6" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory">
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE AMAYA
+                                </div>
+                                <div className="col-12 px-0   fontbodyproject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/housegrahapadma"><img src={graha} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Architecture
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE GRAHA PADMA
+                                </div>
+                                <div className=" fontbodyproject">
+
                                 </div>
                             </div>
                         </div>
