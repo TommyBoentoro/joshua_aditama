@@ -30,6 +30,8 @@ import HilagoBali from "./Pages/projectdetail/househilagobali"
 import HilagoIndustrial from "./Pages/projectdetail/househilagoindustrial"
 import HouseMb from "./Pages/projectdetail/housemb"
 import PalmHills from "./Pages/projectdetail/housepalmhills"
+import HouseRivera from "./Pages/projectdetail/houserivera"
+import Rotieta from "./Pages/projectdetail/rotieta"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -76,6 +78,8 @@ function App (){
           <Route path = "/hilagoindustrial" component = {HilagoIndustrial}/>
           <Route path = "/housemb" component = {HouseMb}/>
           <Route path = "/housepalmhills" component = {PalmHills}/>
+          <Route path = "/houseriviera" component = {HouseRivera}/>
+          <Route path = "/rotietta" component = {Rotieta}/>
         </Switch>
         {/* <Footbar/> */}
       </BrowserRouter>
