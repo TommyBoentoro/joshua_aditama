@@ -254,6 +254,169 @@ class Project extends React.Component {
                     </div>
 
                     <div className="row">
+                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/hilagobali"><img src={bali} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE HILAGO BALI
+                                </div>
+                                <div className="fontbodyproject">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/hilagoindustrial"><img src={industrial} alt="" className="imagecol-6" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory">
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE HILAGO INDUSTRIAL
+                                </div>
+                                <div className="col-12 px-0   fontbodyproject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/housemb"><img src={housemb} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE MB
+                                </div>
+                                <div className=" fontbodyproject">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/housepalmhills"><img src={palm} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE PALM HILLS
+                                </div>
+                                <div className="fontbodyproject">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/houseriviera"><img src={riviera} alt="" className="imagecol-6" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory">
+                                    Interior, Architecture
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE RIVIERA
+                                </div>
+                                <div className="col-12 px-0   fontbodyproject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/rotietta"><img src={rotietta} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    ROTIETTA
+                                </div>
+                                <div className=" fontbodyproject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/birdnest"><img src={birdnest} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Architecture, Interior
+                                </div >
+                                <div className="fonttitle">
+                                    BIRDNEST
+                                </div>
+                                <div className=" fontbodyproject">
+                                    An architecture where it corresponds the existing site
+                                    and nature.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/cutoclock"><img src={cut} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    CUT O'CLOCK
+                                </div>
+                                <div className="fontbodyproject">
+                                    A modern luxury barbershop.
+                                    Black and Wood.
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/houseamaya"><img src={amaya} alt="" className="imagecol-6" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory">
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE AMAYA
+                                </div>
+                                <div className="col-12 px-0   fontbodyproject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/housegrahapadma"><img src={graha} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Architecture
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE GRAHA PADMA
+                                </div>
+                                <div className=" fontbodyproject">
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-sm-9 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
                             <div style={{ overflow: "hidden" }}>
                                 <a href="/openaire"> <img src={openaire} alt="logo" className="imagecol-9" /> </a>
@@ -470,170 +633,7 @@ class Project extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/birdnest"><img src={birdnest} alt="" className="imagecol-3" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory" >
-                                    Architecture, Interior
-                                </div >
-                                <div className="fonttitle">
-                                    BIRDNEST
-                                </div>
-                                <div className=" fontbodyproject">
-                                    An architecture where it corresponds the existing site
-                                    and nature.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/cutoclock"><img src={cut} alt="" className="imagecol-3" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory" >
-                                    Interior
-                                </div >
-                                <div className="fonttitle">
-                                    CUT O'CLOCK
-                                </div>
-                                <div className="fontbodyproject">
-                                    A modern luxury barbershop.
-                                    Black and Wood.
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/houseamaya"><img src={amaya} alt="" className="imagecol-6" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory">
-                                    Interior
-                                </div >
-                                <div className="fonttitle">
-                                    HOUSE AMAYA
-                                </div>
-                                <div className="col-12 px-0   fontbodyproject">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/housegrahapadma"><img src={graha} alt="" className="imagecol-3" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory" >
-                                    Architecture
-                                </div >
-                                <div className="fonttitle">
-                                    HOUSE GRAHA PADMA
-                                </div>
-                                <div className=" fontbodyproject">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/hilagobali"><img src={bali} alt="" className="imagecol-3" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory" >
-                                    Interior
-                                </div >
-                                <div className="fonttitle">
-                                    HOUSE HILAGO BALI
-                                </div>
-                                <div className="fontbodyproject">
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/hilagoindustrial"><img src={industrial} alt="" className="imagecol-6" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory">
-                                    Interior
-                                </div >
-                                <div className="fonttitle">
-                                    HOUSE HILAGO INDUSTRIAL
-                                </div>
-                                <div className="col-12 px-0   fontbodyproject">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/housemb"><img src={housemb} alt="" className="imagecol-3" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory" >
-                                    Interior
-                                </div >
-                                <div className="fonttitle">
-                                    HOUSE MB
-                                </div>
-                                <div className=" fontbodyproject">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/housepalmhills"><img src={palm} alt="" className="imagecol-3" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory" >
-                                    Interior
-                                </div >
-                                <div className="fonttitle">
-                                    HOUSE PALM HILLS
-                                </div>
-                                <div className="fontbodyproject">
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/houseriviera"><img src={riviera} alt="" className="imagecol-6" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory">
-                                    Interior, Architecture
-                                </div >
-                                <div className="fonttitle">
-                                    HOUSE RIVIERA
-                                </div>
-                                <div className="col-12 px-0   fontbodyproject">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
-                            <div style={{ overflow: "hidden" }} >
-                                <a href="/rotietta"><img src={rotietta} alt="" className="imagecol-3" /></a>
-                            </div>
-                            <div className="margincardbody">
-                                <div className="fontcategory" >
-                                    Interior
-                                </div >
-                                <div className="fonttitle">
-                                    ROTIETTA
-                                </div>
-                                <div className=" fontbodyproject">
-
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
