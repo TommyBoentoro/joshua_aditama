@@ -2,7 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 
 // Import Images
-import cover from "./../../Assets/project/CUTOCLOCK/cover.jpg"
+import Cover from "./../../Assets/project/CUTOCLOK/cover.jpg"
 
 // Import Footer
 import Footbar from "../../components/Footer"
@@ -34,7 +34,7 @@ const PrevArrow = ({ onClick }) => {
     );
 };
 
-class cutoclock extends React.Component {
+class Cutoclock extends React.Component {
     render() {
 
         const settings = {
@@ -52,7 +52,7 @@ class cutoclock extends React.Component {
 
         return (
             <>
-                <div className="backgroundimg" style={{ backgroundImage: `url(${cover})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center center", overflow: "hidden" }}>
+                <div className="backgroundimg" style={{ backgroundImage: `url(${Cover})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center center", overflow: "hidden" }}>
                     <div className="overlay">
                         <div className="container  px-md-3 px-sm-0 px-4 d-flex flex-column justify-content-end fontlato" style={{ height: "100%" }}>
                             <div className="fontbgheading" >
@@ -86,7 +86,7 @@ class cutoclock extends React.Component {
                 <div className="marginslick">
                     <Slider {...settings}>
                         <div>
-                            <img src={cover} className="opacityimage slickheight" alt="" />
+                            <img src={Cover} className="opacityimage slickheight" alt="" />
                         </div>
                     </Slider>
                 </div>
@@ -96,4 +96,4 @@ class cutoclock extends React.Component {
     }
 }
 
-export default cutoclock
+export default Cutoclock
