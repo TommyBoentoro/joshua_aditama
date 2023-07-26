@@ -32,7 +32,7 @@ import graha from "./../Assets/project/HOUSE_GRAHA_PADMA/cover.jpg"
 import bali from "./../Assets/project/HOUSE_HILAGO_BALI/cover.jpg"
 import industrial from "./../Assets/project/HOUSE_HILAGO_INDU/cover.jpg"
 import housemb from "./../Assets/project/HOUSE_MB/cover.jpg"
-import palm from "./../Assets/project/HOUSE_PALMHILLS/cover.jpg"
+import palm from "./../Assets/project/HOUSE_PALMHILLS/cover.jpeg"
 import riviera from "./../Assets/project/HOUSE_RIVERA/cover.jpg"
 import rotietta from "./../Assets/project/ROTIETA/cover.jpg"
 
