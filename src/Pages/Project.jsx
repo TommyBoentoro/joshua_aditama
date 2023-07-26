@@ -29,6 +29,9 @@ import birdnest from "./../Assets/project/BIRDNEST/1.jpg"
 import cut from "./../Assets/project/CUTOCLOK/cover.jpg"
 import amaya from "./../Assets/project/HOUSE_AMAYA/cover.jpg"
 import graha from "./../Assets/project/HOUSE_GRAHA_PADMA/cover.jpg"
+import bali from "./../Assets/project/HOUSE_HILAGO_BALI/cover.jpg"
+import industrial from "./../Assets/project/HOUSE_HILAGO_INDU/cover.jpg"
+import housemb from "./../Assets/project/HOUSE_MB/cover.jpg"
 
 
 class Project extends React.Component {
@@ -525,6 +528,54 @@ class Project extends React.Component {
                                 </div >
                                 <div className="fonttitle">
                                     HOUSE GRAHA PADMA
+                                </div>
+                                <div className=" fontbodyproject">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className=" col-sm-6 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/hilagobali"><img src={bali} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE HILAGO BALI
+                                </div>
+                                <div className="fontbodyproject">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/hilagoindustrial"><img src={industrial} alt="" className="imagecol-6" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory">
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE HILAGO INDUSTRIAL
+                                </div>
+                                <div className="col-12 px-0   fontbodyproject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" col-sm-3 px-md-3 px-sm-1 px-0 image imagehover paddingbody">
+                            <div style={{ overflow: "hidden" }} >
+                                <a href="/housemb"><img src={housemb} alt="" className="imagecol-3" /></a>
+                            </div>
+                            <div className="margincardbody">
+                                <div className="fontcategory" >
+                                    Interior
+                                </div >
+                                <div className="fonttitle">
+                                    HOUSE MB
                                 </div>
                                 <div className=" fontbodyproject">
 
