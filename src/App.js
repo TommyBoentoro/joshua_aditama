@@ -25,6 +25,7 @@ import surfingResort from "./Pages/projectdetail/surfing_resort"
 import Birdnest from "./Pages/projectdetail/birdnest"
 import cutoclock from "./Pages/projectdetail/cutoclock"
 import Amaya from "./Pages/projectdetail/houseamaya"
+import GrahaPadma from "./Pages/projectdetail/housegrahapadma"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -66,6 +67,7 @@ function App (){
           <Route path = "/birdnest" component = {Birdnest}/>
           <Route path = "/cutoclock" component = {cutoclock}/>
           <Route path = "/houseamaya" component = {Amaya}/>
+          <Route path = "/housegrahapadma" component = {GrahaPadma}/>
         </Switch>
         {/* <Footbar/> */}
       </BrowserRouter>
