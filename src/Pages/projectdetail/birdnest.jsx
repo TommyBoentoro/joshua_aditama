@@ -44,7 +44,7 @@ const PrevArrow = ({ onClick }) => {
     );
 };
 
-class birdnest extends React.Component {
+class Birdnest extends React.Component {
     render() {
 
         const settings = {
@@ -141,4 +141,4 @@ class birdnest extends React.Component {
     }
 }
 
-export default birdnest
+export default Birdnest
