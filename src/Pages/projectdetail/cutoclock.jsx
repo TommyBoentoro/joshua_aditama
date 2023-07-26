@@ -10,7 +10,7 @@ import empat from "./../../Assets/project/CUTOCLOCK/4.jpg"
 import lima from "./../../Assets/project/CUTOCLOCK/5.jpg"
 import enam from "./../../Assets/project/CUTOCLOCK/6.jpg"
 import tujuh from "./../../Assets/project/CUTOCLOCK/7.jpg"
-import delapan from "./../../Assets/project/CUTOCLOCK/8.jpg"
+import delapan from "./../../Assets/project/CUTOCLOCK/8.JPG"
 
 
 
