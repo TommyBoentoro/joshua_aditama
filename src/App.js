@@ -70,6 +70,7 @@ function App (){
           <Route path = "/lindspapandayan" component = {lindsPapandayan}/>
           <Route path = "/tabebuya" component = {tabebuya}/>
           <Route path = "/surfing_resort" component = {surfingResort}/>
+          
           <Route path = "/birdnest" component = {Birdnest}/>
           <Route path = "/cutoclock" component = {cutoclock}/>
           <Route path = "/houseamaya" component = {Amaya}/>
