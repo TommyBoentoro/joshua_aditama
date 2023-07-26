@@ -22,7 +22,7 @@ import wongart from "./Pages/projectdetail/wong_art"
 import lindsPapandayan from "./Pages/projectdetail/linds_papandayan"
 import tabebuya from "./Pages/projectdetail/tabebuya"
 import surfingResort from "./Pages/projectdetail/surfing_resort"
-import supershy from "./Pages/projectdetail/Super"
+import birdnest from "./Pages/projectdetail/birdnest"
 
 // Redux
 import {applyMiddleware, createStore} from "redux"
@@ -61,7 +61,7 @@ function App (){
           <Route path = "/lindspapandayan" component = {lindsPapandayan}/>
           <Route path = "/tabebuya" component = {tabebuya}/>
           <Route path = "/surfing_resort" component = {surfingResort}/>
-          <Route path = "/super" component = {supershy}/>
+          <Route path = "/birdnest" component = {birdnest}/>
         </Switch>
         {/* <Footbar/> */}
       </BrowserRouter>

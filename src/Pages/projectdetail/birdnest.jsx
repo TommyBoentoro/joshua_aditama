@@ -2,7 +2,6 @@ import React from "react"
 import Slider from "react-slick"
 
 // Import Images
-import linds from "./../../Assets/project/LINDS/COVER.jpg"
 import birdnest from "./../../Assets/project/BIRDNEST/1.jpg"
 import satu from "./../../Assets/project/BIRDNEST/2.jpg"
 import dua from "./../../Assets/project/BIRDNEST/3.jpg"
@@ -19,7 +18,7 @@ import sembilan from "./../../Assets/project/BIRDNEST/10.jpg"
 import Footbar from "../../components/Footer"
 
 // Import CSS
-import "./../../"
+import "../.."
 import "./../../Supports/tiga.css"
 import "./../../Supports/home.css"
 import "./../../Supports/projectDetail.css"
@@ -45,7 +44,7 @@ const PrevArrow = ({ onClick }) => {
     );
 };
 
-class supershy extends React.Component {
+class birdnest extends React.Component {
     render() {
 
         const settings = {
@@ -142,4 +141,4 @@ class supershy extends React.Component {
     }
 }
 
-export default supershy
+export default birdnest
