@@ -19,7 +19,7 @@ import tigabelas from "./../../Assets/project/HOUSE_RIVERA/13.jpg"
 import empatbelas from "./../../Assets/project/HOUSE_RIVERA/14.jpg"
 import limabelas from "./../../Assets/project/HOUSE_RIVERA/15.jpg"
 import enambelas from "./../../Assets/project/HOUSE_RIVERA/16.jpg"
-import tujuhbelas from "./../../Assets/project/HOUSE_RIVERA/17.jpg"
+
 
 
 
@@ -79,7 +79,7 @@ class HouseRivera extends React.Component {
                             </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Interior
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
@@ -149,9 +149,6 @@ class HouseRivera extends React.Component {
                         </div>
                         <div>
                             <img src={enambelas} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={tujuhbelas} className="opacityimage slickheight" alt="" />
                         </div>
                     </Slider>
                 </div>
