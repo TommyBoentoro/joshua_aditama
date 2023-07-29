@@ -11,7 +11,7 @@ import enam from "./../../Assets/project/HOUSE_HILAGO_INDU/6.jpg"
 import tujuh from "./../../Assets/project/HOUSE_HILAGO_INDU/7.jpg"
 import delapan from "./../../Assets/project/HOUSE_HILAGO_INDU/8.jpg"
 import sembilan from "./../../Assets/project/HOUSE_HILAGO_INDU/9.jpg"
-import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover1.jpeg."
+import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover1.jpeg"
 
 
 // Import Footer
