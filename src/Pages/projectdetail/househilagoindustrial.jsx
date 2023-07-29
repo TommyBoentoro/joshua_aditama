@@ -2,7 +2,6 @@ import React from "react"
 import Slider from "react-slick"
 
 // Import Images
-import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover1.jpeg"
 import satu from "./../../Assets/project/HOUSE_HILAGO_INDU/1.jpg"
 import dua from "./../../Assets/project/HOUSE_HILAGO_INDU/2.jpeg"
 import tiga from "./../../Assets/project/HOUSE_HILAGO_INDU/3.jpg"
@@ -12,6 +11,7 @@ import enam from "./../../Assets/project/HOUSE_HILAGO_INDU/6.jpg"
 import tujuh from "./../../Assets/project/HOUSE_HILAGO_INDU/7.jpg"
 import delapan from "./../../Assets/project/HOUSE_HILAGO_INDU/8.jpg"
 import sembilan from "./../../Assets/project/HOUSE_HILAGO_INDU/9.jpg"
+import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover1.jpeg."
 
 
 // Import Footer
