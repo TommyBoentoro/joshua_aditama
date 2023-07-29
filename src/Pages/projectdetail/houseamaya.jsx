@@ -69,7 +69,7 @@ class Amaya extends React.Component {
                             </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Interior
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
@@ -89,9 +89,6 @@ class Amaya extends React.Component {
 
                 <div className="marginslick">
                     <Slider {...settings}>
-                        <div>
-                            <img src={cover} className="opacityimage slickheight" alt="" />
-                        </div>
                         <div>
                             <img src={satu} className="opacityimage slickheight" alt="" />
                         </div>

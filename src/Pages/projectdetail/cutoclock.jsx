@@ -2,7 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 
 // Import Images
-import Cover from "./../../Assets/project/CUTOCLOK/cover.jpg"
+import Cover from "./../../Assets/project/CUTOCLOK/COVER.jpg"
 import satu from "./../../Assets/project/CUTOCLOK/1.jpg"
 import dua from "./../../Assets/project/CUTOCLOK/2.jpg"
 import tiga from "./../../Assets/project/CUTOCLOK/3.jpg"
@@ -10,6 +10,7 @@ import empat from "./../../Assets/project/CUTOCLOK/4.jpg"
 import lima from "./../../Assets/project/CUTOCLOK/5.jpg"
 import enam from "./../../Assets/project/CUTOCLOK/6.jpg"
 import tujuh from "./../../Assets/project/CUTOCLOK/7.jpg"
+import delapan  from "./../../Assets/project/CUTOCLOK/8.jpg"
 
 // Import Footer
 import Footbar from "../../components/Footer"
@@ -66,7 +67,7 @@ class Cutoclock extends React.Component {
                                 CUT O'CLOCK                            </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Interior
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
@@ -93,9 +94,6 @@ class Cutoclock extends React.Component {
                 <div className="marginslick">
                     <Slider {...settings}>
                         <div>
-                            <img src={Cover} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
                             <img src={satu} className="opacityimage slickheight" alt="" />
                         </div>
                         <div>
@@ -115,6 +113,9 @@ class Cutoclock extends React.Component {
                         </div>
                         <div>
                             <img src={tujuh} className="opacityimage slickheight" alt="" />
+                        </div>
+                        <div>
+                            <img src={delapan} className="opacityimage slickheight" alt="" />
                         </div>
                     </Slider>
                 </div>
