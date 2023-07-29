@@ -105,9 +105,6 @@ class Birdnest extends React.Component {
                 <div className="marginslick">
                     <Slider {...settings}>
                         <div>
-                            <img src={birdnest} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
                             <img src={satu} className="opacityimage slickheight" alt="" />
                         </div>
                         <div>
