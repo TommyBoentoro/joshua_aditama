@@ -97,9 +97,6 @@ class Rotieta extends React.Component {
                         <div>
                             <img src={tiga} className="opacityimage slickheight" alt="" />
                         </div>
-                        <div>
-                            <img src={empat} className="opacityimage slickheight" alt="" />
-                        </div>
                     </Slider>
                 </div>
                 <Footbar />
