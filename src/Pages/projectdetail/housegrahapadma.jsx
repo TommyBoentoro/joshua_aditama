@@ -64,7 +64,7 @@ class GrahaPadma extends React.Component {
                             </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Architecture
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">

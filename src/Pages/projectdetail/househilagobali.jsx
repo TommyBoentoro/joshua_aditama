@@ -5,13 +5,13 @@ import Slider from "react-slick"
 import cover from "./../../Assets/project/HOUSE_HILAGO_BALI/cover.jpg"
 import satu from "./../../Assets/project/HOUSE_HILAGO_BALI/1.jpg"
 import dua from "./../../Assets/project/HOUSE_HILAGO_BALI/2.jpg"
-import tiga from "./../../Assets/project/HOUSE_HILAGO_BALI/3.png"
+import tiga from "./../../Assets/project/HOUSE_HILAGO_BALI/3.jpg"
 import empat from "./../../Assets/project/HOUSE_HILAGO_BALI/4.jpg"
 import lima from "./../../Assets/project/HOUSE_HILAGO_BALI/5.jpg"
 import enam from "./../../Assets/project/HOUSE_HILAGO_BALI/6.jpg"
 import tujuh from "./../../Assets/project/HOUSE_HILAGO_BALI/7.jpg"
 import delapan from "./../../Assets/project/HOUSE_HILAGO_BALI/8.jpg"
-import sembilan from "./../../Assets/project/HOUSE_HILAGO_BALI/9.png"
+
 
 
 // Import Footer
@@ -70,7 +70,7 @@ class HilagoBali extends React.Component {
                             </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Interior
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
@@ -116,9 +116,6 @@ class HilagoBali extends React.Component {
                         </div>
                         <div>
                             <img src={delapan} className="opacityimage slickheight" alt="" />
-                        </div>
-                        <div>
-                            <img src={sembilan} className="opacityimage slickheight" alt="" />
                         </div>
                     </Slider>
                 </div>

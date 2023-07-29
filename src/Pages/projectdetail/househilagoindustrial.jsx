@@ -2,16 +2,16 @@ import React from "react"
 import Slider from "react-slick"
 
 // Import Images
-import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover.jpg"
+import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover.jpeg"
 import satu from "./../../Assets/project/HOUSE_HILAGO_INDU/1.jpg"
 import dua from "./../../Assets/project/HOUSE_HILAGO_INDU/2.jpeg"
-import tiga from "./../../Assets/project/HOUSE_HILAGO_INDU/3.jpeg"
-import empat from "./../../Assets/project/HOUSE_HILAGO_INDU/4.jpeg"
+import tiga from "./../../Assets/project/HOUSE_HILAGO_INDU/3.jpg"
+import empat from "./../../Assets/project/HOUSE_HILAGO_INDU/4.jpg"
 import lima from "./../../Assets/project/HOUSE_HILAGO_INDU/5.jpg"
-import enam from "./../../Assets/project/HOUSE_HILAGO_INDU/6.jpeg"
-import tujuh from "./../../Assets/project/HOUSE_HILAGO_INDU/7.jpeg"
-import delapan from "./../../Assets/project/HOUSE_HILAGO_INDU/8.jpeg"
-import sembilan from "./../../Assets/project/HOUSE_HILAGO_INDU/9.jpeg"
+import enam from "./../../Assets/project/HOUSE_HILAGO_INDU/6.jpg"
+import tujuh from "./../../Assets/project/HOUSE_HILAGO_INDU/7.jpg"
+import delapan from "./../../Assets/project/HOUSE_HILAGO_INDU/8.jpg"
+import sembilan from "./../../Assets/project/HOUSE_HILAGO_INDU/9.jpg"
 
 
 // Import Footer
@@ -70,7 +70,7 @@ class HilagoIndustrial extends React.Component {
                             </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Interior
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
