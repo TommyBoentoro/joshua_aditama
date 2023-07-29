@@ -2,7 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 
 // Import Images
-import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover.jpeg"
+import cover from "./../../Assets/project/HOUSE_HILAGO_INDU/cover1.jpeg"
 import satu from "./../../Assets/project/HOUSE_HILAGO_INDU/1.jpg"
 import dua from "./../../Assets/project/HOUSE_HILAGO_INDU/2.jpeg"
 import tiga from "./../../Assets/project/HOUSE_HILAGO_INDU/3.jpg"
