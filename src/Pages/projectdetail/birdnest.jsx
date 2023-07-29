@@ -8,10 +8,11 @@ import dua from "./../../Assets/project/BIRDNEST/3.jpg"
 import tiga from "./../../Assets/project/BIRDNEST/4.jpg"
 import empat from "./../../Assets/project/BIRDNEST/5.jpg"
 import lima from "./../../Assets/project/BIRDNEST/6.jpg"
-import enam from "./../../Assets/project/BIRDNEST/11.jpg"
+import enam from "./../../Assets/project/BIRDNEST/7.jpg"
 import tujuh from "./../../Assets/project/BIRDNEST/8.jpg"
 import delapan from "./../../Assets/project/BIRDNEST/9.jpg"
 import sembilan from "./../../Assets/project/BIRDNEST/10.jpg"
+import sepuluh from "./../../Assets/project/BIRDNEST/11.jpg"
 
 
 // Import Footer
@@ -70,7 +71,7 @@ class Birdnest extends React.Component {
                             </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Architecture
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
@@ -132,6 +133,9 @@ class Birdnest extends React.Component {
                         </div>
                         <div>
                             <img src={sembilan} className="opacityimage slickheight" alt="" />
+                        </div>
+                        <div>
+                            <img src={sepuluh} className="opacityimage slickheight" alt="" />
                         </div>
                     </Slider>
                 </div>
