@@ -7,10 +7,10 @@ import satu from "./../../Assets/project/HOUSE_PALMHILLS/1.jpg"
 import dua from "./../../Assets/project/HOUSE_PALMHILLS/2.jpg"
 import tiga from "./../../Assets/project/HOUSE_PALMHILLS/3.jpeg"
 import empat from "./../../Assets/project/HOUSE_PALMHILLS/4.jpeg"
-import lima from "./../../Assets/project/HOUSE_PALMHILLS/5.jpeg"
+import lima from "./../../Assets/project/HOUSE_PALMHILLS/5.jpg"
 import enam from "./../../Assets/project/HOUSE_PALMHILLS/6.jpg"
 import tujuh from "./../../Assets/project/HOUSE_PALMHILLS/7.jpg"
-import delapan from "./../../Assets/project/HOUSE_PALMHILLS/8.jpeg"
+import delapan from "./../../Assets/project/HOUSE_PALMHILLS/8.jpg"
 import sembilan from "./../../Assets/project/HOUSE_PALMHILLS/9.jpg"
 
 
@@ -70,7 +70,7 @@ class PalmHills extends React.Component {
                             </div>
                             <div className="paddingbg fontbgbody" >
                                 <div className="row px-sm-0 px-2 ">
-                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
+                                    <div className=" col-sm col-6 py-md-0 py-1 d-flex justify-content-md-start justify-content-start">
                                         Category: Interior
                                     </div>
                                     <div className="col-sm col-6 py-md-0 py-1 d-flex justify-content-md-center justify-content-start">
