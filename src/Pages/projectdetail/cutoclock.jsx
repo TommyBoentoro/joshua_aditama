@@ -10,7 +10,7 @@ import empat from "./../../Assets/project/CUTOCLOK/4.jpg"
 import lima from "./../../Assets/project/CUTOCLOK/5.jpg"
 import enam from "./../../Assets/project/CUTOCLOK/6.jpg"
 import tujuh from "./../../Assets/project/CUTOCLOK/7.jpg"
-import delapan from "./../../Assets/project/CUTOCLOK/8.jpg"
+import delapan from "./../../Assets/project/CUTOCLOK/test.jpg"
 
 // Import Footer
 import Footbar from "../../components/Footer"
